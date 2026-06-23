@@ -37,8 +37,8 @@
 
     main { max-width:960px; margin:0 auto; padding:2rem 1.5rem; }
 
-    /* ── Tabs ── */
-    .tabs { display:flex; gap:.5rem; margin-bottom:1.5rem; }
+    /* ── Primary tabs (Teams / Players) ── */
+    .tabs { display:flex; gap:.5rem; margin-bottom:1.25rem; }
     .tab {
       padding:.45rem 1.1rem; border-radius:8px; font-size:.85rem; font-weight:600;
       cursor:pointer; border:1px solid var(--border); background:var(--surface);
@@ -46,6 +46,18 @@
     }
     .tab.active { background:var(--accent); border-color:var(--accent); color:#fff; }
     .tab:hover:not(.active) { background:var(--surface2); color:var(--text); }
+
+    /* ── Year sub-tabs ── */
+    .year-tabs {
+      display:flex; gap:.35rem; flex-wrap:wrap; margin-bottom:1.25rem;
+    }
+    .year-tab {
+      padding:.3rem .75rem; border-radius:6px; font-size:.78rem; font-weight:600;
+      cursor:pointer; border:1px solid var(--border); background:var(--surface);
+      color:var(--muted); transition:all .15s;
+    }
+    .year-tab.active { background:var(--accent2); border-color:var(--accent2); color:#fff; }
+    .year-tab:hover:not(.active) { background:var(--surface2); color:var(--text); }
 
     /* ── Explainer ── */
     .explainer {
@@ -112,9 +124,11 @@
   <div id="content" style="display:none">
 
     <div class="tabs">
-      <div class="tab active" id="tab-teams" onclick="showTab('teams')">Teams</div>
-      <div class="tab" id="tab-players" onclick="showTab('players')">Players</div>
+      <div class="tab active" id="tab-teams" onclick="showType('teams')">Teams</div>
+      <div class="tab" id="tab-players" onclick="showType('players')">Players</div>
     </div>
+
+    <div class="year-tabs" id="year-tabs"></div>
 
     <div class="explainer" id="explainer-teams">
       <strong>What is Elo?</strong> It's a rating system originally from chess.
@@ -132,6 +146,13 @@
       Ratings are built from the full match history — but only players active in the last 90 days appear here. Minimum 10 matches to appear.
     </div>
 
+    <div class="explainer" id="explainer-season" style="display:none">
+      <strong>Season view:</strong> Elo shown is each <span id="season-year-label">team's</span>
+      cumulative rating at end of <span class="season-year-val">that year</span> — built from all
+      matches up to that point, not just that year's. Win rate and match count are within the year only.
+      Minimum 5 matches in that year to appear.
+    </div>
+
     <table class="leaderboard" id="leaderboard-table"></table>
   </div>
 </main>
@@ -139,16 +160,70 @@
 <script>
 const LEADERBOARD_URL = "leaderboard.json";
 let data = null;
+let currentType = "teams";   // "teams" | "players"
+let currentYear = "current"; // "current" | "2026" | "2025" | ...
 
-function showTab(tab) {
-  document.getElementById("tab-teams").classList.toggle("active", tab === "teams");
-  document.getElementById("tab-players").classList.toggle("active", tab === "players");
-  document.getElementById("explainer-teams").style.display = tab === "teams" ? "" : "none";
-  document.getElementById("explainer-players").style.display = tab === "players" ? "" : "none";
-  if (data) renderTable(tab === "teams" ? data.teams : data.players, tab);
+function showType(type) {
+  currentType = type;
+  document.getElementById("tab-teams").classList.toggle("active", type === "teams");
+  document.getElementById("tab-players").classList.toggle("active", type === "players");
+  renderExplainer();
+  renderTable();
 }
 
-function renderTable(rows, type) {
+function showYear(year, btn) {
+  currentYear = year;
+  document.querySelectorAll(".year-tab").forEach(t => t.classList.remove("active"));
+  btn.classList.add("active");
+  renderExplainer();
+  renderTable();
+}
+
+function renderExplainer() {
+  const isCurrent = currentYear === "current";
+  document.getElementById("explainer-teams").style.display =
+    (isCurrent && currentType === "teams") ? "" : "none";
+  document.getElementById("explainer-players").style.display =
+    (isCurrent && currentType === "players") ? "" : "none";
+  document.getElementById("explainer-season").style.display =
+    isCurrent ? "none" : "";
+  if (!isCurrent) {
+    document.getElementById("season-year-label").textContent =
+      currentType === "teams" ? "team's" : "player's";
+    document.querySelectorAll(".season-year-val").forEach(el => {
+      el.textContent = currentYear;
+    });
+  }
+}
+
+function buildYearTabs(years) {
+  const container = document.getElementById("year-tabs");
+  const allYears = ["current", ...years.slice().reverse()]; // newest first
+  container.innerHTML = allYears.map((y, i) => {
+    const label = y === "current" ? "Current" : y;
+    const active = i === 0 ? " active" : "";
+    return `<div class="year-tab${active}" onclick="showYear('${y}', this)">${label}</div>`;
+  }).join("");
+}
+
+function getRows() {
+  if (!data) return [];
+  if (currentYear === "current") {
+    return currentType === "teams" ? data.teams : data.players;
+  }
+  const season = (data.seasons || {})[currentYear];
+  if (!season) return [];
+  return currentType === "teams" ? season.teams : season.players;
+}
+
+function renderTable() {
+  const rows = getRows();
+  if (!rows || rows.length === 0) {
+    document.getElementById("leaderboard-table").innerHTML =
+      `<tr><td colspan="6" style="padding:2rem;text-align:center;color:var(--muted)">No data for this view.</td></tr>`;
+    return;
+  }
+
   const maxElo = rows[0]?.elo || 2000;
   const minElo = rows[rows.length - 1]?.elo || 1500;
   const range = maxElo - minElo || 1;
@@ -156,7 +231,7 @@ function renderTable(rows, type) {
   const header = `
     <tr>
       <th style="width:3rem">#</th>
-      <th>${type === "teams" ? "Team" : "Player"}</th>
+      <th>${currentType === "teams" ? "Team" : "Player"}</th>
       <th class="right">Elo</th>
       <th class="elo-bar-cell"></th>
       <th class="right">Matches</th>
@@ -199,7 +274,10 @@ async function load() {
       month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZoneName:"short"
     });
 
-    renderTable(data.teams, "teams");
+    const years = Object.keys(data.seasons || {}).sort();
+    buildYearTabs(years);
+
+    renderTable();
     statusEl.style.display = "none";
     content.style.display = "block";
   } catch(err) {
