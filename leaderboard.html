@@ -65,9 +65,7 @@
     }
     .explainer strong { color:var(--text); }
 
-    /* ── Table panels ── */
-    .lb-panel { display:none; }
-    .lb-panel.active { display:block; }
+    /* ── Table panels — shown/hidden via JS style.display directly ── */
 
     /* ── Table ── */
     .leaderboard { width:100%; border-collapse:collapse; }
@@ -157,30 +155,21 @@ const LEADERBOARD_URL = "leaderboard.json";
 
 let activeType = "teams";
 let activeYear = "current";
-
-function panelId(type, year) {
-  return `panel-${type}-${year}`;
-}
+const allPanels = [];   // filled by render(), each entry: { type, year, el }
+const typeTabs  = [];
+const yearTabs  = [];
 
 function switchView(type, year) {
   activeType = type;
   activeYear = year;
 
-  // Update type tabs
-  document.querySelectorAll("#type-tabs .tab").forEach(t => {
-    t.classList.toggle("active", t.dataset.type === type);
-  });
-  // Update year tabs
-  document.querySelectorAll("#year-tabs .year-tab").forEach(t => {
-    t.classList.toggle("active", t.dataset.year === year);
-  });
+  typeTabs.forEach(t => t.el.classList.toggle("active", t.type === type));
+  yearTabs.forEach(t => t.el.classList.toggle("active", t.year === year));
 
-  // Show correct panel
-  document.querySelectorAll(".lb-panel").forEach(p => p.classList.remove("active"));
-  const panel = document.getElementById(panelId(type, year));
-  if (panel) panel.classList.add("active");
+  allPanels.forEach(p => { p.el.style.display = "none"; });
+  const target = allPanels.find(p => p.type === type && p.year === year);
+  if (target) target.el.style.display = "block";
 
-  // Show correct explainer
   const isCumul = year === "current";
   document.getElementById("explainer-cumul-teams").style.display =
     (isCumul && type === "teams") ? "" : "none";
@@ -234,28 +223,28 @@ function render(data) {
   const years = Object.keys(data.seasons || {}).sort().reverse(); // newest first
 
   // Build type tabs
-  const typeTabs = document.getElementById("type-tabs");
+  const typeTabsEl = document.getElementById("type-tabs");
   ["teams", "players"].forEach((type, i) => {
     const el = document.createElement("div");
     el.className = "tab" + (i === 0 ? " active" : "");
-    el.dataset.type = type;
     el.textContent = type === "teams" ? "Teams" : "Players";
     el.addEventListener("click", () => switchView(type, activeYear));
-    typeTabs.appendChild(el);
+    typeTabsEl.appendChild(el);
+    typeTabs.push({ type, el });
   });
 
   // Build year tabs
-  const yearTabs = document.getElementById("year-tabs");
+  const yearTabsEl = document.getElementById("year-tabs");
   ["current", ...years].forEach((year, i) => {
     const el = document.createElement("div");
     el.className = "year-tab" + (i === 0 ? " active" : "");
-    el.dataset.year = year;
     el.textContent = year === "current" ? "Cumulative" : year;
     el.addEventListener("click", () => switchView(activeType, year));
-    yearTabs.appendChild(el);
+    yearTabsEl.appendChild(el);
+    yearTabs.push({ year, el });
   });
 
-  // Pre-render all panels
+  // Pre-render all panels, hidden by default
   const panelsEl = document.getElementById("panels");
   const allYears = ["current", ...years];
 
@@ -266,10 +255,10 @@ function render(data) {
         : (data.seasons[year] || {})[type];
 
       const div = document.createElement("div");
-      div.className = "lb-panel" + (year === "current" && type === "teams" ? " active" : "");
-      div.id = panelId(type, year);
+      div.style.display = (year === "current" && type === "teams") ? "block" : "none";
       div.innerHTML = buildTable(rows, type);
       panelsEl.appendChild(div);
+      allPanels.push({ type, year, el: div });
     });
   });
 }
