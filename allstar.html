@@ -137,12 +137,13 @@
 <main>
   <div class="explainer">
     <strong>How this works:</strong> We took every active player (competed in the last 90 days, at least 10 career matches)
-    and asked the model: <em>if I could build any team from the top 30 players, which combination would beat a typical VCT-level team by the most?</em>
-    The model evaluated <strong id="combo-count">142,506</strong> possible 5-player lineups globally
-    and ranked them by predicted win probability against an average opponent.
+    and asked the model: <em>which 5-player combination would beat a typical VCT-level team by the most?</em>
+    Every lineup is scored against the same baseline opponent — the average of all 1,298 active players worldwide —
+    so win probabilities are comparable across rosters and regions.
     <br><br>
-    <strong>Regional teams</strong> are found the same way, but the player pool is limited
-    to the top 15 active players in each league (Americas · EMEA · Pacific · China).
+    The <strong>global</strong> search picks from the top 30 active players by Elo, evaluating all 142,506 possible lineups.
+    <strong>Regional</strong> searches do the same within each league (Americas · EMEA · Pacific · China),
+    using the top 15 active players from that region as candidates — but still scoring against the global average opponent.
   </div>
 
   <p class="section-label">Select region</p>
