@@ -62,17 +62,23 @@
     .section-head .meta { font-size:.75rem; color:var(--muted); margin-left:auto; }
 
     /* ── Calibration chart ── */
-    .calib-chart {
-      display:flex; align-items:flex-end; gap:4px; height:120px;
-      background:var(--surface); border:1px solid var(--border); border-radius:10px;
-      padding:1rem 1rem .5rem;
+    .calib-explainer {
+      display:flex; align-items:center; gap:1rem; margin-bottom:.75rem; flex-wrap:wrap;
     }
-    .calib-col { flex:1; display:flex; flex-direction:column; align-items:center; gap:2px; }
-    .calib-bar-wrap { width:100%; flex:1; position:relative; display:flex; align-items:flex-end; gap:2px; }
-    .calib-bar { flex:1; border-radius:2px 2px 0 0; min-height:3px; }
-    .calib-pred { background:var(--accent2); opacity:.7; }
+    .calib-key { display:flex; align-items:center; gap:.35rem; font-size:.75rem; color:var(--muted); }
+    .calib-key-dot { width:10px; height:10px; border-radius:2px; flex-shrink:0; }
+    .calib-key-note { font-size:.72rem; color:var(--muted); margin-left:auto; font-style:italic; }
+    .calib-chart {
+      display:flex; align-items:flex-end; gap:6px; height:140px;
+      background:var(--surface); border:1px solid var(--border); border-radius:10px;
+      padding:1rem 1rem .5rem; position:relative;
+    }
+    .calib-col { flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; }
+    .calib-bar-wrap { width:100%; flex:1; display:flex; align-items:flex-end; gap:2px; }
+    .calib-bar { flex:1; border-radius:2px 2px 0 0; min-height:3px; cursor:default; }
+    .calib-pred { background:var(--accent2); opacity:.8; }
     .calib-act  { background:var(--green); }
-    .calib-lbl  { font-size:.55rem; color:var(--muted); white-space:nowrap; }
+    .calib-lbl  { font-size:.58rem; color:var(--muted); white-space:nowrap; }
 
     /* ── Match cards ── */
     .match-list { display:flex; flex-direction:column; gap:.6rem; }
@@ -168,8 +174,13 @@
     <!-- ── Calibration ── -->
     <div class="section" id="calib-section" style="display:none">
       <div class="section-head">
-        <h2>Calibration</h2>
-        <span class="meta">predicted probability vs actual win rate per bucket</span>
+        <h2>Does the model know what it doesn't know?</h2>
+        <span class="meta">when we say 70%, teams win ~70% of the time</span>
+      </div>
+      <div class="calib-explainer">
+        <span class="calib-key"><span class="calib-key-dot calib-pred"></span>Model's predicted chance</span>
+        <span class="calib-key"><span class="calib-key-dot calib-act"></span>What actually happened</span>
+        <span class="calib-key-note">Bars that match = well-calibrated probabilities</span>
       </div>
       <div class="calib-chart" id="calib-chart"></div>
     </div>
@@ -188,7 +199,7 @@
     <!-- ── Historical track record ── -->
     <div class="section" id="history-section" style="display:none">
       <div class="section-head">
-        <h2>Track Record</h2>
+        <h2>Past Predictions</h2>
         <span class="meta" id="history-meta"></span>
       </div>
       <div class="match-list" id="history-list"></div>
@@ -196,25 +207,29 @@
 
     <!-- ── About ── -->
     <div class="about">
-      <h2>About this model</h2>
+      <h2>How it works</h2>
       <p>
-        A gradient-boosted classifier (XGBoost) trained on professional Valorant match
-        history scraped from vlr.gg. Each player's form is summarised across rolling
-        windows (last 5, 10, 20 matches and career) covering KDA, ACS, KAST,
-        first-blood rate, and more. A match feature row is built by aggregating and
-        differencing the two rosters' current stats — 587 features total.
+        The model looks at how each of the 10 players have been performing recently,
+        then asks: <em>based on current form, which roster is stronger?</em>
+        It was trained on ~32,000 professional matches scraped from vlr.gg going back to 2020.
       </p>
       <p>
-        The <strong>track record</strong> above uses a strict walk-forward backtest:
-        the model never sees a match before predicting it. It trains on the earliest
-        80% of historical matches, then predicts the remaining 20% in blocks of 200,
-        retraining after each block on all data seen so far. Accuracy and calibration
-        are measured only on those holdout predictions.
+        Under the hood: a gradient-boosted classifier (XGBoost) with 587 features per match.
+        Each player is described by rolling averages across their last 5, 10, and 20 matches
+        plus career — covering ACS, KDA, KAST, first-blood rate, clutch rate, and more.
+        Match features are built by aggregating each roster and differencing the two sides,
+        so the model sees <em>how much better</em> one team is, not just raw numbers.
+        A dual Elo system (team-level + player-level, substitution-aware) and pairwise roster
+        chemistry features (shared games and win rate for every player pair) are layered on top.
       </p>
       <p>
-        <strong>Upcoming</strong> predictions use the full historical dataset as
-        training data and are refreshed every 6 hours. The model and training data
-        are not publicly distributed.
+        <strong>The track record is honest.</strong> Every past prediction used only data from
+        before that match. The model trained on the oldest 80% of history, then predicted
+        the remaining 20% in 200-match blocks, retraining after each — the same way it
+        operates live. No look-ahead bias.
+      </p>
+      <p>
+        Predictions refresh every 6 hours via GitHub Actions. The model and training data are not publicly distributed.
       </p>
     </div>
   </div>
@@ -232,10 +247,26 @@ function pct(v, decimals=0) {
 function renderStatGrid(bt, upcomingPredicted) {
   const el = document.getElementById("stat-grid");
   const stats = [
-    { label:"Holdout Accuracy", value: pct(bt.accuracy, 1), sub:`${bt.test_matches.toLocaleString()} matches` },
-    { label:"Brier Score",      value: bt.brier_score.toFixed(3),  sub:"lower = better" },
-    { label:"Log Loss",         value: bt.log_loss.toFixed(3),     sub:"lower = better" },
-    { label:"Upcoming",         value: upcomingPredicted,           sub:"matches with predictions" },
+    {
+      label: "Prediction Accuracy",
+      value: pct(bt.accuracy, 1),
+      sub: `correctly picked the winner in ${bt.test_matches.toLocaleString()} past matches`
+    },
+    {
+      label: "Tested On",
+      value: bt.test_matches.toLocaleString(),
+      sub: "matches the model never trained on"
+    },
+    {
+      label: "Trained On",
+      value: bt.train_matches.toLocaleString(),
+      sub: "historical pro matches going back to 2020"
+    },
+    {
+      label: "Live Predictions",
+      value: upcomingPredicted,
+      sub: "upcoming matches · refreshed every 6 hours"
+    },
   ];
   el.innerHTML = stats.map(s => `
     <div class="stat-card">
@@ -250,15 +281,16 @@ function renderCalib(buckets) {
   const chart = document.getElementById("calib-chart");
   if (!buckets || buckets.length === 0) return;
   sec.style.display = "block";
-  const maxN = Math.max(...buckets.map(b => b.n));
   chart.innerHTML = buckets.map(b => {
-    const predH = Math.round(b.predicted_mean * 80);
-    const actH  = Math.round(b.actual_win_rate * 80);
+    const predH = Math.round(b.predicted_mean * 110);
+    const actH  = Math.round(b.actual_win_rate * 110);
+    const predTip = `Model predicted ${pct(b.predicted_mean,1)} win chance`;
+    const actTip  = `Team actually won ${pct(b.actual_win_rate,1)} of the time (${b.n} matches)`;
     return `
       <div class="calib-col">
         <div class="calib-bar-wrap">
-          <div class="calib-bar calib-pred" style="height:${predH}px" title="Predicted: ${pct(b.predicted_mean,1)}"></div>
-          <div class="calib-bar calib-act"  style="height:${actH}px"  title="Actual: ${pct(b.actual_win_rate,1)} (n=${b.n})"></div>
+          <div class="calib-bar calib-pred" style="height:${predH}px" title="${predTip}"></div>
+          <div class="calib-bar calib-act"  style="height:${actH}px"  title="${actTip}"></div>
         </div>
         <div class="calib-lbl">${b.label}</div>
       </div>`;
@@ -314,7 +346,7 @@ function renderUpcoming(matches) {
         ${has?`<div class="prob-bar"><div class="prob-bar-fill" style="width:${barW}%"></div></div>
                <div class="conf-row">
                  <span class="dot ${CONF_CLASS[conf]||"conf-low"}"></span>
-                 <span class="conf-lbl">${conf} confidence</span>
+                 <span class="conf-lbl">${conf === "high" ? "All 10 players have match history" : conf === "medium" ? "Most players have match history" : "Some players lack match history — lower confidence"}</span>
                </div>`
              :`<div class="conf-row"><span class="conf-lbl">Rosters not yet announced</span></div>`}
       </div>`;
