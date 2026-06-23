@@ -1,0 +1,632 @@
+{
+  "generated_at": "2026-06-23T04:22:45.163976+00:00",
+  "active_players": 1298,
+  "active_cutoff_days": 90,
+  "global": [
+    {
+      "rank": 1,
+      "players": [
+        {
+          "player_id": "9803",
+          "name": "d4v41",
+          "elo": 2145.2,
+          "country": "my",
+          "photo_url": "https://owcdn.net/img/69735f207c9bf.png"
+        },
+        {
+          "player_id": "5022",
+          "name": "Derke",
+          "elo": 1996.1,
+          "country": "fi",
+          "photo_url": "https://owcdn.net/img/6977a70c4ff1b.png"
+        },
+        {
+          "player_id": "2172",
+          "name": "brawk",
+          "elo": 1988.4,
+          "country": "us",
+          "photo_url": "https://owcdn.net/img/697426e1f3308.png"
+        },
+        {
+          "player_id": "773",
+          "name": "Lakia",
+          "elo": 1967.3,
+          "country": "kr",
+          "photo_url": "https://owcdn.net/img/65f66e9636e73.png"
+        },
+        {
+          "player_id": "11118",
+          "name": "skuba",
+          "elo": 1965.4,
+          "country": "us",
+          "photo_url": "https://owcdn.net/img/6974067806f34.png"
+        }
+      ],
+      "win_prob_vs_average": 0.794
+    },
+    {
+      "rank": 2,
+      "players": [
+        {
+          "player_id": "3885",
+          "name": "valyn",
+          "elo": 2001.7,
+          "country": "us",
+          "photo_url": "https://owcdn.net/img/65e4660ee20e5.png"
+        },
+        {
+          "player_id": "5022",
+          "name": "Derke",
+          "elo": 1996.1,
+          "country": "fi",
+          "photo_url": "https://owcdn.net/img/6977a70c4ff1b.png"
+        },
+        {
+          "player_id": "2172",
+          "name": "brawk",
+          "elo": 1988.4,
+          "country": "us",
+          "photo_url": "https://owcdn.net/img/697426e1f3308.png"
+        },
+        {
+          "player_id": "773",
+          "name": "Lakia",
+          "elo": 1967.3,
+          "country": "kr",
+          "photo_url": "https://owcdn.net/img/65f66e9636e73.png"
+        },
+        {
+          "player_id": "10971",
+          "name": "RieNs",
+          "elo": 1953.2,
+          "country": "tr",
+          "photo_url": "https://owcdn.net/img/69778b71c9366.png"
+        }
+      ],
+      "win_prob_vs_average": 0.794
+    },
+    {
+      "rank": 3,
+      "players": [
+        {
+          "player_id": "9801",
+          "name": "f0rsakeN",
+          "elo": 2167.7,
+          "country": "id",
+          "photo_url": "https://owcdn.net/img/69735f135cf21.png"
+        },
+        {
+          "player_id": "5022",
+          "name": "Derke",
+          "elo": 1996.1,
+          "country": "fi",
+          "photo_url": "https://owcdn.net/img/6977a70c4ff1b.png"
+        },
+        {
+          "player_id": "2172",
+          "name": "brawk",
+          "elo": 1988.4,
+          "country": "us",
+          "photo_url": "https://owcdn.net/img/697426e1f3308.png"
+        },
+        {
+          "player_id": "773",
+          "name": "Lakia",
+          "elo": 1967.3,
+          "country": "kr",
+          "photo_url": "https://owcdn.net/img/65f66e9636e73.png"
+        },
+        {
+          "player_id": "10971",
+          "name": "RieNs",
+          "elo": 1953.2,
+          "country": "tr",
+          "photo_url": "https://owcdn.net/img/69778b71c9366.png"
+        }
+      ],
+      "win_prob_vs_average": 0.794
+    }
+  ],
+  "regional": {
+    "Americas": [
+      {
+        "rank": 1,
+        "players": [
+          {
+            "player_id": "3885",
+            "name": "valyn",
+            "elo": 2001.7,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/65e4660ee20e5.png"
+          },
+          {
+            "player_id": "8082",
+            "name": "zander",
+            "elo": 1996.9,
+            "country": "ca",
+            "photo_url": "https://owcdn.net/img/65a1dde2ae314.png"
+          },
+          {
+            "player_id": "2172",
+            "name": "brawk",
+            "elo": 1988.4,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/697426e1f3308.png"
+          },
+          {
+            "player_id": "11118",
+            "name": "skuba",
+            "elo": 1965.4,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/6974067806f34.png"
+          },
+          {
+            "player_id": "4807",
+            "name": "bstrdd",
+            "elo": 1947.1,
+            "country": "cl",
+            "photo_url": "https://owcdn.net/img/6977fa15e7dbe.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7403
+      },
+      {
+        "rank": 2,
+        "players": [
+          {
+            "player_id": "8082",
+            "name": "zander",
+            "elo": 1996.9,
+            "country": "ca",
+            "photo_url": "https://owcdn.net/img/65a1dde2ae314.png"
+          },
+          {
+            "player_id": "2172",
+            "name": "brawk",
+            "elo": 1988.4,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/697426e1f3308.png"
+          },
+          {
+            "player_id": "11118",
+            "name": "skuba",
+            "elo": 1965.4,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/6974067806f34.png"
+          },
+          {
+            "player_id": "7873",
+            "name": "leaf",
+            "elo": 1953.9,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/6613103dd51a4.png"
+          },
+          {
+            "player_id": "4807",
+            "name": "bstrdd",
+            "elo": 1947.1,
+            "country": "cl",
+            "photo_url": "https://owcdn.net/img/6977fa15e7dbe.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7333
+      },
+      {
+        "rank": 3,
+        "players": [
+          {
+            "player_id": "4828",
+            "name": "NiSMO",
+            "elo": 2027.0,
+            "country": "lb",
+            "photo_url": "https://owcdn.net/img/688c62bcd5f73.png"
+          },
+          {
+            "player_id": "3885",
+            "name": "valyn",
+            "elo": 2001.7,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/65e4660ee20e5.png"
+          },
+          {
+            "player_id": "2172",
+            "name": "brawk",
+            "elo": 1988.4,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/697426e1f3308.png"
+          },
+          {
+            "player_id": "11118",
+            "name": "skuba",
+            "elo": 1965.4,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/6974067806f34.png"
+          },
+          {
+            "player_id": "21251",
+            "name": "blowz",
+            "elo": 1949.0,
+            "country": "br",
+            "photo_url": "https://owcdn.net/img/69234aef86f4b.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7321
+      }
+    ],
+    "EMEA": [
+      {
+        "rank": 1,
+        "players": [
+          {
+            "player_id": "438",
+            "name": "Boaster",
+            "elo": 2018.9,
+            "country": "gb",
+            "photo_url": "https://owcdn.net/img/687e2c495dcc6.png"
+          },
+          {
+            "player_id": "9810",
+            "name": "Alfajer",
+            "elo": 1922.7,
+            "country": "tr",
+            "photo_url": "https://owcdn.net/img/687e2c40ac175.png"
+          },
+          {
+            "player_id": "10885",
+            "name": "DaviH",
+            "elo": 1919.9,
+            "country": "pt",
+            "photo_url": "https://owcdn.net/img/69a8be6cb643d.png"
+          },
+          {
+            "player_id": "4",
+            "name": "crashies",
+            "elo": 1905.6,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/687e2c376a05d.png"
+          },
+          {
+            "player_id": "11",
+            "name": "Zyppan",
+            "elo": 1902.1,
+            "country": "se",
+            "photo_url": "https://owcdn.net/img/69a8bfacbffc8.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7943
+      },
+      {
+        "rank": 2,
+        "players": [
+          {
+            "player_id": "438",
+            "name": "Boaster",
+            "elo": 2018.9,
+            "country": "gb",
+            "photo_url": "https://owcdn.net/img/687e2c495dcc6.png"
+          },
+          {
+            "player_id": "10971",
+            "name": "RieNs",
+            "elo": 1953.2,
+            "country": "tr",
+            "photo_url": "https://owcdn.net/img/69778b71c9366.png"
+          },
+          {
+            "player_id": "9810",
+            "name": "Alfajer",
+            "elo": 1922.7,
+            "country": "tr",
+            "photo_url": "https://owcdn.net/img/687e2c40ac175.png"
+          },
+          {
+            "player_id": "4",
+            "name": "crashies",
+            "elo": 1905.6,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/687e2c376a05d.png"
+          },
+          {
+            "player_id": "11",
+            "name": "Zyppan",
+            "elo": 1902.1,
+            "country": "se",
+            "photo_url": "https://owcdn.net/img/69a8bfacbffc8.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7924
+      },
+      {
+        "rank": 3,
+        "players": [
+          {
+            "player_id": "438",
+            "name": "Boaster",
+            "elo": 2018.9,
+            "country": "gb",
+            "photo_url": "https://owcdn.net/img/687e2c495dcc6.png"
+          },
+          {
+            "player_id": "5022",
+            "name": "Derke",
+            "elo": 1996.1,
+            "country": "fi",
+            "photo_url": "https://owcdn.net/img/6977a70c4ff1b.png"
+          },
+          {
+            "player_id": "10971",
+            "name": "RieNs",
+            "elo": 1953.2,
+            "country": "tr",
+            "photo_url": "https://owcdn.net/img/69778b71c9366.png"
+          },
+          {
+            "player_id": "9810",
+            "name": "Alfajer",
+            "elo": 1922.7,
+            "country": "tr",
+            "photo_url": "https://owcdn.net/img/687e2c40ac175.png"
+          },
+          {
+            "player_id": "4",
+            "name": "crashies",
+            "elo": 1905.6,
+            "country": "us",
+            "photo_url": "https://owcdn.net/img/687e2c376a05d.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7849
+      }
+    ],
+    "Pacific": [
+      {
+        "rank": 1,
+        "players": [
+          {
+            "player_id": "9803",
+            "name": "d4v41",
+            "elo": 2145.2,
+            "country": "my",
+            "photo_url": "https://owcdn.net/img/69735f207c9bf.png"
+          },
+          {
+            "player_id": "773",
+            "name": "Lakia",
+            "elo": 1967.3,
+            "country": "kr",
+            "photo_url": "https://owcdn.net/img/65f66e9636e73.png"
+          },
+          {
+            "player_id": "7378",
+            "name": "Jinggg",
+            "elo": 1950.5,
+            "country": "sg",
+            "photo_url": "https://owcdn.net/img/69735f0889a6b.png"
+          },
+          {
+            "player_id": "3401",
+            "name": "PTC",
+            "elo": 1949.5,
+            "country": "th",
+            "photo_url": "https://owcdn.net/img/698dc49c526de.png"
+          },
+          {
+            "player_id": "4095",
+            "name": "SkRossi",
+            "elo": 1937.6,
+            "country": "in",
+            "photo_url": "https://owcdn.net/img/670fae5d9c90c.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7879
+      },
+      {
+        "rank": 2,
+        "players": [
+          {
+            "player_id": "9803",
+            "name": "d4v41",
+            "elo": 2145.2,
+            "country": "my",
+            "photo_url": "https://owcdn.net/img/69735f207c9bf.png"
+          },
+          {
+            "player_id": "3401",
+            "name": "PTC",
+            "elo": 1949.5,
+            "country": "th",
+            "photo_url": "https://owcdn.net/img/698dc49c526de.png"
+          },
+          {
+            "player_id": "1437",
+            "name": "YESicaN",
+            "elo": 1945.6,
+            "country": "vn",
+            "photo_url": "https://owcdn.net/img/629f1027a9137.png"
+          },
+          {
+            "player_id": "4095",
+            "name": "SkRossi",
+            "elo": 1937.6,
+            "country": "in",
+            "photo_url": "https://owcdn.net/img/670fae5d9c90c.png"
+          },
+          {
+            "player_id": "7043",
+            "name": "NcSlasher",
+            "elo": 1908.9,
+            "country": "id",
+            "photo_url": "https://owcdn.net/img/67fe1388348ff.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7846
+      },
+      {
+        "rank": 3,
+        "players": [
+          {
+            "player_id": "9801",
+            "name": "f0rsakeN",
+            "elo": 2167.7,
+            "country": "id",
+            "photo_url": "https://owcdn.net/img/69735f135cf21.png"
+          },
+          {
+            "player_id": "9803",
+            "name": "d4v41",
+            "elo": 2145.2,
+            "country": "my",
+            "photo_url": "https://owcdn.net/img/69735f207c9bf.png"
+          },
+          {
+            "player_id": "12098",
+            "name": "Kadoom",
+            "elo": 2010.6,
+            "country": "th",
+            "photo_url": "https://owcdn.net/img/698dc4b48a423.png"
+          },
+          {
+            "player_id": "773",
+            "name": "Lakia",
+            "elo": 1967.3,
+            "country": "kr",
+            "photo_url": "https://owcdn.net/img/65f66e9636e73.png"
+          },
+          {
+            "player_id": "7378",
+            "name": "Jinggg",
+            "elo": 1950.5,
+            "country": "sg",
+            "photo_url": "https://owcdn.net/img/69735f0889a6b.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7833
+      }
+    ],
+    "China": [
+      {
+        "rank": 1,
+        "players": [
+          {
+            "player_id": "15559",
+            "name": "CHICHOO",
+            "elo": 1914.2,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe4289bb34.png"
+          },
+          {
+            "player_id": "3017",
+            "name": "nobody",
+            "elo": 1893.6,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe4210de6e.png"
+          },
+          {
+            "player_id": "3520",
+            "name": "ZmjjKK",
+            "elo": 1865.3,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe40edf9da.png"
+          },
+          {
+            "player_id": "4720",
+            "name": "Haodong",
+            "elo": 1756.2,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/678247ccb12a1.png"
+          },
+          {
+            "player_id": "4742",
+            "name": "Smoggy",
+            "elo": 1742.7,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe435edc57.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7941
+      },
+      {
+        "rank": 2,
+        "players": [
+          {
+            "player_id": "15559",
+            "name": "CHICHOO",
+            "elo": 1914.2,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe4289bb34.png"
+          },
+          {
+            "player_id": "3017",
+            "name": "nobody",
+            "elo": 1893.6,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe4210de6e.png"
+          },
+          {
+            "player_id": "21216",
+            "name": "f4ngeer",
+            "elo": 1744.8,
+            "country": "ru",
+            "photo_url": "/img/base/ph/sil.png"
+          },
+          {
+            "player_id": "4774",
+            "name": "Knight",
+            "elo": 1743.6,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fdffe244c5.png"
+          },
+          {
+            "player_id": "4742",
+            "name": "Smoggy",
+            "elo": 1742.7,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe435edc57.png"
+          }
+        ],
+        "win_prob_vs_average": 0.7921
+      },
+      {
+        "rank": 3,
+        "players": [
+          {
+            "player_id": "15559",
+            "name": "CHICHOO",
+            "elo": 1914.2,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe4289bb34.png"
+          },
+          {
+            "player_id": "3017",
+            "name": "nobody",
+            "elo": 1893.6,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe4210de6e.png"
+          },
+          {
+            "player_id": "3520",
+            "name": "ZmjjKK",
+            "elo": 1865.3,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fe40edf9da.png"
+          },
+          {
+            "player_id": "4885",
+            "name": "whzy",
+            "elo": 1752.1,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fdfcb36dac.png"
+          },
+          {
+            "player_id": "4774",
+            "name": "Knight",
+            "elo": 1743.6,
+            "country": "cn",
+            "photo_url": "https://owcdn.net/img/677fdffe244c5.png"
+          }
+        ],
+        "win_prob_vs_average": 0.791
+      }
+    ]
+  }
+}

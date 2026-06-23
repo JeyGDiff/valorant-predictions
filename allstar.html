@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-Star Roster · Valorant Predictions</title>
+  <style>
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a; --border: #2e3350;
+      --accent: #ff4655; --accent2: #7c5cbf; --text: #e8eaf0; --muted: #7a82a0;
+      --green: #22c55e; --gold: #f59e0b; --silver: #94a3b8; --bronze: #b45309;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
+
+    nav {
+      background:var(--surface); border-bottom:1px solid var(--border);
+      padding:.6rem 2rem; display:flex; gap:.25rem; align-items:center;
+    }
+    nav a {
+      font-size:.8rem; font-weight:600; color:var(--muted); text-decoration:none;
+      padding:.35rem .75rem; border-radius:6px; transition:background .15s, color .15s;
+    }
+    nav a:hover { background:var(--surface2); color:var(--text); }
+    nav a.active { background:var(--surface2); color:var(--text); }
+
+    header {
+      border-bottom:1px solid var(--border); padding:1.25rem 2rem;
+      display:flex; align-items:center; gap:1rem;
+    }
+    .logo { width:34px; height:34px; background:var(--accent); border-radius:8px;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:900; font-size:1rem; color:#fff; flex-shrink:0; }
+    header h1 { font-size:1.15rem; font-weight:700; letter-spacing:-.02em; }
+    header p  { font-size:.78rem; color:var(--muted); margin-top:1px; }
+    .header-right { margin-left:auto; font-size:.75rem; color:var(--muted); text-align:right; }
+
+    main { max-width:960px; margin:0 auto; padding:2rem 1.5rem; }
+
+    /* ── Section header ── */
+    .section-label {
+      font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em;
+      color:var(--muted); margin-bottom:.75rem;
+    }
+
+    /* ── Explainer ── */
+    .explainer {
+      background:var(--surface); border:1px solid var(--border); border-radius:10px;
+      padding:1rem 1.25rem; margin-bottom:2rem; font-size:.82rem; color:var(--muted);
+      line-height:1.7;
+    }
+    .explainer strong { color:var(--text); }
+
+    /* ── Region tabs ── */
+    .tabs { display:flex; gap:.5rem; margin-bottom:1.5rem; flex-wrap:wrap; }
+    .tab {
+      padding:.45rem 1.1rem; border-radius:8px; font-size:.85rem; font-weight:600;
+      cursor:pointer; border:1px solid var(--border); background:var(--surface);
+      color:var(--muted); transition:all .15s;
+    }
+    .tab.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+    .tab:hover:not(.active) { background:var(--surface2); color:var(--text); }
+
+    /* ── Region panel ── */
+    .region-panel { display:none; }
+    .region-panel.active { display:block; }
+
+    /* ── Roster card ── */
+    .roster-card {
+      background:var(--surface); border:1px solid var(--border); border-radius:12px;
+      margin-bottom:1.25rem; overflow:hidden;
+    }
+    .roster-card-header {
+      display:flex; align-items:center; gap:.75rem; padding:.85rem 1.25rem;
+      border-bottom:1px solid var(--border);
+    }
+    .roster-rank {
+      width:2rem; height:2rem; border-radius:50%; display:flex; align-items:center;
+      justify-content:center; font-size:.8rem; font-weight:800; flex-shrink:0;
+    }
+    .roster-rank.r1 { background:var(--gold); color:#1a1200; }
+    .roster-rank.r2 { background:var(--silver); color:#0a1020; }
+    .roster-rank.r3 { background:var(--bronze); color:#1a0800; }
+    .roster-rank.rother { background:var(--surface2); color:var(--muted); }
+    .roster-title { font-weight:700; font-size:.95rem; }
+    .roster-prob {
+      margin-left:auto; font-size:.82rem; color:var(--muted);
+    }
+    .roster-prob strong { color:var(--green); font-size:1rem; }
+
+    /* ── Player grid ── */
+    .player-grid {
+      display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:0;
+    }
+    .player-card {
+      padding:.9rem 1.25rem; border-right:1px solid var(--border);
+      display:flex; flex-direction:column; gap:.2rem;
+    }
+    .player-card:last-child { border-right:none; }
+    .player-avatar {
+      width:48px; height:48px; border-radius:50%; background:var(--accent2);
+      display:flex; align-items:center; justify-content:center;
+      font-size:.9rem; font-weight:800; color:#fff; margin-bottom:.35rem;
+      overflow:hidden; flex-shrink:0;
+    }
+    .player-avatar img { width:100%; height:100%; object-fit:cover; border-radius:50%; }
+    .player-name { font-weight:700; font-size:.9rem; color:var(--text); }
+    .player-flag { font-size:.9rem; margin-right:.2rem; }
+    .player-elo { font-size:.8rem; color:var(--gold); font-weight:600; }
+
+    /* ── Methodology note ── */
+    .method-note {
+      background:var(--surface2); border-radius:8px; padding:.75rem 1rem;
+      font-size:.78rem; color:var(--muted); margin-top:1.5rem; line-height:1.6;
+    }
+
+    #status { text-align:center; padding:3rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Predictions</a>
+  <a href="leaderboard.html">Elo Rankings</a>
+  <a href="allstar.html" class="active">All-Star</a>
+</nav>
+
+<header>
+  <div class="logo">V</div>
+  <div>
+    <h1>All-Star Roster</h1>
+    <p>The best possible team the model can assemble — globally and by region</p>
+  </div>
+  <div class="header-right" id="header-meta">Loading…</div>
+</header>
+
+<main>
+  <div class="explainer">
+    <strong>How this works:</strong> We took every active player (competed in the last 90 days, at least 10 career matches)
+    and asked the model: <em>if I could build any team from the top 30 players, which combination would beat a typical VCT-level team by the most?</em>
+    The model evaluated <strong id="combo-count">142,506</strong> possible 5-player lineups globally
+    and ranked them by predicted win probability against an average opponent.
+    <br><br>
+    <strong>Regional teams</strong> are found the same way, but the player pool is limited
+    to the top 15 active players in each league (Americas · EMEA · Pacific · China).
+  </div>
+
+  <p class="section-label">Select region</p>
+  <div class="tabs" id="region-tabs">
+    <button class="tab active" onclick="showRegion('global', this)">Global</button>
+    <button class="tab" onclick="showRegion('Americas', this)">Americas</button>
+    <button class="tab" onclick="showRegion('EMEA', this)">EMEA</button>
+    <button class="tab" onclick="showRegion('Pacific', this)">Pacific</button>
+    <button class="tab" onclick="showRegion('China', this)">China</button>
+  </div>
+
+  <div id="panels">
+    <p id="status">Loading…</p>
+  </div>
+
+  <div class="method-note">
+    <strong>Methodology note:</strong> Win probability is scored against a fixed "average opponent" built from the mean stats of all
+    1,298 active players — it's a relative measure, not a literal win rate in a live tournament.
+    Player ratings use the same Elo system that powers the leaderboard: every match in history replayed in order,
+    wins and losses updating each player's rating in real time.
+    "Best team" = highest predicted win probability; ties broken by Elo sum.
+  </div>
+</main>
+
+<script>
+const DATA_URL = 'allstar.json';
+
+let data = null;
+
+async function load() {
+  try {
+    const r = await fetch(DATA_URL);
+    data = await r.json();
+    render();
+  } catch(e) {
+    document.getElementById('status').textContent = 'Failed to load allstar.json';
+  }
+}
+
+function initials(name) {
+  return (name || '?').split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 2);
+}
+
+function countryFlag(cc) {
+  if (!cc || cc.length !== 2) return '';
+  const base = 0x1F1E6 - 65;
+  return String.fromCodePoint(base + cc.toUpperCase().charCodeAt(0))
+       + String.fromCodePoint(base + cc.toUpperCase().charCodeAt(1));
+}
+
+function rankClass(rank) {
+  if (rank === 1) return 'r1';
+  if (rank === 2) return 'r2';
+  if (rank === 3) return 'r3';
+  return 'rother';
+}
+
+function rankLabel(rank) {
+  if (rank === 1) return '#1';
+  if (rank === 2) return '#2';
+  if (rank === 3) return '#3';
+  return `#${rank}`;
+}
+
+// Palette for avatars (cycles through players)
+const AVATAR_COLORS = ['#7c5cbf','#ff4655','#0e9f6e','#f59e0b','#3b82f6'];
+
+function buildRosterCard(roster, idx) {
+  const rank = roster.rank;
+  const pct = (roster.win_prob_vs_average * 100).toFixed(1);
+  const label = rank === 1 ? 'Best lineup' : rank === 2 ? '2nd-best lineup' : `${rankLabel(rank)} lineup`;
+
+  const playerCards = roster.players.map((p, i) => {
+    const avatarContent = p.photo_url
+      ? `<img src="${escHtml(p.photo_url)}" alt="${escHtml(p.name)}" onerror="this.style.display='none';this.parentNode.textContent='${initials(p.name)}'">`
+      : initials(p.name);
+    const flag = p.country ? `<span class="player-flag">${countryFlag(p.country)}</span>` : '';
+    return `
+    <div class="player-card">
+      <div class="player-avatar" style="background:${AVATAR_COLORS[i % AVATAR_COLORS.length]}">${avatarContent}</div>
+      <div class="player-name">${flag}${escHtml(p.name)}</div>
+      <div class="player-elo">Elo ${p.elo.toFixed(0)}</div>
+    </div>`;
+  }).join('');
+
+  return `
+    <div class="roster-card">
+      <div class="roster-card-header">
+        <div class="roster-rank ${rankClass(rank)}">${rankLabel(rank)}</div>
+        <div class="roster-title">${escHtml(label)}</div>
+        <div class="roster-prob">Predicted win rate vs average: <strong>${pct}%</strong></div>
+      </div>
+      <div class="player-grid">${playerCards}</div>
+    </div>
+  `;
+}
+
+function buildPanel(rosters) {
+  if (!rosters || rosters.length === 0) {
+    return '<p style="color:var(--muted);padding:1rem">Not enough active players in this region.</p>';
+  }
+  return rosters.map((r, i) => buildRosterCard(r, i)).join('');
+}
+
+function render() {
+  if (!data) return;
+
+  // Header meta
+  const d = new Date(data.generated_at);
+  document.getElementById('header-meta').innerHTML =
+    `Updated ${d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'})}<br>`
+    + `${data.active_players.toLocaleString()} active players evaluated`;
+
+  // Build all panels (hidden until tab click)
+  const panels = document.getElementById('panels');
+  panels.innerHTML = `
+    <div class="region-panel active" id="panel-global">${buildPanel(data.global)}</div>
+    <div class="region-panel" id="panel-Americas">${buildPanel(data.regional?.Americas)}</div>
+    <div class="region-panel" id="panel-EMEA">${buildPanel(data.regional?.EMEA)}</div>
+    <div class="region-panel" id="panel-Pacific">${buildPanel(data.regional?.Pacific)}</div>
+    <div class="region-panel" id="panel-China">${buildPanel(data.regional?.China)}</div>
+  `;
+}
+
+function showRegion(key, btn) {
+  // Update tabs
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  // Update panels
+  document.querySelectorAll('.region-panel').forEach(p => p.classList.remove('active'));
+  const panel = document.getElementById(`panel-${key}`);
+  if (panel) panel.classList.add('active');
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+load();
+</script>
+</body>
+</html>
