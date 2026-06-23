@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T03:48:19.913478+00:00",
+  "generated_at": "2026-06-23T04:10:06.990174+00:00",
   "total_matches": 31969,
   "teams": [
     {
@@ -9,7 +9,8 @@
       "elo": 1940.0,
       "matches": 291,
       "wins": 212,
-      "win_rate": 0.7285
+      "win_rate": 0.7285,
+      "last_seen": "2026-06-21"
     },
     {
       "rank": 2,
@@ -18,439 +19,488 @@
       "elo": 1868.4,
       "matches": 251,
       "wins": 169,
-      "win_rate": 0.6733
+      "win_rate": 0.6733,
+      "last_seen": "2026-06-10"
     },
     {
       "rank": 3,
-      "team_id": "2291",
-      "name": "Ghost Gaming",
-      "elo": 1868.1,
-      "matches": 143,
-      "wins": 101,
-      "win_rate": 0.7063
-    },
-    {
-      "rank": 4,
-      "team_id": "628",
-      "name": "FunPlus Phoenix",
-      "elo": 1863.4,
-      "matches": 110,
-      "wins": 82,
-      "win_rate": 0.7455
-    },
-    {
-      "rank": 5,
-      "team_id": "533",
-      "name": "XSET",
-      "elo": 1861.3,
-      "matches": 111,
-      "wins": 76,
-      "win_rate": 0.6847
-    },
-    {
-      "rank": 6,
       "team_id": "11058",
       "name": "G2 Esports",
       "elo": 1849.8,
       "matches": 140,
       "wins": 87,
-      "win_rate": 0.6214
+      "win_rate": 0.6214,
+      "last_seen": "2026-06-14"
     },
     {
-      "rank": 7,
+      "rank": 4,
       "team_id": "2359",
       "name": "LEVIAT\u00c1N",
       "elo": 1848.7,
       "matches": 153,
       "wins": 88,
-      "win_rate": 0.5752
+      "win_rate": 0.5752,
+      "last_seen": "2026-06-21"
     },
     {
-      "rank": 8,
-      "team_id": "4210",
-      "name": "Made in Thailand",
-      "elo": 1833.1,
-      "matches": 137,
-      "wins": 94,
-      "win_rate": 0.6861
-    },
-    {
-      "rank": 9,
+      "rank": 5,
       "team_id": "11060",
       "name": "Nongshim RedForce",
       "elo": 1832.9,
       "matches": 99,
       "wins": 60,
-      "win_rate": 0.6061
+      "win_rate": 0.6061,
+      "last_seen": "2026-05-31"
     },
     {
-      "rank": 10,
-      "team_id": "6675",
-      "name": "The Guard",
-      "elo": 1831.1,
-      "matches": 86,
-      "wins": 63,
-      "win_rate": 0.7326
-    },
-    {
-      "rank": 11,
+      "rank": 6,
       "team_id": "2593",
       "name": "FNATIC",
       "elo": 1830.4,
       "matches": 229,
       "wins": 163,
-      "win_rate": 0.7118
+      "win_rate": 0.7118,
+      "last_seen": "2026-05-30"
     },
     {
-      "rank": 12,
-      "team_id": "682",
-      "name": "Gambit Esports",
-      "elo": 1820.9,
-      "matches": 82,
-      "wins": 64,
-      "win_rate": 0.7805
-    },
-    {
-      "rank": 13,
-      "team_id": "6538",
-      "name": "DSYRE",
-      "elo": 1811.4,
-      "matches": 127,
-      "wins": 99,
-      "win_rate": 0.7795
-    },
-    {
-      "rank": 14,
+      "rank": 7,
       "team_id": "120",
       "name": "100 Thieves",
       "elo": 1809.9,
       "matches": 231,
       "wins": 139,
-      "win_rate": 0.6017
+      "win_rate": 0.6017,
+      "last_seen": "2026-05-29"
     },
     {
-      "rank": 15,
-      "team_id": "2815",
-      "name": "Version1",
-      "elo": 1809.4,
-      "matches": 94,
-      "wins": 65,
-      "win_rate": 0.6915
-    },
-    {
-      "rank": 16,
+      "rank": 8,
       "team_id": "14",
       "name": "T1",
       "elo": 1807.8,
       "matches": 261,
       "wins": 166,
-      "win_rate": 0.636
+      "win_rate": 0.636,
+      "last_seen": "2026-05-30"
     },
     {
-      "rank": 17,
-      "team_id": "1615",
-      "name": "Knights",
-      "elo": 1806.0,
-      "matches": 162,
-      "wins": 107,
-      "win_rate": 0.6605
-    },
-    {
-      "rank": 18,
-      "team_id": "8127",
-      "name": "OpTic Gaming",
-      "elo": 1798.8,
-      "matches": 39,
-      "wins": 27,
-      "win_rate": 0.6923
-    },
-    {
-      "rank": 19,
-      "team_id": "198",
-      "name": "Vision Strikers",
-      "elo": 1798.7,
-      "matches": 68,
-      "wins": 61,
-      "win_rate": 0.8971
-    },
-    {
-      "rank": 20,
-      "team_id": "1208",
-      "name": "ORDER",
-      "elo": 1797.1,
-      "matches": 88,
-      "wins": 74,
-      "win_rate": 0.8409
-    },
-    {
-      "rank": 21,
-      "team_id": "6461",
-      "name": "Akrew",
-      "elo": 1793.1,
-      "matches": 103,
-      "wins": 78,
-      "win_rate": 0.7573
-    },
-    {
-      "rank": 22,
+      "rank": 9,
       "team_id": "1001",
       "name": "Team Heretics",
       "elo": 1787.9,
       "matches": 231,
       "wins": 144,
-      "win_rate": 0.6234
+      "win_rate": 0.6234,
+      "last_seen": "2026-06-14"
     },
     {
-      "rank": 23,
-      "team_id": "642",
-      "name": "Luminosity",
-      "elo": 1786.0,
-      "matches": 130,
-      "wins": 82,
-      "win_rate": 0.6308
-    },
-    {
-      "rank": 24,
+      "rank": 10,
       "team_id": "2059",
       "name": "Team Vitality",
       "elo": 1784.6,
       "matches": 197,
       "wins": 125,
-      "win_rate": 0.6345
+      "win_rate": 0.6345,
+      "last_seen": "2026-06-19"
     },
     {
-      "rank": 25,
-      "team_id": "10725",
-      "name": "Oxygen Esports",
-      "elo": 1783.7,
-      "matches": 76,
-      "wins": 56,
-      "win_rate": 0.7368
-    },
-    {
-      "rank": 26,
+      "rank": 11,
       "team_id": "8185",
       "name": "KIWOOM DRX",
       "elo": 1782.0,
       "matches": 189,
       "wins": 125,
-      "win_rate": 0.6614
+      "win_rate": 0.6614,
+      "last_seen": "2026-05-30"
     },
     {
-      "rank": 27,
-      "team_id": "8044",
-      "name": "MOUZ",
-      "elo": 1781.1,
-      "matches": 126,
-      "wins": 92,
-      "win_rate": 0.7302
-    },
-    {
-      "rank": 28,
+      "rank": 12,
       "team_id": "2",
       "name": "Sentinels",
       "elo": 1779.1,
       "matches": 292,
       "wins": 199,
-      "win_rate": 0.6815
+      "win_rate": 0.6815,
+      "last_seen": "2026-05-30"
     },
     {
-      "rank": 29,
-      "team_id": "16616",
-      "name": "BBL PCIFIC",
-      "elo": 1777.1,
-      "matches": 66,
-      "wins": 53,
-      "win_rate": 0.803
-    },
-    {
-      "rank": 30,
+      "rank": 13,
       "team_id": "397",
       "name": "BBL Esports",
       "elo": 1774.8,
       "matches": 175,
       "wins": 104,
-      "win_rate": 0.5943
+      "win_rate": 0.5943,
+      "last_seen": "2026-05-31"
     },
     {
-      "rank": 31,
+      "rank": 14,
       "team_id": "11001",
       "name": "M80",
       "elo": 1770.7,
       "matches": 93,
       "wins": 70,
-      "win_rate": 0.7527
+      "win_rate": 0.7527,
+      "last_seen": "2026-06-18"
     },
     {
-      "rank": 32,
-      "team_id": "4346",
-      "name": "DarkZero Esports",
-      "elo": 1763.5,
-      "matches": 143,
-      "wins": 97,
-      "win_rate": 0.6783
-    },
-    {
-      "rank": 33,
-      "team_id": "7969",
-      "name": "Team Falcons",
-      "elo": 1762.0,
-      "matches": 77,
-      "wins": 56,
-      "win_rate": 0.7273
-    },
-    {
-      "rank": 34,
+      "rank": 15,
       "team_id": "17",
       "name": "Gen.G",
       "elo": 1761.5,
       "matches": 317,
       "wins": 200,
-      "win_rate": 0.6309
+      "win_rate": 0.6309,
+      "last_seen": "2026-05-31"
     },
     {
-      "rank": 35,
-      "team_id": "2032",
-      "name": "ONIC G",
-      "elo": 1758.7,
-      "matches": 71,
-      "wins": 50,
-      "win_rate": 0.7042
-    },
-    {
-      "rank": 36,
-      "team_id": "724",
-      "name": "E-Xolos LAZER",
-      "elo": 1758.0,
-      "matches": 142,
-      "wins": 99,
-      "win_rate": 0.6972
-    },
-    {
-      "rank": 37,
-      "team_id": "3531",
-      "name": "Acend",
-      "elo": 1755.8,
-      "matches": 166,
-      "wins": 129,
-      "win_rate": 0.7771
-    },
-    {
-      "rank": 38,
+      "rank": 16,
       "team_id": "427",
       "name": "ENVY",
       "elo": 1754.9,
       "matches": 153,
       "wins": 104,
-      "win_rate": 0.6797
+      "win_rate": 0.6797,
+      "last_seen": "2026-05-19"
     },
     {
-      "rank": 39,
+      "rank": 17,
       "team_id": "4330",
       "name": "Fancy United Esports",
       "elo": 1750.0,
       "matches": 170,
       "wins": 108,
-      "win_rate": 0.6353
+      "win_rate": 0.6353,
+      "last_seen": "2026-06-18"
     },
     {
-      "rank": 40,
+      "rank": 18,
       "team_id": "474",
       "name": "Team Liquid",
       "elo": 1748.9,
       "matches": 211,
       "wins": 130,
-      "win_rate": 0.6161
+      "win_rate": 0.6161,
+      "last_seen": "2026-05-23"
     },
     {
-      "rank": 41,
-      "team_id": "4345",
-      "name": "SoaR",
-      "elo": 1746.1,
-      "matches": 142,
-      "wins": 94,
-      "win_rate": 0.662
-    },
-    {
-      "rank": 42,
+      "rank": 19,
       "team_id": "876",
       "name": "Enterprise Esports",
       "elo": 1743.2,
       "matches": 161,
       "wins": 96,
-      "win_rate": 0.5963
+      "win_rate": 0.5963,
+      "last_seen": "2026-06-22"
     },
     {
-      "rank": 43,
-      "team_id": "4940",
-      "name": "Pioneers",
-      "elo": 1742.3,
-      "matches": 70,
-      "wins": 51,
-      "win_rate": 0.7286
-    },
-    {
-      "rank": 44,
-      "team_id": "1209",
-      "name": "Guild Esports",
-      "elo": 1738.5,
-      "matches": 93,
-      "wins": 63,
-      "win_rate": 0.6774
-    },
-    {
-      "rank": 45,
+      "rank": 20,
       "team_id": "7386",
       "name": "MIBR",
       "elo": 1738.0,
       "matches": 112,
       "wins": 57,
-      "win_rate": 0.5089
+      "win_rate": 0.5089,
+      "last_seen": "2026-05-28"
     },
     {
-      "rank": 46,
-      "team_id": "11201",
-      "name": "Version1",
-      "elo": 1738.0,
-      "matches": 47,
-      "wins": 39,
-      "win_rate": 0.8298
-    },
-    {
-      "rank": 47,
+      "rank": 21,
       "team_id": "9314",
       "name": "Team Falcons Vega",
       "elo": 1736.0,
       "matches": 81,
       "wins": 53,
-      "win_rate": 0.6543
+      "win_rate": 0.6543,
+      "last_seen": "2026-04-23"
     },
     {
-      "rank": 48,
-      "team_id": "2304",
-      "name": "Giants Gaming",
-      "elo": 1735.6,
-      "matches": 134,
-      "wins": 93,
-      "win_rate": 0.694
-    },
-    {
-      "rank": 49,
-      "team_id": "637",
-      "name": "Rise",
-      "elo": 1735.0,
-      "matches": 101,
-      "wins": 63,
-      "win_rate": 0.6238
-    },
-    {
-      "rank": 50,
+      "rank": 22,
       "team_id": "466",
       "name": "BOOM Esports",
       "elo": 1733.8,
       "matches": 259,
       "wins": 173,
-      "win_rate": 0.668
+      "win_rate": 0.668,
+      "last_seen": "2026-06-11"
+    },
+    {
+      "rank": 23,
+      "team_id": "7412",
+      "name": "Akave Esports GC",
+      "elo": 1730.6,
+      "matches": 56,
+      "wins": 42,
+      "win_rate": 0.75,
+      "last_seen": "2026-06-05"
+    },
+    {
+      "rank": 24,
+      "team_id": "878",
+      "name": "Rex Regum Qeon",
+      "elo": 1725.7,
+      "matches": 132,
+      "wins": 65,
+      "win_rate": 0.4924,
+      "last_seen": "2026-05-23"
+    },
+    {
+      "rank": 25,
+      "team_id": "623",
+      "name": "Sharper Esports",
+      "elo": 1722.6,
+      "matches": 177,
+      "wins": 96,
+      "win_rate": 0.5424,
+      "last_seen": "2026-06-17"
+    },
+    {
+      "rank": 26,
+      "team_id": "4050",
+      "name": "FULL SENSE",
+      "elo": 1721.0,
+      "matches": 233,
+      "wins": 152,
+      "win_rate": 0.6524,
+      "last_seen": "2026-06-09"
+    },
+    {
+      "rank": 27,
+      "team_id": "1184",
+      "name": "FUT Esports",
+      "elo": 1719.1,
+      "matches": 252,
+      "wins": 154,
+      "win_rate": 0.6111,
+      "last_seen": "2026-06-16"
+    },
+    {
+      "rank": 28,
+      "team_id": "7055",
+      "name": "Team Liquid Brazil",
+      "elo": 1714.1,
+      "matches": 118,
+      "wins": 89,
+      "win_rate": 0.7542,
+      "last_seen": "2026-06-18"
+    },
+    {
+      "rank": 29,
+      "team_id": "5214",
+      "name": "CGN Esports",
+      "elo": 1713.1,
+      "matches": 194,
+      "wins": 119,
+      "win_rate": 0.6134,
+      "last_seen": "2026-05-20"
+    },
+    {
+      "rank": 30,
+      "team_id": "8050",
+      "name": "MIBR GC",
+      "elo": 1712.5,
+      "matches": 85,
+      "wins": 54,
+      "win_rate": 0.6353,
+      "last_seen": "2026-05-31"
+    },
+    {
+      "rank": 31,
+      "team_id": "1120",
+      "name": "EDward Gaming",
+      "elo": 1705.8,
+      "matches": 239,
+      "wins": 160,
+      "win_rate": 0.6695,
+      "last_seen": "2026-06-20"
+    },
+    {
+      "rank": 32,
+      "team_id": "188",
+      "name": "Cloud9",
+      "elo": 1700.6,
+      "matches": 275,
+      "wins": 172,
+      "win_rate": 0.6255,
+      "last_seen": "2026-05-13"
+    },
+    {
+      "rank": 33,
+      "team_id": "21093",
+      "name": "Gentle Mates GC",
+      "elo": 1700.2,
+      "matches": 24,
+      "wins": 21,
+      "win_rate": 0.875,
+      "last_seen": "2026-05-24"
+    },
+    {
+      "rank": 34,
+      "team_id": "6530",
+      "name": "G2 Gozen",
+      "elo": 1695.4,
+      "matches": 207,
+      "wins": 158,
+      "win_rate": 0.7633,
+      "last_seen": "2026-05-23"
+    },
+    {
+      "rank": 35,
+      "team_id": "12694",
+      "name": "Gentle Mates",
+      "elo": 1692.8,
+      "matches": 80,
+      "wins": 43,
+      "win_rate": 0.5375,
+      "last_seen": "2026-05-23"
+    },
+    {
+      "rank": 36,
+      "team_id": "5248",
+      "name": "Evil Geniuses",
+      "elo": 1689.9,
+      "matches": 215,
+      "wins": 121,
+      "win_rate": 0.5628,
+      "last_seen": "2026-05-20"
+    },
+    {
+      "rank": 37,
+      "team_id": "4915",
+      "name": "Natus Vincere",
+      "elo": 1688.9,
+      "matches": 147,
+      "wins": 81,
+      "win_rate": 0.551,
+      "last_seen": "2026-05-31"
+    },
+    {
+      "rank": 38,
+      "team_id": "4616",
+      "name": "UCAM Esports Club",
+      "elo": 1686.9,
+      "matches": 251,
+      "wins": 142,
+      "win_rate": 0.5657,
+      "last_seen": "2026-05-27"
+    },
+    {
+      "rank": 39,
+      "team_id": "18117",
+      "name": "Motiv Esports",
+      "elo": 1686.0,
+      "matches": 44,
+      "wins": 30,
+      "win_rate": 0.6818,
+      "last_seen": "2026-05-04"
+    },
+    {
+      "rank": 40,
+      "team_id": "6961",
+      "name": "LOUD",
+      "elo": 1684.3,
+      "matches": 104,
+      "wins": 61,
+      "win_rate": 0.5865,
+      "last_seen": "2026-05-31"
+    },
+    {
+      "rank": 41,
+      "team_id": "918",
+      "name": "Global Esports",
+      "elo": 1679.1,
+      "matches": 190,
+      "wins": 104,
+      "win_rate": 0.5474,
+      "last_seen": "2026-06-10"
+    },
+    {
+      "rank": 42,
+      "team_id": "6392",
+      "name": "Eternal Fire",
+      "elo": 1676.7,
+      "matches": 111,
+      "wins": 64,
+      "win_rate": 0.5766,
+      "last_seen": "2026-05-24"
+    },
+    {
+      "rank": 43,
+      "team_id": "6882",
+      "name": "FOKUS",
+      "elo": 1668.6,
+      "matches": 160,
+      "wins": 98,
+      "win_rate": 0.6125,
+      "last_seen": "2026-05-20"
+    },
+    {
+      "rank": 44,
+      "team_id": "13581",
+      "name": "Xi Lai Gaming",
+      "elo": 1667.9,
+      "matches": 85,
+      "wins": 51,
+      "win_rate": 0.6,
+      "last_seen": "2026-06-16"
+    },
+    {
+      "rank": 45,
+      "team_id": "20784",
+      "name": "LYON",
+      "elo": 1665.5,
+      "matches": 19,
+      "wins": 19,
+      "win_rate": 1.0,
+      "last_seen": "2026-06-17"
+    },
+    {
+      "rank": 46,
+      "team_id": "7031",
+      "name": "NAOS",
+      "elo": 1662.9,
+      "matches": 143,
+      "wins": 92,
+      "win_rate": 0.6434,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "rank": 47,
+      "team_id": "2355",
+      "name": "KR\u00dc Esports",
+      "elo": 1660.5,
+      "matches": 168,
+      "wins": 93,
+      "win_rate": 0.5536,
+      "last_seen": "2026-05-28"
+    },
+    {
+      "rank": 48,
+      "team_id": "3136",
+      "name": "Oasis Gaming",
+      "elo": 1658.5,
+      "matches": 152,
+      "wins": 91,
+      "win_rate": 0.5987,
+      "last_seen": "2026-06-18"
+    },
+    {
+      "rank": 49,
+      "team_id": "2934",
+      "name": "FENNEL",
+      "elo": 1656.6,
+      "matches": 119,
+      "wins": 76,
+      "win_rate": 0.6387,
+      "last_seen": "2026-06-04"
+    },
+    {
+      "rank": 50,
+      "team_id": "14478",
+      "name": "Eintracht Frankfurt",
+      "elo": 1656.0,
+      "matches": 77,
+      "wins": 47,
+      "win_rate": 0.6104,
+      "last_seen": "2026-04-21"
     }
   ],
   "players": [
@@ -461,7 +511,8 @@
       "elo": 2167.7,
       "matches": 282,
       "wins": 209,
-      "win_rate": 0.7411
+      "win_rate": 0.7411,
+      "last_seen": "2026-06-21"
     },
     {
       "rank": 2,
@@ -470,7 +521,8 @@
       "elo": 2160.0,
       "matches": 181,
       "wins": 127,
-      "win_rate": 0.7017
+      "win_rate": 0.7017,
+      "last_seen": "2026-05-28"
     },
     {
       "rank": 3,
@@ -479,7 +531,8 @@
       "elo": 2145.2,
       "matches": 277,
       "wins": 205,
-      "win_rate": 0.7401
+      "win_rate": 0.7401,
+      "last_seen": "2026-06-21"
     },
     {
       "rank": 4,
@@ -488,7 +541,8 @@
       "elo": 2101.8,
       "matches": 190,
       "wins": 130,
-      "win_rate": 0.6842
+      "win_rate": 0.6842,
+      "last_seen": "2026-06-22"
     },
     {
       "rank": 5,
@@ -497,7 +551,8 @@
       "elo": 2077.9,
       "matches": 250,
       "wins": 183,
-      "win_rate": 0.732
+      "win_rate": 0.732,
+      "last_seen": "2026-06-19"
     },
     {
       "rank": 6,
@@ -506,7 +561,8 @@
       "elo": 2061.0,
       "matches": 282,
       "wins": 193,
-      "win_rate": 0.6844
+      "win_rate": 0.6844,
+      "last_seen": "2026-04-06"
     },
     {
       "rank": 7,
@@ -515,7 +571,8 @@
       "elo": 2057.3,
       "matches": 228,
       "wins": 149,
-      "win_rate": 0.6535
+      "win_rate": 0.6535,
+      "last_seen": "2026-05-30"
     },
     {
       "rank": 8,
@@ -524,7 +581,8 @@
       "elo": 2027.1,
       "matches": 198,
       "wins": 129,
-      "win_rate": 0.6515
+      "win_rate": 0.6515,
+      "last_seen": "2026-05-30"
     },
     {
       "rank": 9,
@@ -533,7 +591,8 @@
       "elo": 2027.0,
       "matches": 252,
       "wins": 178,
-      "win_rate": 0.7063
+      "win_rate": 0.7063,
+      "last_seen": "2026-06-18"
     },
     {
       "rank": 10,
@@ -542,7 +601,8 @@
       "elo": 2018.9,
       "matches": 264,
       "wins": 184,
-      "win_rate": 0.697
+      "win_rate": 0.697,
+      "last_seen": "2026-05-30"
     },
     {
       "rank": 11,
@@ -551,7 +611,8 @@
       "elo": 2011.9,
       "matches": 234,
       "wins": 161,
-      "win_rate": 0.688
+      "win_rate": 0.688,
+      "last_seen": "2026-05-30"
     },
     {
       "rank": 12,
@@ -560,7 +621,8 @@
       "elo": 2010.6,
       "matches": 203,
       "wins": 137,
-      "win_rate": 0.6749
+      "win_rate": 0.6749,
+      "last_seen": "2026-06-17"
     },
     {
       "rank": 13,
@@ -569,7 +631,8 @@
       "elo": 2001.7,
       "matches": 303,
       "wins": 205,
-      "win_rate": 0.6766
+      "win_rate": 0.6766,
+      "last_seen": "2026-06-14"
     },
     {
       "rank": 14,
@@ -578,7 +641,8 @@
       "elo": 1996.9,
       "matches": 269,
       "wins": 182,
-      "win_rate": 0.6766
+      "win_rate": 0.6766,
+      "last_seen": "2026-06-18"
     },
     {
       "rank": 15,
@@ -587,7 +651,8 @@
       "elo": 1996.1,
       "matches": 227,
       "wins": 158,
-      "win_rate": 0.696
+      "win_rate": 0.696,
+      "last_seen": "2026-06-19"
     },
     {
       "rank": 16,
@@ -596,7 +661,8 @@
       "elo": 1988.4,
       "matches": 284,
       "wins": 188,
-      "win_rate": 0.662
+      "win_rate": 0.662,
+      "last_seen": "2026-06-10"
     },
     {
       "rank": 17,
@@ -605,7 +671,8 @@
       "elo": 1987.4,
       "matches": 219,
       "wins": 157,
-      "win_rate": 0.7169
+      "win_rate": 0.7169,
+      "last_seen": "2026-05-31"
     },
     {
       "rank": 18,
@@ -614,7 +681,8 @@
       "elo": 1979.7,
       "matches": 176,
       "wins": 114,
-      "win_rate": 0.6477
+      "win_rate": 0.6477,
+      "last_seen": "2026-05-28"
     },
     {
       "rank": 19,
@@ -623,7 +691,8 @@
       "elo": 1969.0,
       "matches": 247,
       "wins": 180,
-      "win_rate": 0.7287
+      "win_rate": 0.7287,
+      "last_seen": "2026-05-30"
     },
     {
       "rank": 20,
@@ -632,7 +701,8 @@
       "elo": 1967.3,
       "matches": 143,
       "wins": 94,
-      "win_rate": 0.6573
+      "win_rate": 0.6573,
+      "last_seen": "2026-05-31"
     },
     {
       "rank": 21,
@@ -641,7 +711,8 @@
       "elo": 1967.1,
       "matches": 264,
       "wins": 175,
-      "win_rate": 0.6629
+      "win_rate": 0.6629,
+      "last_seen": "2026-05-29"
     },
     {
       "rank": 22,
@@ -650,259 +721,288 @@
       "elo": 1965.4,
       "matches": 280,
       "wins": 195,
-      "win_rate": 0.6964
+      "win_rate": 0.6964,
+      "last_seen": "2026-06-10"
     },
     {
       "rank": 23,
-      "player_id": "65",
-      "name": "effys",
-      "elo": 1961.2,
-      "matches": 177,
-      "wins": 120,
-      "win_rate": 0.678
-    },
-    {
-      "rank": 24,
-      "player_id": "75",
-      "name": "Subroza",
-      "elo": 1960.1,
-      "matches": 199,
-      "wins": 155,
-      "win_rate": 0.7789
-    },
-    {
-      "rank": 25,
-      "player_id": "659",
-      "name": "Sacy",
-      "elo": 1958.0,
-      "matches": 160,
-      "wins": 113,
-      "win_rate": 0.7063
-    },
-    {
-      "rank": 26,
       "player_id": "8176",
       "name": "enerii",
       "elo": 1956.9,
       "matches": 95,
       "wins": 80,
-      "win_rate": 0.8421
+      "win_rate": 0.8421,
+      "last_seen": "2026-04-23"
     },
     {
-      "rank": 27,
+      "rank": 24,
       "player_id": "601",
       "name": "Asuna",
       "elo": 1956.2,
       "matches": 283,
       "wins": 176,
-      "win_rate": 0.6219
+      "win_rate": 0.6219,
+      "last_seen": "2026-05-29"
     },
     {
-      "rank": 28,
+      "rank": 25,
       "player_id": "7873",
       "name": "leaf",
       "elo": 1953.9,
       "matches": 246,
       "wins": 167,
-      "win_rate": 0.6789
+      "win_rate": 0.6789,
+      "last_seen": "2026-06-14"
     },
     {
-      "rank": 29,
+      "rank": 26,
       "player_id": "804",
       "name": "BuZz",
       "elo": 1953.4,
       "matches": 240,
       "wins": 164,
-      "win_rate": 0.6833
+      "win_rate": 0.6833,
+      "last_seen": "2026-05-30"
     },
     {
-      "rank": 30,
+      "rank": 27,
       "player_id": "10971",
       "name": "RieNs",
       "elo": 1953.2,
       "matches": 191,
       "wins": 118,
-      "win_rate": 0.6178
+      "win_rate": 0.6178,
+      "last_seen": "2026-06-14"
     },
     {
-      "rank": 31,
+      "rank": 28,
       "player_id": "7378",
       "name": "Jinggg",
       "elo": 1950.5,
       "matches": 252,
       "wins": 180,
-      "win_rate": 0.7143
+      "win_rate": 0.7143,
+      "last_seen": "2026-06-21"
     },
     {
-      "rank": 32,
+      "rank": 29,
       "player_id": "3401",
       "name": "PTC",
       "elo": 1949.5,
       "matches": 249,
       "wins": 176,
-      "win_rate": 0.7068
+      "win_rate": 0.7068,
+      "last_seen": "2026-06-17"
     },
     {
-      "rank": 33,
+      "rank": 30,
       "player_id": "21251",
       "name": "blowz",
       "elo": 1949.0,
       "matches": 87,
       "wins": 64,
-      "win_rate": 0.7356
+      "win_rate": 0.7356,
+      "last_seen": "2026-06-21"
     },
     {
-      "rank": 34,
+      "rank": 31,
       "player_id": "733",
       "name": "stellar",
       "elo": 1948.1,
       "matches": 309,
       "wins": 195,
-      "win_rate": 0.6311
+      "win_rate": 0.6311,
+      "last_seen": "2026-06-18"
     },
     {
-      "rank": 35,
+      "rank": 32,
       "player_id": "4807",
       "name": "bstrdd",
       "elo": 1947.1,
       "matches": 130,
       "wins": 101,
-      "win_rate": 0.7769
+      "win_rate": 0.7769,
+      "last_seen": "2026-05-31"
     },
     {
-      "rank": 36,
+      "rank": 33,
       "player_id": "1437",
       "name": "YESicaN",
       "elo": 1945.6,
       "matches": 192,
       "wins": 120,
-      "win_rate": 0.625
+      "win_rate": 0.625,
+      "last_seen": "2026-06-18"
     },
     {
-      "rank": 37,
+      "rank": 34,
       "player_id": "457",
       "name": "nAts",
       "elo": 1944.0,
       "matches": 216,
       "wins": 141,
-      "win_rate": 0.6528
+      "win_rate": 0.6528,
+      "last_seen": "2026-05-23"
     },
     {
-      "rank": 38,
-      "player_id": "74",
-      "name": "hazed",
-      "elo": 1942.9,
-      "matches": 198,
-      "wins": 149,
-      "win_rate": 0.7525
-    },
-    {
-      "rank": 39,
-      "player_id": "101",
-      "name": "soulcas",
-      "elo": 1941.8,
-      "matches": 220,
-      "wins": 149,
-      "win_rate": 0.6773
-    },
-    {
-      "rank": 40,
+      "rank": 35,
       "player_id": "4095",
       "name": "SkRossi",
       "elo": 1937.6,
       "matches": 189,
       "wins": 128,
-      "win_rate": 0.6772
+      "win_rate": 0.6772,
+      "last_seen": "2026-06-05"
     },
     {
-      "rank": 41,
+      "rank": 36,
       "player_id": "6437",
       "name": "Dark3st",
       "elo": 1937.4,
       "matches": 216,
       "wins": 117,
-      "win_rate": 0.5417
+      "win_rate": 0.5417,
+      "last_seen": "2026-06-17"
     },
     {
-      "rank": 42,
-      "player_id": "421",
-      "name": "Genghsta",
-      "elo": 1935.3,
-      "matches": 238,
-      "wins": 158,
-      "win_rate": 0.6639
-    },
-    {
-      "rank": 43,
+      "rank": 37,
       "player_id": "4581",
       "name": "JonahP",
       "elo": 1933.2,
       "matches": 281,
       "wins": 186,
-      "win_rate": 0.6619
+      "win_rate": 0.6619,
+      "last_seen": "2026-05-30"
     },
     {
-      "rank": 44,
+      "rank": 38,
       "player_id": "1524",
       "name": "H1ber",
       "elo": 1929.9,
       "matches": 237,
       "wins": 154,
-      "win_rate": 0.6498
+      "win_rate": 0.6498,
+      "last_seen": "2026-05-22"
     },
     {
-      "rank": 45,
+      "rank": 39,
       "player_id": "5132",
       "name": "mada",
       "elo": 1925.5,
       "matches": 273,
       "wins": 178,
-      "win_rate": 0.652
+      "win_rate": 0.652,
+      "last_seen": "2026-06-10"
     },
     {
-      "rank": 46,
+      "rank": 40,
       "player_id": "569",
       "name": "pAura",
       "elo": 1923.1,
       "matches": 226,
       "wins": 152,
-      "win_rate": 0.6726
+      "win_rate": 0.6726,
+      "last_seen": "2026-05-04"
     },
     {
-      "rank": 47,
+      "rank": 41,
       "player_id": "9810",
       "name": "Alfajer",
       "elo": 1922.7,
       "matches": 199,
       "wins": 141,
-      "win_rate": 0.7085
+      "win_rate": 0.7085,
+      "last_seen": "2026-05-30"
     },
     {
-      "rank": 48,
+      "rank": 42,
       "player_id": "10885",
       "name": "DaviH",
       "elo": 1919.9,
       "matches": 130,
       "wins": 97,
-      "win_rate": 0.7462
+      "win_rate": 0.7462,
+      "last_seen": "2026-05-20"
     },
     {
-      "rank": 49,
+      "rank": 43,
       "player_id": "4004",
       "name": "zekken",
       "elo": 1916.3,
       "matches": 255,
       "wins": 164,
-      "win_rate": 0.6431
+      "win_rate": 0.6431,
+      "last_seen": "2026-05-28"
+    },
+    {
+      "rank": 44,
+      "player_id": "15559",
+      "name": "CHICHOO",
+      "elo": 1914.2,
+      "matches": 229,
+      "wins": 158,
+      "win_rate": 0.69,
+      "last_seen": "2026-06-20"
+    },
+    {
+      "rank": 45,
+      "player_id": "8419",
+      "name": "Reduxx",
+      "elo": 1912.2,
+      "matches": 312,
+      "wins": 207,
+      "win_rate": 0.6635,
+      "last_seen": "2026-05-30"
+    },
+    {
+      "rank": 46,
+      "player_id": "7043",
+      "name": "NcSlasher",
+      "elo": 1908.9,
+      "matches": 228,
+      "wins": 163,
+      "win_rate": 0.7149,
+      "last_seen": "2026-06-11"
+    },
+    {
+      "rank": 47,
+      "player_id": "7616",
+      "name": "Feniz",
+      "elo": 1907.2,
+      "matches": 137,
+      "wins": 101,
+      "win_rate": 0.7372,
+      "last_seen": "2026-06-17"
+    },
+    {
+      "rank": 48,
+      "player_id": "7458",
+      "name": "moose",
+      "elo": 1907.1,
+      "matches": 230,
+      "wins": 147,
+      "win_rate": 0.6391,
+      "last_seen": "2026-06-18"
+    },
+    {
+      "rank": 49,
+      "player_id": "4",
+      "name": "crashies",
+      "elo": 1905.6,
+      "matches": 258,
+      "wins": 172,
+      "win_rate": 0.6667,
+      "last_seen": "2026-05-30"
     },
     {
       "rank": 50,
-      "player_id": "474",
-      "name": "xeta",
-      "elo": 1914.3,
-      "matches": 128,
-      "wins": 88,
-      "win_rate": 0.6875
+      "player_id": "11225",
+      "name": "Ethan",
+      "elo": 1904.4,
+      "matches": 193,
+      "wins": 123,
+      "win_rate": 0.6373,
+      "last_seen": "2026-06-10"
     }
   ]
 }
