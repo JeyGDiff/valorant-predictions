@@ -198,11 +198,14 @@ function renderExplainer() {
 function buildYearTabs(years) {
   const container = document.getElementById("year-tabs");
   const allYears = ["current", ...years.slice().reverse()]; // newest first
-  container.innerHTML = allYears.map((y, i) => {
-    const label = y === "current" ? "Cumulative" : y;
-    const active = i === 0 ? " active" : "";
-    return `<div class="year-tab${active}" onclick="showYear('${y}', this)">${label}</div>`;
-  }).join("");
+  container.innerHTML = "";
+  allYears.forEach((y, i) => {
+    const el = document.createElement("div");
+    el.className = "year-tab" + (i === 0 ? " active" : "");
+    el.textContent = y === "current" ? "Cumulative" : y;
+    el.addEventListener("click", () => showYear(y, el));
+    container.appendChild(el);
+  });
 }
 
 function getRows() {
