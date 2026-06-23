@@ -48,9 +48,7 @@
     .tab:hover:not(.active) { background:var(--surface2); color:var(--text); }
 
     /* ── Year sub-tabs ── */
-    .year-tabs {
-      display:flex; gap:.35rem; flex-wrap:wrap; margin-bottom:1.25rem;
-    }
+    .year-tabs { display:flex; gap:.35rem; flex-wrap:wrap; margin-bottom:1.25rem; }
     .year-tab {
       padding:.3rem .75rem; border-radius:6px; font-size:.78rem; font-weight:600;
       cursor:pointer; border:1px solid var(--border); background:var(--surface);
@@ -66,6 +64,10 @@
       line-height:1.7;
     }
     .explainer strong { color:var(--text); }
+
+    /* ── Table panels ── */
+    .lb-panel { display:none; }
+    .lb-panel.active { display:block; }
 
     /* ── Table ── */
     .leaderboard { width:100%; border-collapse:collapse; }
@@ -123,165 +125,164 @@
   <div id="status">Loading…</div>
   <div id="content" style="display:none">
 
-    <div class="tabs">
-      <div class="tab active" id="tab-teams" onclick="showType('teams')">Teams</div>
-      <div class="tab" id="tab-players" onclick="showType('players')">Players</div>
-    </div>
-
+    <div class="tabs" id="type-tabs"></div>
     <div class="year-tabs" id="year-tabs"></div>
 
-    <div class="explainer" id="explainer-teams">
+    <div class="explainer" id="explainer-cumul-teams">
       <strong>What is Elo?</strong> It's a rating system originally from chess.
       Beat a stronger team and your rating jumps; lose to a weaker one and it drops.
       Everyone starts at 1500 and the number moves after every series.
       The higher the number, the stronger the team's track record.
       <strong>Cumulative</strong> ratings are built from the full match history — only teams active in the last 90 days appear here. Minimum 10 matches to appear.
     </div>
-
-    <div class="explainer" id="explainer-players" style="display:none">
+    <div class="explainer" id="explainer-cumul-players" style="display:none">
       Player Elo works the same way but is attached to individual players, not team logos —
       so when a star player transfers, their rating follows them.
       A team's strength in the model is the average Elo of its five rostered players,
       making this substitution-aware: a roster swap immediately changes the team's predicted strength.
       <strong>Cumulative</strong> ratings are built from the full match history — only players active in the last 90 days appear here. Minimum 10 matches to appear.
     </div>
-
     <div class="explainer" id="explainer-season" style="display:none">
       <strong>Season view:</strong> Elo resets to 1500 at the start of each year — rankings reflect
       only that year's performance. Win rate and match count are within the year only.
       Minimum 5 matches in that year to appear.
     </div>
 
-    <table class="leaderboard" id="leaderboard-table"></table>
+    <div id="panels"></div>
   </div>
 </main>
 
 <script>
 const LEADERBOARD_URL = "leaderboard.json";
-let data = null;
-let currentType = "teams";   // "teams" | "players"
-let currentYear = "current"; // "current" | "2026" | "2025" | ...
 
-function showType(type) {
-  currentType = type;
-  document.getElementById("tab-teams").classList.toggle("active", type === "teams");
-  document.getElementById("tab-players").classList.toggle("active", type === "players");
-  renderExplainer();
-  renderTable();
+let activeType = "teams";
+let activeYear = "current";
+
+function panelId(type, year) {
+  return `panel-${type}-${year}`;
 }
 
-function showYear(year, btn) {
-  currentYear = year;
-  document.querySelectorAll(".year-tab").forEach(t => t.classList.remove("active"));
-  btn.classList.add("active");
-  renderExplainer();
-  renderTable();
-}
+function switchView(type, year) {
+  activeType = type;
+  activeYear = year;
 
-function renderExplainer() {
-  const isCurrent = currentYear === "current";
-  document.getElementById("explainer-teams").style.display =
-    (isCurrent && currentType === "teams") ? "" : "none";
-  document.getElementById("explainer-players").style.display =
-    (isCurrent && currentType === "players") ? "" : "none";
-  document.getElementById("explainer-season").style.display =
-    isCurrent ? "none" : "";
-  if (!isCurrent) {
-    document.getElementById("season-year-label").textContent =
-      currentType === "teams" ? "team's" : "player's";
-    document.querySelectorAll(".season-year-val").forEach(el => {
-      el.textContent = currentYear;
-    });
-  }
-}
-
-function buildYearTabs(years) {
-  const container = document.getElementById("year-tabs");
-  const allYears = ["current", ...years.slice().reverse()]; // newest first
-  container.innerHTML = "";
-  allYears.forEach((y, i) => {
-    const el = document.createElement("div");
-    el.className = "year-tab" + (i === 0 ? " active" : "");
-    el.textContent = y === "current" ? "Cumulative" : y;
-    el.addEventListener("click", () => showYear(y, el));
-    container.appendChild(el);
+  // Update type tabs
+  document.querySelectorAll("#type-tabs .tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.type === type);
   });
+  // Update year tabs
+  document.querySelectorAll("#year-tabs .year-tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.year === year);
+  });
+
+  // Show correct panel
+  document.querySelectorAll(".lb-panel").forEach(p => p.classList.remove("active"));
+  const panel = document.getElementById(panelId(type, year));
+  if (panel) panel.classList.add("active");
+
+  // Show correct explainer
+  const isCumul = year === "current";
+  document.getElementById("explainer-cumul-teams").style.display =
+    (isCumul && type === "teams") ? "" : "none";
+  document.getElementById("explainer-cumul-players").style.display =
+    (isCumul && type === "players") ? "" : "none";
+  document.getElementById("explainer-season").style.display =
+    isCumul ? "none" : "";
 }
 
-function getRows() {
-  if (!data) return [];
-  if (currentYear === "current") {
-    return currentType === "teams" ? data.teams : data.players;
-  }
-  const season = (data.seasons || {})[currentYear];
-  if (!season) return [];
-  return currentType === "teams" ? season.teams : season.players;
-}
-
-function renderTable() {
-  const rows = getRows();
+function buildTable(rows, type) {
   if (!rows || rows.length === 0) {
-    document.getElementById("leaderboard-table").innerHTML =
-      `<tr><td colspan="6" style="padding:2rem;text-align:center;color:var(--muted)">No data for this view.</td></tr>`;
-    return;
+    return `<p style="padding:1rem;color:var(--muted)">No data.</p>`;
   }
-
-  const maxElo = rows[0]?.elo || 2000;
-  const minElo = rows[rows.length - 1]?.elo || 1500;
+  const maxElo = rows[0].elo;
+  const minElo = rows[rows.length - 1].elo;
   const range = maxElo - minElo || 1;
 
-  const header = `
-    <tr>
-      <th style="width:3rem">#</th>
-      <th>${currentType === "teams" ? "Team" : "Player"}</th>
-      <th class="right">Elo</th>
-      <th class="elo-bar-cell"></th>
-      <th class="right">Matches</th>
-      <th class="right">Win Rate</th>
-    </tr>`;
+  const header = `<table class="leaderboard"><tr>
+    <th style="width:3rem">#</th>
+    <th>${type === "teams" ? "Team" : "Player"}</th>
+    <th class="right">Elo</th>
+    <th class="elo-bar-cell"></th>
+    <th class="right">Matches</th>
+    <th class="right">Win Rate</th>
+  </tr>`;
 
   const body = rows.map(r => {
     const rankCls = r.rank === 1 ? "rank-1" : r.rank === 2 ? "rank-2" : r.rank === 3 ? "rank-3" : "rank-other";
     const barW = Math.round(((r.elo - minElo) / range) * 100);
-    const wr = r.win_rate;
-    const wrCls = wr >= 0.55 ? "good" : "bad";
-    return `
-      <tr>
-        <td class="rank ${rankCls}">${r.rank}</td>
-        <td class="entity-name">${r.name}</td>
-        <td class="elo-value">${r.elo}</td>
-        <td class="elo-bar-cell">
-          <div class="elo-bar-bg"><div class="elo-bar-fill" style="width:${barW}%"></div></div>
-        </td>
-        <td class="stat-cell">${r.matches.toLocaleString()}</td>
-        <td class="win-rate"><span class="win-rate-val ${wrCls}">${(wr*100).toFixed(1)}%</span></td>
-      </tr>`;
+    const wrCls = r.win_rate >= 0.55 ? "good" : "bad";
+    return `<tr>
+      <td class="rank ${rankCls}">${r.rank}</td>
+      <td class="entity-name">${r.name}</td>
+      <td class="elo-value">${r.elo}</td>
+      <td class="elo-bar-cell"><div class="elo-bar-bg"><div class="elo-bar-fill" style="width:${barW}%"></div></div></td>
+      <td class="stat-cell">${r.matches.toLocaleString()}</td>
+      <td class="win-rate"><span class="win-rate-val ${wrCls}">${(r.win_rate*100).toFixed(1)}%</span></td>
+    </tr>`;
   }).join("");
 
-  document.getElementById("leaderboard-table").innerHTML = header + body;
+  return header + body + "</table>";
+}
+
+function render(data) {
+  // Updated-at header
+  const ts = new Date(data.generated_at);
+  document.getElementById("updated-at").textContent = "Updated " + ts.toLocaleString(undefined, {
+    month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZoneName:"short"
+  });
+
+  const years = Object.keys(data.seasons || {}).sort().reverse(); // newest first
+
+  // Build type tabs
+  const typeTabs = document.getElementById("type-tabs");
+  ["teams", "players"].forEach((type, i) => {
+    const el = document.createElement("div");
+    el.className = "tab" + (i === 0 ? " active" : "");
+    el.dataset.type = type;
+    el.textContent = type === "teams" ? "Teams" : "Players";
+    el.addEventListener("click", () => switchView(type, activeYear));
+    typeTabs.appendChild(el);
+  });
+
+  // Build year tabs
+  const yearTabs = document.getElementById("year-tabs");
+  ["current", ...years].forEach((year, i) => {
+    const el = document.createElement("div");
+    el.className = "year-tab" + (i === 0 ? " active" : "");
+    el.dataset.year = year;
+    el.textContent = year === "current" ? "Cumulative" : year;
+    el.addEventListener("click", () => switchView(activeType, year));
+    yearTabs.appendChild(el);
+  });
+
+  // Pre-render all panels
+  const panelsEl = document.getElementById("panels");
+  const allYears = ["current", ...years];
+
+  allYears.forEach(year => {
+    ["teams", "players"].forEach(type => {
+      const rows = year === "current"
+        ? (type === "teams" ? data.teams : data.players)
+        : (data.seasons[year] || {})[type];
+
+      const div = document.createElement("div");
+      div.className = "lb-panel" + (year === "current" && type === "teams" ? " active" : "");
+      div.id = panelId(type, year);
+      div.innerHTML = buildTable(rows, type);
+      panelsEl.appendChild(div);
+    });
+  });
 }
 
 async function load() {
   const statusEl = document.getElementById("status");
-  const content  = document.getElementById("content");
-  const updEl    = document.getElementById("updated-at");
-
   try {
     const res = await fetch(LEADERBOARD_URL + "?_=" + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    data = await res.json();
-
-    const ts = new Date(data.generated_at);
-    updEl.textContent = "Updated " + ts.toLocaleString(undefined, {
-      month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZoneName:"short"
-    });
-
-    const years = Object.keys(data.seasons || {}).sort();
-    buildYearTabs(years);
-
-    renderTable();
+    const data = await res.json();
+    render(data);
     statusEl.style.display = "none";
-    content.style.display = "block";
+    document.getElementById("content").style.display = "block";
   } catch(err) {
     statusEl.textContent = "Failed to load: " + err.message;
   }
