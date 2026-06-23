@@ -160,10 +160,15 @@
 
   <div class="method-note">
     <strong>Methodology note:</strong> Win probability is scored against a fixed "average opponent" built from the mean stats of all
-    1,298 active players — it's a relative measure, not a literal win rate in a live tournament.
+    active players — it's a relative measure, not a literal win rate in a live tournament.
     Player ratings use the same Elo system that powers the leaderboard: every match in history replayed in order,
     wins and losses updating each player's rating in real time.
-    "Best team" = highest predicted win probability; ties broken by Elo sum.
+    <br><br>
+    <strong>These rosters are purely stat-driven and not role-aware.</strong>
+    The model doesn't know that a real team needs an IGL, a duelist, a sentinel, and so on — it
+    just finds the five players whose combined stats predict the highest win probability.
+    Think of it as "who are the five best individual performers right now" rather than
+    "who would make the most functional team."
   </div>
 </main>
 
