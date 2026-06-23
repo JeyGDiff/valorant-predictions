@@ -152,6 +152,12 @@
     a:hover { text-decoration:underline; }
     #main-status { text-align:center; padding:3rem; color:var(--muted); }
 
+    /* ── Disclaimer banner ── */
+    .disclaimer {
+      background:#1a1410; border-bottom:1px solid #3a2a1a;
+      padding:.45rem 2rem; font-size:.75rem; color:#8a7a6a; text-align:center;
+    }
+
     /* ── Nav ── */
     nav {
       background:var(--surface); border-bottom:1px solid var(--border);
@@ -181,6 +187,8 @@
   </div>
   <div class="header-right" id="updated-at">–</div>
 </header>
+
+<div class="disclaimer">These predictions are for entertainment and analytical purposes only. Do not use them to inform betting decisions. Past accuracy does not guarantee future results.</div>
 
 <main>
   <div id="main-status">Loading…</div>
@@ -248,9 +256,6 @@
       </p>
       <p>
         Predictions refresh every 6 hours via GitHub Actions. The model and training data are not publicly distributed.
-      </p>
-      <p style="margin-top:1rem; font-size:.78rem; color:var(--muted); opacity:.7;">
-        These predictions are for entertainment and analytical purposes only. Do not use them to inform betting decisions. Past accuracy does not guarantee future results.
       </p>
     </div>
   </div>
