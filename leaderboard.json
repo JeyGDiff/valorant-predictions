@@ -1,0 +1,908 @@
+{
+  "generated_at": "2026-06-23T03:48:19.913478+00:00",
+  "total_matches": 31969,
+  "teams": [
+    {
+      "rank": 1,
+      "team_id": "624",
+      "name": "Paper Rex",
+      "elo": 1940.0,
+      "matches": 291,
+      "wins": 212,
+      "win_rate": 0.7285
+    },
+    {
+      "rank": 2,
+      "team_id": "1034",
+      "name": "NRG",
+      "elo": 1868.4,
+      "matches": 251,
+      "wins": 169,
+      "win_rate": 0.6733
+    },
+    {
+      "rank": 3,
+      "team_id": "2291",
+      "name": "Ghost Gaming",
+      "elo": 1868.1,
+      "matches": 143,
+      "wins": 101,
+      "win_rate": 0.7063
+    },
+    {
+      "rank": 4,
+      "team_id": "628",
+      "name": "FunPlus Phoenix",
+      "elo": 1863.4,
+      "matches": 110,
+      "wins": 82,
+      "win_rate": 0.7455
+    },
+    {
+      "rank": 5,
+      "team_id": "533",
+      "name": "XSET",
+      "elo": 1861.3,
+      "matches": 111,
+      "wins": 76,
+      "win_rate": 0.6847
+    },
+    {
+      "rank": 6,
+      "team_id": "11058",
+      "name": "G2 Esports",
+      "elo": 1849.8,
+      "matches": 140,
+      "wins": 87,
+      "win_rate": 0.6214
+    },
+    {
+      "rank": 7,
+      "team_id": "2359",
+      "name": "LEVIAT\u00c1N",
+      "elo": 1848.7,
+      "matches": 153,
+      "wins": 88,
+      "win_rate": 0.5752
+    },
+    {
+      "rank": 8,
+      "team_id": "4210",
+      "name": "Made in Thailand",
+      "elo": 1833.1,
+      "matches": 137,
+      "wins": 94,
+      "win_rate": 0.6861
+    },
+    {
+      "rank": 9,
+      "team_id": "11060",
+      "name": "Nongshim RedForce",
+      "elo": 1832.9,
+      "matches": 99,
+      "wins": 60,
+      "win_rate": 0.6061
+    },
+    {
+      "rank": 10,
+      "team_id": "6675",
+      "name": "The Guard",
+      "elo": 1831.1,
+      "matches": 86,
+      "wins": 63,
+      "win_rate": 0.7326
+    },
+    {
+      "rank": 11,
+      "team_id": "2593",
+      "name": "FNATIC",
+      "elo": 1830.4,
+      "matches": 229,
+      "wins": 163,
+      "win_rate": 0.7118
+    },
+    {
+      "rank": 12,
+      "team_id": "682",
+      "name": "Gambit Esports",
+      "elo": 1820.9,
+      "matches": 82,
+      "wins": 64,
+      "win_rate": 0.7805
+    },
+    {
+      "rank": 13,
+      "team_id": "6538",
+      "name": "DSYRE",
+      "elo": 1811.4,
+      "matches": 127,
+      "wins": 99,
+      "win_rate": 0.7795
+    },
+    {
+      "rank": 14,
+      "team_id": "120",
+      "name": "100 Thieves",
+      "elo": 1809.9,
+      "matches": 231,
+      "wins": 139,
+      "win_rate": 0.6017
+    },
+    {
+      "rank": 15,
+      "team_id": "2815",
+      "name": "Version1",
+      "elo": 1809.4,
+      "matches": 94,
+      "wins": 65,
+      "win_rate": 0.6915
+    },
+    {
+      "rank": 16,
+      "team_id": "14",
+      "name": "T1",
+      "elo": 1807.8,
+      "matches": 261,
+      "wins": 166,
+      "win_rate": 0.636
+    },
+    {
+      "rank": 17,
+      "team_id": "1615",
+      "name": "Knights",
+      "elo": 1806.0,
+      "matches": 162,
+      "wins": 107,
+      "win_rate": 0.6605
+    },
+    {
+      "rank": 18,
+      "team_id": "8127",
+      "name": "OpTic Gaming",
+      "elo": 1798.8,
+      "matches": 39,
+      "wins": 27,
+      "win_rate": 0.6923
+    },
+    {
+      "rank": 19,
+      "team_id": "198",
+      "name": "Vision Strikers",
+      "elo": 1798.7,
+      "matches": 68,
+      "wins": 61,
+      "win_rate": 0.8971
+    },
+    {
+      "rank": 20,
+      "team_id": "1208",
+      "name": "ORDER",
+      "elo": 1797.1,
+      "matches": 88,
+      "wins": 74,
+      "win_rate": 0.8409
+    },
+    {
+      "rank": 21,
+      "team_id": "6461",
+      "name": "Akrew",
+      "elo": 1793.1,
+      "matches": 103,
+      "wins": 78,
+      "win_rate": 0.7573
+    },
+    {
+      "rank": 22,
+      "team_id": "1001",
+      "name": "Team Heretics",
+      "elo": 1787.9,
+      "matches": 231,
+      "wins": 144,
+      "win_rate": 0.6234
+    },
+    {
+      "rank": 23,
+      "team_id": "642",
+      "name": "Luminosity",
+      "elo": 1786.0,
+      "matches": 130,
+      "wins": 82,
+      "win_rate": 0.6308
+    },
+    {
+      "rank": 24,
+      "team_id": "2059",
+      "name": "Team Vitality",
+      "elo": 1784.6,
+      "matches": 197,
+      "wins": 125,
+      "win_rate": 0.6345
+    },
+    {
+      "rank": 25,
+      "team_id": "10725",
+      "name": "Oxygen Esports",
+      "elo": 1783.7,
+      "matches": 76,
+      "wins": 56,
+      "win_rate": 0.7368
+    },
+    {
+      "rank": 26,
+      "team_id": "8185",
+      "name": "KIWOOM DRX",
+      "elo": 1782.0,
+      "matches": 189,
+      "wins": 125,
+      "win_rate": 0.6614
+    },
+    {
+      "rank": 27,
+      "team_id": "8044",
+      "name": "MOUZ",
+      "elo": 1781.1,
+      "matches": 126,
+      "wins": 92,
+      "win_rate": 0.7302
+    },
+    {
+      "rank": 28,
+      "team_id": "2",
+      "name": "Sentinels",
+      "elo": 1779.1,
+      "matches": 292,
+      "wins": 199,
+      "win_rate": 0.6815
+    },
+    {
+      "rank": 29,
+      "team_id": "16616",
+      "name": "BBL PCIFIC",
+      "elo": 1777.1,
+      "matches": 66,
+      "wins": 53,
+      "win_rate": 0.803
+    },
+    {
+      "rank": 30,
+      "team_id": "397",
+      "name": "BBL Esports",
+      "elo": 1774.8,
+      "matches": 175,
+      "wins": 104,
+      "win_rate": 0.5943
+    },
+    {
+      "rank": 31,
+      "team_id": "11001",
+      "name": "M80",
+      "elo": 1770.7,
+      "matches": 93,
+      "wins": 70,
+      "win_rate": 0.7527
+    },
+    {
+      "rank": 32,
+      "team_id": "4346",
+      "name": "DarkZero Esports",
+      "elo": 1763.5,
+      "matches": 143,
+      "wins": 97,
+      "win_rate": 0.6783
+    },
+    {
+      "rank": 33,
+      "team_id": "7969",
+      "name": "Team Falcons",
+      "elo": 1762.0,
+      "matches": 77,
+      "wins": 56,
+      "win_rate": 0.7273
+    },
+    {
+      "rank": 34,
+      "team_id": "17",
+      "name": "Gen.G",
+      "elo": 1761.5,
+      "matches": 317,
+      "wins": 200,
+      "win_rate": 0.6309
+    },
+    {
+      "rank": 35,
+      "team_id": "2032",
+      "name": "ONIC G",
+      "elo": 1758.7,
+      "matches": 71,
+      "wins": 50,
+      "win_rate": 0.7042
+    },
+    {
+      "rank": 36,
+      "team_id": "724",
+      "name": "E-Xolos LAZER",
+      "elo": 1758.0,
+      "matches": 142,
+      "wins": 99,
+      "win_rate": 0.6972
+    },
+    {
+      "rank": 37,
+      "team_id": "3531",
+      "name": "Acend",
+      "elo": 1755.8,
+      "matches": 166,
+      "wins": 129,
+      "win_rate": 0.7771
+    },
+    {
+      "rank": 38,
+      "team_id": "427",
+      "name": "ENVY",
+      "elo": 1754.9,
+      "matches": 153,
+      "wins": 104,
+      "win_rate": 0.6797
+    },
+    {
+      "rank": 39,
+      "team_id": "4330",
+      "name": "Fancy United Esports",
+      "elo": 1750.0,
+      "matches": 170,
+      "wins": 108,
+      "win_rate": 0.6353
+    },
+    {
+      "rank": 40,
+      "team_id": "474",
+      "name": "Team Liquid",
+      "elo": 1748.9,
+      "matches": 211,
+      "wins": 130,
+      "win_rate": 0.6161
+    },
+    {
+      "rank": 41,
+      "team_id": "4345",
+      "name": "SoaR",
+      "elo": 1746.1,
+      "matches": 142,
+      "wins": 94,
+      "win_rate": 0.662
+    },
+    {
+      "rank": 42,
+      "team_id": "876",
+      "name": "Enterprise Esports",
+      "elo": 1743.2,
+      "matches": 161,
+      "wins": 96,
+      "win_rate": 0.5963
+    },
+    {
+      "rank": 43,
+      "team_id": "4940",
+      "name": "Pioneers",
+      "elo": 1742.3,
+      "matches": 70,
+      "wins": 51,
+      "win_rate": 0.7286
+    },
+    {
+      "rank": 44,
+      "team_id": "1209",
+      "name": "Guild Esports",
+      "elo": 1738.5,
+      "matches": 93,
+      "wins": 63,
+      "win_rate": 0.6774
+    },
+    {
+      "rank": 45,
+      "team_id": "7386",
+      "name": "MIBR",
+      "elo": 1738.0,
+      "matches": 112,
+      "wins": 57,
+      "win_rate": 0.5089
+    },
+    {
+      "rank": 46,
+      "team_id": "11201",
+      "name": "Version1",
+      "elo": 1738.0,
+      "matches": 47,
+      "wins": 39,
+      "win_rate": 0.8298
+    },
+    {
+      "rank": 47,
+      "team_id": "9314",
+      "name": "Team Falcons Vega",
+      "elo": 1736.0,
+      "matches": 81,
+      "wins": 53,
+      "win_rate": 0.6543
+    },
+    {
+      "rank": 48,
+      "team_id": "2304",
+      "name": "Giants Gaming",
+      "elo": 1735.6,
+      "matches": 134,
+      "wins": 93,
+      "win_rate": 0.694
+    },
+    {
+      "rank": 49,
+      "team_id": "637",
+      "name": "Rise",
+      "elo": 1735.0,
+      "matches": 101,
+      "wins": 63,
+      "win_rate": 0.6238
+    },
+    {
+      "rank": 50,
+      "team_id": "466",
+      "name": "BOOM Esports",
+      "elo": 1733.8,
+      "matches": 259,
+      "wins": 173,
+      "win_rate": 0.668
+    }
+  ],
+  "players": [
+    {
+      "rank": 1,
+      "player_id": "9801",
+      "name": "f0rsakeN",
+      "elo": 2167.7,
+      "matches": 282,
+      "wins": 209,
+      "win_rate": 0.7411
+    },
+    {
+      "rank": 2,
+      "player_id": "727",
+      "name": "saadhak",
+      "elo": 2160.0,
+      "matches": 181,
+      "wins": 127,
+      "win_rate": 0.7017
+    },
+    {
+      "rank": 3,
+      "player_id": "9803",
+      "name": "d4v41",
+      "elo": 2145.2,
+      "matches": 277,
+      "wins": 205,
+      "win_rate": 0.7401
+    },
+    {
+      "rank": 4,
+      "player_id": "2173",
+      "name": "MAGNUM",
+      "elo": 2101.8,
+      "matches": 190,
+      "wins": 130,
+      "win_rate": 0.6842
+    },
+    {
+      "rank": 5,
+      "player_id": "458",
+      "name": "Chronicle",
+      "elo": 2077.9,
+      "matches": 250,
+      "wins": 183,
+      "win_rate": 0.732
+    },
+    {
+      "rank": 6,
+      "player_id": "612",
+      "name": "mitch",
+      "elo": 2061.0,
+      "matches": 282,
+      "wins": 193,
+      "win_rate": 0.6844
+    },
+    {
+      "rank": 7,
+      "player_id": "4462",
+      "name": "MaKo",
+      "elo": 2057.3,
+      "matches": 228,
+      "wins": 149,
+      "win_rate": 0.6535
+    },
+    {
+      "rank": 8,
+      "player_id": "2489",
+      "name": "Munchkin",
+      "elo": 2027.1,
+      "matches": 198,
+      "wins": 129,
+      "win_rate": 0.6515
+    },
+    {
+      "rank": 9,
+      "player_id": "4828",
+      "name": "NiSMO",
+      "elo": 2027.0,
+      "matches": 252,
+      "wins": 178,
+      "win_rate": 0.7063
+    },
+    {
+      "rank": 10,
+      "player_id": "438",
+      "name": "Boaster",
+      "elo": 2018.9,
+      "matches": 264,
+      "wins": 184,
+      "win_rate": 0.697
+    },
+    {
+      "rank": 11,
+      "player_id": "1265",
+      "name": "johnqt",
+      "elo": 2011.9,
+      "matches": 234,
+      "wins": 161,
+      "win_rate": 0.688
+    },
+    {
+      "rank": 12,
+      "player_id": "12098",
+      "name": "Kadoom",
+      "elo": 2010.6,
+      "matches": 203,
+      "wins": 137,
+      "win_rate": 0.6749
+    },
+    {
+      "rank": 13,
+      "player_id": "3885",
+      "name": "valyn",
+      "elo": 2001.7,
+      "matches": 303,
+      "wins": 205,
+      "win_rate": 0.6766
+    },
+    {
+      "rank": 14,
+      "player_id": "8082",
+      "name": "zander",
+      "elo": 1996.9,
+      "matches": 269,
+      "wins": 182,
+      "win_rate": 0.6766
+    },
+    {
+      "rank": 15,
+      "player_id": "5022",
+      "name": "Derke",
+      "elo": 1996.1,
+      "matches": 227,
+      "wins": 158,
+      "win_rate": 0.696
+    },
+    {
+      "rank": 16,
+      "player_id": "2172",
+      "name": "brawk",
+      "elo": 1988.4,
+      "matches": 284,
+      "wins": 188,
+      "win_rate": 0.662
+    },
+    {
+      "rank": 17,
+      "player_id": "488",
+      "name": "Rb",
+      "elo": 1987.4,
+      "matches": 219,
+      "wins": 157,
+      "win_rate": 0.7169
+    },
+    {
+      "rank": 18,
+      "player_id": "8480",
+      "name": "aspas",
+      "elo": 1979.7,
+      "matches": 176,
+      "wins": 114,
+      "win_rate": 0.6477
+    },
+    {
+      "rank": 19,
+      "player_id": "485",
+      "name": "stax",
+      "elo": 1969.0,
+      "matches": 247,
+      "wins": 180,
+      "win_rate": 0.7287
+    },
+    {
+      "rank": 20,
+      "player_id": "773",
+      "name": "Lakia",
+      "elo": 1967.3,
+      "matches": 143,
+      "wins": 94,
+      "win_rate": 0.6573
+    },
+    {
+      "rank": 21,
+      "player_id": "3722",
+      "name": "koalanoob",
+      "elo": 1967.1,
+      "matches": 264,
+      "wins": 175,
+      "win_rate": 0.6629
+    },
+    {
+      "rank": 22,
+      "player_id": "11118",
+      "name": "skuba",
+      "elo": 1965.4,
+      "matches": 280,
+      "wins": 195,
+      "win_rate": 0.6964
+    },
+    {
+      "rank": 23,
+      "player_id": "65",
+      "name": "effys",
+      "elo": 1961.2,
+      "matches": 177,
+      "wins": 120,
+      "win_rate": 0.678
+    },
+    {
+      "rank": 24,
+      "player_id": "75",
+      "name": "Subroza",
+      "elo": 1960.1,
+      "matches": 199,
+      "wins": 155,
+      "win_rate": 0.7789
+    },
+    {
+      "rank": 25,
+      "player_id": "659",
+      "name": "Sacy",
+      "elo": 1958.0,
+      "matches": 160,
+      "wins": 113,
+      "win_rate": 0.7063
+    },
+    {
+      "rank": 26,
+      "player_id": "8176",
+      "name": "enerii",
+      "elo": 1956.9,
+      "matches": 95,
+      "wins": 80,
+      "win_rate": 0.8421
+    },
+    {
+      "rank": 27,
+      "player_id": "601",
+      "name": "Asuna",
+      "elo": 1956.2,
+      "matches": 283,
+      "wins": 176,
+      "win_rate": 0.6219
+    },
+    {
+      "rank": 28,
+      "player_id": "7873",
+      "name": "leaf",
+      "elo": 1953.9,
+      "matches": 246,
+      "wins": 167,
+      "win_rate": 0.6789
+    },
+    {
+      "rank": 29,
+      "player_id": "804",
+      "name": "BuZz",
+      "elo": 1953.4,
+      "matches": 240,
+      "wins": 164,
+      "win_rate": 0.6833
+    },
+    {
+      "rank": 30,
+      "player_id": "10971",
+      "name": "RieNs",
+      "elo": 1953.2,
+      "matches": 191,
+      "wins": 118,
+      "win_rate": 0.6178
+    },
+    {
+      "rank": 31,
+      "player_id": "7378",
+      "name": "Jinggg",
+      "elo": 1950.5,
+      "matches": 252,
+      "wins": 180,
+      "win_rate": 0.7143
+    },
+    {
+      "rank": 32,
+      "player_id": "3401",
+      "name": "PTC",
+      "elo": 1949.5,
+      "matches": 249,
+      "wins": 176,
+      "win_rate": 0.7068
+    },
+    {
+      "rank": 33,
+      "player_id": "21251",
+      "name": "blowz",
+      "elo": 1949.0,
+      "matches": 87,
+      "wins": 64,
+      "win_rate": 0.7356
+    },
+    {
+      "rank": 34,
+      "player_id": "733",
+      "name": "stellar",
+      "elo": 1948.1,
+      "matches": 309,
+      "wins": 195,
+      "win_rate": 0.6311
+    },
+    {
+      "rank": 35,
+      "player_id": "4807",
+      "name": "bstrdd",
+      "elo": 1947.1,
+      "matches": 130,
+      "wins": 101,
+      "win_rate": 0.7769
+    },
+    {
+      "rank": 36,
+      "player_id": "1437",
+      "name": "YESicaN",
+      "elo": 1945.6,
+      "matches": 192,
+      "wins": 120,
+      "win_rate": 0.625
+    },
+    {
+      "rank": 37,
+      "player_id": "457",
+      "name": "nAts",
+      "elo": 1944.0,
+      "matches": 216,
+      "wins": 141,
+      "win_rate": 0.6528
+    },
+    {
+      "rank": 38,
+      "player_id": "74",
+      "name": "hazed",
+      "elo": 1942.9,
+      "matches": 198,
+      "wins": 149,
+      "win_rate": 0.7525
+    },
+    {
+      "rank": 39,
+      "player_id": "101",
+      "name": "soulcas",
+      "elo": 1941.8,
+      "matches": 220,
+      "wins": 149,
+      "win_rate": 0.6773
+    },
+    {
+      "rank": 40,
+      "player_id": "4095",
+      "name": "SkRossi",
+      "elo": 1937.6,
+      "matches": 189,
+      "wins": 128,
+      "win_rate": 0.6772
+    },
+    {
+      "rank": 41,
+      "player_id": "6437",
+      "name": "Dark3st",
+      "elo": 1937.4,
+      "matches": 216,
+      "wins": 117,
+      "win_rate": 0.5417
+    },
+    {
+      "rank": 42,
+      "player_id": "421",
+      "name": "Genghsta",
+      "elo": 1935.3,
+      "matches": 238,
+      "wins": 158,
+      "win_rate": 0.6639
+    },
+    {
+      "rank": 43,
+      "player_id": "4581",
+      "name": "JonahP",
+      "elo": 1933.2,
+      "matches": 281,
+      "wins": 186,
+      "win_rate": 0.6619
+    },
+    {
+      "rank": 44,
+      "player_id": "1524",
+      "name": "H1ber",
+      "elo": 1929.9,
+      "matches": 237,
+      "wins": 154,
+      "win_rate": 0.6498
+    },
+    {
+      "rank": 45,
+      "player_id": "5132",
+      "name": "mada",
+      "elo": 1925.5,
+      "matches": 273,
+      "wins": 178,
+      "win_rate": 0.652
+    },
+    {
+      "rank": 46,
+      "player_id": "569",
+      "name": "pAura",
+      "elo": 1923.1,
+      "matches": 226,
+      "wins": 152,
+      "win_rate": 0.6726
+    },
+    {
+      "rank": 47,
+      "player_id": "9810",
+      "name": "Alfajer",
+      "elo": 1922.7,
+      "matches": 199,
+      "wins": 141,
+      "win_rate": 0.7085
+    },
+    {
+      "rank": 48,
+      "player_id": "10885",
+      "name": "DaviH",
+      "elo": 1919.9,
+      "matches": 130,
+      "wins": 97,
+      "win_rate": 0.7462
+    },
+    {
+      "rank": 49,
+      "player_id": "4004",
+      "name": "zekken",
+      "elo": 1916.3,
+      "matches": 255,
+      "wins": 164,
+      "win_rate": 0.6431
+    },
+    {
+      "rank": 50,
+      "player_id": "474",
+      "name": "xeta",
+      "elo": 1914.3,
+      "matches": 128,
+      "wins": 88,
+      "win_rate": 0.6875
+    }
+  ]
+}

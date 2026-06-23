@@ -151,9 +151,26 @@
     a { color:var(--accent); text-decoration:none; }
     a:hover { text-decoration:underline; }
     #main-status { text-align:center; padding:3rem; color:var(--muted); }
+
+    /* ── Nav ── */
+    nav {
+      background:var(--surface); border-bottom:1px solid var(--border);
+      padding:.6rem 2rem; display:flex; gap:.25rem; align-items:center;
+    }
+    nav a {
+      font-size:.8rem; font-weight:600; color:var(--muted); text-decoration:none;
+      padding:.35rem .75rem; border-radius:6px; transition:background .15s, color .15s;
+    }
+    nav a:hover { background:var(--surface2); color:var(--text); }
+    nav a.active { background:var(--surface2); color:var(--text); }
   </style>
 </head>
 <body>
+
+<nav>
+  <a href="index.html" class="active">Predictions</a>
+  <a href="leaderboard.html">Elo Rankings</a>
+</nav>
 
 <header>
   <div class="logo">V</div>

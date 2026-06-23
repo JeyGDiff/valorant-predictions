@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elo Rankings · Valorant Predictions</title>
+  <style>
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a; --border: #2e3350;
+      --accent: #ff4655; --accent2: #7c5cbf; --text: #e8eaf0; --muted: #7a82a0;
+      --green: #22c55e; --gold: #f59e0b; --silver: #94a3b8; --bronze: #b45309;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
+
+    nav {
+      background:var(--surface); border-bottom:1px solid var(--border);
+      padding:.6rem 2rem; display:flex; gap:.25rem; align-items:center;
+    }
+    nav a {
+      font-size:.8rem; font-weight:600; color:var(--muted); text-decoration:none;
+      padding:.35rem .75rem; border-radius:6px; transition:background .15s, color .15s;
+    }
+    nav a:hover { background:var(--surface2); color:var(--text); }
+    nav a.active { background:var(--surface2); color:var(--text); }
+
+    header {
+      border-bottom:1px solid var(--border); padding:1.25rem 2rem;
+      display:flex; align-items:center; gap:1rem;
+    }
+    .logo { width:34px; height:34px; background:var(--accent); border-radius:8px;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:900; font-size:1rem; color:#fff; flex-shrink:0; }
+    header h1 { font-size:1.15rem; font-weight:700; letter-spacing:-.02em; }
+    header p  { font-size:.78rem; color:var(--muted); margin-top:1px; }
+    .header-right { margin-left:auto; font-size:.75rem; color:var(--muted); text-align:right; }
+
+    main { max-width:960px; margin:0 auto; padding:2rem 1.5rem; }
+
+    /* ── Tabs ── */
+    .tabs { display:flex; gap:.5rem; margin-bottom:1.5rem; }
+    .tab {
+      padding:.45rem 1.1rem; border-radius:8px; font-size:.85rem; font-weight:600;
+      cursor:pointer; border:1px solid var(--border); background:var(--surface);
+      color:var(--muted); transition:all .15s;
+    }
+    .tab.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+    .tab:hover:not(.active) { background:var(--surface2); color:var(--text); }
+
+    /* ── Explainer ── */
+    .explainer {
+      background:var(--surface); border:1px solid var(--border); border-radius:10px;
+      padding:1rem 1.25rem; margin-bottom:1.5rem; font-size:.82rem; color:var(--muted);
+      line-height:1.7;
+    }
+    .explainer strong { color:var(--text); }
+
+    /* ── Table ── */
+    .leaderboard { width:100%; border-collapse:collapse; }
+    .leaderboard th {
+      text-align:left; font-size:.7rem; font-weight:600; color:var(--muted);
+      text-transform:uppercase; letter-spacing:.06em;
+      padding:.5rem .75rem; border-bottom:1px solid var(--border);
+    }
+    .leaderboard th.right { text-align:right; }
+    .leaderboard td {
+      padding:.65rem .75rem; border-bottom:1px solid #1e2235;
+      font-size:.88rem; vertical-align:middle;
+    }
+    .leaderboard tr:last-child td { border-bottom:none; }
+    .leaderboard tr:hover td { background:var(--surface2); }
+
+    .rank { font-weight:800; font-size:.9rem; width:2rem; text-align:center; }
+    .rank-1 { color:var(--gold); }
+    .rank-2 { color:var(--silver); }
+    .rank-3 { color:var(--bronze); }
+    .rank-other { color:var(--muted); }
+
+    .entity-name { font-weight:600; }
+    .elo-value { font-weight:700; font-size:.95rem; text-align:right; }
+    .elo-bar-cell { width:120px; }
+    .elo-bar-bg { height:4px; background:var(--surface2); border-radius:2px; }
+    .elo-bar-fill { height:4px; border-radius:2px; background:linear-gradient(90deg, var(--accent), var(--accent2)); }
+    .stat-cell { text-align:right; color:var(--muted); font-size:.82rem; }
+    .win-rate { text-align:right; }
+    .win-rate-val { font-weight:600; }
+    .win-rate-val.good { color:var(--green); }
+    .win-rate-val.bad  { color:var(--muted); }
+
+    #status { text-align:center; padding:3rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Predictions</a>
+  <a href="leaderboard.html" class="active">Elo Rankings</a>
+</nav>
+
+<header>
+  <div class="logo">V</div>
+  <div>
+    <h1>Elo Rankings</h1>
+    <p>Opponent-adjusted ratings across 32,000+ pro matches · updated with each snapshot</p>
+  </div>
+  <div class="header-right" id="updated-at">–</div>
+</header>
+
+<main>
+  <div id="status">Loading…</div>
+  <div id="content" style="display:none">
+
+    <div class="tabs">
+      <div class="tab active" id="tab-teams" onclick="showTab('teams')">Teams</div>
+      <div class="tab" id="tab-players" onclick="showTab('players')">Players</div>
+    </div>
+
+    <div class="explainer" id="explainer-teams">
+      <strong>What is Elo?</strong> Originally designed for chess, Elo rates competitors by
+      the strength of who they beat. Win against a top-ranked opponent: big rating gain.
+      Beat a weak team: small gain. Lose to anyone: lose points proportionally.
+      Every team starts at 1500 and moves up or down with each series result.
+      <strong>This leaderboard shows current ratings</strong> — where each team sits after
+      their full match history, making it a snapshot of present form and peak dominance combined.
+      Minimum 10 matches to appear.
+    </div>
+
+    <div class="explainer" id="explainer-players" style="display:none">
+      <strong>Player Elo</strong> works the same way but is attached to individual players,
+      not team logos — so when a star player transfers, their rating follows them.
+      A team's strength in the model is the average Elo of its five rostered players,
+      making this substitution-aware: a roster swap immediately changes the team's predicted strength.
+      Minimum 10 matches to appear.
+    </div>
+
+    <table class="leaderboard" id="leaderboard-table"></table>
+  </div>
+</main>
+
+<script>
+const LEADERBOARD_URL = "leaderboard.json";
+let data = null;
+
+function showTab(tab) {
+  document.getElementById("tab-teams").classList.toggle("active", tab === "teams");
+  document.getElementById("tab-players").classList.toggle("active", tab === "players");
+  document.getElementById("explainer-teams").style.display = tab === "teams" ? "" : "none";
+  document.getElementById("explainer-players").style.display = tab === "players" ? "" : "none";
+  if (data) renderTable(tab === "teams" ? data.teams : data.players, tab);
+}
+
+function renderTable(rows, type) {
+  const maxElo = rows[0]?.elo || 2000;
+  const minElo = rows[rows.length - 1]?.elo || 1500;
+  const range = maxElo - minElo || 1;
+
+  const header = `
+    <tr>
+      <th style="width:3rem">#</th>
+      <th>${type === "teams" ? "Team" : "Player"}</th>
+      <th class="right">Elo</th>
+      <th class="elo-bar-cell"></th>
+      <th class="right">Matches</th>
+      <th class="right">Win Rate</th>
+    </tr>`;
+
+  const body = rows.map(r => {
+    const rankCls = r.rank === 1 ? "rank-1" : r.rank === 2 ? "rank-2" : r.rank === 3 ? "rank-3" : "rank-other";
+    const barW = Math.round(((r.elo - minElo) / range) * 100);
+    const wr = r.win_rate;
+    const wrCls = wr >= 0.55 ? "good" : "bad";
+    return `
+      <tr>
+        <td class="rank ${rankCls}">${r.rank}</td>
+        <td class="entity-name">${r.name}</td>
+        <td class="elo-value">${r.elo}</td>
+        <td class="elo-bar-cell">
+          <div class="elo-bar-bg"><div class="elo-bar-fill" style="width:${barW}%"></div></div>
+        </td>
+        <td class="stat-cell">${r.matches.toLocaleString()}</td>
+        <td class="win-rate"><span class="win-rate-val ${wrCls}">${(wr*100).toFixed(1)}%</span></td>
+      </tr>`;
+  }).join("");
+
+  document.getElementById("leaderboard-table").innerHTML = header + body;
+}
+
+async function load() {
+  const statusEl = document.getElementById("status");
+  const content  = document.getElementById("content");
+  const updEl    = document.getElementById("updated-at");
+
+  try {
+    const res = await fetch(LEADERBOARD_URL + "?_=" + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = await res.json();
+
+    const ts = new Date(data.generated_at);
+    updEl.textContent = "Updated " + ts.toLocaleString(undefined, {
+      month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZoneName:"short"
+    });
+
+    renderTable(data.teams, "teams");
+    statusEl.style.display = "none";
+    content.style.display = "block";
+  } catch(err) {
+    statusEl.textContent = "Failed to load: " + err.message;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
