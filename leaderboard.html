@@ -135,7 +135,7 @@
       Beat a stronger team and your rating jumps; lose to a weaker one and it drops.
       Everyone starts at 1500 and the number moves after every series.
       The higher the number, the stronger the team's track record.
-      Ratings are built from the full match history — but only teams active in the last 90 days appear here. Minimum 10 matches to appear.
+      <strong>Cumulative</strong> ratings are built from the full match history — only teams active in the last 90 days appear here. Minimum 10 matches to appear.
     </div>
 
     <div class="explainer" id="explainer-players" style="display:none">
@@ -143,13 +143,12 @@
       so when a star player transfers, their rating follows them.
       A team's strength in the model is the average Elo of its five rostered players,
       making this substitution-aware: a roster swap immediately changes the team's predicted strength.
-      Ratings are built from the full match history — but only players active in the last 90 days appear here. Minimum 10 matches to appear.
+      <strong>Cumulative</strong> ratings are built from the full match history — only players active in the last 90 days appear here. Minimum 10 matches to appear.
     </div>
 
     <div class="explainer" id="explainer-season" style="display:none">
-      <strong>Season view:</strong> Elo shown is each <span id="season-year-label">team's</span>
-      cumulative rating at end of <span class="season-year-val">that year</span> — built from all
-      matches up to that point, not just that year's. Win rate and match count are within the year only.
+      <strong>Season view:</strong> Elo resets to 1500 at the start of each year — rankings reflect
+      only that year's performance. Win rate and match count are within the year only.
       Minimum 5 matches in that year to appear.
     </div>
 
@@ -200,7 +199,7 @@ function buildYearTabs(years) {
   const container = document.getElementById("year-tabs");
   const allYears = ["current", ...years.slice().reverse()]; // newest first
   container.innerHTML = allYears.map((y, i) => {
-    const label = y === "current" ? "Current" : y;
+    const label = y === "current" ? "Cumulative" : y;
     const active = i === 0 ? " active" : "";
     return `<div class="year-tab${active}" onclick="showYear('${y}', this)">${label}</div>`;
   }).join("");
