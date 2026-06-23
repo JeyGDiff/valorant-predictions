@@ -102,9 +102,21 @@
     }
     .team       { display:flex; flex-direction:column; }
     .team.right { align-items:flex-end; }
+    .team-header { display:flex; align-items:center; gap:.5rem; }
+    .team.right .team-header { flex-direction:row-reverse; }
+    .team-logo {
+      width:32px; height:32px; border-radius:50%; object-fit:contain;
+      background:var(--surface2); border:1px solid var(--border); flex-shrink:0;
+      padding:3px;
+    }
+    .team-logo-placeholder {
+      width:32px; height:32px; border-radius:50%; background:var(--surface2);
+      border:1px solid var(--border); display:flex; align-items:center; justify-content:center;
+      font-size:.75rem; font-weight:700; color:var(--muted); flex-shrink:0;
+    }
     .team-name  { font-size:.95rem; font-weight:700; letter-spacing:-.01em; }
     .team-name.winner { color:var(--accent); }
-    .team-prob  { font-size:1.4rem; font-weight:800; letter-spacing:-.03em; line-height:1.1; }
+    .team-prob  { font-size:1.4rem; font-weight:800; letter-spacing:-.03em; line-height:1.1; margin-top:.2rem; }
     .team-sub   { font-size:.68rem; color:var(--muted); margin-top:1px; }
     .vs         { font-size:.7rem; color:var(--muted); font-weight:600; text-align:center; }
 
@@ -253,6 +265,12 @@ function renderCalib(buckets) {
   }).join("");
 }
 
+function logoHtml(url, name) {
+  const initial = name ? name[0].toUpperCase() : "?";
+  if (url) return `<img class="team-logo" src="${url}" alt="${name}" onerror="this.outerHTML='<div class=team-logo-placeholder>${initial}</div>'">`;
+  return `<div class="team-logo-placeholder">${initial}</div>`;
+}
+
 function renderUpcoming(matches) {
   const list = document.getElementById("upcoming-list");
   const meta = document.getElementById("upcoming-meta");
@@ -276,13 +294,19 @@ function renderUpcoming(matches) {
         </div>
         <div class="teams-row">
           <div class="team">
-            <div class="team-name ${t1w?"winner":""}">${m.team1_name||"TBD"}</div>
+            <div class="team-header">
+              ${logoHtml(m.team1_logo, m.team1_name)}
+              <div class="team-name ${t1w?"winner":""}">${m.team1_name||"TBD"}</div>
+            </div>
             ${has?`<div class="team-prob">${pct(m.team1_win_prob)}</div>
                    <div class="team-sub">${m.team1_players_known}/5 players known</div>`:""}
           </div>
           <div class="vs">VS</div>
           <div class="team right">
-            <div class="team-name ${t2w?"winner":""}">${m.team2_name||"TBD"}</div>
+            <div class="team-header">
+              <div class="team-name ${t2w?"winner":""}">${m.team2_name||"TBD"}</div>
+              ${logoHtml(m.team2_logo, m.team2_name)}
+            </div>
             ${has?`<div class="team-prob">${pct(m.team2_win_prob)}</div>
                    <div class="team-sub">${m.team2_players_known}/5 players known</div>`:""}
           </div>
