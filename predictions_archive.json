@@ -372,5 +372,27 @@
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
+  },
+  {
+    "match_id": "701325",
+    "match_date": "Upcoming 2",
+    "team1_name": "Evictix GC",
+    "team2_name": "Zero Sugar",
+    "team1_win_prob": 0.3082,
+    "team2_win_prob": 0.6918,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "700691",
+    "match_date": "Upcoming 1",
+    "team1_name": "S8UL Esports",
+    "team2_name": "No Salary Peek",
+    "team1_win_prob": 0.6437,
+    "team2_win_prob": 0.3563,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
   }
 ]
