@@ -264,6 +264,7 @@
 <script>
 const PREDICTIONS_URL    = "predictions.json";
 const BACKTEST_URL       = "backtest_results.json";
+const RECENT_PRED_URL    = "recent_predictions.json";
 const CONF_CLASS = { high:"conf-high", medium:"conf-med", low:"conf-low" };
 
 function pct(v, decimals=0) {
@@ -424,13 +425,15 @@ async function load() {
   const updEl   = document.getElementById("updated-at");
 
   try {
-    const [predRes, btRes] = await Promise.allSettled([
+    const [predRes, btRes, recentRes] = await Promise.allSettled([
       fetch(PREDICTIONS_URL + "?_=" + Date.now()).then(r => r.ok ? r.json() : null),
       fetch(BACKTEST_URL    + "?_=" + Date.now()).then(r => r.ok ? r.json() : null),
+      fetch(RECENT_PRED_URL + "?_=" + Date.now()).then(r => r.ok ? r.json() : null),
     ]);
 
-    const pred = predRes.status === "fulfilled" ? predRes.value : null;
-    const bt   = btRes.status   === "fulfilled" ? btRes.value   : null;
+    const pred   = predRes.status   === "fulfilled" ? predRes.value   : null;
+    const bt     = btRes.status     === "fulfilled" ? btRes.value     : null;
+    const recent = recentRes.status === "fulfilled" ? recentRes.value : null;
 
     if (!pred && !bt) throw new Error("Could not load predictions.json or backtest_results.json");
 
@@ -446,12 +449,18 @@ async function load() {
     if (bt) {
       renderStatGrid(bt, upcomingPredicted);
       renderCalib(bt.calibration);
-      renderHistory(bt.recent_predictions);
     } else {
       document.getElementById("stat-grid").innerHTML =
         `<div class="stat-card"><div class="stat-label">Upcoming</div>
          <div class="stat-value">${upcomingPredicted}</div>
          <div class="stat-sub">matches with predictions</div></div>`;
+    }
+
+    // Live-tracked past predictions take priority over backtest history
+    if (recent?.predictions?.length) {
+      renderHistory(recent.predictions);
+    } else if (bt?.recent_predictions?.length) {
+      renderHistory(bt.recent_predictions);
     }
 
     if (pred) renderUpcoming(pred.matches);
