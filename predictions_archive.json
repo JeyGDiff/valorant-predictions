@@ -317,5 +317,38 @@
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
+  },
+  {
+    "match_id": "701318",
+    "match_date": "LIVE",
+    "team1_name": "36 Thieves",
+    "team2_name": "Evictix GC",
+    "team1_win_prob": 0.7528,
+    "team2_win_prob": 0.2472,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701231",
+    "match_date": "Upcoming 1",
+    "team1_name": "Nightblood Gaming",
+    "team2_name": "SaD Esports",
+    "team1_win_prob": 0.4761,
+    "team2_win_prob": 0.5239,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "676927",
+    "match_date": "Upcoming 1",
+    "team1_name": "9z Globant",
+    "team2_name": "BESTIA",
+    "team1_win_prob": 0.2005,
+    "team2_win_prob": 0.7995,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
   }
 ]
