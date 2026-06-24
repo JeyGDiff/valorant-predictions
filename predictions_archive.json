@@ -295,5 +295,27 @@
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
+  },
+  {
+    "match_id": "676926",
+    "match_date": "Upcoming 1",
+    "team1_name": "OXEN",
+    "team2_name": "ShindeN",
+    "team1_win_prob": 0.3421,
+    "team2_win_prob": 0.6579,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701230",
+    "match_date": "Upcoming 1",
+    "team1_name": "NRG Academy",
+    "team2_name": "Shopify Rebellion Black",
+    "team1_win_prob": 0.5896,
+    "team2_win_prob": 0.4104,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
   }
 ]
