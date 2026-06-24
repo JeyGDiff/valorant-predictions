@@ -394,5 +394,27 @@
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
+  },
+  {
+    "match_id": "681802",
+    "match_date": "Upcoming 1",
+    "team1_name": "REJECT",
+    "team2_name": "IGZIST",
+    "team1_win_prob": 0.6502,
+    "team2_win_prob": 0.3498,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "700692",
+    "match_date": "Upcoming 1",
+    "team1_name": "Revenant XSpark",
+    "team2_name": "Asterisk",
+    "team1_win_prob": 0.6997,
+    "team2_win_prob": 0.3003,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
   }
 ]
