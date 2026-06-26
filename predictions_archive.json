@@ -1,454 +1,509 @@
 [
   {
     "match_id": "676923",
-    "match_date": "LIVE",
+    "match_date": "2026-06-26",
     "team1_name": "9z Globant",
     "team2_name": "University War",
     "team1_win_prob": 0.4228,
     "team2_win_prob": 0.5772,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "678060",
-    "match_date": "LIVE",
+    "match_date": "2026-06-26",
     "team1_name": "STREAMER ARENA",
     "team2_name": "FUEGO",
     "team1_win_prob": 0.1967,
     "team2_win_prob": 0.8033,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "678061",
-    "match_date": "LIVE",
+    "match_date": "2026-06-26",
     "team1_name": "Contra",
     "team2_name": "LYON",
     "team1_win_prob": 0.1857,
     "team2_win_prob": 0.8143,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "681798",
-    "match_date": "Upcoming 5",
+    "match_date": "2026-06-26",
     "team1_name": "RIDDLE ORDER",
     "team2_name": "AGELITE",
     "team1_win_prob": 0.7439,
     "team2_win_prob": 0.2561,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "686202",
-    "match_date": "Upcoming 6",
+    "match_date": "2026-06-26",
     "team1_name": "ONSIDE GAMING",
     "team2_name": "T1 Academy",
     "team1_win_prob": 0.8212,
     "team2_win_prob": 0.1788,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "681799",
-    "match_date": "Upcoming 8",
+    "match_date": "2026-06-26",
     "team1_name": "FENNEL",
     "team2_name": "IGZIST",
     "team1_win_prob": 0.5015,
     "team2_win_prob": 0.4985,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "701319",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "wiwiwi",
     "team2_name": "Zero Sugar",
     "team1_win_prob": 0.8931,
     "team2_win_prob": 0.1069,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "688434",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Natus Vincere Junior",
     "team2_name": "Mandatory",
     "team1_win_prob": 0.3555,
     "team2_win_prob": 0.6445,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "688435",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Be\u015fikta\u015f Esports",
     "team2_name": "AlQadsiah Esports",
     "team1_win_prob": 0.2737,
     "team2_win_prob": 0.7263,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "688439",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Enterprise Esports",
     "team2_name": "Joblife",
     "team1_win_prob": 0.5668,
     "team2_win_prob": 0.4332,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "688440",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Bar\u00e7a eSports",
     "team2_name": "CGN Esports",
     "team1_win_prob": 0.5105,
     "team2_win_prob": 0.4895,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "688444",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "UCAM Esports Club",
     "team2_name": "MIR",
     "team1_win_prob": 0.814,
     "team2_win_prob": 0.186,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": false
   },
   {
     "match_id": "688445",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Pixel Lumina",
     "team2_name": "FOKUS",
     "team1_win_prob": 0.6722,
     "team2_win_prob": 0.3278,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": false
   },
   {
     "match_id": "688449",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "REBORN",
     "team2_name": "Misa Esports",
     "team1_win_prob": 0.6295,
     "team2_win_prob": 0.3705,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "688450",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Ghools Esports",
     "team2_name": "Team Liquid Academy",
     "team1_win_prob": 0.3952,
     "team2_win_prob": 0.6048,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "676924",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "KR\u00dc BLAZE",
     "team2_name": "LEVIAT\u00c1N Academy",
     "team1_win_prob": 0.5928,
     "team2_win_prob": 0.4072,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": false
   },
   {
     "match_id": "701226",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Azure Dragon Gaming",
     "team2_name": "Alliance Guardians",
     "team1_win_prob": 0.6275,
     "team2_win_prob": 0.3725,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "701227",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "QoR",
     "team2_name": "Evictix",
     "team1_win_prob": 0.8141,
     "team2_win_prob": 0.1859,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "676925",
-    "match_date": "Upcoming 2",
+    "match_date": "2026-06-26",
     "team1_name": "University War",
     "team2_name": "KR\u00dc SPARK",
     "team1_win_prob": 0.4391,
     "team2_win_prob": 0.5609,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "701228",
-    "match_date": "Upcoming 2",
+    "match_date": "2026-06-26",
     "team1_name": "FlyQuest",
     "team2_name": "Division One",
     "team1_win_prob": 0.4536,
     "team2_win_prob": 0.5464,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "701229",
-    "match_date": "Upcoming 2",
+    "match_date": "2026-06-26",
     "team1_name": "ROSE",
     "team2_name": "Pigeons",
     "team1_win_prob": 0.6905,
     "team2_win_prob": 0.3095,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": false
   },
   {
     "match_id": "678063",
-    "match_date": "Upcoming 2",
+    "match_date": "2026-06-26",
     "team1_name": "FUEGO",
     "team2_name": "LYON",
     "team1_win_prob": 0.104,
     "team2_win_prob": 0.896,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "681800",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "CREST GAMING Zst",
     "team2_name": "QT DIG\u221e",
     "team1_win_prob": 0.4697,
     "team2_win_prob": 0.5303,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "686204",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Dplus Esports",
     "team2_name": "X-CAST",
     "team1_win_prob": 0.7236,
     "team2_win_prob": 0.2764,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "681801",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Insomnia",
     "team2_name": "AGELITE",
     "team1_win_prob": 0.4217,
     "team2_win_prob": 0.5783,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "686205",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "DRX Academy",
     "team2_name": "Gen.G Global Academy",
     "team1_win_prob": 0.4486,
     "team2_win_prob": 0.5514,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "701324",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Baguette",
     "team2_name": "ROZ GC",
     "team1_win_prob": 0.482,
     "team2_win_prob": 0.518,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "676926",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "OXEN",
     "team2_name": "ShindeN",
     "team1_win_prob": 0.3421,
     "team2_win_prob": 0.6579,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "701230",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "NRG Academy",
     "team2_name": "Shopify Rebellion Black",
     "team1_win_prob": 0.5896,
     "team2_win_prob": 0.4104,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": false
   },
   {
     "match_id": "701318",
-    "match_date": "LIVE",
+    "match_date": "2026-06-26",
     "team1_name": "36 Thieves",
     "team2_name": "Evictix GC",
     "team1_win_prob": 0.7528,
     "team2_win_prob": 0.2472,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "701231",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Nightblood Gaming",
     "team2_name": "SaD Esports",
     "team1_win_prob": 0.4761,
     "team2_win_prob": 0.5239,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "676927",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "9z Globant",
     "team2_name": "BESTIA",
     "team1_win_prob": 0.2005,
     "team2_win_prob": 0.7995,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "701232",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "YFT",
     "team2_name": "Evil Geniuses Academy",
     "team1_win_prob": 0.3159,
     "team2_win_prob": 0.6841,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "678065",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Contra",
     "team2_name": "FUSION",
     "team1_win_prob": 0.4588,
     "team2_win_prob": 0.5412,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "701325",
-    "match_date": "Upcoming 2",
+    "match_date": "2026-06-26",
     "team1_name": "Evictix GC",
     "team2_name": "Zero Sugar",
     "team1_win_prob": 0.3082,
     "team2_win_prob": 0.6918,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
   },
   {
     "match_id": "700691",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "S8UL Esports",
     "team2_name": "No Salary Peek",
     "team1_win_prob": 0.6437,
     "team2_win_prob": 0.3563,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "681802",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "REJECT",
     "team2_name": "IGZIST",
     "team1_win_prob": 0.6502,
     "team2_win_prob": 0.3498,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "700692",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Revenant XSpark",
     "team2_name": "Asterisk",
     "team1_win_prob": 0.6997,
     "team2_win_prob": 0.3003,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "681803",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "RIDDLE ORDER",
     "team2_name": "FENNEL",
     "team1_win_prob": 0.4234,
     "team2_win_prob": 0.5766,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": false
   },
   {
     "match_id": "701320",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "Team Falcons Vega",
     "team2_name": "sisu",
     "team1_win_prob": 0.9136,
     "team2_win_prob": 0.0864,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "701321",
-    "match_date": "Upcoming 1",
+    "match_date": "2026-06-26",
     "team1_name": "36 Thieves",
     "team2_name": "wiwiwi",
     "team1_win_prob": 0.3013,
     "team2_win_prob": 0.6987,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "701180",
+    "match_date": "2026-06-26",
+    "team1_name": "Team Solid",
+    "team2_name": "TBK Esports",
+    "team1_win_prob": 0.3915,
+    "team2_win_prob": 0.6085,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "701179",
+    "match_date": "2026-06-26",
+    "team1_name": "ELEVATE",
+    "team2_name": "INTZ",
+    "team1_win_prob": 0.2156,
+    "team2_win_prob": 0.7844,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "706323",
+    "match_date": "2026-06-26",
+    "team1_name": "SaD Esports",
+    "team2_name": "Evictix",
+    "team1_win_prob": 0.8802,
+    "team2_win_prob": 0.1198,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "706324",
+    "match_date": "2026-06-26",
+    "team1_name": "Azure Dragon Gaming",
+    "team2_name": "NRG Academy",
+    "team1_win_prob": 0.5049,
+    "team2_win_prob": 0.4951,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "700695",
+    "match_date": "2026-06-26",
+    "team1_name": "No Salary Peek",
+    "team2_name": "Asterisk",
+    "team1_win_prob": 0.6759,
+    "team2_win_prob": 0.3241,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
   },
   {
     "match_id": "681804",
@@ -484,28 +539,6 @@
     "correct": null
   },
   {
-    "match_id": "701180",
-    "match_date": "Upcoming 1",
-    "team1_name": "Team Solid",
-    "team2_name": "TBK Esports",
-    "team1_win_prob": 0.3915,
-    "team2_win_prob": 0.6085,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "701179",
-    "match_date": "Upcoming 1",
-    "team1_name": "ELEVATE",
-    "team2_name": "INTZ",
-    "team1_win_prob": 0.2156,
-    "team2_win_prob": 0.7844,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "681806",
     "match_date": "Upcoming 2",
     "team1_name": "Insomnia",
@@ -513,28 +546,6 @@
     "team1_win_prob": 0.2748,
     "team2_win_prob": 0.7252,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706323",
-    "match_date": "Upcoming 1",
-    "team1_name": "SaD Esports",
-    "team2_name": "Evictix",
-    "team1_win_prob": 0.8802,
-    "team2_win_prob": 0.1198,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706324",
-    "match_date": "Upcoming 1",
-    "team1_name": "Azure Dragon Gaming",
-    "team2_name": "NRG Academy",
-    "team1_win_prob": 0.5049,
-    "team2_win_prob": 0.4951,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
@@ -567,17 +578,6 @@
     "team2_name": "YFT",
     "team1_win_prob": 0.7404,
     "team2_win_prob": 0.2596,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "700695",
-    "match_date": "LIVE",
-    "team1_name": "No Salary Peek",
-    "team2_name": "Asterisk",
-    "team1_win_prob": 0.6759,
-    "team2_win_prob": 0.3241,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
