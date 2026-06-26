@@ -3,148 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elo Rankings · Valorant Predictions</title>
+  <title>SolvedState · Elo Rankings</title>
+  <meta name="description" content="Opponent-adjusted Elo ratings for pro VALORANT teams and players, built from 32,000+ matches." />
+  <link rel="icon" type="image/png" href="ss_icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="solvedstate.css" />
   <style>
-    :root {
-      --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a; --border: #2e3350;
-      --accent: #ff4655; --accent2: #7c5cbf; --text: #e8eaf0; --muted: #7a82a0;
-      --green: #22c55e; --gold: #f59e0b; --silver: #94a3b8; --bronze: #b45309;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
+    .controls-row { display:flex; align-items:center; gap:var(--space-4); flex-wrap:wrap; margin-bottom:var(--space-5); }
+    .year-tabs { display:flex; gap:var(--space-1); flex-wrap:wrap; }
 
-    nav {
-      background:var(--surface); border-bottom:1px solid var(--border);
-      padding:.6rem 2rem; display:flex; gap:.25rem; align-items:center;
-    }
-    nav a {
-      font-size:.8rem; font-weight:600; color:var(--muted); text-decoration:none;
-      padding:.35rem .75rem; border-radius:6px; transition:background .15s, color .15s;
-    }
-    nav a:hover { background:var(--surface2); color:var(--text); }
-    nav a.active { background:var(--surface2); color:var(--text); }
+    /* ── Leaderboard table (page-specific cells) ── */
+    .rank { font-family:var(--font-mono); font-weight:600; font-variant-numeric:tabular-nums; text-align:center; }
+    .rank-1 { color:var(--ss-cyan-500); }
+    .rank-2 { color:var(--ss-text-300); }
+    .rank-3 { color:var(--ss-cyan-700); }
+    .rank-other { color:var(--ss-text-500); }
 
-    header {
-      border-bottom:1px solid var(--border); padding:1.25rem 2rem;
-      display:flex; align-items:center; gap:1rem;
-    }
-    .logo { width:34px; height:34px; background:var(--accent); border-radius:8px;
-      display:flex; align-items:center; justify-content:center;
-      font-weight:900; font-size:1rem; color:#fff; flex-shrink:0; }
-    header h1 { font-size:1.15rem; font-weight:700; letter-spacing:-.02em; }
-    header p  { font-size:.78rem; color:var(--muted); margin-top:1px; }
-    .header-right { margin-left:auto; font-size:.75rem; color:var(--muted); text-align:right; }
-
-    main { max-width:960px; margin:0 auto; padding:2rem 1.5rem; }
-
-    /* ── Primary tabs (Teams / Players) ── */
-    .tabs { display:flex; gap:.5rem; margin-bottom:1.25rem; }
-    .tab {
-      padding:.45rem 1.1rem; border-radius:8px; font-size:.85rem; font-weight:600;
-      cursor:pointer; border:1px solid var(--border); background:var(--surface);
-      color:var(--muted); transition:all .15s;
-    }
-    .tab.active { background:var(--accent); border-color:var(--accent); color:#fff; }
-    .tab:hover:not(.active) { background:var(--surface2); color:var(--text); }
-
-    /* ── Year sub-tabs ── */
-    .year-tabs { display:flex; gap:.35rem; flex-wrap:wrap; margin-bottom:1.25rem; }
-    .year-tab {
-      padding:.3rem .75rem; border-radius:6px; font-size:.78rem; font-weight:600;
-      cursor:pointer; border:1px solid var(--border); background:var(--surface);
-      color:var(--muted); transition:all .15s;
-    }
-    .year-tab.active { background:var(--accent2); border-color:var(--accent2); color:#fff; }
-    .year-tab:hover:not(.active) { background:var(--surface2); color:var(--text); }
-
-    /* ── Explainer ── */
-    .explainer {
-      background:var(--surface); border:1px solid var(--border); border-radius:10px;
-      padding:1rem 1.25rem; margin-bottom:1.5rem; font-size:.82rem; color:var(--muted);
-      line-height:1.7;
-    }
-    .explainer strong { color:var(--text); }
-
-    /* ── Table panels — shown/hidden via JS style.display directly ── */
-
-    /* ── Table ── */
-    .leaderboard { width:100%; border-collapse:collapse; }
-    .leaderboard th {
-      text-align:left; font-size:.7rem; font-weight:600; color:var(--muted);
-      text-transform:uppercase; letter-spacing:.06em;
-      padding:.5rem .75rem; border-bottom:1px solid var(--border);
-    }
-    .leaderboard th.right { text-align:right; }
-    .leaderboard td {
-      padding:.65rem .75rem; border-bottom:1px solid #1e2235;
-      font-size:.88rem; vertical-align:middle;
-    }
-    .leaderboard tr:last-child td { border-bottom:none; }
-    .leaderboard tr:hover td { background:var(--surface2); }
-
-    .rank { font-weight:800; font-size:.9rem; width:2rem; text-align:center; }
-    .rank-1 { color:var(--gold); }
-    .rank-2 { color:var(--silver); }
-    .rank-3 { color:var(--bronze); }
-    .rank-other { color:var(--muted); }
-
-    .entity-name { font-weight:600; }
-    .elo-value { font-weight:700; font-size:.95rem; text-align:right; }
+    .entity-name { font-weight:600; color:var(--ss-text-100); }
+    .elo-value { font-family:var(--font-mono); font-weight:600; color:var(--ss-text-100); font-variant-numeric:tabular-nums; }
     .elo-bar-cell { width:120px; }
-    .elo-bar-bg { height:4px; background:var(--surface2); border-radius:2px; }
-    .elo-bar-fill { height:4px; border-radius:2px; background:linear-gradient(90deg, var(--accent), var(--accent2)); }
-    .stat-cell { text-align:right; color:var(--muted); font-size:.82rem; }
-    .win-rate { text-align:right; }
-    .win-rate-val { font-weight:600; }
-    .win-rate-val.good { color:var(--green); }
-    .win-rate-val.bad  { color:var(--muted); }
-
-    #status { text-align:center; padding:3rem; color:var(--muted); }
+    .elo-bar-bg { height:4px; background:var(--ss-surface-850); border-radius:var(--radius-pill); overflow:hidden; }
+    .elo-bar-fill { height:4px; border-radius:var(--radius-pill); background:var(--ss-cyan-500); }
+    .stat-cell { color:var(--ss-text-500); }
+    .win-rate-val { font-family:var(--font-mono); font-weight:600; font-variant-numeric:tabular-nums; }
+    .win-rate-val.good { color:var(--ss-green-500); }
+    .win-rate-val.bad  { color:var(--ss-text-500); }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Predictions</a>
-  <a href="leaderboard.html" class="active">Elo Rankings</a>
-  <a href="allstar.html">All-Star</a>
-</nav>
+<div class="ss-topbar">
+  <a class="ss-brand" href="index.html" aria-label="SolvedState home">
+    <img src="ss_logo.png" alt="SolvedState" />
+    <span class="ss-brand-sub">VALORANT</span>
+  </a>
+  <nav class="ss-nav">
+    <a href="index.html">Predictions</a>
+    <a href="leaderboard.html" class="active">Elo Rankings</a>
+    <a href="allstar.html">All-Star</a>
+  </nav>
+  <div class="ss-meta" id="updated-at">—</div>
+</div>
 
-<header>
-  <div class="logo">V</div>
-  <div>
-    <h1>Elo Rankings</h1>
-    <p>Opponent-adjusted ratings across 32,000+ pro matches · updated with each snapshot</p>
-  </div>
-  <div class="header-right" id="updated-at">–</div>
-</header>
+<div class="ss-pagehead">
+  <div class="ss-eyebrow">Opponent-Adjusted Ratings</div>
+  <h1>Elo Rankings</h1>
+  <p>Every match in history replayed in order — beat a stronger opponent and your rating climbs, lose to a weaker one and it drops. Built from 32,000+ pro matches and updated with each snapshot.</p>
+</div>
 
-<main>
-  <div id="status">Loading…</div>
+<main class="ss-main">
+  <div id="status" class="ss-status">Loading rankings…</div>
   <div id="content" style="display:none">
 
-    <div class="tabs" id="type-tabs"></div>
-    <div class="year-tabs" id="year-tabs"></div>
+    <div class="controls-row">
+      <div class="ss-tabs" id="type-tabs"></div>
+      <div class="year-tabs" id="year-tabs"></div>
+    </div>
 
-    <div class="explainer" id="explainer-cumul-teams">
-      <strong>What is Elo?</strong> It's a rating system originally from chess.
-      Beat a stronger team and your rating jumps; lose to a weaker one and it drops.
-      Everyone starts at 1500 and the number moves after every series.
-      The higher the number, the stronger the team's track record.
-      <strong>Cumulative</strong> ratings are built from the full VCT main-event match history — only teams active in the last 90 days appear here. Minimum 10 matches to appear.
+    <div class="ss-note ss-note--accent" id="explainer-cumul-teams" style="margin-bottom:var(--space-5)">
+      <strong>What is Elo?</strong> A rating system originally from chess. Everyone starts at 1500 and the
+      number moves after every series — the higher the number, the stronger the team's track record.
+      <strong>Cumulative</strong> ratings are built from the full VCT main-event history; only teams active
+      in the last 90 days appear, minimum 10 matches.
     </div>
-    <div class="explainer" id="explainer-cumul-players" style="display:none">
-      Player Elo works the same way but is attached to individual players, not team logos —
-      so when a star player transfers, their rating follows them.
-      A team's strength in the model is the average Elo of its five rostered players,
-      making this substitution-aware: a roster swap immediately changes the team's predicted strength.
-      <strong>Cumulative</strong> ratings are built from the full VCT main-event match history — only players active in the last 90 days appear here. Minimum 10 matches to appear.
+    <div class="ss-note ss-note--accent" id="explainer-cumul-players" style="display:none;margin-bottom:var(--space-5)">
+      Player Elo works the same way but is attached to individual players, so when a star transfers their
+      rating follows them. A team's strength in the model is the average Elo of its five rostered players,
+      making it substitution-aware. <strong>Cumulative</strong> ratings cover the full VCT main-event history;
+      only players active in the last 90 days appear, minimum 10 matches.
     </div>
-    <div class="explainer" id="explainer-season" style="display:none">
-      <strong>Season view:</strong> Elo resets to 1500 at the start of each year — rankings reflect
-      only that year's performance. Win rate and match count are within the year only.
-      Ratings are confidence-weighted: a player with 17 matches counts for less than one with 50,
-      so small hot streaks don't inflate the leaderboard. Minimum 5 VCT-main matches to appear.
+    <div class="ss-note ss-note--accent" id="explainer-season" style="display:none;margin-bottom:var(--space-5)">
+      <strong>Season view:</strong> Elo resets to 1500 at the start of each year — rankings reflect only that
+      year's performance. Ratings are confidence-weighted, so small hot streaks don't inflate the board.
+      Minimum 5 VCT-main matches to appear.
     </div>
 
     <div id="panels"></div>
@@ -156,7 +89,7 @@ const LEADERBOARD_URL = "leaderboard.json";
 
 let activeType = "teams";
 let activeYear = "current";
-const allPanels = [];   // filled by render(), each entry: { type, year, el }
+const allPanels = [];
 const typeTabs  = [];
 const yearTabs  = [];
 
@@ -172,80 +105,73 @@ function switchView(type, year) {
   if (target) target.el.style.display = "block";
 
   const isCumul = year === "current";
-  document.getElementById("explainer-cumul-teams").style.display =
-    (isCumul && type === "teams") ? "" : "none";
-  document.getElementById("explainer-cumul-players").style.display =
-    (isCumul && type === "players") ? "" : "none";
-  document.getElementById("explainer-season").style.display =
-    isCumul ? "none" : "";
+  document.getElementById("explainer-cumul-teams").style.display   = (isCumul && type === "teams")   ? "" : "none";
+  document.getElementById("explainer-cumul-players").style.display = (isCumul && type === "players") ? "" : "none";
+  document.getElementById("explainer-season").style.display        = isCumul ? "none" : "";
 }
 
 function buildTable(rows, type) {
   if (!rows || rows.length === 0) {
-    return `<p style="padding:1rem;color:var(--muted)">No data.</p>`;
+    return `<div class="ss-note">No ${type} meet the match-count threshold for this view yet.</div>`;
   }
   const maxElo = rows[0].elo;
   const minElo = rows[rows.length - 1].elo;
   const range = maxElo - minElo || 1;
 
-  const header = `<table class="leaderboard"><tr>
-    <th style="width:3rem">#</th>
+  const header = `<div class="ss-table-wrap"><table class="ss-table"><thead><tr>
+    <th style="width:3rem" class="right">#</th>
     <th>${type === "teams" ? "Team" : "Player"}</th>
     <th class="right">Elo</th>
     <th class="elo-bar-cell"></th>
     <th class="right">Matches</th>
     <th class="right">Win Rate</th>
-  </tr>`;
+  </tr></thead><tbody>`;
 
   const body = rows.map(r => {
     const rankCls = r.rank === 1 ? "rank-1" : r.rank === 2 ? "rank-2" : r.rank === 3 ? "rank-3" : "rank-other";
     const barW = Math.round(((r.elo - minElo) / range) * 100);
     const wrCls = r.win_rate >= 0.55 ? "good" : "bad";
     return `<tr>
-      <td class="rank ${rankCls}">${r.rank}</td>
+      <td class="rank ${rankCls} right">${r.rank}</td>
       <td class="entity-name">${r.name}</td>
-      <td class="elo-value">${r.elo}</td>
+      <td class="elo-value right">${r.elo}</td>
       <td class="elo-bar-cell"><div class="elo-bar-bg"><div class="elo-bar-fill" style="width:${barW}%"></div></div></td>
-      <td class="stat-cell">${r.matches.toLocaleString()}</td>
-      <td class="win-rate"><span class="win-rate-val ${wrCls}">${(r.win_rate*100).toFixed(1)}%</span></td>
+      <td class="stat-cell right">${r.matches.toLocaleString()}</td>
+      <td class="right"><span class="win-rate-val ${wrCls}">${(r.win_rate*100).toFixed(1)}%</span></td>
     </tr>`;
   }).join("");
 
-  return header + body + "</table>";
+  return header + body + "</tbody></table></div>";
 }
 
 function render(data) {
-  // Updated-at header
   const ts = new Date(data.generated_at);
   document.getElementById("updated-at").textContent = "Updated " + ts.toLocaleString(undefined, {
     month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZoneName:"short"
   });
 
-  const years = Object.keys(data.seasons || {}).sort().reverse(); // newest first
+  const years = Object.keys(data.seasons || {}).sort().reverse();
 
-  // Build type tabs
   const typeTabsEl = document.getElementById("type-tabs");
   ["teams", "players"].forEach((type, i) => {
     const el = document.createElement("div");
-    el.className = "tab" + (i === 0 ? " active" : "");
+    el.className = "ss-tab" + (i === 0 ? " active" : "");
     el.textContent = type === "teams" ? "Teams" : "Players";
     el.addEventListener("click", () => switchView(type, activeYear));
     typeTabsEl.appendChild(el);
     typeTabs.push({ type, el });
   });
 
-  // Build year tabs
   const yearTabsEl = document.getElementById("year-tabs");
   ["current", ...years].forEach((year, i) => {
     const el = document.createElement("div");
-    el.className = "year-tab" + (i === 0 ? " active" : "");
+    el.className = "ss-tab ss-tab--sm" + (i === 0 ? " active" : "");
     el.textContent = year === "current" ? "Cumulative" : year;
     el.addEventListener("click", () => switchView(activeType, year));
     yearTabsEl.appendChild(el);
     yearTabs.push({ year, el });
   });
 
-  // Pre-render all panels, hidden by default
   const panelsEl = document.getElementById("panels");
   const allYears = ["current", ...years];
 
@@ -274,7 +200,7 @@ async function load() {
     statusEl.style.display = "none";
     document.getElementById("content").style.display = "block";
   } catch(err) {
-    statusEl.textContent = "Failed to load: " + err.message;
+    statusEl.innerHTML = `<div class="ss-note ss-note--accent" style="text-align:left;border-left-color:var(--ss-red-500)">Couldn't load rankings — ${err.message}. The data feed may be refreshing; try again shortly.</div>`;
   }
 }
 

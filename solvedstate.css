@@ -1,0 +1,326 @@
+/* ============================================================================
+   SolvedState — shared design system
+   Implements the SolvedState UI/UX brand brief (assets/design_spec.md).
+   Dark tactical analytics surface · restrained cyan · 4px grid.
+   ========================================================================== */
+
+:root {
+  /* ── Color ── */
+  --ss-bg-950: #070A0D;
+  --ss-surface-900: #0D1117;
+  --ss-surface-850: #111821;
+  --ss-border-800: #1C2633;
+  --ss-border-700: #2B3A4A;
+
+  --ss-cyan-500: #00CCD8;
+  --ss-cyan-400: #15E0EA;
+  --ss-cyan-700: #087F88;
+
+  --ss-text-100: #F8F8F8;
+  --ss-text-300: #C7CDD4;
+  --ss-text-500: #8B96A3;
+  --ss-text-650: #5E6976;
+
+  --ss-green-500: #35D07F;
+  --ss-amber-500: #F5B84B;
+  --ss-red-500: #FF5C72;
+  --ss-blue-500: #5E8CFF;
+
+  /* ── Spacing (4px grid) ── */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px;
+
+  /* ── Radius ── */
+  --radius-xs: 4px; --radius-sm: 6px; --radius-md: 8px; --radius-lg: 12px;
+  --radius-xl: 16px; --radius-2xl: 20px; --radius-pill: 999px;
+
+  /* ── Motion ── */
+  --motion-fast: 120ms;
+  --motion-standard: 180ms;
+  --motion-slow: 240ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  /* ── Type ── */
+  --font-head: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--ss-bg-950);
+  color: var(--ss-text-100);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-head); letter-spacing: -0.02em; font-weight: 650; }
+
+a { color: var(--ss-cyan-500); text-decoration: none; }
+a:hover { color: var(--ss-cyan-400); }
+
+::selection { background: rgba(0, 204, 216, 0.24); color: var(--ss-text-100); }
+
+/* Numeric / metric figures use the technical mono face */
+.mono, .tnum { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* ── Scrollbar ── */
+* { scrollbar-width: thin; scrollbar-color: var(--ss-border-700) transparent; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: var(--ss-border-700); border-radius: var(--radius-pill); }
+*::-webkit-scrollbar-track { background: transparent; }
+
+/* ============================================================================
+   Top bar + brand + nav
+   ========================================================================== */
+.ss-topbar {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: var(--space-6);
+  height: 64px; padding: 0 var(--space-6);
+  background: rgba(7, 10, 13, 0.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--ss-border-800);
+}
+.ss-brand { display: flex; align-items: center; gap: var(--space-3); flex-shrink: 0; }
+.ss-brand img { height: 26px; width: auto; display: block; }
+.ss-brand .ss-brand-sub {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em;
+  color: var(--ss-text-500); padding-left: var(--space-3);
+  border-left: 1px solid var(--ss-border-800);
+}
+
+.ss-nav { display: flex; gap: var(--space-1); align-items: center; }
+.ss-nav a {
+  font-size: 14px; font-weight: 600; color: var(--ss-text-500);
+  padding: var(--space-2) var(--space-3); border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition: background-color var(--motion-standard) var(--ease-standard),
+              color var(--motion-standard) var(--ease-standard),
+              border-color var(--motion-standard) var(--ease-standard);
+}
+.ss-nav a:hover { background: rgba(255, 255, 255, 0.045); color: var(--ss-text-100); }
+.ss-nav a.active {
+  background: rgba(0, 204, 216, 0.10); color: var(--ss-text-100);
+  border-color: rgba(0, 204, 216, 0.25);
+}
+.ss-topbar .ss-meta {
+  margin-left: auto; font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.02em; color: var(--ss-text-500); text-align: right;
+}
+
+/* ── Page header (title block under the top bar) ── */
+.ss-pagehead { padding: var(--space-8) var(--space-6) var(--space-6); }
+.ss-pagehead .ss-eyebrow {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ss-cyan-500);
+  margin-bottom: var(--space-3);
+}
+.ss-pagehead h1 { font-size: 32px; line-height: 40px; color: var(--ss-text-100); }
+.ss-pagehead p { margin-top: var(--space-2); font-size: 14px; color: var(--ss-text-500); max-width: 720px; }
+
+/* ── Disclaimer strip ── */
+.ss-disclaimer {
+  display: flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-2) var(--space-6);
+  background: rgba(245, 184, 75, 0.07);
+  border-bottom: 1px solid var(--ss-border-800);
+  font-size: 12px; line-height: 16px; color: var(--ss-text-500); text-align: center;
+  justify-content: center;
+}
+.ss-disclaimer svg { flex-shrink: 0; color: var(--ss-amber-500); }
+
+/* ============================================================================
+   Layout
+   ========================================================================== */
+.ss-main { max-width: 1180px; margin: 0 auto; padding: var(--space-2) var(--space-6) var(--space-16); }
+
+.ss-section { margin-bottom: var(--space-12); }
+.ss-section-head {
+  display: flex; align-items: baseline; gap: var(--space-3);
+  margin-bottom: var(--space-5); padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--ss-border-800);
+}
+.ss-section-head h2 { font-size: 20px; line-height: 28px; font-weight: 600; color: var(--ss-text-100); }
+.ss-section-head .ss-section-meta {
+  margin-left: auto; font-size: 12px; color: var(--ss-text-500);
+  font-family: var(--font-mono);
+}
+
+/* ============================================================================
+   Cards
+   ========================================================================== */
+.ss-card {
+  background: var(--ss-surface-900);
+  border: 1px solid var(--ss-border-800);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+/* ── Metric card ── */
+.ss-metric-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4);
+  margin-bottom: var(--space-10);
+}
+.ss-metric-card {
+  background: var(--ss-surface-900); border: 1px solid var(--ss-border-800);
+  border-radius: var(--radius-lg); padding: var(--space-4);
+}
+.ss-metric-label {
+  color: var(--ss-text-500); font-size: 12px; font-weight: 650;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.ss-metric-value {
+  color: var(--ss-text-100); font-family: var(--font-mono);
+  font-size: 30px; line-height: 38px; font-weight: 600;
+  letter-spacing: -0.02em; margin-top: var(--space-2);
+  font-variant-numeric: tabular-nums;
+}
+.ss-metric-context { color: var(--ss-text-500); font-size: 12px; line-height: 16px; margin-top: var(--space-2); }
+
+/* ============================================================================
+   Badges
+   ========================================================================== */
+.ss-badge {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  height: 22px; padding: 0 var(--space-2); border-radius: var(--radius-pill);
+  font-size: 11px; font-weight: 600; line-height: 1; white-space: nowrap;
+}
+.ss-badge--positive { background: rgba(53, 208, 127, 0.12); color: var(--ss-green-500); }
+.ss-badge--warning  { background: rgba(245, 184, 75, 0.12); color: var(--ss-amber-500); }
+.ss-badge--negative { background: rgba(255, 92, 114, 0.12); color: var(--ss-red-500); }
+.ss-badge--info     { background: rgba(0, 204, 216, 0.12);  color: var(--ss-cyan-500); }
+.ss-badge--neutral  { background: rgba(199, 205, 212, 0.10); color: var(--ss-text-300); }
+
+/* ============================================================================
+   Confidence / signal indicator (label + icon, never color alone)
+   ========================================================================== */
+.ss-conf { display: inline-flex; align-items: center; gap: var(--space-2); font-size: 12px; color: var(--ss-text-500); }
+.ss-conf .ss-conf-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.ss-conf--high .ss-conf-dot { background: var(--ss-green-500); }
+.ss-conf--medium .ss-conf-dot { background: var(--ss-amber-500); }
+.ss-conf--low .ss-conf-dot { background: var(--ss-red-500); }
+
+/* ============================================================================
+   Buttons / segmented tabs
+   ========================================================================== */
+.ss-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  height: 36px; padding: 0 var(--space-4); border-radius: var(--radius-md);
+  font-family: var(--font-body); font-size: 14px; font-weight: 600;
+  cursor: pointer; border: 1px solid var(--ss-border-700);
+  background: var(--ss-surface-850); color: var(--ss-text-100);
+  transition: background-color var(--motion-standard) var(--ease-standard),
+              border-color var(--motion-standard) var(--ease-standard),
+              color var(--motion-standard) var(--ease-standard);
+}
+.ss-btn:hover { border-color: var(--ss-border-700); background: var(--ss-surface-900); color: var(--ss-text-100); }
+
+/* Segmented tab control */
+.ss-tabs { display: inline-flex; gap: var(--space-1); flex-wrap: wrap; }
+.ss-tab {
+  height: 36px; padding: 0 var(--space-4); border-radius: var(--radius-md);
+  display: inline-flex; align-items: center;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  border: 1px solid var(--ss-border-800); background: var(--ss-surface-900);
+  color: var(--ss-text-500); user-select: none;
+  transition: background-color var(--motion-standard) var(--ease-standard),
+              border-color var(--motion-standard) var(--ease-standard),
+              color var(--motion-standard) var(--ease-standard);
+}
+.ss-tab:hover:not(.active) { background: var(--ss-surface-850); color: var(--ss-text-100); }
+.ss-tab.active {
+  background: rgba(0, 204, 216, 0.10); color: var(--ss-text-100);
+  border-color: rgba(0, 204, 216, 0.35);
+}
+.ss-tab--sm { height: 28px; padding: 0 var(--space-3); font-size: 12px; }
+
+/* ============================================================================
+   Tables
+   ========================================================================== */
+.ss-table-wrap {
+  background: var(--ss-surface-900); border: 1px solid var(--ss-border-800);
+  border-radius: var(--radius-lg); overflow: hidden;
+}
+.ss-table { width: 100%; border-collapse: collapse; }
+.ss-table thead th {
+  position: sticky; top: 64px; z-index: 1;
+  height: 36px; text-align: left;
+  font-size: 11px; font-weight: 650; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ss-text-500); background: var(--ss-surface-850);
+  padding: 0 var(--space-3); border-bottom: 1px solid var(--ss-border-800);
+}
+.ss-table thead th.right { text-align: right; }
+.ss-table tbody td {
+  height: 44px; padding: 0 var(--space-3); font-size: 14px;
+  border-bottom: 1px solid var(--ss-border-800); vertical-align: middle;
+  color: var(--ss-text-300);
+}
+.ss-table tbody tr:last-child td { border-bottom: none; }
+.ss-table tbody tr { transition: background-color var(--motion-fast) var(--ease-standard); }
+.ss-table tbody tr:hover td { background: rgba(255, 255, 255, 0.035); }
+.ss-table td.right, .ss-table td.num { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* ============================================================================
+   Explainer / note panels
+   ========================================================================== */
+.ss-note {
+  background: var(--ss-surface-900); border: 1px solid var(--ss-border-800);
+  border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5);
+  font-size: 14px; line-height: 22px; color: var(--ss-text-500);
+}
+.ss-note strong { color: var(--ss-text-300); font-weight: 600; }
+.ss-note--accent { border-left: 3px solid var(--ss-cyan-500); }
+
+/* ============================================================================
+   Skeleton loader
+   ========================================================================== */
+.ss-skeleton {
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.04), rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+  background-size: 200% 100%;
+  animation: ss-shimmer 1.4s ease-in-out infinite;
+}
+@keyframes ss-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+.ss-status { text-align: center; padding: var(--space-16); color: var(--ss-text-500); font-size: 14px; }
+
+/* ============================================================================
+   Focus + reduced motion (accessibility)
+   ========================================================================== */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 204, 216, 0.22);
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 880px) {
+  .ss-topbar { gap: var(--space-3); padding: 0 var(--space-4); }
+  .ss-brand .ss-brand-sub { display: none; }
+  .ss-topbar .ss-meta { display: none; }
+  .ss-metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .ss-main { padding-left: var(--space-4); padding-right: var(--space-4); }
+  .ss-pagehead { padding-left: var(--space-4); padding-right: var(--space-4); }
+}
+@media (max-width: 520px) {
+  .ss-nav a { padding: var(--space-2); }
+  .ss-pagehead h1 { font-size: 26px; line-height: 32px; }
+}

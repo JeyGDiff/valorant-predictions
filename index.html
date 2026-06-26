@@ -3,269 +3,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valorant Match Predictions · Portfolio</title>
+  <title>SolvedState · Match Predictions</title>
+  <meta name="description" content="SolvedState turns tactical VALORANT match states into win-probability predictions from a walk-forward ML model trained on pro match history." />
+  <link rel="icon" type="image/png" href="ss_icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="solvedstate.css" />
   <style>
-    :root {
-      --bg: #0f1117;
-      --surface: #1a1d27;
-      --surface2: #22263a;
-      --border: #2e3350;
-      --accent: #ff4655;
-      --accent2: #7c5cbf;
-      --text: #e8eaf0;
-      --muted: #7a82a0;
-      --green: #22c55e;
-      --yellow: #eab308;
-      --red: #ef4444;
-      --font: 'Inter', system-ui, sans-serif;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; }
-
-    /* ── Header ── */
-    header {
-      border-bottom: 1px solid var(--border);
-      padding: 1.25rem 2rem;
-      display: flex; align-items: center; gap: 1rem;
-    }
-    .logo { width:34px; height:34px; background:var(--accent); border-radius:8px;
-      display:flex; align-items:center; justify-content:center;
-      font-weight:900; font-size:1rem; color:#fff; flex-shrink:0; }
-    header h1 { font-size:1.15rem; font-weight:700; letter-spacing:-0.02em; }
-    header p  { font-size:0.78rem; color:var(--muted); margin-top:1px; }
-    .header-right { margin-left:auto; font-size:0.75rem; color:var(--muted); text-align:right; }
-
-    /* ── Layout ── */
-    main { max-width:960px; margin:0 auto; padding:2rem 1.5rem; }
-
-    /* ── Stat bar (hero metrics) ── */
-    .stat-grid {
-      display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem;
-      margin-bottom:2rem;
-    }
-    @media(max-width:600px){ .stat-grid{grid-template-columns:repeat(2,1fr);} }
-    .stat-card {
-      background:var(--surface); border:1px solid var(--border); border-radius:10px;
-      padding:1rem 1.25rem;
-    }
-    .stat-label { font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
-    .stat-value { font-size:1.75rem; font-weight:800; letter-spacing:-0.04em; line-height:1.1; margin-top:2px; }
-    .stat-sub   { font-size:0.7rem; color:var(--muted); margin-top:2px; }
-
-    /* ── Section ── */
-    .section { margin-bottom:2.5rem; }
-    .section-head {
-      display:flex; align-items:baseline; gap:.6rem; margin-bottom:1rem;
-      border-bottom:1px solid var(--border); padding-bottom:.6rem;
-    }
-    .section-head h2 { font-size:.95rem; font-weight:600; }
-    .section-head .meta { font-size:.75rem; color:var(--muted); margin-left:auto; }
-
-    /* ── Calibration chart ── */
-    .calib-explainer {
-      display:flex; align-items:center; gap:1rem; margin-bottom:.75rem; flex-wrap:wrap;
-    }
-    .calib-key { display:flex; align-items:center; gap:.35rem; font-size:.75rem; color:var(--muted); }
+    /* ── Calibration chart (page-specific) ── */
+    .calib-explainer { display:flex; align-items:center; gap:var(--space-5); margin-bottom:var(--space-3); flex-wrap:wrap; }
+    .calib-key { display:flex; align-items:center; gap:var(--space-2); font-size:12px; color:var(--ss-text-500); }
     .calib-key-dot { width:10px; height:10px; border-radius:2px; flex-shrink:0; }
-    .calib-key-note { font-size:.72rem; color:var(--muted); margin-left:auto; font-style:italic; }
+    .calib-key-note { font-size:12px; color:var(--ss-text-650); margin-left:auto; }
     .calib-chart {
-      display:flex; align-items:flex-end; gap:6px; height:140px;
-      background:var(--surface); border:1px solid var(--border); border-radius:10px;
-      padding:1rem 1rem .5rem; position:relative;
+      display:flex; align-items:flex-end; gap:var(--space-2); height:150px;
+      background:var(--ss-surface-900); border:1px solid var(--ss-border-800);
+      border-radius:var(--radius-lg); padding:var(--space-4) var(--space-4) var(--space-2);
     }
-    .calib-col { flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; }
+    .calib-col { flex:1; display:flex; flex-direction:column; align-items:center; gap:var(--space-1); }
     .calib-bar-wrap { width:100%; flex:1; display:flex; align-items:flex-end; gap:2px; }
-    .calib-bar { flex:1; border-radius:2px 2px 0 0; min-height:3px; cursor:default; }
-    .calib-pred { background:var(--accent2); opacity:.8; }
-    .calib-act  { background:var(--green); }
-    .calib-lbl  { font-size:.58rem; color:var(--muted); white-space:nowrap; }
+    .calib-bar { flex:1; border-radius:2px 2px 0 0; min-height:3px; }
+    .calib-pred { background:var(--ss-blue-500); opacity:.85; }
+    .calib-act  { background:var(--ss-cyan-500); }
+    .calib-lbl  { font-family:var(--font-mono); font-size:11px; color:var(--ss-text-500); white-space:nowrap; }
 
     /* ── Match cards ── */
-    .match-list { display:flex; flex-direction:column; gap:.6rem; }
+    .match-list { display:flex; flex-direction:column; gap:var(--space-3); }
     .match-card {
-      background:var(--surface); border:1px solid var(--border); border-radius:10px;
-      padding:1rem 1.25rem; transition:border-color .15s;
+      background:var(--ss-surface-900); border:1px solid var(--ss-border-800);
+      border-radius:var(--radius-lg); padding:var(--space-4) var(--space-5);
+      transition:border-color var(--motion-standard) var(--ease-standard);
     }
-    .match-card:hover { border-color:#444a70; }
-    .match-card.correct   { border-left:3px solid var(--green); }
-    .match-card.incorrect { border-left:3px solid var(--red); }
-    .match-card.pending   { border-left:3px solid var(--border); }
+    .match-card:hover { border-color:var(--ss-border-700); }
+    .match-card.correct   { border-left:3px solid var(--ss-green-500); }
+    .match-card.incorrect { border-left:3px solid var(--ss-red-500); }
 
-    .match-top {
-      display:flex; align-items:center; gap:.5rem; margin-bottom:.7rem;
-      font-size:.7rem; color:var(--muted);
-    }
-    .match-top .date { font-weight:600; }
+    .match-top { display:flex; align-items:center; gap:var(--space-2); margin-bottom:var(--space-3); font-size:12px; color:var(--ss-text-500); }
+    .match-top .date { font-family:var(--font-mono); color:var(--ss-text-300); }
     .event-tag {
-      background:var(--surface2); border:1px solid var(--border); border-radius:4px;
-      padding:1px 5px; max-width:220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+      background:var(--ss-surface-850); border:1px solid var(--ss-border-800); border-radius:var(--radius-xs);
+      padding:1px 6px; max-width:240px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
     }
-    .eta-tag { color:var(--accent); margin-left:auto; }
-    .bo-tag  { color:var(--muted); }
+    .bo-tag { font-family:var(--font-mono); color:var(--ss-text-500); }
+    .eta-tag { margin-left:auto; font-family:var(--font-mono); color:var(--ss-cyan-500); }
 
-    .teams-row {
-      display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:.75rem;
-    }
-    .team       { display:flex; flex-direction:column; }
+    .teams-row { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:var(--space-4); }
+    .team { display:flex; flex-direction:column; }
     .team.right { align-items:flex-end; }
-    .team-header { display:flex; align-items:center; gap:.5rem; }
+    .team-header { display:flex; align-items:center; gap:var(--space-2); }
     .team.right .team-header { flex-direction:row-reverse; }
     .team-logo {
-      width:32px; height:32px; border-radius:50%; object-fit:contain;
-      background:var(--surface2); border:1px solid var(--border); flex-shrink:0;
-      padding:3px;
+      width:32px; height:32px; border-radius:var(--radius-sm); object-fit:contain;
+      background:var(--ss-surface-850); border:1px solid var(--ss-border-800); flex-shrink:0; padding:3px;
     }
     .team-logo-placeholder {
-      width:32px; height:32px; border-radius:50%; background:var(--surface2);
-      border:1px solid var(--border); display:flex; align-items:center; justify-content:center;
-      font-size:.75rem; font-weight:700; color:var(--muted); flex-shrink:0;
+      width:32px; height:32px; border-radius:var(--radius-sm); background:var(--ss-surface-850);
+      border:1px solid var(--ss-border-800); display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-mono); font-size:13px; font-weight:600; color:var(--ss-text-500); flex-shrink:0;
     }
-    .team-name  { font-size:.95rem; font-weight:700; letter-spacing:-.01em; }
-    .team-name.winner { color:var(--accent); }
-    .team-prob  { font-size:1.4rem; font-weight:800; letter-spacing:-.03em; line-height:1.1; margin-top:.2rem; }
-    .team-sub   { font-size:.68rem; color:var(--muted); margin-top:1px; }
-    .vs         { font-size:.7rem; color:var(--muted); font-weight:600; text-align:center; }
+    .team-name { font-size:15px; font-weight:600; letter-spacing:-0.01em; color:var(--ss-text-100); }
+    .team-name.winner { color:var(--ss-cyan-500); }
+    .team-prob { font-family:var(--font-mono); font-size:22px; font-weight:600; letter-spacing:-0.02em; line-height:1.1; margin-top:var(--space-1); color:var(--ss-text-100); font-variant-numeric:tabular-nums; }
+    .team-sub { font-size:11px; color:var(--ss-text-500); margin-top:2px; }
+    .vs { font-family:var(--font-mono); font-size:11px; color:var(--ss-text-650); font-weight:600; text-align:center; }
 
-    .prob-bar { height:5px; border-radius:3px; background:var(--surface2); overflow:hidden; margin-top:.75rem; }
-    .prob-bar-fill {
-      height:100%; border-radius:3px;
-      background:linear-gradient(90deg,var(--accent),var(--accent2));
-    }
+    .prob-bar { height:5px; border-radius:var(--radius-pill); background:var(--ss-surface-850); overflow:hidden; margin-top:var(--space-3); display:flex; }
+    .prob-bar-fill { height:100%; background:var(--ss-cyan-500); }
+    .prob-bar-rest { height:100%; flex:1; background:var(--ss-cyan-700); opacity:.45; }
 
-    .conf-row { display:flex; align-items:center; gap:.35rem; margin-top:.5rem; }
-    .dot { width:6px;height:6px;border-radius:50%;flex-shrink:0; }
-    .conf-high{background:var(--green);} .conf-med{background:var(--yellow);} .conf-low{background:var(--red);}
-    .conf-lbl { font-size:.68rem; color:var(--muted); }
+    .conf-row { display:flex; align-items:center; gap:var(--space-3); margin-top:var(--space-3); }
+    .outcome-badge { margin-left:auto; }
 
-    .outcome-badge {
-      font-size:.65rem; font-weight:700; padding:2px 6px; border-radius:4px; margin-left:auto;
-    }
-    .badge-correct   { background:#1a3d27; color:var(--green); }
-    .badge-incorrect { background:#3d1a1a; color:var(--red); }
-
-    /* ── About ── */
-    .about { margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--border); }
-    .about h2 { font-size:.8rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:.6rem; }
-    .about p  { font-size:.82rem; color:var(--muted); max-width:640px; line-height:1.75; }
-    .about p+p{ margin-top:.5rem; }
-    a { color:var(--accent); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    #main-status { text-align:center; padding:3rem; color:var(--muted); }
-
-    /* ── Disclaimer banner ── */
-    .disclaimer {
-      background:#1a1410; border-bottom:1px solid #3a2a1a;
-      padding:.45rem 2rem; font-size:.75rem; color:#8a7a6a; text-align:center;
-    }
-
-    /* ── Nav ── */
-    nav {
-      background:var(--surface); border-bottom:1px solid var(--border);
-      padding:.6rem 2rem; display:flex; gap:.25rem; align-items:center;
-    }
-    nav a {
-      font-size:.8rem; font-weight:600; color:var(--muted); text-decoration:none;
-      padding:.35rem .75rem; border-radius:6px; transition:background .15s, color .15s;
-    }
-    nav a:hover { background:var(--surface2); color:var(--text); }
-    nav a.active { background:var(--surface2); color:var(--text); }
+    /* ── About / methodology ── */
+    .about-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-4); }
+    @media (max-width:720px){ .about-grid{ grid-template-columns:1fr; } }
+    .about h3 { font-size:16px; font-weight:600; color:var(--ss-text-100); margin-bottom:var(--space-2); }
+    .about p { font-size:14px; line-height:22px; color:var(--ss-text-500); }
+    .about p strong { color:var(--ss-text-300); font-weight:600; }
+    .about em { color:var(--ss-text-300); font-style:normal; }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="active">Predictions</a>
-  <a href="leaderboard.html">Elo Rankings</a>
-  <a href="allstar.html">All-Star</a>
-</nav>
+<div class="ss-topbar">
+  <a class="ss-brand" href="index.html" aria-label="SolvedState home">
+    <img src="ss_logo.png" alt="SolvedState" />
+    <span class="ss-brand-sub">VALORANT</span>
+  </a>
+  <nav class="ss-nav">
+    <a href="index.html" class="active">Predictions</a>
+    <a href="leaderboard.html">Elo Rankings</a>
+    <a href="allstar.html">All-Star</a>
+  </nav>
+  <div class="ss-meta" id="updated-at">—</div>
+</div>
 
-<header>
-  <div class="logo">V</div>
-  <div>
-    <h1>Valorant Match Predictions</h1>
-    <p>Walk-forward ML model trained on pro match history · vlr.gg data</p>
-  </div>
-  <div class="header-right" id="updated-at">–</div>
-</header>
+<div class="ss-disclaimer">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+  <span>Predictions are for analytical and entertainment purposes only — not betting advice. Past accuracy does not guarantee future results.</span>
+</div>
 
-<div class="disclaimer">These predictions are for entertainment and analytical purposes only. Do not use them to inform betting decisions. Past accuracy does not guarantee future results.</div>
+<div class="ss-pagehead">
+  <div class="ss-eyebrow">Win Probability Model</div>
+  <h1>Match Predictions</h1>
+  <p>A walk-forward model reads each roster's current form and returns a win probability for every upcoming pro VALORANT match. Trained on pro match history from vlr.gg.</p>
+</div>
 
-<main>
-  <div id="main-status">Loading…</div>
+<main class="ss-main">
+  <div id="main-status" class="ss-status">Loading predictions…</div>
   <div id="content" style="display:none">
 
-    <!-- ── Hero metrics ── -->
-    <div class="stat-grid" id="stat-grid"></div>
+    <!-- ── Headline metrics ── -->
+    <div class="ss-metric-grid" id="stat-grid"></div>
 
     <!-- ── Calibration ── -->
-    <div class="section" id="calib-section" style="display:none">
-      <div class="section-head">
-        <h2>Does the model know what it doesn't know?</h2>
-        <span class="meta">when we say 70%, teams win ~70% of the time</span>
+    <div class="ss-section" id="calib-section" style="display:none">
+      <div class="ss-section-head">
+        <h2>Model calibration</h2>
+        <span class="ss-section-meta">when we say 70%, teams win ~70% of the time</span>
       </div>
       <div class="calib-explainer">
-        <span class="calib-key"><span class="calib-key-dot calib-pred"></span>Model's predicted chance</span>
-        <span class="calib-key"><span class="calib-key-dot calib-act"></span>What actually happened</span>
+        <span class="calib-key"><span class="calib-key-dot calib-pred"></span>Predicted win chance</span>
+        <span class="calib-key"><span class="calib-key-dot calib-act"></span>Actual outcome</span>
         <span class="calib-key-note">Bars that match = well-calibrated probabilities</span>
       </div>
       <div class="calib-chart" id="calib-chart"></div>
     </div>
 
     <!-- ── Upcoming predictions ── -->
-    <div class="section">
-      <div class="section-head">
-        <h2>Upcoming Matches</h2>
-        <span class="meta" id="upcoming-meta"></span>
+    <div class="ss-section">
+      <div class="ss-section-head">
+        <h2>Upcoming matches</h2>
+        <span class="ss-section-meta" id="upcoming-meta"></span>
       </div>
       <div class="match-list" id="upcoming-list">
-        <div style="color:var(--muted);font-size:.85rem">Loading upcoming matches…</div>
+        <div class="ss-skeleton" style="height:96px;border-radius:var(--radius-lg)"></div>
       </div>
     </div>
 
     <!-- ── Historical track record ── -->
-    <div class="section" id="history-section" style="display:none">
-      <div class="section-head">
-        <h2>Past Predictions</h2>
-        <span class="meta" id="history-meta"></span>
+    <div class="ss-section" id="history-section" style="display:none">
+      <div class="ss-section-head">
+        <h2>Track record</h2>
+        <span class="ss-section-meta" id="history-meta"></span>
       </div>
       <div class="match-list" id="history-list"></div>
     </div>
 
-    <!-- ── About ── -->
-    <div class="about">
-      <h2>How it works</h2>
-      <p>
-        The model looks at how each of the 10 players have been performing recently,
-        then asks: <em>based on current form, which roster is stronger?</em>
-        It was trained on ~32,000 professional matches scraped from vlr.gg going back to 2020.
-      </p>
-      <p>
-        Under the hood: a gradient-boosted classifier (XGBoost) with 587 features per match.
-        Each player is described by rolling averages across their last 5, 10, and 20 matches
-        plus career — covering ACS, KDA, KAST, first-blood rate, clutch rate, and more.
-        Match features are built by aggregating each roster and differencing the two sides,
-        so the model sees <em>how much better</em> one team is, not just raw numbers.
-        A dual Elo system (team-level + player-level, substitution-aware) and pairwise roster
-        chemistry features (shared games and win rate for every player pair) are layered on top.
-      </p>
-      <p>
-        <strong>The track record is honest.</strong> Every past prediction used only data from
-        before that match. The model trained on the oldest 80% of history, then predicted
-        the remaining 20% in 200-match blocks, retraining after each — the same way it
-        operates live. No look-ahead bias.
-      </p>
-      <p>
-        Predictions refresh every 6 hours via GitHub Actions. The model and training data are not publicly distributed.
-      </p>
+    <!-- ── Methodology ── -->
+    <div class="ss-section about">
+      <div class="ss-section-head">
+        <h2>Methodology</h2>
+        <span class="ss-section-meta">how the model works</span>
+      </div>
+      <div class="about-grid">
+        <div class="ss-card">
+          <h3>What it reads</h3>
+          <p>
+            The model looks at how each of the 10 players has been performing recently, then asks:
+            <em>based on current form, which roster is stronger?</em> It was trained on ~32,000
+            professional matches scraped from vlr.gg going back to 2020.
+          </p>
+        </div>
+        <div class="ss-card">
+          <h3>Under the hood</h3>
+          <p>
+            A gradient-boosted classifier (XGBoost) with 587 features per match. Each player is described
+            by rolling averages across their last 5, 10, and 20 matches plus career — ACS, KDA, KAST,
+            first-blood rate, clutch rate, and more — then aggregated per roster and differenced across the
+            two sides. A substitution-aware dual Elo system and pairwise roster-chemistry features layer on top.
+          </p>
+        </div>
+        <div class="ss-card">
+          <h3>An honest track record</h3>
+          <p>
+            <strong>Every past prediction used only data from before that match.</strong> The model trained
+            on the oldest 80% of history, then predicted the remaining 20% in 200-match blocks, retraining
+            after each — the same way it operates live. No look-ahead bias.
+          </p>
+        </div>
+        <div class="ss-card">
+          <h3>Refresh cadence</h3>
+          <p>
+            Predictions refresh hourly via GitHub Actions, resolving finished matches and picking up new
+            upcoming ones. The model and training data are not publicly distributed.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </main>
 
 <script>
-const PREDICTIONS_URL    = "predictions.json";
-const BACKTEST_URL       = "backtest_results.json";
-const RECENT_PRED_URL    = "recent_predictions.json";
-const CONF_CLASS = { high:"conf-high", medium:"conf-med", low:"conf-low" };
+const PREDICTIONS_URL = "predictions.json";
+const BACKTEST_URL    = "backtest_results.json";
+const RECENT_PRED_URL = "recent_predictions.json";
 
 function pct(v, decimals=0) {
   return v != null ? (v*100).toFixed(decimals) + "%" : "—";
@@ -274,32 +207,20 @@ function pct(v, decimals=0) {
 function renderStatGrid(bt, upcomingPredicted) {
   const el = document.getElementById("stat-grid");
   const stats = [
-    {
-      label: "Prediction Accuracy",
-      value: pct(bt.accuracy, 1),
-      sub: `correctly picked the winner in ${bt.test_matches.toLocaleString()} past matches`
-    },
-    {
-      label: "Tested On",
-      value: bt.test_matches.toLocaleString(),
-      sub: "matches the model never trained on"
-    },
-    {
-      label: "Trained On",
-      value: bt.train_matches.toLocaleString(),
-      sub: "historical pro matches going back to 2020"
-    },
-    {
-      label: "Live Predictions",
-      value: upcomingPredicted,
-      sub: "upcoming matches · refreshed every 6 hours"
-    },
+    { label: "Prediction Accuracy", value: pct(bt.accuracy, 1),
+      sub: `picked the winner in ${bt.test_matches.toLocaleString()} past matches` },
+    { label: "Tested On", value: bt.test_matches.toLocaleString(),
+      sub: "matches the model never trained on" },
+    { label: "Trained On", value: bt.train_matches.toLocaleString(),
+      sub: "historical pro matches since 2020" },
+    { label: "Live Predictions", value: upcomingPredicted,
+      sub: "upcoming matches · refreshed hourly" },
   ];
   el.innerHTML = stats.map(s => `
-    <div class="stat-card">
-      <div class="stat-label">${s.label}</div>
-      <div class="stat-value">${s.value}</div>
-      <div class="stat-sub">${s.sub}</div>
+    <div class="ss-metric-card">
+      <div class="ss-metric-label">${s.label}</div>
+      <div class="ss-metric-value">${s.value}</div>
+      <div class="ss-metric-context">${s.sub}</div>
     </div>`).join("");
 }
 
@@ -309,10 +230,10 @@ function renderCalib(buckets) {
   if (!buckets || buckets.length === 0) return;
   sec.style.display = "block";
   chart.innerHTML = buckets.map(b => {
-    const predH = Math.round(b.predicted_mean * 110);
-    const actH  = Math.round(b.actual_win_rate * 110);
+    const predH = Math.round(b.predicted_mean * 118);
+    const actH  = Math.round(b.actual_win_rate * 118);
     const predTip = `Model predicted ${pct(b.predicted_mean,1)} win chance`;
-    const actTip  = `Team actually won ${pct(b.actual_win_rate,1)} of the time (${b.n} matches)`;
+    const actTip  = `Team actually won ${pct(b.actual_win_rate,1)} of the time (n=${b.n})`;
     return `
       <div class="calib-col">
         <div class="calib-bar-wrap">
@@ -330,6 +251,14 @@ function logoHtml(url, name) {
   return `<div class="team-logo-placeholder">${initial}</div>`;
 }
 
+function confMarkup(conf) {
+  const cls = conf === "high" ? "ss-conf--high" : conf === "medium" ? "ss-conf--medium" : "ss-conf--low";
+  const label = conf === "high" ? "High confidence · all 10 players have match history"
+              : conf === "medium" ? "Medium confidence · most players have match history"
+              : "Low confidence · some players lack match history";
+  return `<span class="ss-conf ${cls}"><span class="ss-conf-dot"></span>${label}</span>`;
+}
+
 function renderUpcoming(matches) {
   const list = document.getElementById("upcoming-list");
   const meta = document.getElementById("upcoming-meta");
@@ -337,15 +266,17 @@ function renderUpcoming(matches) {
   const pending   = matches.filter(m => m.status !== "predicted");
   meta.textContent = `${matches.length} total · ${predicted.length} with predictions`;
   const ordered = [...predicted, ...pending];
-  if (ordered.length === 0) { list.innerHTML = '<div style="color:var(--muted);font-size:.85rem">No upcoming matches found.</div>'; return; }
+  if (ordered.length === 0) {
+    list.innerHTML = '<div class="ss-note">No upcoming matches in the schedule yet. New matches are picked up automatically as rosters are announced.</div>';
+    return;
+  }
   list.innerHTML = ordered.map(m => {
     const has = m.status === "predicted" && m.team1_win_prob != null;
     const t1w = has && m.predicted_winner === "team1";
     const t2w = has && m.predicted_winner === "team2";
     const barW = has ? Math.round(m.team1_win_prob * 100) : 50;
-    const conf = has ? m.confidence : null;
     return `
-      <div class="match-card pending">
+      <div class="match-card">
         <div class="match-top">
           ${m.event ? `<span class="event-tag">${m.event}</span>` : ""}
           ${m.best_of ? `<span class="bo-tag">Bo${m.best_of}</span>` : ""}
@@ -370,12 +301,9 @@ function renderUpcoming(matches) {
                    <div class="team-sub">${m.team2_players_known}/5 players known</div>`:""}
           </div>
         </div>
-        ${has?`<div class="prob-bar"><div class="prob-bar-fill" style="width:${barW}%"></div></div>
-               <div class="conf-row">
-                 <span class="dot ${CONF_CLASS[conf]||"conf-low"}"></span>
-                 <span class="conf-lbl">${conf === "high" ? "All 10 players have match history" : conf === "medium" ? "Most players have match history" : "Some players lack match history — lower confidence"}</span>
-               </div>`
-             :`<div class="conf-row"><span class="conf-lbl">Rosters not yet announced</span></div>`}
+        ${has?`<div class="prob-bar"><div class="prob-bar-fill" style="width:${barW}%"></div><div class="prob-bar-rest"></div></div>
+               <div class="conf-row">${confMarkup(m.confidence)}</div>`
+             :`<div class="conf-row"><span class="ss-conf"><span class="ss-conf-dot" style="background:var(--ss-text-650)"></span>Rosters not yet announced</span></div>`}
       </div>`;
   }).join("");
 }
@@ -392,14 +320,14 @@ function renderHistory(recent) {
     const cls  = r.correct ? "correct" : "incorrect";
     const t1w  = r.predicted_winner === "team1";
     const a1w  = r.actual_winner    === "team1";
-    const badgeCls  = r.correct ? "badge-correct" : "badge-incorrect";
-    const badgeTxt  = r.correct ? "✓ Correct" : "✗ Wrong";
+    const badgeCls = r.correct ? "ss-badge--positive" : "ss-badge--negative";
+    const badgeTxt = r.correct ? "✓ Correct" : "✗ Wrong";
     const barW = Math.round(r.team1_win_prob * 100);
     return `
       <div class="match-card ${cls}">
         <div class="match-top">
           <span class="date">${r.match_date || ""}</span>
-          <span class="outcome-badge ${badgeCls}">${badgeTxt}</span>
+          <span class="ss-badge ${badgeCls} outcome-badge">${badgeTxt}</span>
         </div>
         <div class="teams-row">
           <div class="team">
@@ -414,7 +342,7 @@ function renderHistory(recent) {
             ${!t1w?'<div class="team-sub">predicted →</div>':""}
           </div>
         </div>
-        <div class="prob-bar"><div class="prob-bar-fill" style="width:${barW}%"></div></div>
+        <div class="prob-bar"><div class="prob-bar-fill" style="width:${barW}%"></div><div class="prob-bar-rest"></div></div>
       </div>`;
   }).join("");
 }
@@ -439,7 +367,7 @@ async function load() {
 
     if (pred?.generated_at) {
       const ts = new Date(pred.generated_at);
-      updEl.textContent = "Predictions updated " + ts.toLocaleString(undefined,{
+      updEl.textContent = "Updated " + ts.toLocaleString(undefined,{
         month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZoneName:"short"
       });
     }
@@ -451,12 +379,11 @@ async function load() {
       renderCalib(bt.calibration);
     } else {
       document.getElementById("stat-grid").innerHTML =
-        `<div class="stat-card"><div class="stat-label">Upcoming</div>
-         <div class="stat-value">${upcomingPredicted}</div>
-         <div class="stat-sub">matches with predictions</div></div>`;
+        `<div class="ss-metric-card"><div class="ss-metric-label">Live Predictions</div>
+         <div class="ss-metric-value">${upcomingPredicted}</div>
+         <div class="ss-metric-context">upcoming matches with predictions</div></div>`;
     }
 
-    // Live-tracked past predictions take priority over backtest history
     if (recent?.predictions?.length) {
       renderHistory(recent.predictions);
     } else if (bt?.recent_predictions?.length) {
@@ -468,7 +395,7 @@ async function load() {
     status.style.display  = "none";
     content.style.display = "block";
   } catch (err) {
-    status.textContent = "Failed to load: " + err.message;
+    status.innerHTML = `<div class="ss-note ss-note--accent" style="text-align:left;border-left-color:var(--ss-red-500)">Couldn't load match data — ${err.message}. The data feed may be refreshing; try again shortly.</div>`;
   }
 }
 
