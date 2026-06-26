@@ -250,7 +250,6 @@ a:hover { color: var(--ss-cyan-400); }
 }
 .ss-table { width: 100%; border-collapse: collapse; }
 .ss-table thead th {
-  position: sticky; top: 64px; z-index: 1;
   height: 36px; text-align: left;
   font-size: 11px; font-weight: 650; letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--ss-text-500); background: var(--ss-surface-850);
