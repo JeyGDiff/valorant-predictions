@@ -156,7 +156,7 @@
   <!-- ── Pipeline at a glance ── -->
   <div class="pipeline">
     <div class="pl-step">
-      <div class="pl-node"><span class="k">01 · Collect</span><span class="t">Scrape matches</span></div>
+      <div class="pl-node"><span class="k">01 · Collect</span><span class="t">Match data</span></div>
       <span class="pl-arrow">→</span>
     </div>
     <div class="pl-step">
@@ -190,12 +190,12 @@
     <div class="stage-body">
       <h3>Collect the raw matches</h3>
       <p>
-        A scraper pulls completed professional matches from vlr.gg going back to 2020 — roughly
+        We collect completed professional matches going back to 2020 — roughly
         <em>32,000 matches</em>. Each one is stored as JSON: the two rosters, the map scores, betting odds
         where available, and a full per-player stat line for every map played.
       </p>
       <div class="io">
-        <span class="io-label">in</span><span class="ss-badge ss-badge--neutral">vlr.gg match pages</span>
+        <span class="io-label">in</span><span class="ss-badge ss-badge--neutral">pro match data</span>
         <span class="io-label" style="margin-left:var(--space-3)">out</span><span class="ss-badge ss-badge--info">match_*.json</span>
       </div>
       <div class="fieldlist">
