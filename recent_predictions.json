@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-06-27T20:58:06.187783+00:00",
-  "total_resolved": 53,
-  "correct": 34,
+  "generated_at": "2026-06-27T22:06:20.489910+00:00",
+  "total_resolved": 54,
+  "correct": 35,
   "predictions": [
+    {
+      "match_id": "701181",
+      "match_date": "2026-06-27",
+      "team1_name": "INTZ",
+      "team2_name": "Team Solid",
+      "team1_win_prob": 0.3989,
+      "team2_win_prob": 0.6011,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "701326",
       "match_date": "2026-06-27",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "701179",
-      "match_date": "2026-06-26",
-      "team1_name": "ELEVATE",
-      "team2_name": "INTZ",
-      "team1_win_prob": 0.2156,
-      "team2_win_prob": 0.7844,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
