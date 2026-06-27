@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolvedState · Draft Simulator</title>
+  <meta name="description" content="Step through a pro VALORANT map veto one decision at a time, then compare your draft to the optimal calculated path — built from per-team map history." />
+  <link rel="icon" type="image/png" href="ss_icon.png?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="solvedstate.css?v=3" />
+  <style>
+    /* ── Setup controls ── */
+    .setup-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-4); }
+    @media (max-width:640px){ .setup-grid{ grid-template-columns:1fr; } }
+    .field { display:flex; flex-direction:column; gap:var(--space-2); }
+    .field label { font-size:12px; font-weight:600; color:var(--ss-text-500); text-transform:uppercase; letter-spacing:.04em; }
+    .ss-input, .ss-input:focus {
+      height:36px; padding:0 var(--space-3); border-radius:var(--radius-md);
+      background:var(--ss-surface-900); border:1px solid var(--ss-border-800);
+      color:var(--ss-text-100); font-family:var(--font-body); font-size:14px; outline:none;
+    }
+    .ss-input:focus { border-color:rgba(0,204,216,0.35); }
+    select.ss-input { cursor:pointer; }
+
+    .map-chips { display:flex; flex-wrap:wrap; gap:var(--space-2); }
+    .map-chip {
+      height:32px; padding:0 var(--space-3); border-radius:var(--radius-pill);
+      display:inline-flex; align-items:center; font-size:13px; font-weight:600; cursor:pointer;
+      border:1px solid var(--ss-border-800); background:var(--ss-surface-900); color:var(--ss-text-500);
+      user-select:none; transition:all .15s ease;
+    }
+    .map-chip.on { background:rgba(0,204,216,0.10); border-color:rgba(0,204,216,0.35); color:var(--ss-text-100); }
+
+    /* ── Veto board ── */
+    .board-head { display:flex; align-items:center; gap:var(--space-3); flex-wrap:wrap; margin-bottom:var(--space-4); }
+    .progress-track { flex:1; min-width:160px; height:5px; border-radius:var(--radius-pill); background:var(--ss-surface-850); overflow:hidden; }
+    .progress-fill { height:100%; background:var(--ss-cyan-500); transition:width .25s ease; }
+
+    .turn-banner { display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-4); }
+    .turn-pill { font-family:var(--font-mono); font-size:12px; font-weight:600; padding:3px 10px; border-radius:var(--radius-pill); }
+    .turn-pill.our { background:rgba(0,204,216,0.12); color:var(--ss-cyan-400); border:1px solid rgba(0,204,216,0.35); }
+    .turn-pill.opp { background:var(--ss-surface-850); color:var(--ss-text-500); border:1px solid var(--ss-border-800); }
+    .turn-title { font-family:var(--font-head); font-size:18px; font-weight:600; color:var(--ss-text-100); }
+
+    .map-options { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:var(--space-3); }
+    .map-option {
+      text-align:left; padding:var(--space-3) var(--space-4); border-radius:var(--radius-lg); cursor:pointer;
+      background:var(--ss-surface-900); border:1px solid var(--ss-border-800); color:var(--ss-text-100);
+      transition:border-color .15s ease, background-color .15s ease;
+    }
+    .map-option:hover { border-color:rgba(0,204,216,0.45); background:var(--ss-surface-850); }
+    .map-option.ban:hover { border-color:rgba(255,70,85,0.5); }
+    .map-option .mo-name { font-size:15px; font-weight:600; }
+    .map-option .mo-sub { font-size:12px; color:var(--ss-text-500); margin-top:2px; font-family:var(--font-mono); }
+    .map-option .mo-win { font-family:var(--font-mono); font-weight:600; }
+
+    /* ── Veto timeline ── */
+    .timeline { display:flex; flex-direction:column; gap:6px; }
+    .tl-row { display:grid; grid-template-columns:28px 64px 1fr auto; align-items:center; gap:var(--space-3); padding:6px var(--space-3); border-radius:var(--radius-md); background:var(--ss-surface-900); border:1px solid var(--ss-border-800); font-size:13px; }
+    .tl-step { font-family:var(--font-mono); color:var(--ss-text-650); }
+    .tl-act { font-family:var(--font-mono); font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; }
+    .tl-act.ban { color:var(--ss-red-500); }
+    .tl-act.pick { color:var(--ss-cyan-400); }
+    .tl-act.decider { color:var(--ss-amber-500); }
+    .tl-map { font-weight:600; color:var(--ss-text-100); }
+    .tl-who { font-size:12px; color:var(--ss-text-500); }
+
+    /* ── Summary ── */
+    .delta-pos { color:var(--ss-green-500); }
+    .delta-neg { color:var(--ss-red-500); }
+    .prob-mini { display:inline-block; width:90px; height:4px; border-radius:var(--radius-pill); background:var(--ss-surface-850); overflow:hidden; vertical-align:middle; }
+    .prob-mini > span { display:block; height:100%; background:var(--ss-cyan-500); }
+    .board-bars { display:flex; flex-direction:column; gap:8px; }
+    .bb-row { display:grid; grid-template-columns:80px 1fr 48px; align-items:center; gap:var(--space-3); }
+    .bb-name { font-size:13px; font-weight:600; color:var(--ss-text-300); }
+    .bb-track { height:18px; border-radius:var(--radius-sm); background:var(--ss-surface-850); overflow:hidden; }
+    .bb-fill { height:100%; border-radius:var(--radius-sm); }
+    .bb-val { font-family:var(--font-mono); font-size:13px; font-weight:600; text-align:right; color:var(--ss-text-100); }
+    .actions-row { display:flex; gap:var(--space-3); margin-top:var(--space-5); flex-wrap:wrap; }
+    .ss-btn.primary { background:rgba(0,204,216,0.12); border-color:rgba(0,204,216,0.4); color:var(--ss-cyan-400); }
+  </style>
+</head>
+<body>
+
+<div class="ss-topbar">
+  <a class="ss-brand" href="index.html" aria-label="SolvedState home">
+    <img class="ss-brand-icon" src="ss_icon.png?v=3" alt="" />
+    <span class="ss-brand-word">Solved<b>State</b></span>
+    <span class="ss-brand-sub">VALORANT</span>
+  </a>
+  <nav class="ss-nav">
+    <a href="index.html">Predictions</a>
+    <a href="leaderboard.html">Elo Rankings</a>
+    <a href="allstar.html">All-Star</a>
+    <a href="draft-simulator.html" class="active">Draft Sim</a>
+    <a href="lifecycle.html">Lifecycle</a>
+    <a href="architecture.html">How It Works</a>
+  </nav>
+  <div class="ss-meta" id="updated-at">—</div>
+</div>
+
+<div class="ss-disclaimer">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+  <span>A descriptive what-if tool built from historical map results — not a prediction of any specific match or betting advice.</span>
+</div>
+
+<div class="ss-pagehead">
+  <div class="ss-eyebrow">Map Veto · What-If</div>
+  <h1>Draft Simulator</h1>
+  <p>Pick two teams, then walk the map veto one decision at a time. The opponent responds with the choice that hurts your series odds the most, and at the end your draft is scored against the optimal calculated path.</p>
+</div>
+
+<main class="ss-main">
+  <div id="status" class="ss-status">Loading team map profiles…</div>
+
+  <div id="app" style="display:none">
+
+    <!-- ── Setup ── -->
+    <div class="ss-section" id="setup-section">
+      <div class="ss-section-head">
+        <h2>Set up the series</h2>
+        <span class="ss-section-meta" id="setup-meta"></span>
+      </div>
+      <div class="setup-grid">
+        <div class="field">
+          <label>Your team</label>
+          <select class="ss-input" id="sel-our"></select>
+        </div>
+        <div class="field">
+          <label>Opponent</label>
+          <select class="ss-input" id="sel-opp"></select>
+        </div>
+        <div class="field">
+          <label>Series format</label>
+          <select class="ss-input" id="sel-format">
+            <option value="BO1">Best of 1</option>
+            <option value="BO3" selected>Best of 3</option>
+            <option value="BO5">Best of 5</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Who starts the veto</label>
+          <select class="ss-input" id="sel-starter">
+            <option value="our" selected>Our side</option>
+            <option value="opp">Opponent</option>
+          </select>
+        </div>
+        <div class="field" id="veto-style-field" style="display:none">
+          <label>Bo5 veto flow</label>
+          <select class="ss-input" id="sel-veto">
+            <option value="Standard" selected>Standard (alternating)</option>
+            <option value="Grand Final Advantage">Grand Final advantage</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field" style="margin-top:var(--space-4)">
+        <label>Map pool</label>
+        <div class="map-chips" id="map-chips"></div>
+      </div>
+
+      <div class="actions-row">
+        <button class="ss-btn primary" id="btn-start">Start veto →</button>
+      </div>
+      <div class="ss-note" id="setup-warn" style="display:none;margin-top:var(--space-4)"></div>
+    </div>
+
+    <!-- ── Veto board ── -->
+    <div class="ss-section" id="board-section" style="display:none">
+      <div class="board-head">
+        <span class="ss-section-meta" id="board-matchup"></span>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      </div>
+
+      <div id="step-area"></div>
+
+      <div class="ss-section-head" style="margin-top:var(--space-6)">
+        <h2>Veto so far</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+
+      <div class="actions-row">
+        <button class="ss-btn" id="btn-undo">← Undo</button>
+        <button class="ss-btn" id="btn-restart">Start over</button>
+      </div>
+    </div>
+
+    <!-- ── Summary ── -->
+    <div class="ss-section" id="summary-section" style="display:none">
+      <div class="ss-section-head">
+        <h2>Draft summary</h2>
+        <span class="ss-section-meta" id="summary-matchup"></span>
+      </div>
+      <div class="ss-metric-grid" id="summary-metrics"></div>
+
+      <div class="ss-section-head" style="margin-top:var(--space-6)">
+        <h2>Your maps</h2>
+        <span class="ss-section-meta">side & win chance for each map you'll play</span>
+      </div>
+      <div class="ss-table-wrap"><table class="ss-table" id="your-maps"></table></div>
+
+      <div class="ss-section-head" style="margin-top:var(--space-6)">
+        <h2>Optimal calculated path</h2>
+        <span class="ss-section-meta">the veto that maximizes your series odds</span>
+      </div>
+      <div class="ss-table-wrap"><table class="ss-table" id="optimal-path"></table></div>
+
+      <div class="ss-section-head" style="margin-top:var(--space-6)">
+        <h2>Map probability board</h2>
+        <span class="ss-section-meta">your modeled win chance on a neutral pick of each pool map</span>
+      </div>
+      <div class="board-bars" id="board-bars"></div>
+
+      <div class="actions-row">
+        <button class="ss-btn primary" id="btn-again">Run another draft</button>
+      </div>
+    </div>
+
+    <!-- ── How it works ── -->
+    <div class="ss-section">
+      <div class="ss-section-head"><h2>How the numbers work</h2></div>
+      <div class="ss-card">
+        <p style="font-size:14px;line-height:22px;color:var(--ss-text-500)">
+          Each team carries a per-map profile built from its match history — overall win rate, how often it
+          picks the map, and its round win rate on attack vs defense. A map's win chance starts from the gap
+          between the two teams' map win rates, nudged by a small pick advantage and the better starting side.
+          The optimal path is a minimax search over the whole veto: on your turns it maximizes your series
+          win probability, on the opponent's turns it minimizes it. These are descriptive heuristics over
+          history, <strong style="color:var(--ss-text-300)">not the win-probability model</strong> used on the Predictions page.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+const PROFILES_URL = "draft_profiles.json";
+const NEUTRAL_TEAM = "— Neutral baseline —";
+
+let DATA = null;
+let state = null;   // active veto state
+
+// ───────────────────────── helpers ─────────────────────────
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+const isNum = (v) => v !== null && v !== undefined && !Number.isNaN(v);
+const fmtPct = (v, d = 1) => isNum(v) ? (v).toFixed(d) + "%" : "–";
+
+function neutralMapProfile() {
+  return { maps_played: 0, win_pct: 50.0, pick_count: 0, pick_rate: 0.0, pick_win_pct: 50.0,
+           atk_wr: 50.0, def_wr: 50.0, start_attack_maps: 0, start_attack_wr: null,
+           start_defend_maps: 0, start_defend_wr: null };
+}
+
+function teamMapProfile(teamName, mapName) {
+  if (teamName === NEUTRAL_TEAM) return neutralMapProfile();
+  const t = DATA.teams[teamName];
+  const p = t && t.maps[mapName];
+  return p ? p : neutralMapProfile();
+}
+
+// enrich a single map profile with team_value & pick_score (mirrors enrich_profile)
+function enrich(p) {
+  const sampleConf = (Math.min(p.maps_played, 10) / 10.0) * 100.0;
+  const sideBest = Math.max(p.atk_wr, p.def_wr);
+  const teamValue = p.win_pct*0.45 + p.pick_rate*0.20 + p.pick_win_pct*0.10 + sideBest*0.15 + sampleConf*0.10;
+  const pickScore = p.win_pct*0.50 + p.pick_rate*0.25 + p.pick_win_pct*0.10 + sideBest*0.10 + sampleConf*0.05;
+  return { ...p, team_value: teamValue, pick_score: pickScore, sample_conf: sampleConf };
+}
+
+// our preferred starting side default for a map (mirrors setup_profiles)
+function defaultStartSide(p) {
+  const saw = p.start_attack_wr, sdw = p.start_defend_wr;
+  if (isNum(saw) || isNum(sdw)) {
+    const a = isNum(saw) ? saw : -1, d = isNum(sdw) ? sdw : -1;
+    return a >= d ? "Attack" : "Defend";
+  }
+  return "Auto";
+}
+
+// build merged candidate row per map (mirrors get_candidate_maps + start_side_our)
+function buildCandidateLookup(pool, ourTeam, oppTeam) {
+  const lookup = {};
+  for (const map of pool) {
+    const o = enrich(teamMapProfile(ourTeam, map));
+    const e = enrich(teamMapProfile(oppTeam, map));
+    const row = {
+      map_name: map,
+      win_pct_our: o.win_pct, win_pct_opp: e.win_pct,
+      pick_rate_our: o.pick_rate, pick_rate_opp: e.pick_rate,
+      atk_wr_our: o.atk_wr, atk_wr_opp: e.atk_wr,
+      def_wr_our: o.def_wr, def_wr_opp: e.def_wr,
+      start_attack_wr_our: o.start_attack_wr, start_defend_wr_our: o.start_defend_wr,
+      start_attack_wr_opp: e.start_attack_wr, start_defend_wr_opp: e.start_defend_wr,
+      maps_played_our: o.maps_played, maps_played_opp: e.maps_played,
+      team_value_our: o.team_value, team_value_opp: e.team_value,
+      pick_score_our: o.pick_score, pick_score_opp: e.pick_score,
+      start_side_our: defaultStartSide(o),
+    };
+    row.balance_score = o.maps_played + e.maps_played - Math.abs(o.win_pct - e.win_pct) * 0.25;
+    lookup[map] = row;
+  }
+  return lookup;
+}
+
+// ───────────────────────── veto math (mirrors prediction logic) ─────────────────────────
+function sideEdges(row) {
+  let attack = ((row.atk_wr_our - row.def_wr_opp) / 100.0) * 0.12;
+  let defend = ((row.def_wr_our - row.atk_wr_opp) / 100.0) * 0.12;
+  if (isNum(row.start_attack_wr_our)) attack += ((row.start_attack_wr_our - 50.0) / 100.0) * 0.06;
+  if (isNum(row.start_defend_wr_our)) defend += ((row.start_defend_wr_our - 50.0) / 100.0) * 0.06;
+  return [attack, defend];
+}
+
+function ourStartSide(row, chooser, ourPref) {
+  const [attackEdge, defendEdge] = sideEdges(row);
+  let chosen;
+  if (chooser === "our") {
+    if (ourPref === "Attack" || ourPref === "Defend") {
+      chosen = ourPref;
+    } else if (isNum(row.start_attack_wr_our) || isNum(row.start_defend_wr_our)) {
+      const a = isNum(row.start_attack_wr_our) ? row.start_attack_wr_our : -1;
+      const d = isNum(row.start_defend_wr_our) ? row.start_defend_wr_our : -1;
+      chosen = a >= d ? "Attack" : "Defend";
+    } else {
+      chosen = attackEdge >= defendEdge ? "Attack" : "Defend";
+    }
+  } else {
+    if (isNum(row.start_attack_wr_opp) || isNum(row.start_defend_wr_opp)) {
+      const oa = isNum(row.start_attack_wr_opp) ? row.start_attack_wr_opp : -1;
+      const od = isNum(row.start_defend_wr_opp) ? row.start_defend_wr_opp : -1;
+      chosen = oa >= od ? "Defend" : "Attack";
+    } else {
+      chosen = attackEdge <= defendEdge ? "Attack" : "Defend";
+    }
+  }
+  const edge = chosen === "Attack" ? attackEdge : defendEdge;
+  return [chosen, edge];
+}
+
+function fastMapProbability(lookup, deciderChooser, mapName, picker, forcedSide) {
+  const row = lookup[mapName];
+  let base = 0.50 + (row.win_pct_our - row.win_pct_opp) / 200.0;
+  if (picker === "our") base += 0.03;
+  else if (picker === "opp") base -= 0.03;
+
+  const chooser = picker === "our" ? "opp" : picker === "opp" ? "our" : deciderChooser;
+
+  let startSide, sideEdge;
+  if (forcedSide === "Attack" || forcedSide === "Defend") {
+    const [a, d] = sideEdges(row);
+    startSide = forcedSide;
+    sideEdge = forcedSide === "Attack" ? a : d;
+  } else {
+    [startSide, sideEdge] = ourStartSide(row, chooser, row.start_side_our);
+  }
+  const prob = clamp(base + sideEdge, 0.15, 0.85);
+  return { map_name: mapName, picker, side_chooser: chooser, our_start_side: startSide,
+           our_win_prob: Math.round(prob * 1000) / 1000, our_wr: row.win_pct_our, opp_wr: row.win_pct_opp,
+           our_pick_rate: row.pick_rate_our, opp_pick_rate: row.pick_rate_opp };
+}
+
+function bestSideForUs(lookup, dc, map, picker) {
+  const a = fastMapProbability(lookup, dc, map, picker, "Attack");
+  const d = fastMapProbability(lookup, dc, map, picker, "Defend");
+  return a.our_win_prob >= d.our_win_prob ? a : d;
+}
+function bestSideForEnemy(lookup, dc, map, picker) {
+  const a = fastMapProbability(lookup, dc, map, picker, "Attack");
+  const d = fastMapProbability(lookup, dc, map, picker, "Defend");
+  return a.our_win_prob <= d.our_win_prob ? a : d;
+}
+
+function seriesProbability(mapProbs, winsNeeded) {
+  let states = new Map([["0,0", 1.0]]);
+  for (const p of mapProbs) {
+    const next = new Map();
+    for (const [k, sp] of states) {
+      const [ow, pw] = k.split(",").map(Number);
+      if (ow >= winsNeeded || pw >= winsNeeded) {
+        next.set(k, (next.get(k) || 0) + sp);
+        continue;
+      }
+      const a = `${ow + 1},${pw}`, b = `${ow},${pw + 1}`;
+      next.set(a, (next.get(a) || 0) + sp * p);
+      next.set(b, (next.get(b) || 0) + sp * (1 - p));
+    }
+    states = next;
+  }
+  let total = 0;
+  for (const [k, sp] of states) { if (Number(k.split(",")[0]) >= winsNeeded) total += sp; }
+  return Math.round(total * 10000) / 10000;
+}
+
+function chooseDeciderMap(lookup, avail) {
+  let best = null, bestKey = null;
+  for (const m of avail) {
+    const r = lookup[m];
+    const key = [r.balance_score, r.maps_played_our + r.maps_played_opp, -Math.abs(r.win_pct_our - r.win_pct_opp)];
+    if (!bestKey || key[0] > bestKey[0] ||
+        (key[0] === bestKey[0] && (key[1] > bestKey[1] ||
+        (key[1] === bestKey[1] && key[2] > bestKey[2])))) { best = m; bestKey = key; }
+  }
+  return best;
+}
+
+function buildDraftSequence(format, priority, poolSize, vetoStyle) {
+  const other = priority === "our" ? "opp" : "our";
+  if (format === "BO1") {
+    const seq = []; let cur = priority;
+    for (let i = 0; i < Math.max(poolSize - 1, 0); i++) { seq.push([cur, "ban"]); cur = cur === "our" ? "opp" : "our"; }
+    return seq;
+  }
+  if (format === "BO3") {
+    return [[priority,"ban"],[other,"ban"],[priority,"pick"],[other,"pick"],[priority,"ban"],[other,"ban"]];
+  }
+  if (vetoStyle === "Grand Final Advantage") {
+    return [[priority,"ban"],[priority,"ban"],[priority,"pick"],[other,"pick"],[priority,"pick"],[other,"pick"]];
+  }
+  return [[priority,"ban"],[other,"ban"],[priority,"pick"],[other,"pick"],[priority,"pick"],[other,"pick"]];
+}
+
+const WINS_NEEDED = { BO1: 1, BO3: 2, BO5: 3 };
+
+function buildTerminalProjection(ctx, availMaps, pickedSeq) {
+  const decider = chooseDeciderMap(ctx.lookup, availMaps);
+  const played = pickedSeq.map(([actor, map]) => fastMapProbability(ctx.lookup, ctx.deciderChooser, map, actor));
+  played.push(fastMapProbability(ctx.lookup, ctx.deciderChooser, decider, "decider"));
+  const sp = seriesProbability(played.map(x => x.our_win_prob), WINS_NEEDED[ctx.format]);
+  return { series_prob: sp, future_actions: [], played_maps: played, decider_map: decider,
+           leftover_maps: availMaps.filter(m => m !== decider).sort() };
+}
+
+// minimax over the remaining veto (mirrors evaluate_state)
+function evaluateState(ctx, avail, stepIndex, picked) {
+  const key = JSON.stringify([[...avail].sort(), stepIndex, picked]);
+  if (ctx.memo.has(key)) return ctx.memo.get(key);
+
+  if (stepIndex >= ctx.sequence.length) {
+    const res = buildTerminalProjection(ctx, avail, picked);
+    ctx.memo.set(key, res);
+    return res;
+  }
+  const [actor, action] = ctx.sequence[stepIndex];
+  const candidates = [];
+  for (const map of [...avail].sort()) {
+    const nextAvail = avail.filter(m => m !== map);
+    const nextPicked = action === "pick" ? [...picked, [actor, map]] : picked;
+    const down = evaluateState(ctx, nextAvail, stepIndex + 1, nextPicked);
+    candidates.push({
+      map_name: map, series_prob: down.series_prob,
+      future_actions: [[actor, action, map], ...down.future_actions],
+      played_maps: down.played_maps, decider_map: down.decider_map, leftover_maps: down.leftover_maps,
+    });
+  }
+  const best = actor === "our"
+    ? candidates.reduce((a, b) => b.series_prob > a.series_prob ? b : a)
+    : candidates.reduce((a, b) => b.series_prob < a.series_prob ? b : a);
+  ctx.memo.set(key, best);
+  return best;
+}
+
+// derive available maps + picked sequence from the action list
+function stateFromActions(pool, actions) {
+  let avail = [...pool];
+  const picked = [];
+  for (const a of actions) {
+    avail = avail.filter(m => m !== a.map);
+    if (a.action === "pick") picked.push([a.actor, a.map]);
+  }
+  return { avail, picked };
+}
+
+function buildManualPlayed(ctx, actions, decider) {
+  const played = [];
+  for (const a of actions) {
+    if (a.action === "pick") played.push(fastMapProbability(ctx.lookup, ctx.deciderChooser, a.map, a.actor, a.our_start_side));
+  }
+  if (decider) played.push(fastMapProbability(ctx.lookup, ctx.deciderChooser, decider.map, "decider", decider.our_start_side));
+  return played;
+}
+
+// ───────────────────────── flow ─────────────────────────
+function teamLabel(name) { return name === NEUTRAL_TEAM ? "Our side" : name; }
+
+function readSetup() {
+  const format = document.getElementById("sel-format").value;
+  const pool = [...document.querySelectorAll(".map-chip.on")].map(c => c.dataset.map);
+  return {
+    our: document.getElementById("sel-our").value,
+    opp: document.getElementById("sel-opp").value,
+    format,
+    starter: document.getElementById("sel-starter").value,
+    vetoStyle: format === "BO5" ? document.getElementById("sel-veto").value : "Standard",
+    pool,
+  };
+}
+
+function startVeto() {
+  const s = readSetup();
+  const warn = document.getElementById("setup-warn");
+  const need = s.format === "BO1" ? 2 : 7;
+  if (s.pool.length < need) {
+    warn.style.display = "block";
+    warn.textContent = `${s.format} needs at least ${need} maps in the pool — selected ${s.pool.length}.`;
+    return;
+  }
+  if (s.our === s.opp) {
+    warn.style.display = "block";
+    warn.textContent = "Pick two different teams.";
+    return;
+  }
+  warn.style.display = "none";
+
+  const lookup = buildCandidateLookup(s.pool, s.our, s.opp);
+  const deciderChooser = s.starter === "our" ? "opp" : "our";
+  const sequence = buildDraftSequence(s.format, s.starter, s.pool.length, s.vetoStyle);
+  const ctx = { lookup, deciderChooser, format: s.format, sequence, pool: s.pool, memo: new Map() };
+
+  state = { setup: s, ctx, actions: [], decider: null, phase: "step" };
+  document.getElementById("setup-section").style.display = "none";
+  document.getElementById("summary-section").style.display = "none";
+  document.getElementById("board-section").style.display = "block";
+  renderStep();
+}
+
+function currentProjection() {
+  const { avail, picked } = stateFromActions(state.ctx.pool, state.actions);
+  return evaluateState(state.ctx, avail, state.actions.length, picked);
+}
+
+function renderStep() {
+  const ctx = state.ctx, seq = ctx.sequence;
+  const stepIdx = state.actions.length;
+  const totalSteps = seq.length + 1; // + decider
+  document.getElementById("progress-fill").style.width = `${Math.round((stepIdx / totalSteps) * 100)}%`;
+  document.getElementById("board-matchup").textContent =
+    `${teamLabel(state.setup.our)} vs ${state.setup.opp} · ${state.setup.format} · ` +
+    `${state.setup.starter === "our" ? "we start the veto" : state.setup.opp + " starts"} · pool ${ctx.pool.length}`;
+
+  renderTimeline();
+
+  const area = document.getElementById("step-area");
+  const { avail } = stateFromActions(ctx.pool, state.actions);
+
+  if (stepIdx >= seq.length) { renderDeciderStep(area, avail); return; }
+
+  const [actor, action] = seq[stepIdx];
+
+  if (actor === "opp") {
+    // opponent acts with the modeled (minimax) choice
+    const proj = currentProjection();
+    const enemyMap = proj.future_actions[0][2];
+    let sideNote = "";
+    let nextAction = { actor, action, map: enemyMap };
+    if (action === "pick") {
+      const best = bestSideForUs(ctx.lookup, ctx.deciderChooser, enemyMap, "opp");
+      nextAction.our_start_side = best.our_start_side;
+      sideNote = `<div class="ss-note" style="margin-top:var(--space-3)">${state.setup.opp} picks <strong>${enemyMap}</strong>. We take <strong>${best.our_start_side}</strong> — our best side here at ${fmtPct(best.our_win_prob*100)} map win chance.</div>`;
+    } else {
+      sideNote = `<div class="ss-note" style="margin-top:var(--space-3)">${state.setup.opp} bans <strong>${enemyMap}</strong> — the map that most hurts our series odds.</div>`;
+    }
+    area.innerHTML = `
+      <div class="turn-banner">
+        <span class="turn-pill opp">${state.setup.opp}</span>
+        <span class="turn-title">Opponent ${action}s ${enemyMap}</span>
+      </div>${sideNote}
+      <div class="actions-row"><button class="ss-btn primary" id="btn-next">Continue →</button></div>`;
+    document.getElementById("btn-next").onclick = () => { state.actions.push(nextAction); renderStep(); };
+    return;
+  }
+
+  // our turn — clickable map options
+  const dc = ctx.deciderChooser;
+  const opts = avail.map(map => {
+    // show our win chance if we take the map now (enemy chooses our side on our picks)
+    const proj = action === "pick" ? bestSideForEnemy(ctx.lookup, dc, map, "our")
+                                   : fastMapProbability(ctx.lookup, dc, map, "decider");
+    const wp = Math.round(proj.our_win_prob * 100);
+    const col = wp >= 55 ? "var(--ss-green-500)" : wp <= 45 ? "var(--ss-red-500)" : "var(--ss-text-300)";
+    return `<button class="map-option ${action}" data-map="${map}">
+        <div class="mo-name">${map}</div>
+        <div class="mo-sub">our WR <span class="mo-win" style="color:${col}">${fmtPct(proj.our_win_prob*100,0)}</span> ${action === "pick" ? "if picked" : "if it stays"}</div>
+      </button>`;
+  }).join("");
+
+  area.innerHTML = `
+    <div class="turn-banner">
+      <span class="turn-pill our">Our side</span>
+      <span class="turn-title">Choose a map to ${action}</span>
+    </div>
+    ${action === "pick" ? `<div class="ss-note" style="margin-bottom:var(--space-3)">On a map we pick, the opponent chooses our starting side — shown here as our floor.</div>` : ""}
+    <div class="map-options">${opts}</div>`;
+
+  area.querySelectorAll(".map-option").forEach(btn => {
+    btn.onclick = () => {
+      const map = btn.dataset.map;
+      const a = { actor, action, map };
+      if (action === "pick") {
+        const enemy = bestSideForEnemy(ctx.lookup, dc, map, "our");
+        a.our_start_side = enemy.our_start_side;
+      }
+      state.actions.push(a);
+      renderStep();
+    };
+  });
+}
+
+function renderDeciderStep(area, avail) {
+  const ctx = state.ctx, dc = ctx.deciderChooser;
+  const decider = chooseDeciderMap(ctx.lookup, avail);
+  const leftover = avail.filter(m => m !== decider);
+  let sideNote, side;
+  if (dc === "our") {
+    const best = bestSideForUs(ctx.lookup, dc, decider, "decider");
+    side = best.our_start_side;
+    sideNote = `We choose side on the decider: <strong>${side}</strong> at ${fmtPct(best.our_win_prob*100)} map win chance.`;
+  } else {
+    const enemy = bestSideForEnemy(ctx.lookup, dc, decider, "decider");
+    side = enemy.our_start_side;
+    sideNote = `${state.setup.opp} chooses side on the decider: we get <strong>${side}</strong> at ${fmtPct(enemy.our_win_prob*100)} map win chance.`;
+  }
+  area.innerHTML = `
+    <div class="turn-banner">
+      <span class="turn-pill" style="background:rgba(245,158,11,.12);color:var(--ss-amber-500);border:1px solid rgba(245,158,11,.35)">Decider</span>
+      <span class="turn-title">${decider}</span>
+    </div>
+    <div class="ss-note">${sideNote}${leftover.length ? ` Unused after the decider: ${leftover.join(", ")}.` : ""}</div>
+    <div class="actions-row"><button class="ss-btn primary" id="btn-finish">See summary →</button></div>`;
+  document.getElementById("btn-finish").onclick = () => {
+    state.decider = { map: decider, our_start_side: side };
+    renderSummary();
+  };
+}
+
+function renderTimeline() {
+  const tl = document.getElementById("timeline");
+  const rows = state.actions.map((a, i) => {
+    const who = a.actor === "our" ? "Our side" : state.setup.opp;
+    return `<div class="tl-row">
+      <span class="tl-step">${i + 1}</span>
+      <span class="tl-act ${a.action}">${a.action}</span>
+      <span class="tl-map">${a.map}${a.our_start_side ? ` <span class="tl-who">· our side ${a.our_start_side}</span>` : ""}</span>
+      <span class="tl-who">${who}</span>
+    </div>`;
+  });
+  tl.innerHTML = rows.join("") || `<div class="ss-note">No picks or bans yet.</div>`;
+}
+
+function renderSummary() {
+  const ctx = state.ctx;
+  const manualPlayed = buildManualPlayed(ctx, state.actions, state.decider);
+  const manualProb = manualPlayed.length ? seriesProbability(manualPlayed.map(x => x.our_win_prob), WINS_NEEDED[ctx.format]) : 0;
+  const optimal = evaluateState(ctx, [...ctx.pool], 0, []);
+  const delta = (optimal.series_prob - manualProb) * 100;
+
+  document.getElementById("board-section").style.display = "none";
+  const sec = document.getElementById("summary-section");
+  sec.style.display = "block";
+  document.getElementById("summary-matchup").textContent =
+    `${teamLabel(state.setup.our)} vs ${state.setup.opp} · ${state.setup.format}`;
+
+  const deltaCls = delta > 0.05 ? "delta-neg" : delta < -0.05 ? "delta-pos" : "";
+  const deltaTxt = (delta >= 0 ? "+" : "") + delta.toFixed(1) + " pts";
+  document.getElementById("summary-metrics").innerHTML = [
+    { l: "Your series win %", v: fmtPct(manualProb * 100), s: "from the draft you built" },
+    { l: "Optimal series win %", v: fmtPct(optimal.series_prob * 100), s: "best veto for your side" },
+    { l: "Left on the table", v: `<span class="${deltaCls}">${deltaTxt}</span>`, s: "optimal minus your draft" },
+    { l: "Decider", v: state.decider ? state.decider.map : "—", s: state.decider ? `our side ${state.decider.our_start_side}` : "" },
+  ].map(m => `<div class="ss-metric-card"><div class="ss-metric-label">${m.l}</div>
+      <div class="ss-metric-value">${m.v}</div><div class="ss-metric-context">${m.s}</div></div>`).join("");
+
+  // your maps table
+  const whoName = (p) => p === "our" ? "Our side" : p === "opp" ? state.setup.opp : "Decider";
+  document.getElementById("your-maps").innerHTML = `
+    <thead><tr><th>Map</th><th>Picked by</th><th>Our side</th><th class="right">Map win %</th><th class="right">Our hist WR</th><th class="right">Opp hist WR</th></tr></thead>
+    <tbody>${manualPlayed.map(m => `<tr>
+      <td style="font-weight:600;color:var(--ss-text-100)">${m.map_name}</td>
+      <td>${whoName(m.picker)}</td><td>${m.our_start_side}</td>
+      <td class="right" style="font-family:var(--font-mono);font-weight:600">${fmtPct(m.our_win_prob*100)}</td>
+      <td class="right">${fmtPct(m.our_wr)}</td><td class="right">${fmtPct(m.opp_wr)}</td></tr>`).join("")}</tbody>`;
+
+  // optimal path table
+  document.getElementById("optimal-path").innerHTML = `
+    <thead><tr><th style="width:3rem" class="right">#</th><th>Team</th><th>Action</th><th>Map</th></tr></thead>
+    <tbody>${optimal.future_actions.map(([actor, action, map], i) => `<tr>
+      <td class="right" style="font-family:var(--font-mono);color:var(--ss-text-650)">${i + 1}</td>
+      <td>${actor === "our" ? "Our side" : state.setup.opp}</td>
+      <td><span class="tl-act ${action}">${action}</span></td>
+      <td style="font-weight:600;color:var(--ss-text-100)">${map}</td></tr>`).join("")}</tbody>`;
+
+  // probability board (neutral pick on each pool map)
+  const board = ctx.pool.map(map => {
+    const wp = fastMapProbability(ctx.lookup, ctx.deciderChooser, map, "decider").our_win_prob * 100;
+    return { map, wp };
+  }).sort((a, b) => b.wp - a.wp);
+  document.getElementById("board-bars").innerHTML = board.map(b => {
+    const hue = b.wp >= 55 ? "var(--ss-green-500)" : b.wp <= 45 ? "var(--ss-red-500)" : "var(--ss-cyan-500)";
+    return `<div class="bb-row"><div class="bb-name">${b.map}</div>
+      <div class="bb-track"><div class="bb-fill" style="width:${Math.round(b.wp)}%;background:${hue}"></div></div>
+      <div class="bb-val">${fmtPct(b.wp,0)}</div></div>`;
+  }).join("");
+}
+
+// ───────────────────────── setup wiring ─────────────────────────
+function populateTeamSelects() {
+  // Sort by name (case-insensitive). Object key order can't be trusted —
+  // JS hoists integer-like keys (e.g. a team named "555") to the front.
+  const names = Object.keys(DATA.teams).sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: "base", numeric: true }));
+  const ourSel = document.getElementById("sel-our");
+  const oppSel = document.getElementById("sel-opp");
+  ourSel.innerHTML = `<option value="${NEUTRAL_TEAM}">${NEUTRAL_TEAM}</option>` +
+    names.map(n => `<option value="${n}">${n}</option>`).join("");
+  oppSel.innerHTML = names.map(n => `<option value="${n}">${n}</option>`).join("");
+  ourSel.value = names[0] || NEUTRAL_TEAM;
+  oppSel.value = names[1] || names[0];
+}
+
+function populateMapChips() {
+  const wrap = document.getElementById("map-chips");
+  wrap.innerHTML = DATA.map_pool.map(m =>
+    `<span class="map-chip on" data-map="${m}">${m}</span>`).join("");
+  wrap.querySelectorAll(".map-chip").forEach(c => c.onclick = () => c.classList.toggle("on"));
+}
+
+function wireSetup() {
+  document.getElementById("sel-format").onchange = (e) => {
+    document.getElementById("veto-style-field").style.display = e.target.value === "BO5" ? "flex" : "none";
+  };
+  document.getElementById("btn-start").onclick = startVeto;
+  document.getElementById("btn-again").onclick = resetToSetup;
+  document.getElementById("btn-restart").onclick = resetToSetup;
+  document.getElementById("btn-undo").onclick = () => {
+    if (!state) return;
+    if (state.actions.length === 0) { resetToSetup(); return; }
+    state.actions.pop();
+    state.decider = null;
+    renderStep();
+  };
+}
+
+function resetToSetup() {
+  state = null;
+  document.getElementById("board-section").style.display = "none";
+  document.getElementById("summary-section").style.display = "none";
+  document.getElementById("setup-section").style.display = "block";
+  document.getElementById("setup-section").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+async function load() {
+  const status = document.getElementById("status");
+  try {
+    const res = await fetch(PROFILES_URL + "?_=" + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    DATA = await res.json();
+    document.getElementById("setup-meta").textContent = `${DATA.n_teams} teams · map history`;
+    if (DATA.generated_at) {
+      const ts = new Date(DATA.generated_at);
+      document.getElementById("updated-at").textContent = "Updated " + ts.toLocaleString(undefined,
+        { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit", timeZoneName: "short" });
+    }
+    populateTeamSelects();
+    populateMapChips();
+    wireSetup();
+    status.style.display = "none";
+    document.getElementById("app").style.display = "block";
+  } catch (err) {
+    status.innerHTML = `<div class="ss-note ss-note--accent" style="text-align:left;border-left-color:var(--ss-red-500)">Couldn't load team profiles — ${err.message}. The data feed may be refreshing; try again shortly.</div>`;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
