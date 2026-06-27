@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706325",
+    "match_date": "2026-06-27",
+    "team1_name": "Division One",
+    "team2_name": "Pigeons",
+    "team1_win_prob": 0.5361,
+    "team2_win_prob": 0.4639,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "676923",
     "match_date": "2026-06-26",
     "team1_name": "9z Globant",
@@ -550,17 +561,6 @@
     "correct": null
   },
   {
-    "match_id": "706325",
-    "match_date": "Upcoming 2",
-    "team1_name": "Division One",
-    "team2_name": "Pigeons",
-    "team1_win_prob": 0.5361,
-    "team2_win_prob": 0.4639,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706326",
     "match_date": "Upcoming 1",
     "team1_name": "Evil Geniuses Academy",
@@ -633,6 +633,17 @@
     "team2_name": "wiwiwi",
     "team1_win_prob": 0.871,
     "team2_win_prob": 0.129,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "688436",
+    "match_date": "Upcoming 2",
+    "team1_name": "Mandatory",
+    "team2_name": "Be\u015fikta\u015f Esports",
+    "team1_win_prob": 0.8108,
+    "team2_win_prob": 0.1892,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
