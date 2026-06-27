@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-06-27T16:02:13.373355+00:00",
-  "total_resolved": 52,
-  "correct": 33,
+  "generated_at": "2026-06-27T17:59:16.888813+00:00",
+  "total_resolved": 53,
+  "correct": 34,
   "predictions": [
+    {
+      "match_id": "701326",
+      "match_date": "2026-06-27",
+      "team1_name": "36 Thieves",
+      "team2_name": "ROZ GC",
+      "team1_win_prob": 0.9628,
+      "team2_win_prob": 0.0372,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "681805",
       "match_date": "2026-06-27",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.7844,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706323",
-      "match_date": "2026-06-26",
-      "team1_name": "SaD Esports",
-      "team2_name": "Evictix",
-      "team1_win_prob": 0.8802,
-      "team2_win_prob": 0.1198,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
