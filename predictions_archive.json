@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "681805",
+    "match_date": "2026-06-27",
+    "team1_name": "QT DIG\u221e",
+    "team2_name": "IGZIST",
+    "team1_win_prob": 0.4665,
+    "team2_win_prob": 0.5335,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "701327",
+    "match_date": "2026-06-27",
+    "team1_name": "sisu",
+    "team2_name": "Zero Sugar",
+    "team1_win_prob": 0.7059,
+    "team2_win_prob": 0.2941,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "700696",
+    "match_date": "2026-06-27",
+    "team1_name": "Revenant XSpark",
+    "team2_name": "No Salary Peek",
+    "team1_win_prob": 0.479,
+    "team2_win_prob": 0.521,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "681804",
     "match_date": "2026-06-27",
     "team1_name": "CREST GAMING Zst",
@@ -539,17 +572,6 @@
     "correct": true
   },
   {
-    "match_id": "681805",
-    "match_date": "Upcoming 2",
-    "team1_name": "QT DIG\u221e",
-    "team2_name": "IGZIST",
-    "team1_win_prob": 0.4665,
-    "team2_win_prob": 0.5335,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "681807",
     "match_date": "Upcoming 2",
     "team1_name": "REJECT",
@@ -589,17 +611,6 @@
     "team2_name": "YFT",
     "team1_win_prob": 0.7404,
     "team2_win_prob": 0.2596,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "701327",
-    "match_date": "Upcoming 2",
-    "team1_name": "sisu",
-    "team2_name": "Zero Sugar",
-    "team1_win_prob": 0.7059,
-    "team2_win_prob": 0.2941,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
@@ -649,17 +660,6 @@
     "correct": null
   },
   {
-    "match_id": "700696",
-    "match_date": "Upcoming 1",
-    "team1_name": "Revenant XSpark",
-    "team2_name": "No Salary Peek",
-    "team1_win_prob": 0.479,
-    "team2_win_prob": 0.521,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706186",
     "match_date": "Upcoming 1",
     "team1_name": "New Zealand",
@@ -688,6 +688,50 @@
     "team2_name": "FOKUS",
     "team1_win_prob": 0.7423,
     "team2_win_prob": 0.2577,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701344",
+    "match_date": "Upcoming 1",
+    "team1_name": "JFT GC",
+    "team2_name": "Evolve GC",
+    "team1_win_prob": 0.8467,
+    "team2_win_prob": 0.1533,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "700694",
+    "match_date": "Upcoming 1",
+    "team1_name": "S8UL Esports",
+    "team2_name": "No Salary Peek",
+    "team1_win_prob": 0.6437,
+    "team2_win_prob": 0.3563,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "688451",
+    "match_date": "Upcoming 2",
+    "team1_name": "Misa Esports",
+    "team2_name": "Team Liquid Academy",
+    "team1_win_prob": 0.6669,
+    "team2_win_prob": 0.3331,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "705838",
+    "match_date": "Upcoming 3",
+    "team1_name": "KR\u00dc BLAZE",
+    "team2_name": "Polar Squad Esports GC",
+    "team1_win_prob": 0.7236,
+    "team2_win_prob": 0.2764,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

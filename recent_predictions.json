@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-06-27T12:07:10.433648+00:00",
-  "total_resolved": 49,
-  "correct": 31,
+  "generated_at": "2026-06-27T14:26:47.869690+00:00",
+  "total_resolved": 52,
+  "correct": 33,
   "predictions": [
+    {
+      "match_id": "681805",
+      "match_date": "2026-06-27",
+      "team1_name": "QT DIG\u221e",
+      "team2_name": "IGZIST",
+      "team1_win_prob": 0.4665,
+      "team2_win_prob": 0.5335,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "701327",
+      "match_date": "2026-06-27",
+      "team1_name": "sisu",
+      "team2_name": "Zero Sugar",
+      "team1_win_prob": 0.7059,
+      "team2_win_prob": 0.2941,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "700696",
+      "match_date": "2026-06-27",
+      "team1_name": "Revenant XSpark",
+      "team2_name": "No Salary Peek",
+      "team1_win_prob": 0.479,
+      "team2_win_prob": 0.521,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "681804",
       "match_date": "2026-06-27",
@@ -516,28 +549,6 @@
       "team2_name": "Evictix",
       "team1_win_prob": 0.8802,
       "team2_win_prob": 0.1198,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706324",
-      "match_date": "2026-06-26",
-      "team1_name": "Azure Dragon Gaming",
-      "team2_name": "NRG Academy",
-      "team1_win_prob": 0.5049,
-      "team2_win_prob": 0.4951,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "700695",
-      "match_date": "2026-06-26",
-      "team1_name": "No Salary Peek",
-      "team2_name": "Asterisk",
-      "team1_win_prob": 0.6759,
-      "team2_win_prob": 0.3241,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
