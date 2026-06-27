@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-06-27T07:46:28.748554+00:00",
-  "total_resolved": 47,
-  "correct": 29,
+  "generated_at": "2026-06-27T10:03:24.947188+00:00",
+  "total_resolved": 49,
+  "correct": 31,
   "predictions": [
+    {
+      "match_id": "681804",
+      "match_date": "2026-06-27",
+      "team1_name": "CREST GAMING Zst",
+      "team2_name": "AGELITE",
+      "team1_win_prob": 0.625,
+      "team2_win_prob": 0.375,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "700693",
+      "match_date": "2026-06-27",
+      "team1_name": "S8UL Esports",
+      "team2_name": "Revenant XSpark",
+      "team1_win_prob": 0.6269,
+      "team2_win_prob": 0.3731,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706325",
       "match_date": "2026-06-27",
