@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "701322",
+    "match_date": "2026-06-28",
+    "team1_name": "Team Falcons Vega",
+    "team2_name": "wiwiwi",
+    "team1_win_prob": 0.871,
+    "team2_win_prob": 0.129,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "706279",
+    "match_date": "2026-06-28",
+    "team1_name": "South Africa",
+    "team2_name": "Nigeria",
+    "team1_win_prob": 0.7536,
+    "team2_win_prob": 0.2464,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "701328",
     "match_date": "2026-06-28",
     "team1_name": "36 Thieves",
@@ -726,17 +748,6 @@
     "correct": true
   },
   {
-    "match_id": "701322",
-    "match_date": "Upcoming 1",
-    "team1_name": "Team Falcons Vega",
-    "team2_name": "wiwiwi",
-    "team1_win_prob": 0.871,
-    "team2_win_prob": 0.129,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "688436",
     "match_date": "Upcoming 2",
     "team1_name": "Mandatory",
@@ -891,17 +902,6 @@
     "correct": null
   },
   {
-    "match_id": "706279",
-    "match_date": "Upcoming 1",
-    "team1_name": "South Africa",
-    "team2_name": "Nigeria",
-    "team1_win_prob": 0.7536,
-    "team2_win_prob": 0.2464,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "686212",
     "match_date": "Upcoming 3",
     "team1_name": "Gen.G Global Academy",
@@ -974,6 +974,28 @@
     "team2_name": "EDward Gaming",
     "team1_win_prob": 0.3947,
     "team2_win_prob": 0.6053,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706759",
+    "match_date": "Upcoming 3",
+    "team1_name": "Team Vitality",
+    "team2_name": "Karmine Corp",
+    "team1_win_prob": 0.529,
+    "team2_win_prob": 0.471,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706760",
+    "match_date": "Upcoming 3",
+    "team1_name": "NRG",
+    "team2_name": "Paper Rex",
+    "team1_win_prob": 0.4081,
+    "team2_win_prob": 0.5919,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
