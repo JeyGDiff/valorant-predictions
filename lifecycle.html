@@ -219,7 +219,7 @@
 
       <div class="lc-stepper" id="stepper"></div>
       <div class="lc-controls">
-        <button class="ss-btn" id="btn-replay">▶ Replay</button>
+        <button class="ss-btn" id="btn-replay">↺ Restart</button>
         <button class="ss-btn" id="btn-next">Next stage →</button>
         <span class="ss-section-meta" id="stage-counter"></span>
       </div>
@@ -502,19 +502,6 @@ function gotoStage(i){
 }
 function nextStage(){ gotoStage((stage+1)%N_STAGES); }
 
-let autoTimer=null;
-function autoplay(){
-  clearTimeout(autoTimer);
-  gotoStage(0);
-  const durations=[1500,2600,2200,2200,2000,2200,2600];
-  let i=0;
-  function step(){
-    if(i>=N_STAGES-1) return;
-    autoTimer=setTimeout(()=>{ i++; gotoStage(i); step(); }, durations[i]);
-  }
-  step();
-}
-
 /* ── Walk-forward ── */
 function renderWalkforward(){
   const w=DATA.walkforward; if(!w) return;
@@ -567,14 +554,13 @@ async function load(){
 
     buildStepper(); fillRosters(); fillAgg(); fillDiffs(); fillElo(); fillFinal(); renderWalkforward();
 
-    document.getElementById("btn-replay").addEventListener("click",autoplay);
-    document.getElementById("btn-next").addEventListener("click",()=>{ clearTimeout(autoTimer); nextStage(); });
+    document.getElementById("btn-replay").addEventListener("click",()=>gotoStage(0));
+    document.getElementById("btn-next").addEventListener("click",nextStage);
 
     status.style.display="none"; content.style.display="block";
+    gotoStage(0);  // start on stage 1; advance manually via the stepper / Next
 
-    // Auto-run section 1 once it's on screen; trigger walk-forward when scrolled to.
-    const io=new IntersectionObserver((es)=>es.forEach(e=>{ if(e.isIntersecting){ autoplay(); io.disconnect(); } }),{threshold:.3});
-    io.observe(document.getElementById("stepper"));
+    // Walk-forward chart animates once when scrolled into view (not the stages).
     const io2=new IntersectionObserver((es)=>es.forEach(e=>{ if(e.isIntersecting){ animateWalkforward(); io2.disconnect(); } }),{threshold:.3});
     io2.observe(document.getElementById("wf-chart"));
   }catch(err){
