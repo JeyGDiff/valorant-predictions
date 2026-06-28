@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-06-28T19:13:21.682106+00:00",
-  "total_resolved": 72,
-  "correct": 48,
+  "generated_at": "2026-06-28T20:57:48.203932+00:00",
+  "total_resolved": 75,
+  "correct": 51,
   "predictions": [
+    {
+      "match_id": "706111",
+      "match_date": "2026-06-28",
+      "team1_name": "Argentina",
+      "team2_name": "Peru",
+      "team1_win_prob": 0.7713,
+      "team2_win_prob": 0.2287,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "706259",
+      "match_date": "2026-06-28",
+      "team1_name": "Ukraine",
+      "team2_name": "Czechia",
+      "team1_win_prob": 0.1195,
+      "team2_win_prob": 0.8805,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706229",
+      "match_date": "2026-06-28",
+      "team1_name": "Denmark",
+      "team2_name": "Portugal",
+      "team1_win_prob": 0.5984,
+      "team2_win_prob": 0.4016,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706245",
       "match_date": "2026-06-28",
@@ -519,39 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "678063",
-      "match_date": "2026-06-26",
-      "team1_name": "FUEGO",
-      "team2_name": "LYON",
-      "team1_win_prob": 0.104,
-      "team2_win_prob": 0.896,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "681800",
-      "match_date": "2026-06-26",
-      "team1_name": "CREST GAMING Zst",
-      "team2_name": "QT DIG\u221e",
-      "team1_win_prob": 0.4697,
-      "team2_win_prob": 0.5303,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "686204",
-      "match_date": "2026-06-26",
-      "team1_name": "Dplus Esports",
-      "team2_name": "X-CAST",
-      "team1_win_prob": 0.7236,
-      "team2_win_prob": 0.2764,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
