@@ -129,6 +129,68 @@
     .lc-chip.in { animation:lc-cardin var(--motion-standard) var(--ease-standard) forwards; }
     .lc-chip.dim { color:var(--ss-text-650); }
 
+    /* ── Stage 6: activation graph ── */
+    .act-graph { position:relative; display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:var(--space-6);
+      background:var(--ss-surface-900); border:1px solid var(--ss-border-800); border-radius:var(--radius-lg);
+      padding:var(--space-5); margin-bottom:var(--space-5); align-items:center; }
+    @media (max-width:760px){ .act-graph{ grid-template-columns:1fr; gap:var(--space-4); } }
+    .act-edges { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:0; }
+    .act-col { position:relative; z-index:1; }
+    .act-col-title { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ss-text-650);
+      margin-bottom:var(--space-3); }
+    .act-mid { display:flex; align-items:center; justify-content:center; }
+    .act-inputs { display:flex; flex-direction:column; gap:var(--space-2); }
+    .act-node { background:var(--ss-surface-850); border:1px solid var(--ss-border-800); border-radius:var(--radius-sm);
+      padding:6px 10px; opacity:0; transform:translateX(-6px); transition:box-shadow var(--motion-slow); }
+    .act-node.in { animation:lc-actin var(--motion-slow) var(--ease-standard) forwards; }
+    @keyframes lc-actin { to { opacity:1; transform:none; } }
+    .act-node-top { display:flex; justify-content:space-between; align-items:baseline; gap:var(--space-2); }
+    .act-node .nm { font-size:12px; color:var(--ss-text-300); }
+    .act-node .vl { font-family:var(--font-mono); font-size:11px; font-variant-numeric:tabular-nums; }
+    .act-node.t1 .vl { color:var(--ss-cyan-500); } .act-node.t2 .vl { color:var(--ss-amber-500); }
+    .act-bar { position:relative; height:6px; margin-top:5px; background:var(--ss-surface-900);
+      border-radius:var(--radius-pill); overflow:hidden; }
+    .act-bar .mid { position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--ss-border-700); }
+    .act-bar .fill { position:absolute; top:0; bottom:0; width:0; transition:width 600ms var(--ease-standard); }
+    .act-bar .fill.t1 { left:50%; background:var(--ss-cyan-500); }
+    .act-bar .fill.t2 { right:50%; background:var(--ss-amber-500); }
+    .act-hub, .act-output { text-align:center; background:var(--ss-surface-850); border:1px solid var(--ss-border-700);
+      border-radius:var(--radius-lg); padding:var(--space-4) var(--space-3); width:100%; }
+    .act-hub { box-shadow:0 0 0 0 rgba(0,204,216,0); transition:box-shadow var(--motion-standard); }
+    .act-hub.pulse { box-shadow:0 0 22px 1px rgba(0,204,216,.35); border-color:var(--ss-cyan-700); }
+    .act-hub .hub-n { font-family:var(--font-mono); font-size:26px; font-weight:600; color:var(--ss-text-100); }
+    .act-hub .hub-l { font-size:11px; color:var(--ss-text-500); margin-top:2px; }
+    .act-output .out-n { font-family:var(--font-mono); font-size:30px; font-weight:600; color:var(--ss-cyan-400);
+      font-variant-numeric:tabular-nums; }
+    .act-output .out-l { font-size:11px; color:var(--ss-text-500); margin-top:2px; }
+
+    /* ── Stage 6: tree path ── */
+    .act-tree { background:var(--ss-surface-900); border:1px solid var(--ss-border-800); border-radius:var(--radius-lg);
+      padding:var(--space-4) var(--space-5); margin-bottom:var(--space-5); }
+    .act-tree-head { font-family:var(--font-head); font-size:13px; font-weight:600; color:var(--ss-text-300); margin-bottom:var(--space-3); }
+    .act-tree-meta { font-family:var(--font-mono); font-size:11px; color:var(--ss-text-650); font-weight:400; margin-left:var(--space-2); }
+    .act-path { display:flex; flex-wrap:wrap; align-items:stretch; gap:var(--space-2); }
+    .act-step { display:flex; align-items:center; gap:var(--space-2); opacity:0; }
+    .act-step.in { animation:lc-actin var(--motion-standard) var(--ease-standard) forwards; }
+    .act-cond { background:var(--ss-surface-850); border:1px solid var(--ss-border-800); border-radius:var(--radius-sm);
+      padding:6px 10px; font-size:12px; }
+    .act-cond .q { color:var(--ss-text-300); } .act-cond .q b { font-family:var(--font-mono); color:var(--ss-text-100); }
+    .act-cond .br { font-family:var(--font-mono); font-size:11px; margin-top:3px; }
+    .act-cond .br .yes, .act-cond .br .no { padding:0 5px; border-radius:var(--radius-xs); color:var(--ss-text-650); }
+    .act-cond .br .taken { background:var(--ss-cyan-700); color:var(--ss-text-100); }
+    .act-arrow { font-family:var(--font-mono); color:var(--ss-text-650); font-size:12px; }
+    .act-leaf { background:var(--ss-surface-850); border:1px solid var(--ss-cyan-700); border-radius:var(--radius-sm);
+      padding:6px 10px; font-family:var(--font-mono); font-size:12px; color:var(--ss-cyan-500); }
+
+    /* ── Stage 6: log-odds chart ── */
+    .act-logodds { background:var(--ss-surface-900); border:1px solid var(--ss-border-800); border-radius:var(--radius-lg);
+      padding:var(--space-4) var(--space-5); }
+    .act-lo-head { display:flex; justify-content:space-between; font-size:12px; color:var(--ss-text-500); margin-bottom:var(--space-2); }
+    .act-lo-meta { font-family:var(--font-mono); color:var(--ss-text-650); }
+    .act-lo-chart { width:100%; height:90px; display:block; }
+    .act-lo-axis { display:flex; justify-content:space-between; margin-top:var(--space-2); font-size:12px; color:var(--ss-text-500); }
+    .act-lo-axis b { font-family:var(--font-mono); color:var(--ss-text-100); }
+
     /* ── Final prediction ── */
     .lc-final { background:var(--ss-surface-900); border:1px solid var(--ss-border-800);
       border-radius:var(--radius-xl); padding:var(--space-6); }
@@ -293,8 +355,37 @@
         <div class="lc-vec-strip" id="vec-strip"></div>
       </div>
 
-      <!-- Stage 6 -->
+      <!-- Stage 6: model activation -->
       <div class="lc-stage" data-stage="6">
+        <div class="lc-stage-title">The model activates</div>
+        <div class="lc-stage-sub">The 587 features fan into XGBoost's 300 trees. Each signal pulls toward one side — brighter and thicker means a stronger pull. These are the model's <em>real</em> SHAP contributions for this match, not an illustration.</div>
+        <div class="act-graph" id="act-graph">
+          <svg class="act-edges" id="act-edges" preserveAspectRatio="none"></svg>
+          <div class="act-col">
+            <div class="act-col-title">Top signals</div>
+            <div class="act-inputs" id="act-inputs"></div>
+          </div>
+          <div class="act-col act-mid"><div class="act-hub" id="act-hub"><div class="hub-n">300</div><div class="hub-l">gradient-boosted trees</div></div></div>
+          <div class="act-col act-mid"><div class="act-output" id="act-output"><div class="out-n" id="act-out-pr">50%</div><div class="out-l" id="act-out-nm">win probability</div></div></div>
+        </div>
+
+        <div class="act-tree">
+          <div class="act-tree-head">One real tree, the path this match takes <span class="act-tree-meta" id="act-tree-meta"></span></div>
+          <div class="act-path" id="act-path"></div>
+        </div>
+
+        <div class="act-logodds">
+          <div class="act-lo-head">
+            <span>Log-odds accumulate across all 300 trees</span>
+            <span class="act-lo-meta" id="act-lo-meta"></span>
+          </div>
+          <svg class="act-lo-chart" id="act-lo-chart" preserveAspectRatio="none"></svg>
+          <div class="act-lo-axis"><span>base <b id="act-lo-base">—</b></span><span>final margin <b id="act-lo-final">—</b> → <b id="act-lo-prob">—</b></span></div>
+        </div>
+      </div>
+
+      <!-- Stage 7 -->
+      <div class="lc-stage" data-stage="7">
         <div class="lc-stage-title">The prediction resolves</div>
         <div class="lc-stage-sub">XGBoost returns a calibrated win probability for each side.</div>
         <div class="lc-final">
@@ -338,8 +429,8 @@
 
 <script>
 const LIFECYCLE_URL = "lifecycle.json";
-const N_STAGES = 7;
-const STAGE_LABELS = ["Raw match","Player form","Aggregate","Difference","Elo check","587 vector","Probability"];
+const N_STAGES = 8;
+const STAGE_LABELS = ["Raw match","Player form","Aggregate","Difference","Elo check","587 vector","Activation","Probability"];
 let DATA = null, stage = 0, timers = [];
 
 const pct = (v,d=0) => v==null ? "—" : (v*100).toFixed(d)+"%";
@@ -489,7 +580,7 @@ function countUp(el,target,dur,suffix=""){
 }
 
 /* ── Stage driver ── */
-const STAGE_ANIM = { 1:animateRosters, 3:animateDiffs, 5:animateVector, 6:animateFinal };
+const STAGE_ANIM = { 1:animateRosters, 3:animateDiffs, 5:animateVector, 6:animateActivation, 7:animateFinal };
 function showStage(i){
   document.querySelectorAll(".lc-stage").forEach(s=>
     s.classList.toggle("show", +s.dataset.stage===i));
@@ -501,6 +592,98 @@ function gotoStage(i){
   if(STAGE_ANIM[stage]) STAGE_ANIM[stage]();
 }
 function nextStage(){ gotoStage((stage+1)%N_STAGES); }
+
+/* ── Stage 6: model activation ── */
+const ACT_CYAN="#00CCD8", ACT_AMBER="#F5B84B";
+function drawEdges(){
+  const graph=document.getElementById("act-graph"), svg=document.getElementById("act-edges");
+  const hub=document.getElementById("act-hub"), out=document.getElementById("act-output");
+  if(!graph||!svg) return;
+  const gr=graph.getBoundingClientRect();
+  if(!gr.width) return;
+  svg.setAttribute("viewBox",`0 0 ${gr.width} ${gr.height}`);
+  const rel=el=>{const r=el.getBoundingClientRect();
+    return {l:r.left-gr.left,r:r.right-gr.left,cy:(r.top+r.bottom)/2-gr.top};};
+  const H=rel(hub), O=rel(out);
+  let d="";
+  document.querySelectorAll("#act-inputs .act-node").forEach(n=>{
+    const R=rel(n), col=n.dataset.side==="t1"?ACT_CYAN:ACT_AMBER;
+    const sw=(1+(parseFloat(n.dataset.w)/48)*3).toFixed(2);
+    const op=n.classList.contains("in")?0.55:0;
+    const mx=(R.r+H.l)/2;
+    d+=`<path d="M${R.r},${R.cy} C${mx},${R.cy} ${mx},${H.cy} ${H.l},${H.cy}" fill="none" stroke="${col}" stroke-width="${sw}" opacity="${op}"/>`;
+  });
+  const mx=(H.r+O.l)/2;
+  d+=`<path d="M${H.r},${H.cy} C${mx},${H.cy} ${mx},${O.cy} ${O.l},${O.cy}" fill="none" stroke="${ACT_CYAN}" stroke-width="3" opacity="0.6"/>`;
+  svg.innerHTML=d;
+}
+function renderTreePath(e){
+  document.getElementById("act-tree-meta").textContent=
+    `tree #${e.tree.index} of ${e.n_trees} · leaf ${signed(e.tree.leaf_value,3)} log-odds`;
+  const steps=e.tree.path, wrap=document.getElementById("act-path");
+  wrap.innerHTML=steps.map((s,i)=>{
+    if(s.leaf) return `<div class="act-step"><span class="act-leaf">leaf ${signed(s.value,3)} log-odds</span></div>`;
+    const v=s.value==null?"n/a":s.value;
+    const yes=`<span class="yes ${s.go==='yes'?'taken':''}">yes</span>`;
+    const no =`<span class="no ${s.go==='no'?'taken':''}">no</span>`;
+    const arrow=`<span class="act-arrow">→</span>`;
+    return `<div class="act-step"><div class="act-cond">
+      <div class="q">${s.label} <b>${v}</b> &lt; ${s.threshold}?</div>
+      <div class="br">${yes} / ${no}</div></div>${arrow}</div>`;
+  }).join("");
+  [...wrap.children].forEach((c,i)=> later(()=>c.classList.add("in"), 140*i));
+}
+function renderLogOdds(e){
+  const svg=document.getElementById("act-lo-chart");
+  const W=svg.clientWidth||640, H=90, pad=8, cum=e.cumulative, n=cum.length;
+  const lo=Math.min(0,e.base_margin,...cum), hi=Math.max(0.001,...cum);
+  const X=i=>pad+(i/(n-1))*(W-2*pad);
+  const Y=v=>H-pad-((v-lo)/(hi-lo))*(H-2*pad);
+  const zy=Y(0).toFixed(1);
+  const pts=cum.map((v,i)=>`${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ");
+  svg.innerHTML=
+    `<line x1="${pad}" y1="${zy}" x2="${W-pad}" y2="${zy}" stroke="#2B3A4A" stroke-dasharray="3 3"/>`+
+    `<polyline points="${pts}" fill="none" stroke="${ACT_CYAN}" stroke-width="2"/>`+
+    `<circle cx="${X(n-1).toFixed(1)}" cy="${Y(cum[n-1]).toFixed(1)}" r="3" fill="#15E0EA"/>`;
+  try{
+    const pl=svg.querySelector("polyline"), len=pl.getTotalLength();
+    pl.style.strokeDasharray=len; pl.style.strokeDashoffset=len;
+    pl.getBoundingClientRect();
+    pl.style.transition="stroke-dashoffset 1200ms var(--ease-standard)";
+    pl.style.strokeDashoffset=0;
+  }catch(_){}
+  document.getElementById("act-lo-base").textContent=signed(e.base_margin,2);
+  document.getElementById("act-lo-final").textContent=signed(e.margin,2);
+  document.getElementById("act-lo-prob").textContent=Math.round(e.prob*100)+"%";
+  document.getElementById("act-lo-meta").textContent=`${n} trees`;
+}
+function animateActivation(){
+  const m=DATA.match, e=m.explain; if(!e) return;
+  const t1=m.team1_name, t2=m.team2_name;
+  document.getElementById("act-out-nm").textContent=(m.predicted_winner==="team1"?t1:t2)+" win prob";
+  const maxAbs=Math.max(...e.groups.map(g=>g.abs),1e-6);
+  document.getElementById("act-inputs").innerHTML=e.groups.map(g=>{
+    const t=g.side==="team1"?"t1":"t2", w=Math.min(48,g.abs/maxAbs*48).toFixed(1);
+    return `<div class="act-node ${t}" data-w="${w}" data-side="${t}">
+      <div class="act-node-top"><span class="nm">${g.label}</span><span class="vl">${signed(g.net,2)}</span></div>
+      <div class="act-bar"><span class="mid"></span><span class="fill ${t}"></span></div></div>`;
+  }).join("");
+  const nodes=[...document.querySelectorAll("#act-inputs .act-node")];
+  const hub=document.getElementById("act-hub");
+  nodes.forEach((n,i)=> later(()=>{
+    n.classList.add("in");
+    n.querySelector(".fill").style.width=n.dataset.w+"%";
+    const col=n.dataset.side==="t1"?"0,204,216":"245,184,75";
+    const op=(0.15+0.4*(parseFloat(n.dataset.w)/48)).toFixed(2);
+    n.style.boxShadow=`0 0 14px -2px rgba(${col},${op})`;
+    hub.classList.add("pulse"); later(()=>hub.classList.remove("pulse"),320);
+    drawEdges();
+  }, 170*i));
+  later(()=>{ countUp(document.getElementById("act-out-pr"),Math.round(e.prob*100),800,"%"); drawEdges(); }, 170*nodes.length+200);
+  renderTreePath(e);
+  later(()=>renderLogOdds(e), 300);
+}
+window.addEventListener("resize",()=>{ if(stage===6) drawEdges(); });
 
 /* ── Walk-forward ── */
 function renderWalkforward(){
