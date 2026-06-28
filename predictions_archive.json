@@ -1,5 +1,49 @@
 [
   {
+    "match_id": "706245",
+    "match_date": "2026-06-28",
+    "team1_name": "Ukraine",
+    "team2_name": "Hungary",
+    "team1_win_prob": 0.3733,
+    "team2_win_prob": 0.6267,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "706215",
+    "match_date": "2026-06-28",
+    "team1_name": "Denmark",
+    "team2_name": "France",
+    "team1_win_prob": 0.4064,
+    "team2_win_prob": 0.5936,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "706179",
+    "match_date": "2026-06-28",
+    "team1_name": "Hong Kong",
+    "team2_name": "India",
+    "team1_win_prob": 0.2764,
+    "team2_win_prob": 0.7236,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "706452",
+    "match_date": "2026-06-28",
+    "team1_name": "Saudi Arabia",
+    "team2_name": "Morocco",
+    "team1_win_prob": 0.7343,
+    "team2_win_prob": 0.2657,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "701322",
     "match_date": "2026-06-28",
     "team1_name": "Team Falcons Vega",
@@ -803,28 +847,6 @@
     "correct": null
   },
   {
-    "match_id": "706245",
-    "match_date": "Upcoming 2",
-    "team1_name": "Ukraine",
-    "team2_name": "Hungary",
-    "team1_win_prob": 0.3733,
-    "team2_win_prob": 0.6267,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706215",
-    "match_date": "Upcoming 2",
-    "team1_name": "Denmark",
-    "team2_name": "France",
-    "team1_win_prob": 0.4064,
-    "team2_win_prob": 0.5936,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706133",
     "match_date": "Upcoming 2",
     "team1_name": "Dominican Republic",
@@ -935,28 +957,6 @@
     "correct": null
   },
   {
-    "match_id": "706179",
-    "match_date": "LIVE",
-    "team1_name": "Hong Kong",
-    "team2_name": "India",
-    "team1_win_prob": 0.2764,
-    "team2_win_prob": 0.7236,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706452",
-    "match_date": "LIVE",
-    "team1_name": "Saudi Arabia",
-    "team2_name": "Morocco",
-    "team1_win_prob": 0.7343,
-    "team2_win_prob": 0.2657,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706754",
     "match_date": "Upcoming 3",
     "team1_name": "Rex Regum Qeon",
@@ -997,6 +997,50 @@
     "team1_win_prob": 0.4081,
     "team2_win_prob": 0.5919,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706111",
+    "match_date": "LIVE",
+    "team1_name": "Argentina",
+    "team2_name": "Peru",
+    "team1_win_prob": 0.7713,
+    "team2_win_prob": 0.2287,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706259",
+    "match_date": "LIVE",
+    "team1_name": "Ukraine",
+    "team2_name": "Czechia",
+    "team1_win_prob": 0.1195,
+    "team2_win_prob": 0.8805,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706229",
+    "match_date": "Upcoming 1",
+    "team1_name": "Denmark",
+    "team2_name": "Portugal",
+    "team1_win_prob": 0.5984,
+    "team2_win_prob": 0.4016,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707229",
+    "match_date": "Upcoming 4",
+    "team1_name": "LYON",
+    "team2_name": "Contra",
+    "team1_win_prob": 0.9112,
+    "team2_win_prob": 0.0888,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }

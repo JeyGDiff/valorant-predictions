@@ -1,8 +1,52 @@
 {
-  "generated_at": "2026-06-28T17:05:19.378476+00:00",
-  "total_resolved": 68,
-  "correct": 44,
+  "generated_at": "2026-06-28T19:13:21.682106+00:00",
+  "total_resolved": 72,
+  "correct": 48,
   "predictions": [
+    {
+      "match_id": "706245",
+      "match_date": "2026-06-28",
+      "team1_name": "Ukraine",
+      "team2_name": "Hungary",
+      "team1_win_prob": 0.3733,
+      "team2_win_prob": 0.6267,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706215",
+      "match_date": "2026-06-28",
+      "team1_name": "Denmark",
+      "team2_name": "France",
+      "team1_win_prob": 0.4064,
+      "team2_win_prob": 0.5936,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706179",
+      "match_date": "2026-06-28",
+      "team1_name": "Hong Kong",
+      "team2_name": "India",
+      "team1_win_prob": 0.2764,
+      "team2_win_prob": 0.7236,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706452",
+      "match_date": "2026-06-28",
+      "team1_name": "Saudi Arabia",
+      "team2_name": "Morocco",
+      "team1_win_prob": 0.7343,
+      "team2_win_prob": 0.2657,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701322",
       "match_date": "2026-06-28",
@@ -507,50 +551,6 @@
       "team2_win_prob": 0.2764,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "681801",
-      "match_date": "2026-06-26",
-      "team1_name": "Insomnia",
-      "team2_name": "AGELITE",
-      "team1_win_prob": 0.4217,
-      "team2_win_prob": 0.5783,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "686205",
-      "match_date": "2026-06-26",
-      "team1_name": "DRX Academy",
-      "team2_name": "Gen.G Global Academy",
-      "team1_win_prob": 0.4486,
-      "team2_win_prob": 0.5514,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "701324",
-      "match_date": "2026-06-26",
-      "team1_name": "Baguette",
-      "team2_name": "ROZ GC",
-      "team1_win_prob": 0.482,
-      "team2_win_prob": 0.518,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "676926",
-      "match_date": "2026-06-26",
-      "team1_name": "OXEN",
-      "team2_name": "ShindeN",
-      "team1_win_prob": 0.3421,
-      "team2_win_prob": 0.6579,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
