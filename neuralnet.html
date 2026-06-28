@@ -31,6 +31,10 @@
     .nn-curve-legend .k { display:flex; align-items:center; gap:var(--space-2); }
     .nn-curve-legend .sw { width:14px; height:3px; border-radius:2px; }
 
+    /* teaching video */
+    .nn-video { width:100%; display:block; border:1px solid var(--ss-border-800);
+      border-radius:var(--radius-lg); background:var(--ss-surface-900); }
+
     /* network diagram */
     .nn-net { position:relative; display:grid; grid-template-columns:1.5fr .9fr .8fr .8fr; gap:var(--space-5);
       background:var(--ss-surface-900); border:1px solid var(--ss-border-800); border-radius:var(--radius-lg);
@@ -107,6 +111,21 @@
 <main class="ss-main">
   <div id="main-status" class="ss-status">Loading network…</div>
   <div id="content" style="display:none">
+
+    <!-- ── Watch it train (teaching video) ── -->
+    <div class="ss-section">
+      <div class="ss-section-head">
+        <h2>Watch it train</h2>
+        <span class="ss-section-meta">forward pass · loss · backprop · update — every value real</span>
+      </div>
+      <p class="nn-sub">The full net is <em>587 → 128 → 64 → 1</em> — too many neurons to draw, so this shows the most <em>dynamic</em> representative ones. Nothing is faked: the model is retrained from scratch, and for one real match we replay its actual activations, gradients and weight updates epoch by epoch. It starts <em>confidently wrong</em> and learns to call the match.</p>
+      <video class="nn-video" src="teaching_backprop.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+      <div class="nn-curve-legend" style="margin-top:var(--space-3)">
+        <span class="k"><span class="sw" style="background:var(--ss-cyan-500)"></span>forward pass · activation</span>
+        <span class="k"><span class="sw" style="background:var(--ss-amber-500)"></span>backprop · gradient</span>
+        <span class="k"><span class="sw" style="background:var(--ss-green-500)"></span>weight update</span>
+      </div>
+    </div>
 
     <!-- ── Watch it learn ── -->
     <div class="ss-section">
