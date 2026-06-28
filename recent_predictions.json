@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-06-28T11:04:22.964819+00:00",
-  "total_resolved": 61,
-  "correct": 40,
+  "generated_at": "2026-06-28T13:28:37.133028+00:00",
+  "total_resolved": 64,
+  "correct": 41,
   "predictions": [
+    {
+      "match_id": "681807",
+      "match_date": "2026-06-28",
+      "team1_name": "REJECT",
+      "team2_name": "RIDDLE ORDER",
+      "team1_win_prob": 0.7486,
+      "team2_win_prob": 0.2514,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "700694",
+      "match_date": "2026-06-28",
+      "team1_name": "S8UL Esports",
+      "team2_name": "No Salary Peek",
+      "team1_win_prob": 0.6437,
+      "team2_win_prob": 0.3563,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "706192",
+      "match_date": "2026-06-28",
+      "team1_name": "New Zealand",
+      "team2_name": "Australia",
+      "team1_win_prob": 0.1336,
+      "team2_win_prob": 0.8664,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "681806",
       "match_date": "2026-06-28",
@@ -516,39 +549,6 @@
       "team2_name": "BESTIA",
       "team1_win_prob": 0.2005,
       "team2_win_prob": 0.7995,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701232",
-      "match_date": "2026-06-26",
-      "team1_name": "YFT",
-      "team2_name": "Evil Geniuses Academy",
-      "team1_win_prob": 0.3159,
-      "team2_win_prob": 0.6841,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "678065",
-      "match_date": "2026-06-26",
-      "team1_name": "Contra",
-      "team2_name": "FUSION",
-      "team1_win_prob": 0.4588,
-      "team2_win_prob": 0.5412,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "701325",
-      "match_date": "2026-06-26",
-      "team1_name": "Evictix GC",
-      "team2_name": "Zero Sugar",
-      "team1_win_prob": 0.3082,
-      "team2_win_prob": 0.6918,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
