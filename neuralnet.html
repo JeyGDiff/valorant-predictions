@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolvedState · Neural Net (JAX)</title>
+  <meta name="description" content="A neural network written by hand in JAX — explicit weights, hand-written forward pass and Adam. A permutation-invariant attention model over each roster, re-implemented in the browser so you can watch it think and nudge the inputs live." />
+  <link rel="icon" type="image/png" href="ss_icon.png?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="solvedstate.css?v=3" />
+  <style>
+    .nn-sub { font-size:13px; color:var(--ss-text-500); line-height:20px; max-width:760px; margin-bottom:var(--space-4); }
+    .nn-sub em { color:var(--ss-text-300); font-style:normal; }
+
+    /* comparison table */
+    .nn-cmp { width:100%; border-collapse:collapse; }
+    .nn-cmp th, .nn-cmp td { text-align:right; padding:10px 14px; border-top:1px solid var(--ss-border-800); font-variant-numeric:tabular-nums; }
+    .nn-cmp th:first-child, .nn-cmp td:first-child { text-align:left; }
+    .nn-cmp thead th { border-top:none; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ss-text-650); font-weight:500; }
+    .nn-cmp td { font-family:var(--font-mono); font-size:13px; color:var(--ss-text-300); }
+    .nn-cmp td.model { font-family:var(--font-body); color:var(--ss-text-100); font-weight:600; }
+    .nn-cmp tr.best td { color:var(--ss-cyan-500); }
+    .nn-cmp .tag { font-family:var(--font-mono); font-size:10px; color:var(--ss-text-650); margin-left:8px; }
+
+    /* learning curve */
+    .nn-curve { width:100%; height:170px; display:block; background:var(--ss-surface-900);
+      border:1px solid var(--ss-border-800); border-radius:var(--radius-lg); }
+    .nn-curve-legend { display:flex; gap:var(--space-5); margin-top:var(--space-3); font-size:12px; color:var(--ss-text-500); }
+    .nn-curve-legend .k { display:flex; align-items:center; gap:var(--space-2); }
+    .nn-curve-legend .sw { width:14px; height:3px; border-radius:2px; }
+
+    /* network diagram */
+    .nn-net { position:relative; display:grid; grid-template-columns:1.5fr .9fr .8fr .8fr; gap:var(--space-5);
+      background:var(--ss-surface-900); border:1px solid var(--ss-border-800); border-radius:var(--radius-lg);
+      padding:var(--space-5); align-items:center; }
+    @media (max-width:820px){ .nn-net{ grid-template-columns:1fr; } .nn-edges{ display:none; } }
+    .nn-edges { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:0; }
+    .nn-col { position:relative; z-index:1; display:flex; flex-direction:column; gap:var(--space-4); }
+    .nn-team-group { display:flex; flex-direction:column; gap:var(--space-2); }
+    .nn-team-label { font-size:11px; text-transform:uppercase; letter-spacing:.04em; margin-bottom:2px; }
+    .nn-pl { background:var(--ss-surface-850); border:1px solid var(--ss-border-800); border-radius:var(--radius-sm);
+      padding:7px 10px; cursor:pointer; transition:border-color var(--motion-standard), box-shadow var(--motion-standard); }
+    .nn-pl:hover { border-color:var(--ss-border-700); }
+    .nn-pl.sel { border-color:var(--ss-cyan-700); box-shadow:0 0 0 1px var(--ss-cyan-700) inset; }
+    .nn-pl-top { display:flex; justify-content:space-between; align-items:baseline; gap:var(--space-2); }
+    .nn-pl .nm { font-size:13px; font-weight:600; color:var(--ss-text-100); }
+    .nn-pl .aw { font-family:var(--font-mono); font-size:11px; }
+    .nn-pl.t1 .aw { color:var(--ss-cyan-500); } .nn-pl.t2 .aw { color:var(--ss-amber-500); }
+    .nn-attn-bar { height:5px; border-radius:var(--radius-pill); background:var(--ss-surface-900); margin-top:5px; overflow:hidden; }
+    .nn-attn-fill { height:100%; width:0; transition:width 400ms var(--ease-standard); }
+    .nn-pl.t1 .nn-attn-fill { background:var(--ss-cyan-500); } .nn-pl.t2 .nn-attn-fill { background:var(--ss-amber-500); }
+    .nn-node { text-align:center; background:var(--ss-surface-850); border:1px solid var(--ss-border-700);
+      border-radius:var(--radius-lg); padding:var(--space-4) var(--space-3); }
+    .nn-node .lbl { font-size:11px; color:var(--ss-text-500); }
+    .nn-node .nm { font-size:13px; font-weight:600; color:var(--ss-text-300); margin-bottom:4px; }
+    .nn-out .pr { font-family:var(--font-mono); font-size:30px; font-weight:600; color:var(--ss-cyan-400); font-variant-numeric:tabular-nums; }
+    .nn-emb { display:flex; gap:2px; justify-content:center; margin-top:6px; height:22px; align-items:flex-end; }
+    .nn-emb i { width:3px; background:var(--ss-cyan-700); border-radius:1px; }
+
+    /* controls */
+    .nn-controls { background:var(--ss-surface-900); border:1px solid var(--ss-border-800); border-radius:var(--radius-lg);
+      padding:var(--space-4) var(--space-5); margin-top:var(--space-4); }
+    .nn-ctrl-head { display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-4); flex-wrap:wrap; }
+    .nn-ctrl-head .who { font-size:14px; color:var(--ss-text-300); } .nn-ctrl-head .who b { color:var(--ss-text-100); }
+    .nn-sliders { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-4) var(--space-6); }
+    @media (max-width:620px){ .nn-sliders{ grid-template-columns:1fr; } }
+    .nn-slider label { display:flex; justify-content:space-between; font-size:12px; color:var(--ss-text-500); margin-bottom:6px; }
+    .nn-slider label b { font-family:var(--font-mono); color:var(--ss-text-100); }
+    .nn-slider input[type=range]{ width:100%; accent-color:var(--ss-cyan-500); }
+    .nn-verify { font-family:var(--font-mono); font-size:11px; margin-left:auto; }
+    .nn-verify.ok { color:var(--ss-green-500); } .nn-verify.bad { color:var(--ss-red-500); }
+    .nn-delta { font-family:var(--font-mono); font-size:12px; color:var(--ss-text-500); margin-left:var(--space-2); }
+  </style>
+</head>
+<body>
+
+<div class="ss-topbar">
+  <a class="ss-brand" href="index.html" aria-label="SolvedState home">
+    <img class="ss-brand-icon" src="ss_icon.png?v=3" alt="" />
+    <span class="ss-brand-word">Solved<b>State</b></span>
+    <span class="ss-brand-sub">VALORANT</span>
+  </a>
+  <nav class="ss-nav">
+    <a href="index.html">Predictions</a>
+    <a href="leaderboard.html">Elo Rankings</a>
+    <a href="allstar.html">All-Star</a>
+    <a href="lifecycle.html">Lifecycle</a>
+    <a href="neuralnet.html" class="active">Neural Net</a>
+    <a href="architecture.html">How It Works</a>
+  </nav>
+  <div class="ss-meta" id="updated-at">—</div>
+</div>
+
+<div class="ss-disclaimer">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+  <span>An experiment, not the production model. XGBoost is what powers the live predictions — this is a hand-built neural net kept as a demo. The forward pass below runs entirely in your browser.</span>
+</div>
+
+<div class="ss-pagehead">
+  <div class="ss-eyebrow">Deep Learning · From Scratch</div>
+  <h1>A neural net, written by hand in JAX</h1>
+  <p>No layers library, no optimizer package — explicit weight arrays, a forward pass written by hand, gradients from <code>jax.grad</code>, and Adam implemented from scratch. The model is a permutation-invariant attention network that learns to pool each five-player roster on its own. Its trained weights are shipped here and the forward pass is re-implemented in JavaScript, so you can watch it think and nudge the inputs live.</p>
+</div>
+
+<main class="ss-main">
+  <div id="main-status" class="ss-status">Loading network…</div>
+  <div id="content" style="display:none">
+
+    <!-- ── Watch it learn ── -->
+    <div class="ss-section">
+      <div class="ss-section-head">
+        <h2>Watch it learn</h2>
+        <span class="ss-section-meta">training loss, held out honestly in time</span>
+      </div>
+      <p class="nn-sub">Trained on the oldest matches and evaluated on the most recent <span id="nn-testn"></span> it never saw (test from <span id="nn-testfrom"></span>). The attention model that <em>learns</em> roster pooling edges out the plain MLP — and both land a little under XGBoost, which is the honest result on heavily-engineered tabular features.</p>
+      <svg class="nn-curve" id="nn-curve" preserveAspectRatio="none"></svg>
+      <div class="nn-curve-legend">
+        <span class="k"><span class="sw" style="background:var(--ss-cyan-500)"></span>Validation log-loss</span>
+        <span class="k"><span class="sw" style="background:var(--ss-text-650)"></span>Training log-loss</span>
+        <span class="k" id="nn-beststop"></span>
+      </div>
+
+      <div class="ss-section" style="margin-top:var(--space-6)">
+        <div class="ss-section-head"><h2 style="font-size:16px">Three models, same test set</h2></div>
+        <div class="ss-table-wrap">
+          <table class="nn-cmp" id="nn-cmp">
+            <thead><tr><th>Model</th><th>Accuracy</th><th>Log-loss</th><th>Brier</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Watch it think ── -->
+    <div class="ss-section">
+      <div class="ss-section-head">
+        <h2>Watch it think</h2>
+        <span class="ss-section-meta" id="nn-match-meta"></span>
+      </div>
+      <p class="nn-sub">Each player is encoded, then an <em>attention pool</em> decides how much weight to put on each of a team's five players (the edges below — thicker means more attention). The two roster embeddings feed a small head that outputs a win probability. <b>Pick a player and drag the sliders</b> — the whole network recomputes live.</p>
+
+      <div class="nn-net" id="nn-net">
+        <svg class="nn-edges" id="nn-edges" preserveAspectRatio="none"></svg>
+        <div class="nn-col" id="nn-players"></div>
+        <div class="nn-col" id="nn-teams" style="justify-content:space-around"></div>
+        <div class="nn-col" style="justify-content:center"><div class="nn-node" id="nn-head"><div class="nm">MLP head</div><div class="lbl">144 → 48 → 1</div></div></div>
+        <div class="nn-col" style="justify-content:center"><div class="nn-node nn-out"><div class="nm" id="nn-out-nm">win prob</div><div class="pr" id="nn-out-pr">—</div><div class="lbl">JAX net</div></div></div>
+      </div>
+
+      <div class="nn-controls">
+        <div class="nn-ctrl-head">
+          <span class="who">Adjusting: <b id="nn-sel-name">—</b></span>
+          <span class="nn-delta" id="nn-delta"></span>
+          <button class="ss-btn ss-tab--sm" id="nn-reset">Reset to real match</button>
+          <span class="nn-verify" id="nn-verify"></span>
+        </div>
+        <div class="nn-sliders" id="nn-sliders"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+const NN_URL="neuralnet.json";
+let D=null, RAW=null, BASE=null, SEL=0;
+const dot=(a,b)=>{let s=0;for(let i=0;i<a.length;i++)s+=a[i]*b[i];return s;};
+function dense(x,W,b){ const out=b.slice(); for(let i=0;i<x.length;i++){const xi=x[i],Wi=W[i];for(let j=0;j<out.length;j++)out[j]+=xi*Wi[j];} return out; }
+const relu=a=>a.map(v=>v>0?v:0);
+const sig=z=>0.5*(Math.tanh(0.5*z)+1);
+function softmax(s){const m=Math.max(...s);const e=s.map(v=>Math.exp(v-m));const z=e.reduce((p,c)=>p+c,0);return e.map(v=>v/z);}
+
+function standardize(raw){ // raw:[65] -> z:[65], nan->0
+  const {mean,std}=D.scaler;
+  return raw.map((v,i)=>{ if(v==null||isNaN(v))return 0; const z=(v-mean[i])/std[i]; return isFinite(z)?z:0; });
+}
+function encode(z){ const w=D.weights; let h=relu(dense(z,w.enc1.w,w.enc1.b)); return relu(dense(h,w.enc2.w,w.enc2.b)); }
+function pool(encs){ // encs: array of 5 ×[E]
+  const w=D.weights;
+  const scores=encs.map(h=>dot(dense(h,w.attn_k.w,w.attn_k.b), w.query));
+  const att=softmax(scores);
+  const E=encs[0].length, team=new Array(E).fill(0);
+  for(let p=0;p<encs.length;p++) for(let j=0;j<E;j++) team[j]+=att[p]*encs[p][j];
+  return {team, att};
+}
+function forward(){
+  const w=D.weights;
+  const encs=RAW.map(r=>encode(standardize(r)));
+  const a=pool(encs.slice(0,5)), b=pool(encs.slice(5,10));
+  const feat=[...a.team, ...b.team, ...a.team.map((v,i)=>v-b.team[i])];
+  const hh=relu(dense(feat,w.head1.w,w.head1.b));
+  const logit=dense(hh,w.head2.w,w.head2.b)[0];
+  return {prob:sig(logit), att1:a.att, att2:b.att, t1:a.team, t2:b.team, hh};
+}
+
+/* ── network diagram ── */
+function embBars(vec){ // 16 sampled bars from an embedding
+  const step=Math.max(1,Math.floor(vec.length/16));
+  let s=""; const mx=Math.max(...vec.map(Math.abs),1e-6);
+  for(let i=0;i<vec.length;i+=step){ const h=Math.max(2,Math.abs(vec[i])/mx*22); s+=`<i style="height:${h.toFixed(0)}px"></i>`; }
+  return s;
+}
+function renderTeams(out){
+  const m=D.match;
+  document.getElementById("nn-teams").innerHTML=
+    `<div class="nn-node"><div class="nm" style="color:var(--ss-cyan-500)">${m.team1_name}</div><div class="lbl">roster embedding</div><div class="nn-emb" id="emb1">${embBars(out.t1)}</div></div>
+     <div class="nn-node"><div class="nm" style="color:var(--ss-amber-500)">${m.team2_name}</div><div class="lbl">roster embedding</div><div class="nn-emb" id="emb2">${embBars(out.t2)}</div></div>`;
+}
+function renderPlayers(out){
+  const m=D.match, sliderCols=D.sliders.map(s=>s.index);
+  const showStat=(p)=>{ const i=D.sliders[0].index; const v=p.features[i]; return isNaN(v)?"":`ACS ${v.toFixed(0)}`; };
+  const card=(p,gi)=>{
+    const t=p.team===1?"t1":"t2";
+    const att=(p.team===1?out.att1:out.att2)[gi];
+    const mx=Math.max(...(p.team===1?out.att1:out.att2));
+    return `<div class="nn-pl ${t} ${gi+(p.team-1)*5===SEL?'sel':''}" data-i="${gi+(p.team-1)*5}">
+      <div class="nn-pl-top"><span class="nm">${p.name}</span><span class="aw">${(att*100).toFixed(0)}%</span></div>
+      <div class="nn-attn-bar"><div class="nn-attn-fill" style="width:${(att/mx*100).toFixed(0)}%"></div></div></div>`;
+  };
+  const t1=m.players.filter(p=>p.team===1), t2=m.players.filter(p=>p.team===2);
+  document.getElementById("nn-players").innerHTML=
+    `<div class="nn-team-group"><div class="nn-team-label" style="color:var(--ss-cyan-500)">${m.team1_name} · attention</div>${t1.map((p,i)=>card(p,i)).join("")}</div>
+     <div class="nn-team-group"><div class="nn-team-label" style="color:var(--ss-amber-500)">${m.team2_name} · attention</div>${t2.map((p,i)=>card(p,i)).join("")}</div>`;
+  document.querySelectorAll(".nn-pl").forEach(el=> el.addEventListener("click",()=>selectPlayer(+el.dataset.i)));
+}
+function drawEdges(out){
+  const net=document.getElementById("nn-net"), svg=document.getElementById("nn-edges");
+  const gr=net.getBoundingClientRect(); if(!gr.width) return;
+  svg.setAttribute("viewBox",`0 0 ${gr.width} ${gr.height}`);
+  const rel=el=>{const r=el.getBoundingClientRect();return {l:r.left-gr.left,r:r.right-gr.left,cy:(r.top+r.bottom)/2-gr.top};};
+  const teamNodes=document.querySelectorAll("#nn-teams .nn-node");
+  if(teamNodes.length<2) return;
+  const T1=rel(teamNodes[0]), T2=rel(teamNodes[1]);
+  const head=rel(document.getElementById("nn-head")), out0=rel(document.querySelector(".nn-out"));
+  let d="";
+  document.querySelectorAll("#nn-players .nn-pl").forEach(pl=>{
+    const i=+pl.dataset.i, t1=i<5;
+    const att=(t1?out.att1:out.att2)[t1?i:i-5];
+    const mx=Math.max(...(t1?out.att1:out.att2));
+    const R=rel(pl), Tn=t1?T1:T2, col=t1?"#00CCD8":"#F5B84B";
+    const sw=(0.5+(att/mx)*3.5).toFixed(2), op=(0.12+(att/mx)*0.55).toFixed(2);
+    const mx2=(R.r+Tn.l)/2;
+    d+=`<path d="M${R.r},${R.cy} C${mx2},${R.cy} ${mx2},${Tn.cy} ${Tn.l},${Tn.cy}" fill="none" stroke="${col}" stroke-width="${sw}" opacity="${op}"/>`;
+  });
+  [T1,T2].forEach((Tn,k)=>{ const mx=(Tn.r+head.l)/2, col=k? "#F5B84B":"#00CCD8";
+    d+=`<path d="M${Tn.r},${Tn.cy} C${mx},${Tn.cy} ${mx},${head.cy} ${head.l},${head.cy}" fill="none" stroke="${col}" stroke-width="2" opacity="0.5"/>`; });
+  const mxo=(head.r+out0.l)/2;
+  d+=`<path d="M${head.r},${head.cy} C${mxo},${head.cy} ${mxo},${out0.cy} ${out0.l},${out0.cy}" fill="none" stroke="#00CCD8" stroke-width="3" opacity="0.6"/>`;
+  svg.innerHTML=d;
+}
+function renderAll(animateProb){
+  const out=forward();
+  renderTeams(out); renderPlayers(out);
+  const m=D.match, p1=out.prob;
+  document.getElementById("nn-out-nm").textContent=m.team1_name+" win prob";
+  const prEl=document.getElementById("nn-out-pr");
+  if(animateProb){ countUp(prEl,Math.round(p1*100),700,"%"); } else { prEl.textContent=Math.round(p1*100)+"%"; }
+  // delta vs the real match
+  const base=BASE.prob; const dlt=(p1-base)*100;
+  document.getElementById("nn-delta").textContent = Math.abs(dlt)<0.15? "" : `${dlt>0?"+":""}${dlt.toFixed(1)} pts vs real match`;
+  requestAnimationFrame(()=>drawEdges(out));
+  return out;
+}
+function countUp(el,t,dur,suf=""){const s=performance.now();(function tick(n){const k=Math.min(1,(n-s)/dur),e=1-Math.pow(1-k,3);el.textContent=Math.round(t*e)+suf;if(k<1)requestAnimationFrame(tick);})(s);}
+
+/* ── controls ── */
+function selectPlayer(i){
+  SEL=i; document.querySelectorAll(".nn-pl").forEach(el=>el.classList.toggle("sel",+el.dataset.i===i));
+  document.getElementById("nn-sel-name").textContent=D.match.players[i].name;
+  buildSliders();
+}
+function buildSliders(){
+  const p=D.match.players[SEL];
+  document.getElementById("nn-sliders").innerHTML=D.sliders.map(s=>{
+    let v=RAW[SEL][s.index]; if(v==null||isNaN(v)) v=(s.min+s.max)/2;
+    v=Math.min(s.max,Math.max(s.min,v));
+    return `<div class="nn-slider">
+      <label>${s.label} <b id="sv-${s.index}">${fmt(v,s.step)}</b></label>
+      <input type="range" min="${s.min}" max="${s.max}" step="${s.step}" value="${v}" data-idx="${s.index}">
+    </div>`;
+  }).join("");
+  document.querySelectorAll("#nn-sliders input").forEach(inp=>{
+    inp.addEventListener("input",()=>{
+      const idx=+inp.dataset.idx, val=parseFloat(inp.value);
+      RAW[SEL][idx]=val;
+      document.getElementById("sv-"+idx).textContent=fmt(val, parseFloat(inp.step));
+      renderAll(false);
+    });
+  });
+}
+const fmt=(v,step)=> step<1 ? v.toFixed(2) : v.toFixed(0);
+
+/* ── learning curve + table ── */
+function renderCurve(){
+  const h=D.training.roster.history, svg=document.getElementById("nn-curve");
+  const W=svg.clientWidth||760, H=170, pad=18;
+  const tr=h.map(d=>d.train_logloss), va=h.map(d=>d.val_logloss), n=h.length;
+  const lo=Math.min(...tr,...va)-0.01, hi=Math.max(...tr,...va)+0.01;
+  const X=i=>pad+(i/(n-1))*(W-2*pad), Y=v=>H-pad-((v-lo)/(hi-lo))*(H-2*pad);
+  const poly=(arr,col)=>`<polyline points="${arr.map((v,i)=>X(i).toFixed(1)+","+Y(v).toFixed(1)).join(" ")}" fill="none" stroke="${col}" stroke-width="2"/>`;
+  const be=D.training.roster.best_epoch;
+  svg.innerHTML=poly(tr,"#5E6976")+poly(va,"#00CCD8")+
+    (be>=0?`<line x1="${X(be).toFixed(1)}" y1="${pad}" x2="${X(be).toFixed(1)}" y2="${H-pad}" stroke="#35D07F" stroke-dasharray="3 3" opacity="0.7"/>`:"");
+  const bestVal=Math.min(...va);
+  document.getElementById("nn-beststop").innerHTML=be>=0?`<span style="color:var(--ss-green-500)">▎</span>best epoch (early stop) · val ${bestVal.toFixed(3)}`:"";
+  // animate the val line draw
+  try{ const pl=svg.querySelectorAll("polyline")[1], len=pl.getTotalLength();
+    pl.style.strokeDasharray=len; pl.style.strokeDashoffset=len; pl.getBoundingClientRect();
+    pl.style.transition="stroke-dashoffset 1100ms var(--ease-standard)"; pl.style.strokeDashoffset=0; }catch(_){}
+}
+function renderTable(){
+  const t=D.training, rows=[
+    {m:"XGBoost", tag:"production · walk-forward", d:t.xgb_reference, best:true},
+    {m:"Attention roster net", tag:"JAX · learned pooling", d:t.roster},
+    {m:"MLP (587 features)", tag:"JAX · plain", d:t.mlp},
+  ];
+  document.querySelector("#nn-cmp tbody").innerHTML=rows.map(r=>`
+    <tr class="${r.best?'best':''}">
+      <td class="model">${r.m}<span class="tag">${r.tag}</span></td>
+      <td>${(r.d.accuracy*100).toFixed(1)}%</td>
+      <td>${r.d.log_loss.toFixed(3)}</td>
+      <td>${r.d.brier_score.toFixed(3)}</td>
+    </tr>`).join("");
+}
+
+/* ── verify JS port matches JAX ── */
+function verify(out){
+  const ref=D.reference, dp=Math.abs(out.prob-ref.prob_team1);
+  const da=Math.max(...out.att1.map((v,i)=>Math.abs(v-ref.attn_team1[i])));
+  const el=document.getElementById("nn-verify");
+  const ok=dp<1e-3 && da<1e-3;
+  el.className="nn-verify "+(ok?"ok":"bad");
+  el.textContent=ok?`✓ JS forward matches JAX (Δp ${dp.toExponential(1)})`:`⚠ JS/JAX mismatch Δp ${dp.toExponential(1)}`;
+}
+
+async function load(){
+  const status=document.getElementById("main-status"), content=document.getElementById("content");
+  try{
+    D=await fetch(NN_URL+"?_="+Date.now()).then(r=>{if(!r.ok)throw new Error("neuralnet.json not found");return r.json();});
+    if(D.generated_at) document.getElementById("updated-at").textContent="Updated "+new Date(D.generated_at).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+    RAW=D.match.players.map(p=>p.features.slice());
+    document.getElementById("nn-testn").textContent=D.training.test_matches.toLocaleString()+" matches";
+    document.getElementById("nn-testfrom").textContent=D.training.test_from;
+    document.getElementById("nn-match-meta").textContent=`${D.match.team1_name} vs ${D.match.team2_name} · ${D.match.match_date}`;
+    renderCurve(); renderTable();
+    BASE=forward();
+    const out=renderAll(true);
+    verify(out);
+    selectPlayer(0);
+    document.getElementById("nn-reset").addEventListener("click",()=>{ RAW=D.match.players.map(p=>p.features.slice()); buildSliders(); renderAll(false); });
+    status.style.display="none"; content.style.display="block";
+    requestAnimationFrame(()=>drawEdges(out));
+    window.addEventListener("resize",()=>drawEdges(forward()));
+  }catch(err){
+    status.innerHTML=`<div class="ss-note ss-note--accent" style="text-align:left;border-left-color:var(--ss-red-500)">Couldn’t load the network — ${err.message}. Run <code>uv run python -m scripts.train_jax</code> then <code>scripts.export_jax</code>.</div>`;
+  }
+}
+load();
+</script>
+</body>
+</html>
