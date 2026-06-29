@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-06-28T22:04:00.225942+00:00",
-  "total_resolved": 75,
-  "correct": 51,
+  "generated_at": "2026-06-29T00:04:39.616546+00:00",
+  "total_resolved": 77,
+  "correct": 53,
   "predictions": [
+    {
+      "match_id": "706133",
+      "match_date": "2026-06-29",
+      "team1_name": "Dominican Republic",
+      "team2_name": "Colombia",
+      "team1_win_prob": 0.3896,
+      "team2_win_prob": 0.6104,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "707127",
+      "match_date": "2026-06-29",
+      "team1_name": "Division One",
+      "team2_name": "QoR",
+      "team1_win_prob": 0.4328,
+      "team2_win_prob": 0.5672,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "706111",
       "match_date": "2026-06-28",
@@ -530,28 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "701228",
-      "match_date": "2026-06-26",
-      "team1_name": "FlyQuest",
-      "team2_name": "Division One",
-      "team1_win_prob": 0.4536,
-      "team2_win_prob": 0.5464,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701229",
-      "match_date": "2026-06-26",
-      "team1_name": "ROSE",
-      "team2_name": "Pigeons",
-      "team1_win_prob": 0.6905,
-      "team2_win_prob": 0.3095,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
