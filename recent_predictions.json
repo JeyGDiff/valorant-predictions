@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-06-29T14:45:56.860050+00:00",
-  "total_resolved": 81,
-  "correct": 56,
+  "generated_at": "2026-06-29T17:33:17.967837+00:00",
+  "total_resolved": 82,
+  "correct": 57,
   "predictions": [
+    {
+      "match_id": "688436",
+      "match_date": "2026-06-29",
+      "team1_name": "Mandatory",
+      "team2_name": "Be\u015fikta\u015f Esports",
+      "team1_win_prob": 0.8108,
+      "team2_win_prob": 0.1892,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "707128",
       "match_date": "2026-06-29",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.3705,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "688450",
-      "match_date": "2026-06-26",
-      "team1_name": "Ghools Esports",
-      "team2_name": "Team Liquid Academy",
-      "team1_win_prob": 0.3952,
-      "team2_win_prob": 0.6048,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
