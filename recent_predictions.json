@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-06-29T19:51:41.709892+00:00",
-  "total_resolved": 83,
-  "correct": 58,
+  "generated_at": "2026-06-29T21:22:36.097972+00:00",
+  "total_resolved": 85,
+  "correct": 59,
   "predictions": [
+    {
+      "match_id": "688446",
+      "match_date": "2026-06-29",
+      "team1_name": "UCAM Esports Club",
+      "team2_name": "FOKUS",
+      "team1_win_prob": 0.7423,
+      "team2_win_prob": 0.2577,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "688451",
+      "match_date": "2026-06-29",
+      "team1_name": "Misa Esports",
+      "team2_name": "Team Liquid Academy",
+      "team1_win_prob": 0.6669,
+      "team2_win_prob": 0.3331,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "688441",
       "match_date": "2026-06-29",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "688444",
-      "match_date": "2026-06-26",
-      "team1_name": "UCAM Esports Club",
-      "team2_name": "MIR",
-      "team1_win_prob": 0.814,
-      "team2_win_prob": 0.186,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "688445",
-      "match_date": "2026-06-26",
-      "team1_name": "Pixel Lumina",
-      "team2_name": "FOKUS",
-      "team1_win_prob": 0.6722,
-      "team2_win_prob": 0.3278,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
