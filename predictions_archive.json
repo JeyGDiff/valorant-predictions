@@ -1,5 +1,49 @@
 [
   {
+    "match_id": "707128",
+    "match_date": "2026-06-29",
+    "team1_name": "Azure Dragon Gaming",
+    "team2_name": "Evil Geniuses Academy",
+    "team1_win_prob": 0.4443,
+    "team2_win_prob": 0.5558,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "706113",
+    "match_date": "2026-06-29",
+    "team1_name": "Peru",
+    "team2_name": "Uruguay",
+    "team1_win_prob": 0.403,
+    "team2_win_prob": 0.597,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "701182",
+    "match_date": "2026-06-29",
+    "team1_name": "F4TALITY",
+    "team2_name": "Team Solid",
+    "team1_win_prob": 0.2277,
+    "team2_win_prob": 0.7723,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "706147",
+    "match_date": "2026-06-29",
+    "team1_name": "Dominican Republic",
+    "team2_name": "Venezuela",
+    "team1_win_prob": 0.7106,
+    "team2_win_prob": 0.2894,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "706133",
     "match_date": "2026-06-29",
     "team1_name": "Dominican Republic",
@@ -902,17 +946,6 @@
     "correct": null
   },
   {
-    "match_id": "707128",
-    "match_date": "Upcoming 1",
-    "team1_name": "Azure Dragon Gaming",
-    "team2_name": "Evil Geniuses Academy",
-    "team1_win_prob": 0.4443,
-    "team2_win_prob": 0.5558,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "705814",
     "match_date": "Upcoming 2",
     "team1_name": "Akave Esports GC",
@@ -1045,17 +1078,6 @@
     "correct": null
   },
   {
-    "match_id": "706113",
-    "match_date": "Upcoming 1",
-    "team1_name": "Peru",
-    "team2_name": "Uruguay",
-    "team1_win_prob": 0.403,
-    "team2_win_prob": 0.597,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "684631",
     "match_date": "Upcoming 4",
     "team1_name": "Jade Lions",
@@ -1078,34 +1100,56 @@
     "correct": null
   },
   {
-    "match_id": "701182",
-    "match_date": "LIVE",
-    "team1_name": "F4TALITY",
-    "team2_name": "Team Solid",
-    "team1_win_prob": 0.2277,
-    "team2_win_prob": 0.7723,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706147",
-    "match_date": "LIVE",
-    "team1_name": "Dominican Republic",
-    "team2_name": "Venezuela",
-    "team1_win_prob": 0.7106,
-    "team2_win_prob": 0.2894,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706769",
     "match_date": "Upcoming 4",
     "team1_name": "MIBR.LOS(MIBR)",
     "team2_name": "Global Esports",
     "team1_win_prob": 0.6681,
     "team2_win_prob": 0.3319,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706770",
+    "match_date": "Upcoming 4",
+    "team1_name": "AG.AL(All Gamers)",
+    "team2_name": "Team Heretics",
+    "team1_win_prob": 0.316,
+    "team2_win_prob": 0.684,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706764",
+    "match_date": "Upcoming 4",
+    "team1_name": "Gentle Mates",
+    "team2_name": "Xi Lai Gaming",
+    "team1_win_prob": 0.57,
+    "team2_win_prob": 0.43,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706765",
+    "match_date": "Upcoming 4",
+    "team1_name": "Nongshim RedForce",
+    "team2_name": "G2 Esports",
+    "team1_win_prob": 0.4337,
+    "team2_win_prob": 0.5663,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707221",
+    "match_date": "Upcoming 4",
+    "team1_name": "KR\u00dc SPARK",
+    "team2_name": "University War",
+    "team1_win_prob": 0.6793,
+    "team2_win_prob": 0.3207,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

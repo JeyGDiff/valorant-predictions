@@ -1,8 +1,52 @@
 {
-  "generated_at": "2026-06-29T00:04:39.616546+00:00",
-  "total_resolved": 77,
-  "correct": 53,
+  "generated_at": "2026-06-29T05:27:48.381357+00:00",
+  "total_resolved": 81,
+  "correct": 56,
   "predictions": [
+    {
+      "match_id": "707128",
+      "match_date": "2026-06-29",
+      "team1_name": "Azure Dragon Gaming",
+      "team2_name": "Evil Geniuses Academy",
+      "team1_win_prob": 0.4443,
+      "team2_win_prob": 0.5558,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706113",
+      "match_date": "2026-06-29",
+      "team1_name": "Peru",
+      "team2_name": "Uruguay",
+      "team1_win_prob": 0.403,
+      "team2_win_prob": 0.597,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "701182",
+      "match_date": "2026-06-29",
+      "team1_name": "F4TALITY",
+      "team2_name": "Team Solid",
+      "team1_win_prob": 0.2277,
+      "team2_win_prob": 0.7723,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706147",
+      "match_date": "2026-06-29",
+      "team1_name": "Dominican Republic",
+      "team2_name": "Venezuela",
+      "team1_win_prob": 0.7106,
+      "team2_win_prob": 0.2894,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706133",
       "match_date": "2026-06-29",
@@ -505,50 +549,6 @@
       "team2_name": "Team Liquid Academy",
       "team1_win_prob": 0.3952,
       "team2_win_prob": 0.6048,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "676924",
-      "match_date": "2026-06-26",
-      "team1_name": "KR\u00dc BLAZE",
-      "team2_name": "LEVIAT\u00c1N Academy",
-      "team1_win_prob": 0.5928,
-      "team2_win_prob": 0.4072,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "701226",
-      "match_date": "2026-06-26",
-      "team1_name": "Azure Dragon Gaming",
-      "team2_name": "Alliance Guardians",
-      "team1_win_prob": 0.6275,
-      "team2_win_prob": 0.3725,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "701227",
-      "match_date": "2026-06-26",
-      "team1_name": "QoR",
-      "team2_name": "Evictix",
-      "team1_win_prob": 0.8141,
-      "team2_win_prob": 0.1859,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "676925",
-      "match_date": "2026-06-26",
-      "team1_name": "University War",
-      "team2_name": "KR\u00dc SPARK",
-      "team1_win_prob": 0.4391,
-      "team2_win_prob": 0.5609,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
