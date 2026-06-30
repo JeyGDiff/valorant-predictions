@@ -1164,5 +1164,38 @@
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
+  },
+  {
+    "match_id": "707767",
+    "match_date": "Upcoming 2",
+    "team1_name": "M80",
+    "team2_name": "QoR",
+    "team1_win_prob": 0.709,
+    "team2_win_prob": 0.291,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707768",
+    "match_date": "Upcoming 2",
+    "team1_name": "Nightblood Gaming",
+    "team2_name": "YFT",
+    "team1_win_prob": 0.6337,
+    "team2_win_prob": 0.3663,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707769",
+    "match_date": "Upcoming 3",
+    "team1_name": "SaD Esports",
+    "team2_name": "NRG Academy",
+    "team1_win_prob": 0.4775,
+    "team2_win_prob": 0.5225,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
   }
 ]
