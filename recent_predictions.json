@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-06-30T19:49:51.416198+00:00",
-  "total_resolved": 85,
-  "correct": 59,
+  "generated_at": "2026-06-30T21:25:22.522757+00:00",
+  "total_resolved": 87,
+  "correct": 61,
   "predictions": [
+    {
+      "match_id": "707700",
+      "match_date": "2026-06-30",
+      "team1_name": "REBORN",
+      "team2_name": "Joblife",
+      "team1_win_prob": 0.6707,
+      "team2_win_prob": 0.3293,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707699",
+      "match_date": "2026-06-30",
+      "team1_name": "MIR",
+      "team2_name": "Misa Esports",
+      "team1_win_prob": 0.1592,
+      "team2_win_prob": 0.8408,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "688446",
       "match_date": "2026-06-29",
@@ -530,28 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "688439",
-      "match_date": "2026-06-26",
-      "team1_name": "Enterprise Esports",
-      "team2_name": "Joblife",
-      "team1_win_prob": 0.5668,
-      "team2_win_prob": 0.4332,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "688440",
-      "match_date": "2026-06-26",
-      "team1_name": "Bar\u00e7a eSports",
-      "team2_name": "CGN Esports",
-      "team1_win_prob": 0.5105,
-      "team2_win_prob": 0.4895,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
