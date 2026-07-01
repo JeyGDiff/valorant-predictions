@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-01T19:48:32.302077+00:00",
-  "total_resolved": 91,
-  "correct": 63,
+  "generated_at": "2026-07-01T21:24:32.485773+00:00",
+  "total_resolved": 93,
+  "correct": 64,
   "predictions": [
+    {
+      "match_id": "707705",
+      "match_date": "2026-07-01",
+      "team1_name": "FOKUS",
+      "team2_name": "Mandatory",
+      "team1_win_prob": 0.3132,
+      "team2_win_prob": 0.6868,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "707706",
+      "match_date": "2026-07-01",
+      "team1_name": "MIR",
+      "team2_name": "Joblife",
+      "team1_win_prob": 0.2285,
+      "team2_win_prob": 0.7715,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "707701",
       "match_date": "2026-07-01",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.8143,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "681798",
-      "match_date": "2026-06-26",
-      "team1_name": "RIDDLE ORDER",
-      "team2_name": "AGELITE",
-      "team1_win_prob": 0.7439,
-      "team2_win_prob": 0.2561,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "686202",
-      "match_date": "2026-06-26",
-      "team1_name": "ONSIDE GAMING",
-      "team2_name": "T1 Academy",
-      "team1_win_prob": 0.8212,
-      "team2_win_prob": 0.1788,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
