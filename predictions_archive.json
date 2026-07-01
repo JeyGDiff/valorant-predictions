@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "707203",
+    "match_date": "2026-07-01",
+    "team1_name": "RED Canids",
+    "team2_name": "Team Solid",
+    "team1_win_prob": 0.3164,
+    "team2_win_prob": 0.6836,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "707705",
     "match_date": "2026-07-01",
     "team1_name": "FOKUS",
@@ -1265,17 +1276,6 @@
     "correct": null
   },
   {
-    "match_id": "707203",
-    "match_date": "Upcoming 1",
-    "team1_name": "RED Canids",
-    "team2_name": "Team Solid",
-    "team1_win_prob": 0.3164,
-    "team2_win_prob": 0.6836,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707703",
     "match_date": "Upcoming 2",
     "team1_name": "Enterprise Esports",
@@ -1304,6 +1304,17 @@
     "team2_name": "Joblife",
     "team1_win_prob": 0.4439,
     "team2_win_prob": 0.5561,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707204",
+    "match_date": "LIVE",
+    "team1_name": "FURIA Academy",
+    "team2_name": "LA MASIA",
+    "team1_win_prob": 0.2404,
+    "team2_win_prob": 0.7596,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
