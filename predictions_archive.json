@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "707701",
+    "match_date": "2026-07-01",
+    "team1_name": "Natus Vincere Junior",
+    "team2_name": "Enterprise Esports",
+    "team1_win_prob": 0.3877,
+    "team2_win_prob": 0.6123,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "707702",
     "match_date": "2026-07-01",
     "team1_name": "Misa Esports",
@@ -1243,17 +1254,6 @@
     "correct": null
   },
   {
-    "match_id": "707701",
-    "match_date": "Upcoming 1",
-    "team1_name": "Natus Vincere Junior",
-    "team2_name": "Enterprise Esports",
-    "team1_win_prob": 0.3877,
-    "team2_win_prob": 0.6123,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707705",
     "match_date": "Upcoming 2",
     "team1_name": "FOKUS",
@@ -1272,6 +1272,17 @@
     "team1_win_prob": 0.2285,
     "team2_win_prob": 0.7715,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707703",
+    "match_date": "Upcoming 2",
+    "team1_name": "Enterprise Esports",
+    "team2_name": "REBORN",
+    "team1_win_prob": 0.6163,
+    "team2_win_prob": 0.3837,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
