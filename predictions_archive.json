@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "707702",
+    "match_date": "2026-07-01",
+    "team1_name": "Misa Esports",
+    "team2_name": "REBORN",
+    "team1_win_prob": 0.502,
+    "team2_win_prob": 0.498,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "686211",
     "match_date": "2026-07-01",
     "team1_name": "T1 Academy",
@@ -1239,17 +1250,6 @@
     "team1_win_prob": 0.3877,
     "team2_win_prob": 0.6123,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707702",
-    "match_date": "Upcoming 1",
-    "team1_name": "Misa Esports",
-    "team2_name": "REBORN",
-    "team1_win_prob": 0.502,
-    "team2_win_prob": 0.498,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
