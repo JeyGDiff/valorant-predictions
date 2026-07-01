@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-01T11:58:21.340518+00:00",
-  "total_resolved": 88,
+  "generated_at": "2026-07-01T14:45:04.789450+00:00",
+  "total_resolved": 89,
   "correct": 62,
   "predictions": [
+    {
+      "match_id": "686211",
+      "match_date": "2026-07-01",
+      "team1_name": "T1 Academy",
+      "team2_name": "X-CAST",
+      "team1_win_prob": 0.4365,
+      "team2_win_prob": 0.5635,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "705814",
       "match_date": "2026-07-01",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "688434",
-      "match_date": "2026-06-26",
-      "team1_name": "Natus Vincere Junior",
-      "team2_name": "Mandatory",
-      "team1_win_prob": 0.3555,
-      "team2_win_prob": 0.6445,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }

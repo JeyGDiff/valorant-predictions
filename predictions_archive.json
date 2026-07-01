@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "686211",
+    "match_date": "2026-07-01",
+    "team1_name": "T1 Academy",
+    "team2_name": "X-CAST",
+    "team1_win_prob": 0.4365,
+    "team2_win_prob": 0.5635,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "705814",
     "match_date": "2026-07-01",
     "team1_name": "Akave Esports GC",
@@ -975,17 +986,6 @@
     "team1_win_prob": 0.7236,
     "team2_win_prob": 0.2764,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "686211",
-    "match_date": "Upcoming 2",
-    "team1_name": "T1 Academy",
-    "team2_name": "X-CAST",
-    "team1_win_prob": 0.4365,
-    "team2_win_prob": 0.5635,
-    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   },
