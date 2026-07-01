@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "705814",
+    "match_date": "2026-07-01",
+    "team1_name": "Akave Esports GC",
+    "team2_name": "Stray Cats",
+    "team1_win_prob": 0.9545,
+    "team2_win_prob": 0.0455,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "707700",
     "match_date": "2026-06-30",
     "team1_name": "REBORN",
@@ -963,17 +974,6 @@
     "team2_name": "Polar Squad Esports GC",
     "team1_win_prob": 0.7236,
     "team2_win_prob": 0.2764,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "705814",
-    "match_date": "Upcoming 2",
-    "team1_name": "Akave Esports GC",
-    "team2_name": "Stray Cats",
-    "team1_win_prob": 0.9545,
-    "team2_win_prob": 0.0455,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
