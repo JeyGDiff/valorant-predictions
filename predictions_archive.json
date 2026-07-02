@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "706760",
+    "match_date": "2026-07-02",
+    "team1_name": "NRG",
+    "team2_name": "Paper Rex",
+    "team1_win_prob": 0.4081,
+    "team2_win_prob": 0.5919,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "707708",
+    "match_date": "2026-07-02",
+    "team1_name": "Natus Vincere Junior",
+    "team2_name": "Joblife",
+    "team1_win_prob": 0.4439,
+    "team2_win_prob": 0.5561,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "706754",
     "match_date": "2026-07-02",
     "team1_name": "Rex Regum Qeon",
@@ -1155,17 +1177,6 @@
     "correct": true
   },
   {
-    "match_id": "706760",
-    "match_date": "Upcoming 3",
-    "team1_name": "NRG",
-    "team2_name": "Paper Rex",
-    "team1_win_prob": 0.4081,
-    "team2_win_prob": 0.5919,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707229",
     "match_date": "Upcoming 4",
     "team1_name": "LYON",
@@ -1309,17 +1320,6 @@
     "correct": null
   },
   {
-    "match_id": "707708",
-    "match_date": "Upcoming 1",
-    "team1_name": "Natus Vincere Junior",
-    "team2_name": "Joblife",
-    "team1_win_prob": 0.4439,
-    "team2_win_prob": 0.5561,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707205",
     "match_date": "Upcoming 1",
     "team1_name": "MIBR Academy",
@@ -1404,6 +1404,39 @@
     "team1_win_prob": 0.5668,
     "team2_win_prob": 0.4332,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707709",
+    "match_date": "Upcoming 1",
+    "team1_name": "FOKUS",
+    "team2_name": "Joblife",
+    "team1_win_prob": 0.3545,
+    "team2_win_prob": 0.6455,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706761",
+    "match_date": "Upcoming 1",
+    "team1_name": "Team Vitality",
+    "team2_name": "NRG",
+    "team1_win_prob": 0.4488,
+    "team2_win_prob": 0.5512,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706762",
+    "match_date": "Upcoming 1",
+    "team1_name": "Karmine Corp",
+    "team2_name": "Paper Rex",
+    "team1_win_prob": 0.3013,
+    "team2_win_prob": 0.6987,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
