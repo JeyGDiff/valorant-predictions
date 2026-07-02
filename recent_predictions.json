@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-02T21:01:09.999874+00:00",
-  "total_resolved": 107,
-  "correct": 73,
+  "generated_at": "2026-07-02T23:01:21.122127+00:00",
+  "total_resolved": 110,
+  "correct": 76,
   "predictions": [
+    {
+      "match_id": "707767",
+      "match_date": "2026-07-02",
+      "team1_name": "M80",
+      "team2_name": "QoR",
+      "team1_win_prob": 0.709,
+      "team2_win_prob": 0.291,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707703",
+      "match_date": "2026-07-02",
+      "team1_name": "Enterprise Esports",
+      "team2_name": "REBORN",
+      "team1_win_prob": 0.6163,
+      "team2_win_prob": 0.3837,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707205",
+      "match_date": "2026-07-02",
+      "team1_name": "MIBR Academy",
+      "team2_name": "Team Solid",
+      "team1_win_prob": 0.2912,
+      "team2_win_prob": 0.7088,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "706760",
       "match_date": "2026-07-02",
@@ -518,39 +551,6 @@
       "team2_win_prob": 0.7252,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701338",
-      "match_date": "2026-06-28",
-      "team1_name": "Kiss",
-      "team2_name": "swaglord9000",
-      "team1_win_prob": 0.6392,
-      "team2_win_prob": 0.3608,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "706186",
-      "match_date": "2026-06-28",
-      "team1_name": "New Zealand",
-      "team2_name": "Vietnam",
-      "team1_win_prob": 0.1655,
-      "team2_win_prob": 0.8345,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701344",
-      "match_date": "2026-06-28",
-      "team1_name": "JFT GC",
-      "team2_name": "Evolve GC",
-      "team1_win_prob": 0.8467,
-      "team2_win_prob": 0.1533,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
