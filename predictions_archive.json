@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "696458",
+    "match_date": "2026-07-02",
+    "team1_name": "FENNEL GC",
+    "team2_name": "Soleil Gaming GC",
+    "team1_win_prob": 0.8756,
+    "team2_win_prob": 0.1244,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "705838",
     "match_date": "2026-07-02",
     "team1_name": "KR\u00dc BLAZE",
@@ -1067,17 +1078,6 @@
     "correct": true
   },
   {
-    "match_id": "696458",
-    "match_date": "Upcoming 3",
-    "team1_name": "FENNEL GC",
-    "team2_name": "Soleil Gaming GC",
-    "team1_win_prob": 0.8756,
-    "team2_win_prob": 0.1244,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "686212",
     "match_date": "Upcoming 3",
     "team1_name": "Gen.G Global Academy",
@@ -1338,6 +1338,28 @@
     "team1_win_prob": 0.7863,
     "team2_win_prob": 0.2137,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707228",
+    "match_date": "Upcoming 1",
+    "team1_name": "FUEGO",
+    "team2_name": "STREAMER ARENA",
+    "team1_win_prob": 0.835,
+    "team2_win_prob": 0.165,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707770",
+    "match_date": "Upcoming 1",
+    "team1_name": "Shopify Rebellion Black",
+    "team2_name": "Evil Geniuses Academy",
+    "team1_win_prob": 0.4985,
+    "team2_win_prob": 0.5015,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }

@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-02T06:38:47.940036+00:00",
-  "total_resolved": 97,
-  "correct": 67,
+  "generated_at": "2026-07-02T09:59:39.440736+00:00",
+  "total_resolved": 98,
+  "correct": 68,
   "predictions": [
+    {
+      "match_id": "696458",
+      "match_date": "2026-07-02",
+      "team1_name": "FENNEL GC",
+      "team2_name": "Soleil Gaming GC",
+      "team1_win_prob": 0.8756,
+      "team2_win_prob": 0.1244,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "705838",
       "match_date": "2026-07-02",
@@ -538,17 +549,6 @@
       "team2_name": "AGELITE",
       "team1_win_prob": 0.625,
       "team2_win_prob": 0.375,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "700693",
-      "match_date": "2026-06-27",
-      "team1_name": "S8UL Esports",
-      "team2_name": "Revenant XSpark",
-      "team1_win_prob": 0.6269,
-      "team2_win_prob": 0.3731,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
