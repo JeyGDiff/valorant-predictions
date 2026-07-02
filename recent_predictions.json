@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-02T12:15:17.987552+00:00",
-  "total_resolved": 101,
+  "generated_at": "2026-07-02T15:12:26.656906+00:00",
+  "total_resolved": 102,
   "correct": 70,
   "predictions": [
+    {
+      "match_id": "706755",
+      "match_date": "2026-07-02",
+      "team1_name": "BBL Esports",
+      "team2_name": "EDward Gaming",
+      "team1_win_prob": 0.3947,
+      "team2_win_prob": 0.6053,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "686212",
       "match_date": "2026-07-02",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "681805",
-      "match_date": "2026-06-27",
-      "team1_name": "QT DIG\u221e",
-      "team2_name": "IGZIST",
-      "team1_win_prob": 0.4665,
-      "team2_win_prob": 0.5335,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }

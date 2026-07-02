@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706755",
+    "match_date": "2026-07-02",
+    "team1_name": "BBL Esports",
+    "team2_name": "EDward Gaming",
+    "team1_win_prob": 0.3947,
+    "team2_win_prob": 0.6053,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "686212",
     "match_date": "2026-07-02",
     "team1_name": "Gen.G Global Academy",
@@ -1117,17 +1128,6 @@
     "team2_name": "100 Thieves",
     "team1_win_prob": 0.422,
     "team2_win_prob": 0.578,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706755",
-    "match_date": "Upcoming 3",
-    "team1_name": "BBL Esports",
-    "team2_name": "EDward Gaming",
-    "team1_win_prob": 0.3947,
-    "team2_win_prob": 0.6053,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
