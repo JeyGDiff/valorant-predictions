@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-02T15:12:26.656906+00:00",
-  "total_resolved": 102,
-  "correct": 70,
+  "generated_at": "2026-07-02T17:42:59.487177+00:00",
+  "total_resolved": 105,
+  "correct": 72,
   "predictions": [
+    {
+      "match_id": "706754",
+      "match_date": "2026-07-02",
+      "team1_name": "Rex Regum Qeon",
+      "team2_name": "100 Thieves",
+      "team1_win_prob": 0.422,
+      "team2_win_prob": 0.578,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706759",
+      "match_date": "2026-07-02",
+      "team1_name": "Team Vitality",
+      "team2_name": "Karmine Corp",
+      "team1_win_prob": 0.529,
+      "team2_win_prob": 0.471,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707707",
+      "match_date": "2026-07-02",
+      "team1_name": "Misa Esports",
+      "team2_name": "FOKUS",
+      "team1_win_prob": 0.6107,
+      "team2_win_prob": 0.3893,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "706755",
       "match_date": "2026-07-02",
@@ -519,39 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "701178",
-      "match_date": "2026-06-28",
-      "team1_name": "LA MASIA",
-      "team2_name": "F4TALITY",
-      "team1_win_prob": 0.7106,
-      "team2_win_prob": 0.2894,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "701181",
-      "match_date": "2026-06-27",
-      "team1_name": "INTZ",
-      "team2_name": "Team Solid",
-      "team1_win_prob": 0.3989,
-      "team2_win_prob": 0.6011,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701326",
-      "match_date": "2026-06-27",
-      "team1_name": "36 Thieves",
-      "team2_name": "ROZ GC",
-      "team1_win_prob": 0.9628,
-      "team2_win_prob": 0.0372,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
