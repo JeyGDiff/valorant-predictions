@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "705838",
+    "match_date": "2026-07-02",
+    "team1_name": "KR\u00dc BLAZE",
+    "team2_name": "Polar Squad Esports GC",
+    "team1_win_prob": 0.7236,
+    "team2_win_prob": 0.2764,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "705815",
+    "match_date": "2026-07-02",
+    "team1_name": "FUSION X",
+    "team2_name": "No Sweat Blossom",
+    "team1_win_prob": 0.3153,
+    "team2_win_prob": 0.6847,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "707204",
     "match_date": "2026-07-02",
     "team1_name": "FURIA Academy",
@@ -1045,28 +1067,6 @@
     "correct": true
   },
   {
-    "match_id": "705838",
-    "match_date": "Upcoming 3",
-    "team1_name": "KR\u00dc BLAZE",
-    "team2_name": "Polar Squad Esports GC",
-    "team1_win_prob": 0.7236,
-    "team2_win_prob": 0.2764,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "705815",
-    "match_date": "Upcoming 3",
-    "team1_name": "FUSION X",
-    "team2_name": "No Sweat Blossom",
-    "team1_win_prob": 0.3153,
-    "team2_win_prob": 0.6847,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "696458",
     "match_date": "Upcoming 3",
     "team1_name": "FENNEL GC",
@@ -1316,6 +1316,28 @@
     "team1_win_prob": 0.4439,
     "team2_win_prob": 0.5561,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707205",
+    "match_date": "Upcoming 1",
+    "team1_name": "MIBR Academy",
+    "team2_name": "Team Solid",
+    "team1_win_prob": 0.2912,
+    "team2_win_prob": 0.7088,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707206",
+    "match_date": "Upcoming 1",
+    "team1_name": "2Game Esports",
+    "team2_name": "FURIA Academy",
+    "team1_win_prob": 0.7863,
+    "team2_win_prob": 0.2137,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }

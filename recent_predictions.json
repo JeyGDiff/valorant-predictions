@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-02T02:52:24.912677+00:00",
-  "total_resolved": 95,
-  "correct": 65,
+  "generated_at": "2026-07-02T06:38:47.940036+00:00",
+  "total_resolved": 97,
+  "correct": 67,
   "predictions": [
+    {
+      "match_id": "705838",
+      "match_date": "2026-07-02",
+      "team1_name": "KR\u00dc BLAZE",
+      "team2_name": "Polar Squad Esports GC",
+      "team1_win_prob": 0.7236,
+      "team2_win_prob": 0.2764,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "705815",
+      "match_date": "2026-07-02",
+      "team1_name": "FUSION X",
+      "team2_name": "No Sweat Blossom",
+      "team1_win_prob": 0.3153,
+      "team2_win_prob": 0.6847,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "707204",
       "match_date": "2026-07-02",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "706325",
-      "match_date": "2026-06-27",
-      "team1_name": "Division One",
-      "team2_name": "Pigeons",
-      "team1_win_prob": 0.5361,
-      "team2_win_prob": 0.4639,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "676923",
-      "match_date": "2026-06-26",
-      "team1_name": "9z Globant",
-      "team2_name": "University War",
-      "team1_win_prob": 0.4228,
-      "team2_win_prob": 0.5772,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
