@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-02T09:59:39.440736+00:00",
-  "total_resolved": 98,
-  "correct": 68,
+  "generated_at": "2026-07-02T12:15:17.987552+00:00",
+  "total_resolved": 101,
+  "correct": 70,
   "predictions": [
+    {
+      "match_id": "686212",
+      "match_date": "2026-07-02",
+      "team1_name": "Gen.G Global Academy",
+      "team2_name": "Dplus Esports",
+      "team1_win_prob": 0.4957,
+      "team2_win_prob": 0.5043,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "696459",
+      "match_date": "2026-07-02",
+      "team1_name": "EOTO",
+      "team2_name": "Sasanqua",
+      "team1_win_prob": 0.5696,
+      "team2_win_prob": 0.4304,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "686213",
+      "match_date": "2026-07-02",
+      "team1_name": "So:sweet",
+      "team2_name": "ONSIDE GAMING",
+      "team1_win_prob": 0.1171,
+      "team2_win_prob": 0.8829,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "696458",
       "match_date": "2026-07-02",
@@ -519,39 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "701327",
-      "match_date": "2026-06-27",
-      "team1_name": "sisu",
-      "team2_name": "Zero Sugar",
-      "team1_win_prob": 0.7059,
-      "team2_win_prob": 0.2941,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "700696",
-      "match_date": "2026-06-27",
-      "team1_name": "Revenant XSpark",
-      "team2_name": "No Salary Peek",
-      "team1_win_prob": 0.479,
-      "team2_win_prob": 0.521,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "681804",
-      "match_date": "2026-06-27",
-      "team1_name": "CREST GAMING Zst",
-      "team2_name": "AGELITE",
-      "team1_win_prob": 0.625,
-      "team2_win_prob": 0.375,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }

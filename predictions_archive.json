@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "686212",
+    "match_date": "2026-07-02",
+    "team1_name": "Gen.G Global Academy",
+    "team2_name": "Dplus Esports",
+    "team1_win_prob": 0.4957,
+    "team2_win_prob": 0.5043,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "696459",
+    "match_date": "2026-07-02",
+    "team1_name": "EOTO",
+    "team2_name": "Sasanqua",
+    "team1_win_prob": 0.5696,
+    "team2_win_prob": 0.4304,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "686213",
+    "match_date": "2026-07-02",
+    "team1_name": "So:sweet",
+    "team2_name": "ONSIDE GAMING",
+    "team1_win_prob": 0.1171,
+    "team2_win_prob": 0.8829,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "696458",
     "match_date": "2026-07-02",
     "team1_name": "FENNEL GC",
@@ -1078,39 +1111,6 @@
     "correct": true
   },
   {
-    "match_id": "686212",
-    "match_date": "Upcoming 3",
-    "team1_name": "Gen.G Global Academy",
-    "team2_name": "Dplus Esports",
-    "team1_win_prob": 0.4957,
-    "team2_win_prob": 0.5043,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "696459",
-    "match_date": "Upcoming 3",
-    "team1_name": "EOTO",
-    "team2_name": "Sasanqua",
-    "team1_win_prob": 0.5696,
-    "team2_win_prob": 0.4304,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "686213",
-    "match_date": "Upcoming 3",
-    "team1_name": "So:sweet",
-    "team2_name": "ONSIDE GAMING",
-    "team1_win_prob": 0.1171,
-    "team2_win_prob": 0.8829,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706754",
     "match_date": "Upcoming 3",
     "team1_name": "Rex Regum Qeon",
@@ -1359,6 +1359,28 @@
     "team2_name": "Evil Geniuses Academy",
     "team1_win_prob": 0.4985,
     "team2_win_prob": 0.5015,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "696460",
+    "match_date": "Upcoming 1",
+    "team1_name": "FENNEL GC",
+    "team2_name": "Sasanqua",
+    "team1_win_prob": 0.754,
+    "team2_win_prob": 0.246,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "696462",
+    "match_date": "Upcoming 1",
+    "team1_name": "Soleil Gaming GC",
+    "team2_name": "EOTO",
+    "team1_win_prob": 0.3543,
+    "team2_win_prob": 0.6457,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
