@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-03T15:07:46.362479+00:00",
-  "total_resolved": 120,
-  "correct": 84,
+  "generated_at": "2026-07-03T17:21:06.731570+00:00",
+  "total_resolved": 123,
+  "correct": 85,
   "predictions": [
+    {
+      "match_id": "684637",
+      "match_date": "2026-07-03",
+      "team1_name": "Fancy United Esports",
+      "team2_name": "555",
+      "team1_win_prob": 0.697,
+      "team2_win_prob": 0.303,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "706764",
+      "match_date": "2026-07-03",
+      "team1_name": "Gentle Mates",
+      "team2_name": "Xi Lai Gaming",
+      "team1_win_prob": 0.57,
+      "team2_win_prob": 0.43,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "706765",
+      "match_date": "2026-07-03",
+      "team1_name": "Nongshim RedForce",
+      "team2_name": "G2 Esports",
+      "team1_win_prob": 0.4337,
+      "team2_win_prob": 0.5663,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "684631",
       "match_date": "2026-07-03",
@@ -516,39 +549,6 @@
       "team2_name": "Czechia",
       "team1_win_prob": 0.1195,
       "team2_win_prob": 0.8805,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706229",
-      "match_date": "2026-06-28",
-      "team1_name": "Denmark",
-      "team2_name": "Portugal",
-      "team1_win_prob": 0.5984,
-      "team2_win_prob": 0.4016,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706245",
-      "match_date": "2026-06-28",
-      "team1_name": "Ukraine",
-      "team2_name": "Hungary",
-      "team1_win_prob": 0.3733,
-      "team2_win_prob": 0.6267,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706215",
-      "match_date": "2026-06-28",
-      "team1_name": "Denmark",
-      "team2_name": "France",
-      "team1_win_prob": 0.4064,
-      "team2_win_prob": 0.5936,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
