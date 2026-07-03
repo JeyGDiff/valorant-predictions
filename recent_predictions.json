@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-02T23:01:21.122127+00:00",
-  "total_resolved": 110,
-  "correct": 76,
+  "generated_at": "2026-07-03T02:35:25.227955+00:00",
+  "total_resolved": 112,
+  "correct": 78,
   "predictions": [
+    {
+      "match_id": "707768",
+      "match_date": "2026-07-03",
+      "team1_name": "Nightblood Gaming",
+      "team2_name": "YFT",
+      "team1_win_prob": 0.6337,
+      "team2_win_prob": 0.3663,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707206",
+      "match_date": "2026-07-03",
+      "team1_name": "2Game Esports",
+      "team2_name": "FURIA Academy",
+      "team1_win_prob": 0.7863,
+      "team2_win_prob": 0.2137,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "707767",
       "match_date": "2026-07-02",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "706192",
-      "match_date": "2026-06-28",
-      "team1_name": "New Zealand",
-      "team2_name": "Australia",
-      "team1_win_prob": 0.1336,
-      "team2_win_prob": 0.8664,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "681806",
-      "match_date": "2026-06-28",
-      "team1_name": "Insomnia",
-      "team2_name": "FENNEL",
-      "team1_win_prob": 0.2748,
-      "team2_win_prob": 0.7252,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }

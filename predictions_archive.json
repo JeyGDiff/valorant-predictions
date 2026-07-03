@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "707768",
+    "match_date": "2026-07-03",
+    "team1_name": "Nightblood Gaming",
+    "team2_name": "YFT",
+    "team1_win_prob": 0.6337,
+    "team2_win_prob": 0.3663,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "707206",
+    "match_date": "2026-07-03",
+    "team1_name": "2Game Esports",
+    "team2_name": "FURIA Academy",
+    "team1_win_prob": 0.7863,
+    "team2_win_prob": 0.2137,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "707767",
     "match_date": "2026-07-02",
     "team1_name": "M80",
@@ -1309,17 +1331,6 @@
     "correct": null
   },
   {
-    "match_id": "707768",
-    "match_date": "Upcoming 2",
-    "team1_name": "Nightblood Gaming",
-    "team2_name": "YFT",
-    "team1_win_prob": 0.6337,
-    "team2_win_prob": 0.3663,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707769",
     "match_date": "Upcoming 3",
     "team1_name": "SaD Esports",
@@ -1327,17 +1338,6 @@
     "team1_win_prob": 0.4775,
     "team2_win_prob": 0.5225,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707206",
-    "match_date": "Upcoming 1",
-    "team1_name": "2Game Esports",
-    "team2_name": "FURIA Academy",
-    "team1_win_prob": 0.7863,
-    "team2_win_prob": 0.2137,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
@@ -1437,6 +1437,28 @@
     "team1_win_prob": 0.3013,
     "team2_win_prob": 0.6987,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707775",
+    "match_date": "Upcoming 1",
+    "team1_name": "QoR",
+    "team2_name": "YFT",
+    "team1_win_prob": 0.7404,
+    "team2_win_prob": 0.2596,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "675268",
+    "match_date": "Upcoming 2",
+    "team1_name": "RIDDLE ORDER",
+    "team2_name": "IGZIST",
+    "team1_win_prob": 0.642,
+    "team2_win_prob": 0.358,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
