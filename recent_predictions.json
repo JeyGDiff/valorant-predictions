@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-03T19:14:44.850622+00:00",
-  "total_resolved": 123,
-  "correct": 85,
+  "generated_at": "2026-07-03T21:00:36.663872+00:00",
+  "total_resolved": 124,
+  "correct": 86,
   "predictions": [
+    {
+      "match_id": "707709",
+      "match_date": "2026-07-03",
+      "team1_name": "FOKUS",
+      "team2_name": "Joblife",
+      "team1_win_prob": 0.3545,
+      "team2_win_prob": 0.6455,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "684637",
       "match_date": "2026-07-03",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.2287,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706259",
-      "match_date": "2026-06-28",
-      "team1_name": "Ukraine",
-      "team2_name": "Czechia",
-      "team1_win_prob": 0.1195,
-      "team2_win_prob": 0.8805,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
