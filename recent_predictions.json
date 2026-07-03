@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-03T12:06:40.371196+00:00",
-  "total_resolved": 117,
-  "correct": 81,
+  "generated_at": "2026-07-03T15:07:46.362479+00:00",
+  "total_resolved": 120,
+  "correct": 84,
   "predictions": [
+    {
+      "match_id": "684631",
+      "match_date": "2026-07-03",
+      "team1_name": "Jade Lions",
+      "team2_name": "Sharper Esports",
+      "team1_win_prob": 0.2287,
+      "team2_win_prob": 0.7713,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "706769",
+      "match_date": "2026-07-03",
+      "team1_name": "MIBR.LOS(MIBR)",
+      "team2_name": "Global Esports",
+      "team1_win_prob": 0.6681,
+      "team2_win_prob": 0.3319,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "706770",
+      "match_date": "2026-07-03",
+      "team1_name": "AG.AL(All Gamers)",
+      "team2_name": "Team Heretics",
+      "team1_win_prob": 0.316,
+      "team2_win_prob": 0.684,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "696463",
       "match_date": "2026-07-03",
@@ -518,39 +551,6 @@
       "team2_win_prob": 0.5936,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706179",
-      "match_date": "2026-06-28",
-      "team1_name": "Hong Kong",
-      "team2_name": "India",
-      "team1_win_prob": 0.2764,
-      "team2_win_prob": 0.7236,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706452",
-      "match_date": "2026-06-28",
-      "team1_name": "Saudi Arabia",
-      "team2_name": "Morocco",
-      "team1_win_prob": 0.7343,
-      "team2_win_prob": 0.2657,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "701322",
-      "match_date": "2026-06-28",
-      "team1_name": "Team Falcons Vega",
-      "team2_name": "wiwiwi",
-      "team1_win_prob": 0.871,
-      "team2_win_prob": 0.129,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]

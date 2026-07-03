@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "684631",
+    "match_date": "2026-07-03",
+    "team1_name": "Jade Lions",
+    "team2_name": "Sharper Esports",
+    "team1_win_prob": 0.2287,
+    "team2_win_prob": 0.7713,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "706769",
+    "match_date": "2026-07-03",
+    "team1_name": "MIBR.LOS(MIBR)",
+    "team2_name": "Global Esports",
+    "team1_win_prob": 0.6681,
+    "team2_win_prob": 0.3319,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "706770",
+    "match_date": "2026-07-03",
+    "team1_name": "AG.AL(All Gamers)",
+    "team2_name": "Team Heretics",
+    "team1_win_prob": 0.316,
+    "team2_win_prob": 0.684,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "696463",
     "match_date": "2026-07-03",
     "team1_name": "Sasanqua",
@@ -1287,17 +1320,6 @@
     "correct": true
   },
   {
-    "match_id": "684631",
-    "match_date": "Upcoming 4",
-    "team1_name": "Jade Lions",
-    "team2_name": "Sharper Esports",
-    "team1_win_prob": 0.2287,
-    "team2_win_prob": 0.7713,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "684637",
     "match_date": "Upcoming 4",
     "team1_name": "Fancy United Esports",
@@ -1305,28 +1327,6 @@
     "team1_win_prob": 0.697,
     "team2_win_prob": 0.303,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706769",
-    "match_date": "Upcoming 4",
-    "team1_name": "MIBR.LOS(MIBR)",
-    "team2_name": "Global Esports",
-    "team1_win_prob": 0.6681,
-    "team2_win_prob": 0.3319,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706770",
-    "match_date": "Upcoming 4",
-    "team1_name": "AG.AL(All Gamers)",
-    "team2_name": "Team Heretics",
-    "team1_win_prob": 0.316,
-    "team2_win_prob": 0.684,
-    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   },
@@ -1513,6 +1513,39 @@
     "team2_name": "Sasanqua",
     "team1_win_prob": 0.754,
     "team2_win_prob": 0.246,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706771",
+    "match_date": "Upcoming 1",
+    "team1_name": "MIBR.LOS(MIBR)",
+    "team2_name": "Team Heretics",
+    "team1_win_prob": 0.7509,
+    "team2_win_prob": 0.2491,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706772",
+    "match_date": "Upcoming 1",
+    "team1_name": "Global Esports",
+    "team2_name": "AG.AL(All Gamers)",
+    "team1_win_prob": 0.8185,
+    "team2_win_prob": 0.1815,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707771",
+    "match_date": "Upcoming 2",
+    "team1_name": "M80",
+    "team2_name": "Nightblood Gaming",
+    "team1_win_prob": 0.8732,
+    "team2_win_prob": 0.1268,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
