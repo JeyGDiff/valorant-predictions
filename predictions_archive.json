@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "696463",
+    "match_date": "2026-07-03",
+    "team1_name": "Sasanqua",
+    "team2_name": "EOTO",
+    "team1_win_prob": 0.1979,
+    "team2_win_prob": 0.8021,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "696462",
     "match_date": "2026-07-03",
     "team1_name": "Soleil Gaming GC",
@@ -1496,13 +1507,13 @@
     "correct": null
   },
   {
-    "match_id": "696463",
-    "match_date": "LIVE",
-    "team1_name": "Sasanqua",
-    "team2_name": "EOTO",
-    "team1_win_prob": 0.1979,
-    "team2_win_prob": 0.8021,
-    "predicted_winner": "team2",
+    "match_id": "696461",
+    "match_date": "Upcoming 1",
+    "team1_name": "FENNEL GC",
+    "team2_name": "Sasanqua",
+    "team1_win_prob": 0.754,
+    "team2_win_prob": 0.246,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
