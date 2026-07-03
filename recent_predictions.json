@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-03T02:35:25.227955+00:00",
-  "total_resolved": 112,
-  "correct": 78,
+  "generated_at": "2026-07-03T06:28:07.012545+00:00",
+  "total_resolved": 115,
+  "correct": 80,
   "predictions": [
+    {
+      "match_id": "707229",
+      "match_date": "2026-07-03",
+      "team1_name": "LYON",
+      "team2_name": "Contra",
+      "team1_win_prob": 0.9112,
+      "team2_win_prob": 0.0888,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "707228",
+      "match_date": "2026-07-03",
+      "team1_name": "FUEGO",
+      "team2_name": "STREAMER ARENA",
+      "team1_win_prob": 0.835,
+      "team2_win_prob": 0.165,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "696460",
+      "match_date": "2026-07-03",
+      "team1_name": "FENNEL GC",
+      "team2_name": "Sasanqua",
+      "team1_win_prob": 0.754,
+      "team2_win_prob": 0.246,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "707768",
       "match_date": "2026-07-03",
@@ -516,39 +549,6 @@
       "team2_name": "sisu",
       "team1_win_prob": 0.5518,
       "team2_win_prob": 0.4482,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "706165",
-      "match_date": "2026-06-28",
-      "team1_name": "Hong Kong",
-      "team2_name": "Japan",
-      "team1_win_prob": 0.3007,
-      "team2_win_prob": 0.6993,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "681807",
-      "match_date": "2026-06-28",
-      "team1_name": "REJECT",
-      "team2_name": "RIDDLE ORDER",
-      "team1_win_prob": 0.7486,
-      "team2_win_prob": 0.2514,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "700694",
-      "match_date": "2026-06-28",
-      "team1_name": "S8UL Esports",
-      "team2_name": "No Salary Peek",
-      "team1_win_prob": 0.6437,
-      "team2_win_prob": 0.3563,
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false

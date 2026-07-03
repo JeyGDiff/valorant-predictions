@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "707229",
+    "match_date": "2026-07-03",
+    "team1_name": "LYON",
+    "team2_name": "Contra",
+    "team1_win_prob": 0.9112,
+    "team2_win_prob": 0.0888,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "707228",
+    "match_date": "2026-07-03",
+    "team1_name": "FUEGO",
+    "team2_name": "STREAMER ARENA",
+    "team1_win_prob": 0.835,
+    "team2_win_prob": 0.165,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "696460",
+    "match_date": "2026-07-03",
+    "team1_name": "FENNEL GC",
+    "team2_name": "Sasanqua",
+    "team1_win_prob": 0.754,
+    "team2_win_prob": 0.246,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "707768",
     "match_date": "2026-07-03",
     "team1_name": "Nightblood Gaming",
@@ -1232,17 +1265,6 @@
     "correct": true
   },
   {
-    "match_id": "707229",
-    "match_date": "Upcoming 4",
-    "team1_name": "LYON",
-    "team2_name": "Contra",
-    "team1_win_prob": 0.9112,
-    "team2_win_prob": 0.0888,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "684631",
     "match_date": "Upcoming 4",
     "team1_name": "Jade Lions",
@@ -1342,17 +1364,6 @@
     "correct": null
   },
   {
-    "match_id": "707228",
-    "match_date": "Upcoming 1",
-    "team1_name": "FUEGO",
-    "team2_name": "STREAMER ARENA",
-    "team1_win_prob": 0.835,
-    "team2_win_prob": 0.165,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707770",
     "match_date": "Upcoming 1",
     "team1_name": "Shopify Rebellion Black",
@@ -1360,17 +1371,6 @@
     "team1_win_prob": 0.4985,
     "team2_win_prob": 0.5015,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "696460",
-    "match_date": "Upcoming 1",
-    "team1_name": "FENNEL GC",
-    "team2_name": "Sasanqua",
-    "team1_win_prob": 0.754,
-    "team2_win_prob": 0.246,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
@@ -1458,6 +1458,39 @@
     "team2_name": "IGZIST",
     "team1_win_prob": 0.642,
     "team2_win_prob": 0.358,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707230",
+    "match_date": "Upcoming 1",
+    "team1_name": "FUEGO",
+    "team2_name": "Contra",
+    "team1_win_prob": 0.2675,
+    "team2_win_prob": 0.7325,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707232",
+    "match_date": "Upcoming 1",
+    "team1_name": "STREAMER ARENA",
+    "team2_name": "LYON",
+    "team1_win_prob": 0.0469,
+    "team2_win_prob": 0.9531,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "675269",
+    "match_date": "Upcoming 2",
+    "team1_name": "FENNEL",
+    "team2_name": "CREST GAMING Zst",
+    "team1_win_prob": 0.5244,
+    "team2_win_prob": 0.4756,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
