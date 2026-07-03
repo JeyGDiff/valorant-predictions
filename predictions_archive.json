@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "707221",
+    "match_date": "2026-07-03",
+    "team1_name": "KR\u00dc SPARK",
+    "team2_name": "University War",
+    "team1_win_prob": 0.6793,
+    "team2_win_prob": 0.3207,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "707769",
+    "match_date": "2026-07-03",
+    "team1_name": "SaD Esports",
+    "team2_name": "NRG Academy",
+    "team1_win_prob": 0.4775,
+    "team2_win_prob": 0.5225,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "707211",
+    "match_date": "2026-07-03",
+    "team1_name": "LA MASIA",
+    "team2_name": "MIBR Academy",
+    "team1_win_prob": 0.6685,
+    "team2_win_prob": 0.3315,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "707709",
     "match_date": "2026-07-03",
     "team1_name": "FOKUS",
@@ -1364,17 +1397,6 @@
     "correct": true
   },
   {
-    "match_id": "707221",
-    "match_date": "Upcoming 4",
-    "team1_name": "KR\u00dc SPARK",
-    "team2_name": "University War",
-    "team1_win_prob": 0.6793,
-    "team2_win_prob": 0.3207,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707222",
     "match_date": "Upcoming 4",
     "team1_name": "BESTIA",
@@ -1382,17 +1404,6 @@
     "team1_win_prob": 0.6758,
     "team2_win_prob": 0.3242,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707769",
-    "match_date": "Upcoming 3",
-    "team1_name": "SaD Esports",
-    "team2_name": "NRG Academy",
-    "team1_win_prob": 0.4775,
-    "team2_win_prob": 0.5225,
-    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   },
@@ -1551,17 +1562,6 @@
     "correct": null
   },
   {
-    "match_id": "707211",
-    "match_date": "Upcoming 2",
-    "team1_name": "LA MASIA",
-    "team2_name": "MIBR Academy",
-    "team1_win_prob": 0.6685,
-    "team2_win_prob": 0.3315,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707210",
     "match_date": "Upcoming 4",
     "team1_name": "FURIA Academy",
@@ -1612,6 +1612,17 @@
     "team2_name": "Joblife",
     "team1_win_prob": 0.6707,
     "team2_win_prob": 0.3293,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "705839",
+    "match_date": "Upcoming 2",
+    "team1_name": "Looking For Laburo",
+    "team2_name": "KR\u00dc BLAZE",
+    "team1_win_prob": 0.54,
+    "team2_win_prob": 0.46,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
