@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "696461",
+    "match_date": "2026-07-04",
+    "team1_name": "FENNEL GC",
+    "team2_name": "Sasanqua",
+    "team1_win_prob": 0.754,
+    "team2_win_prob": 0.246,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "684638",
+    "match_date": "2026-07-04",
+    "team1_name": "Jade Lions",
+    "team2_name": "555",
+    "team1_win_prob": 0.7471,
+    "team2_win_prob": 0.2529,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "707210",
     "match_date": "2026-07-04",
     "team1_name": "FURIA Academy",
@@ -1529,17 +1551,6 @@
     "correct": null
   },
   {
-    "match_id": "696461",
-    "match_date": "Upcoming 1",
-    "team1_name": "FENNEL GC",
-    "team2_name": "Sasanqua",
-    "team1_win_prob": 0.754,
-    "team2_win_prob": 0.246,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706771",
     "match_date": "Upcoming 1",
     "team1_name": "MIBR.LOS(MIBR)",
@@ -1568,17 +1579,6 @@
     "team2_name": "Nightblood Gaming",
     "team1_win_prob": 0.8732,
     "team2_win_prob": 0.1268,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "684638",
-    "match_date": "Upcoming 1",
-    "team1_name": "Jade Lions",
-    "team2_name": "555",
-    "team1_win_prob": 0.7471,
-    "team2_win_prob": 0.2529,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
