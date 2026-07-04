@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706762",
+    "match_date": "2026-07-04",
+    "team1_name": "Karmine Corp",
+    "team2_name": "Paper Rex",
+    "team1_win_prob": 0.3013,
+    "team2_win_prob": 0.6987,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "706761",
     "match_date": "2026-07-04",
     "team1_name": "Team Vitality",
@@ -1485,17 +1496,6 @@
     "correct": true
   },
   {
-    "match_id": "706762",
-    "match_date": "Upcoming 1",
-    "team1_name": "Karmine Corp",
-    "team2_name": "Paper Rex",
-    "team1_win_prob": 0.3013,
-    "team2_win_prob": 0.6987,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707775",
     "match_date": "Upcoming 1",
     "team1_name": "QoR",
@@ -1734,6 +1734,17 @@
     "team1_win_prob": 0.3485,
     "team2_win_prob": 0.6515,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706763",
+    "match_date": "Upcoming 1",
+    "team1_name": "NRG",
+    "team2_name": "Karmine Corp",
+    "team1_win_prob": 0.6239,
+    "team2_win_prob": 0.3761,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
