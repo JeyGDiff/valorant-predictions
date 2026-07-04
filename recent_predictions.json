@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-04T15:58:42.790686+00:00",
-  "total_resolved": 134,
+  "generated_at": "2026-07-04T17:12:17.486982+00:00",
+  "total_resolved": 135,
   "correct": 92,
   "predictions": [
+    {
+      "match_id": "706761",
+      "match_date": "2026-07-04",
+      "team1_name": "Team Vitality",
+      "team2_name": "NRG",
+      "team1_win_prob": 0.4488,
+      "team2_win_prob": 0.5512,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "706756",
       "match_date": "2026-07-04",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "688446",
-      "match_date": "2026-06-29",
-      "team1_name": "UCAM Esports Club",
-      "team2_name": "FOKUS",
-      "team1_win_prob": 0.7423,
-      "team2_win_prob": 0.2577,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
