@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "707710",
+    "match_date": "2026-07-04",
+    "team1_name": "REBORN",
+    "team2_name": "Joblife",
+    "team1_win_prob": 0.6707,
+    "team2_win_prob": 0.3293,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "706762",
     "match_date": "2026-07-04",
     "team1_name": "Karmine Corp",
@@ -1606,17 +1617,6 @@
     "correct": null
   },
   {
-    "match_id": "707710",
-    "match_date": "Upcoming 1",
-    "team1_name": "REBORN",
-    "team2_name": "Joblife",
-    "team1_win_prob": 0.6707,
-    "team2_win_prob": 0.3293,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "705839",
     "match_date": "Upcoming 2",
     "team1_name": "Looking For Laburo",
@@ -1744,6 +1744,28 @@
     "team2_name": "Karmine Corp",
     "team1_win_prob": 0.6239,
     "team2_win_prob": 0.3761,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707704",
+    "match_date": "Upcoming 1",
+    "team1_name": "Enterprise Esports",
+    "team2_name": "REBORN",
+    "team1_win_prob": 0.6163,
+    "team2_win_prob": 0.3837,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "709680",
+    "match_date": "Upcoming 3",
+    "team1_name": "ONSIDE GAMING",
+    "team2_name": "X-CAST",
+    "team1_win_prob": 0.7984,
+    "team2_win_prob": 0.2016,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
