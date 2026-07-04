@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-04T00:09:17.574486+00:00",
-  "total_resolved": 129,
-  "correct": 89,
+  "generated_at": "2026-07-04T04:32:15.083003+00:00",
+  "total_resolved": 130,
+  "correct": 90,
   "predictions": [
+    {
+      "match_id": "707210",
+      "match_date": "2026-07-04",
+      "team1_name": "FURIA Academy",
+      "team2_name": "RED Canids",
+      "team1_win_prob": 0.2928,
+      "team2_win_prob": 0.7072,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "707222",
       "match_date": "2026-07-04",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "706113",
-      "match_date": "2026-06-29",
-      "team1_name": "Peru",
-      "team2_name": "Uruguay",
-      "team1_win_prob": 0.403,
-      "team2_win_prob": 0.597,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
