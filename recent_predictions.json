@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-03T22:58:34.991720+00:00",
-  "total_resolved": 127,
-  "correct": 88,
+  "generated_at": "2026-07-04T00:09:17.574486+00:00",
+  "total_resolved": 129,
+  "correct": 89,
   "predictions": [
+    {
+      "match_id": "707222",
+      "match_date": "2026-07-04",
+      "team1_name": "BESTIA",
+      "team2_name": "9z Globant",
+      "team1_win_prob": 0.6758,
+      "team2_win_prob": 0.3242,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707770",
+      "match_date": "2026-07-04",
+      "team1_name": "Shopify Rebellion Black",
+      "team2_name": "Evil Geniuses Academy",
+      "team1_win_prob": 0.4985,
+      "team2_win_prob": 0.5015,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "707221",
       "match_date": "2026-07-03",
@@ -530,28 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "701182",
-      "match_date": "2026-06-29",
-      "team1_name": "F4TALITY",
-      "team2_name": "Team Solid",
-      "team1_win_prob": 0.2277,
-      "team2_win_prob": 0.7723,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706147",
-      "match_date": "2026-06-29",
-      "team1_name": "Dominican Republic",
-      "team2_name": "Venezuela",
-      "team1_win_prob": 0.7106,
-      "team2_win_prob": 0.2894,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
