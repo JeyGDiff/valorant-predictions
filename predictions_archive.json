@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "707771",
+    "match_date": "2026-07-05",
+    "team1_name": "M80",
+    "team2_name": "Nightblood Gaming",
+    "team1_win_prob": 0.8732,
+    "team2_win_prob": 0.1268,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "707223",
+    "match_date": "2026-07-05",
+    "team1_name": "KR\u00dc SPARK",
+    "team2_name": "BESTIA",
+    "team1_win_prob": 0.2343,
+    "team2_win_prob": 0.7657,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "706766",
     "match_date": "2026-07-05",
     "team1_name": "Gentle Mates",
@@ -1639,17 +1661,6 @@
     "correct": true
   },
   {
-    "match_id": "707771",
-    "match_date": "Upcoming 2",
-    "team1_name": "M80",
-    "team2_name": "Nightblood Gaming",
-    "team1_win_prob": 0.8732,
-    "team2_win_prob": 0.1268,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "705839",
     "match_date": "Upcoming 2",
     "team1_name": "Looking For Laburo",
@@ -1667,17 +1678,6 @@
     "team2_name": "Shopify Rebellion Black",
     "team1_win_prob": 0.3834,
     "team2_win_prob": 0.6166,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707223",
-    "match_date": "Upcoming 1",
-    "team1_name": "KR\u00dc SPARK",
-    "team2_name": "BESTIA",
-    "team1_win_prob": 0.2343,
-    "team2_win_prob": 0.7657,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null

@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-05T20:54:40.994164+00:00",
-  "total_resolved": 149,
-  "correct": 100,
+  "generated_at": "2026-07-05T21:58:02.260148+00:00",
+  "total_resolved": 151,
+  "correct": 102,
   "predictions": [
+    {
+      "match_id": "707771",
+      "match_date": "2026-07-05",
+      "team1_name": "M80",
+      "team2_name": "Nightblood Gaming",
+      "team1_win_prob": 0.8732,
+      "team2_win_prob": 0.1268,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707223",
+      "match_date": "2026-07-05",
+      "team1_name": "KR\u00dc SPARK",
+      "team2_name": "BESTIA",
+      "team1_win_prob": 0.2343,
+      "team2_win_prob": 0.7657,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "706766",
       "match_date": "2026-07-05",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.6053,
       "predicted_winner": "team2",
       "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "686212",
-      "match_date": "2026-07-02",
-      "team1_name": "Gen.G Global Academy",
-      "team2_name": "Dplus Esports",
-      "team1_win_prob": 0.4957,
-      "team2_win_prob": 0.5043,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "696459",
-      "match_date": "2026-07-02",
-      "team1_name": "EOTO",
-      "team2_name": "Sasanqua",
-      "team1_win_prob": 0.5696,
-      "team2_win_prob": 0.4304,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
       "correct": false
     }
   ]
