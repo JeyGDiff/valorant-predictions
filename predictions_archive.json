@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "707775",
+    "match_date": "2026-07-05",
+    "team1_name": "QoR",
+    "team2_name": "YFT",
+    "team1_win_prob": 0.7404,
+    "team2_win_prob": 0.2596,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "707230",
+    "match_date": "2026-07-05",
+    "team1_name": "FUEGO",
+    "team2_name": "Contra",
+    "team1_win_prob": 0.2675,
+    "team2_win_prob": 0.7325,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "707232",
+    "match_date": "2026-07-05",
+    "team1_name": "STREAMER ARENA",
+    "team2_name": "LYON",
+    "team1_win_prob": 0.0469,
+    "team2_win_prob": 0.9531,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "707776",
     "match_date": "2026-07-04",
     "team1_name": "NRG Academy",
@@ -1518,17 +1551,6 @@
     "correct": true
   },
   {
-    "match_id": "707775",
-    "match_date": "Upcoming 1",
-    "team1_name": "QoR",
-    "team2_name": "YFT",
-    "team1_win_prob": 0.7404,
-    "team2_win_prob": 0.2596,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "675268",
     "match_date": "Upcoming 2",
     "team1_name": "RIDDLE ORDER",
@@ -1536,28 +1558,6 @@
     "team1_win_prob": 0.642,
     "team2_win_prob": 0.358,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707230",
-    "match_date": "Upcoming 1",
-    "team1_name": "FUEGO",
-    "team2_name": "Contra",
-    "team1_win_prob": 0.2675,
-    "team2_win_prob": 0.7325,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707232",
-    "match_date": "Upcoming 1",
-    "team1_name": "STREAMER ARENA",
-    "team2_name": "LYON",
-    "team1_win_prob": 0.0469,
-    "team2_win_prob": 0.9531,
-    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   },
@@ -1833,6 +1833,39 @@
     "team1_win_prob": 0.2041,
     "team2_win_prob": 0.7959,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710278",
+    "match_date": "Upcoming 2",
+    "team1_name": "Be\u015fikta\u015f Esports",
+    "team2_name": "CGN Esports",
+    "team1_win_prob": 0.4006,
+    "team2_win_prob": 0.5994,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710283",
+    "match_date": "Upcoming 2",
+    "team1_name": "UCAM Esports Club",
+    "team2_name": "Eintracht Frankfurt",
+    "team1_win_prob": 0.4715,
+    "team2_win_prob": 0.5285,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710288",
+    "match_date": "Upcoming 2",
+    "team1_name": "Bar\u00e7a eSports",
+    "team2_name": "Ghools Esports",
+    "team1_win_prob": 0.7219,
+    "team2_win_prob": 0.2781,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }

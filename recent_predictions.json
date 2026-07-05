@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-05T00:00:17.447740+00:00",
-  "total_resolved": 138,
-  "correct": 94,
+  "generated_at": "2026-07-05T04:14:13.377160+00:00",
+  "total_resolved": 141,
+  "correct": 96,
   "predictions": [
+    {
+      "match_id": "707775",
+      "match_date": "2026-07-05",
+      "team1_name": "QoR",
+      "team2_name": "YFT",
+      "team1_win_prob": 0.7404,
+      "team2_win_prob": 0.2596,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707230",
+      "match_date": "2026-07-05",
+      "team1_name": "FUEGO",
+      "team2_name": "Contra",
+      "team1_win_prob": 0.2675,
+      "team2_win_prob": 0.7325,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "707232",
+      "match_date": "2026-07-05",
+      "team1_name": "STREAMER ARENA",
+      "team2_name": "LYON",
+      "team1_win_prob": 0.0469,
+      "team2_win_prob": 0.9531,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "707776",
       "match_date": "2026-07-04",
@@ -519,39 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "707701",
-      "match_date": "2026-07-01",
-      "team1_name": "Natus Vincere Junior",
-      "team2_name": "Enterprise Esports",
-      "team1_win_prob": 0.3877,
-      "team2_win_prob": 0.6123,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "707702",
-      "match_date": "2026-07-01",
-      "team1_name": "Misa Esports",
-      "team2_name": "REBORN",
-      "team1_win_prob": 0.502,
-      "team2_win_prob": 0.498,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "686211",
-      "match_date": "2026-07-01",
-      "team1_name": "T1 Academy",
-      "team2_name": "X-CAST",
-      "team1_win_prob": 0.4365,
-      "team2_win_prob": 0.5635,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
