@@ -1769,5 +1769,71 @@
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
+  },
+  {
+    "match_id": "705816",
+    "match_date": "Upcoming 2",
+    "team1_name": "Akave Esports GC",
+    "team2_name": "No Sweat Blossom",
+    "team1_win_prob": 0.8424,
+    "team2_win_prob": 0.1576,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710272",
+    "match_date": "Upcoming 2",
+    "team1_name": "FOKUS",
+    "team2_name": "Formulation Gaming",
+    "team1_win_prob": 0.6018,
+    "team2_win_prob": 0.3982,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710277",
+    "match_date": "Upcoming 2",
+    "team1_name": "MIR",
+    "team2_name": "Fire Flux Esports",
+    "team1_win_prob": 0.2392,
+    "team2_win_prob": 0.7608,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710282",
+    "match_date": "Upcoming 2",
+    "team1_name": "Mandatory",
+    "team2_name": "La Masia",
+    "team1_win_prob": 0.8573,
+    "team2_win_prob": 0.1427,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710287",
+    "match_date": "Upcoming 2",
+    "team1_name": "Misa Esports",
+    "team2_name": "\u00c7ilekler",
+    "team1_win_prob": 0.8363,
+    "team2_win_prob": 0.1637,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710273",
+    "match_date": "Upcoming 2",
+    "team1_name": "Twisted Saints Esports",
+    "team2_name": "Pixel Lumina",
+    "team1_win_prob": 0.2041,
+    "team2_win_prob": 0.7959,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
   }
 ]
