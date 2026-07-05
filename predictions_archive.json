@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "675268",
+    "match_date": "2026-07-05",
+    "team1_name": "RIDDLE ORDER",
+    "team2_name": "IGZIST",
+    "team1_win_prob": 0.642,
+    "team2_win_prob": 0.358,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "707775",
     "match_date": "2026-07-05",
     "team1_name": "QoR",
@@ -1549,17 +1560,6 @@
     "predicted_winner": "team1",
     "actual_winner": "team1",
     "correct": true
-  },
-  {
-    "match_id": "675268",
-    "match_date": "Upcoming 2",
-    "team1_name": "RIDDLE ORDER",
-    "team2_name": "IGZIST",
-    "team1_win_prob": 0.642,
-    "team2_win_prob": 0.358,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
   },
   {
     "match_id": "675269",
