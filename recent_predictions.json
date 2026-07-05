@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-05T12:13:01.104674+00:00",
-  "total_resolved": 142,
-  "correct": 96,
+  "generated_at": "2026-07-05T14:38:22.576645+00:00",
+  "total_resolved": 145,
+  "correct": 97,
   "predictions": [
+    {
+      "match_id": "706771",
+      "match_date": "2026-07-05",
+      "team1_name": "MIBR.LOS(MIBR)",
+      "team2_name": "Team Heretics",
+      "team1_win_prob": 0.7509,
+      "team2_win_prob": 0.2491,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "706772",
+      "match_date": "2026-07-05",
+      "team1_name": "Global Esports",
+      "team2_name": "AG.AL(All Gamers)",
+      "team1_win_prob": 0.8185,
+      "team2_win_prob": 0.1815,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "684632",
+      "match_date": "2026-07-05",
+      "team1_name": "Sharper Esports",
+      "team2_name": "555",
+      "team1_win_prob": 0.748,
+      "team2_win_prob": 0.252,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "675268",
       "match_date": "2026-07-05",
@@ -519,39 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "707204",
-      "match_date": "2026-07-02",
-      "team1_name": "FURIA Academy",
-      "team2_name": "LA MASIA",
-      "team1_win_prob": 0.2404,
-      "team2_win_prob": 0.7596,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "707203",
-      "match_date": "2026-07-01",
-      "team1_name": "RED Canids",
-      "team2_name": "Team Solid",
-      "team1_win_prob": 0.3164,
-      "team2_win_prob": 0.6836,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "707705",
-      "match_date": "2026-07-01",
-      "team1_name": "FOKUS",
-      "team2_name": "Mandatory",
-      "team1_win_prob": 0.3132,
-      "team2_win_prob": 0.6868,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }

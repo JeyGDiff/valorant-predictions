@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "706771",
+    "match_date": "2026-07-05",
+    "team1_name": "MIBR.LOS(MIBR)",
+    "team2_name": "Team Heretics",
+    "team1_win_prob": 0.7509,
+    "team2_win_prob": 0.2491,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "706772",
+    "match_date": "2026-07-05",
+    "team1_name": "Global Esports",
+    "team2_name": "AG.AL(All Gamers)",
+    "team1_win_prob": 0.8185,
+    "team2_win_prob": 0.1815,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "684632",
+    "match_date": "2026-07-05",
+    "team1_name": "Sharper Esports",
+    "team2_name": "555",
+    "team1_win_prob": 0.748,
+    "team2_win_prob": 0.252,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "675268",
     "match_date": "2026-07-05",
     "team1_name": "RIDDLE ORDER",
@@ -1573,28 +1606,6 @@
     "correct": null
   },
   {
-    "match_id": "706771",
-    "match_date": "Upcoming 1",
-    "team1_name": "MIBR.LOS(MIBR)",
-    "team2_name": "Team Heretics",
-    "team1_win_prob": 0.7509,
-    "team2_win_prob": 0.2491,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706772",
-    "match_date": "Upcoming 1",
-    "team1_name": "Global Esports",
-    "team2_name": "AG.AL(All Gamers)",
-    "team1_win_prob": 0.8185,
-    "team2_win_prob": 0.1815,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707771",
     "match_date": "Upcoming 2",
     "team1_name": "M80",
@@ -1700,17 +1711,6 @@
     "team2_name": "SUZ",
     "team1_win_prob": 0.7524,
     "team2_win_prob": 0.2476,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "684632",
-    "match_date": "Upcoming 1",
-    "team1_name": "Sharper Esports",
-    "team2_name": "555",
-    "team1_win_prob": 0.748,
-    "team2_win_prob": 0.252,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
@@ -1865,6 +1865,28 @@
     "team2_name": "Ghools Esports",
     "team1_win_prob": 0.7219,
     "team2_win_prob": 0.2781,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706773",
+    "match_date": "Upcoming 1",
+    "team1_name": "MIBR.LOS(MIBR)",
+    "team2_name": "AG.AL(All Gamers)",
+    "team1_win_prob": 0.9411,
+    "team2_win_prob": 0.0589,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "705818",
+    "match_date": "Upcoming 2",
+    "team1_name": "Stray Cats",
+    "team2_name": "FUSION X",
+    "team1_win_prob": 0.6321,
+    "team2_win_prob": 0.3679,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
