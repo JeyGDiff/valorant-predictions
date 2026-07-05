@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "706766",
+    "match_date": "2026-07-05",
+    "team1_name": "Gentle Mates",
+    "team2_name": "Nongshim RedForce",
+    "team1_win_prob": 0.2988,
+    "team2_win_prob": 0.7012,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "707704",
+    "match_date": "2026-07-05",
+    "team1_name": "Enterprise Esports",
+    "team2_name": "REBORN",
+    "team1_win_prob": 0.6163,
+    "team2_win_prob": 0.3837,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "675269",
     "match_date": "2026-07-05",
     "team1_name": "FENNEL",
@@ -1628,17 +1650,6 @@
     "correct": null
   },
   {
-    "match_id": "706766",
-    "match_date": "Upcoming 1",
-    "team1_name": "Gentle Mates",
-    "team2_name": "Nongshim RedForce",
-    "team1_win_prob": 0.2988,
-    "team2_win_prob": 0.7012,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "705839",
     "match_date": "Upcoming 2",
     "team1_name": "Looking For Laburo",
@@ -1744,17 +1755,6 @@
     "team2_name": "Karmine Corp",
     "team1_win_prob": 0.6239,
     "team2_win_prob": 0.3761,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707704",
-    "match_date": "Upcoming 1",
-    "team1_name": "Enterprise Esports",
-    "team2_name": "REBORN",
-    "team1_win_prob": 0.6163,
-    "team2_win_prob": 0.3837,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
@@ -1888,6 +1888,17 @@
     "team1_win_prob": 0.6321,
     "team2_win_prob": 0.3679,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706768",
+    "match_date": "Upcoming 1",
+    "team1_name": "Nongshim RedForce",
+    "team2_name": "G2 Esports",
+    "team1_win_prob": 0.4337,
+    "team2_win_prob": 0.5663,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }

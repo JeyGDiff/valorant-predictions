@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-05T16:04:16.617083+00:00",
-  "total_resolved": 147,
-  "correct": 99,
+  "generated_at": "2026-07-05T17:59:26.184765+00:00",
+  "total_resolved": 149,
+  "correct": 100,
   "predictions": [
+    {
+      "match_id": "706766",
+      "match_date": "2026-07-05",
+      "team1_name": "Gentle Mates",
+      "team2_name": "Nongshim RedForce",
+      "team1_win_prob": 0.2988,
+      "team2_win_prob": 0.7012,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "707704",
+      "match_date": "2026-07-05",
+      "team1_name": "Enterprise Esports",
+      "team2_name": "REBORN",
+      "team1_win_prob": 0.6163,
+      "team2_win_prob": 0.3837,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "675269",
       "match_date": "2026-07-05",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "686213",
-      "match_date": "2026-07-02",
-      "team1_name": "So:sweet",
-      "team2_name": "ONSIDE GAMING",
-      "team1_win_prob": 0.1171,
-      "team2_win_prob": 0.8829,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "696458",
-      "match_date": "2026-07-02",
-      "team1_name": "FENNEL GC",
-      "team2_name": "Soleil Gaming GC",
-      "team1_win_prob": 0.8756,
-      "team2_win_prob": 0.1244,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
