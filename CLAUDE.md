@@ -29,13 +29,18 @@ assets, and JSON. There is no build step and no application logic here.
 
 ## Deployment
 
-`.github/workflows/deploy.yml` is a custom GitHub Actions Pages workflow with
-`concurrency: pages` (serialize the frequent hourly pushes) and a one-shot retry on
-the `deploy-pages` step (absorb transient `Deployment failed, try again later.`
-backend errors). It only takes effect if **Settings → Pages → Source = GitHub
-Actions**. If deploys start failing intermittently, check that setting and the
-workflow — it is not a data bug (a data problem would fail the *build*, not the
-*deploy*).
+Pages uses the classic **"Deploy from a branch"** source (`main` / root) — no custom
+workflow. Every push deploys.
+
+Deploys intermittently fail with `Deployment failed, try again later.` in the
+`deploy` step. This is a **transient GitHub Pages backend error**, not a data bug (a
+data/content problem fails the *build* step; here the build succeeds and only the
+deploy fails). It **self-heals on the next hourly push** — a *new commit* clears it;
+retrying the *same commit* does not (deploy IDs are keyed by commit SHA). Don't
+"fix" it by editing content. A workflow-based deploy (concurrency + retry) was tried
+and reverted: switching `build_type` to `workflow` mid-build wedged the backend into
+a persistent `errored` state. If attempting again, flip the Pages source only when
+Pages is fully idle.
 
 ## Page → data map
 

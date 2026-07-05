@@ -58,12 +58,19 @@ Shared styling lives in `solvedstate.css`; brand assets are `ss_logo.png`,
 
 ## Deployment
 
-GitHub Pages deploys this repo's `main` on every push. The deploy is configured via
-`.github/workflows/deploy.yml` (custom Actions workflow with concurrency control +
-an automatic retry) so that the frequent hourly prediction pushes don't collide or
-fail on a transient Pages backend error. For this to be the active deployer, the
-repo's **Settings → Pages → Build and deployment → Source** must be set to
-**GitHub Actions**.
+GitHub Pages deploys this repo's `main` on every push, using the classic
+**"Deploy from a branch"** source (Settings → Pages → Source = *Deploy from a
+branch*, `main` / root). There is no custom deploy workflow.
+
+**Known issue — intermittent deploy failures.** Because the engine pushes here
+~hourly, and the classic deploy has no retry/concurrency control, GitHub's Pages
+backend occasionally returns `Deployment failed, try again later.` on a given push.
+This is transient and **self-heals on the next hourly push** (a *new commit* clears
+it — retrying the *same* commit does not). It affects only that one deploy's
+freshness, never the live site, which keeps serving the last good build. A
+workflow-based fix (concurrency + retry) was attempted and reverted because
+migrating `build_type` while a build was in flight left the Pages backend wedged;
+if retried, flip the source to *GitHub Actions* only when Pages is idle.
 
 ## Editing
 
