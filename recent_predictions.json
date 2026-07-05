@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-05T14:38:22.576645+00:00",
-  "total_resolved": 145,
-  "correct": 97,
+  "generated_at": "2026-07-05T16:04:16.617083+00:00",
+  "total_resolved": 147,
+  "correct": 99,
   "predictions": [
+    {
+      "match_id": "675269",
+      "match_date": "2026-07-05",
+      "team1_name": "FENNEL",
+      "team2_name": "CREST GAMING Zst",
+      "team1_win_prob": 0.5244,
+      "team2_win_prob": 0.4756,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "706767",
+      "match_date": "2026-07-05",
+      "team1_name": "Xi Lai Gaming",
+      "team2_name": "G2 Esports",
+      "team1_win_prob": 0.4632,
+      "team2_win_prob": 0.5368,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "706771",
       "match_date": "2026-07-05",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.1244,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "705838",
-      "match_date": "2026-07-02",
-      "team1_name": "KR\u00dc BLAZE",
-      "team2_name": "Polar Squad Esports GC",
-      "team1_win_prob": 0.7236,
-      "team2_win_prob": 0.2764,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "705815",
-      "match_date": "2026-07-02",
-      "team1_name": "FUSION X",
-      "team2_name": "No Sweat Blossom",
-      "team1_win_prob": 0.3153,
-      "team2_win_prob": 0.6847,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
