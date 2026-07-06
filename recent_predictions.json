@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-06T12:00:55.280407+00:00",
-  "total_resolved": 154,
-  "correct": 104,
+  "generated_at": "2026-07-06T16:17:31.903158+00:00",
+  "total_resolved": 157,
+  "correct": 106,
   "predictions": [
+    {
+      "match_id": "709710",
+      "match_date": "2026-07-06",
+      "team1_name": "Ninetails",
+      "team2_name": "SUZ",
+      "team1_win_prob": 0.7524,
+      "team2_win_prob": 0.2476,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "706758",
+      "match_date": "2026-07-06",
+      "team1_name": "BBL Esports",
+      "team2_name": "EDward Gaming",
+      "team1_win_prob": 0.4315,
+      "team2_win_prob": 0.5685,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "706763",
+      "match_date": "2026-07-06",
+      "team1_name": "NRG",
+      "team2_name": "Karmine Corp",
+      "team1_win_prob": 0.6239,
+      "team2_win_prob": 0.3761,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "709709",
       "match_date": "2026-07-06",
@@ -516,39 +549,6 @@
       "team2_name": "Team Solid",
       "team1_win_prob": 0.2912,
       "team2_win_prob": 0.7088,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706760",
-      "match_date": "2026-07-02",
-      "team1_name": "NRG",
-      "team2_name": "Paper Rex",
-      "team1_win_prob": 0.4081,
-      "team2_win_prob": 0.5919,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "707708",
-      "match_date": "2026-07-02",
-      "team1_name": "Natus Vincere Junior",
-      "team2_name": "Joblife",
-      "team1_win_prob": 0.4439,
-      "team2_win_prob": 0.5561,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706754",
-      "match_date": "2026-07-02",
-      "team1_name": "Rex Regum Qeon",
-      "team2_name": "100 Thieves",
-      "team1_win_prob": 0.422,
-      "team2_win_prob": 0.578,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true

@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "709710",
+    "match_date": "2026-07-06",
+    "team1_name": "Ninetails",
+    "team2_name": "SUZ",
+    "team1_win_prob": 0.7524,
+    "team2_win_prob": 0.2476,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "706758",
+    "match_date": "2026-07-06",
+    "team1_name": "BBL Esports",
+    "team2_name": "EDward Gaming",
+    "team1_win_prob": 0.4315,
+    "team2_win_prob": 0.5685,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "706763",
+    "match_date": "2026-07-06",
+    "team1_name": "NRG",
+    "team2_name": "Karmine Corp",
+    "team1_win_prob": 0.6239,
+    "team2_win_prob": 0.3761,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "709709",
     "match_date": "2026-07-06",
     "team1_name": "Gen.G GC",
@@ -1716,28 +1749,6 @@
     "correct": null
   },
   {
-    "match_id": "709710",
-    "match_date": "Upcoming 2",
-    "team1_name": "Ninetails",
-    "team2_name": "SUZ",
-    "team1_win_prob": 0.7524,
-    "team2_win_prob": 0.2476,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706758",
-    "match_date": "Upcoming 1",
-    "team1_name": "BBL Esports",
-    "team2_name": "EDward Gaming",
-    "team1_win_prob": 0.4315,
-    "team2_win_prob": 0.5685,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "705841",
     "match_date": "Upcoming 3",
     "team1_name": "LEVIAT\u00c1N GC",
@@ -1745,17 +1756,6 @@
     "team1_win_prob": 0.3485,
     "team2_win_prob": 0.6515,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706763",
-    "match_date": "Upcoming 1",
-    "team1_name": "NRG",
-    "team2_name": "Karmine Corp",
-    "team1_win_prob": 0.6239,
-    "team2_win_prob": 0.3761,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
