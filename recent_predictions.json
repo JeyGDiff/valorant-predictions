@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-06T07:09:40.381394+00:00",
-  "total_resolved": 153,
-  "correct": 103,
+  "generated_at": "2026-07-06T12:00:55.280407+00:00",
+  "total_resolved": 154,
+  "correct": 104,
   "predictions": [
+    {
+      "match_id": "709709",
+      "match_date": "2026-07-06",
+      "team1_name": "Gen.G GC",
+      "team2_name": "DRX Academy GC",
+      "team1_win_prob": 0.9471,
+      "team2_win_prob": 0.0529,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "707772",
       "match_date": "2026-07-06",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.578,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706759",
-      "match_date": "2026-07-02",
-      "team1_name": "Team Vitality",
-      "team2_name": "Karmine Corp",
-      "team1_win_prob": 0.529,
-      "team2_win_prob": 0.471,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
