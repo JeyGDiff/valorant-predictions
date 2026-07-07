@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-07T14:23:24.792763+00:00",
-  "total_resolved": 163,
-  "correct": 109,
+  "generated_at": "2026-07-07T17:10:36.104038+00:00",
+  "total_resolved": 166,
+  "correct": 112,
   "predictions": [
+    {
+      "match_id": "710272",
+      "match_date": "2026-07-07",
+      "team1_name": "FOKUS",
+      "team2_name": "Formulation Gaming",
+      "team1_win_prob": 0.6018,
+      "team2_win_prob": 0.3982,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "710282",
+      "match_date": "2026-07-07",
+      "team1_name": "Mandatory",
+      "team2_name": "La Masia",
+      "team1_win_prob": 0.8573,
+      "team2_win_prob": 0.1427,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "711001",
+      "match_date": "2026-07-07",
+      "team1_name": "Fancy United Esports",
+      "team2_name": "No Salary Peek",
+      "team1_win_prob": 0.6022,
+      "team2_win_prob": 0.3978,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706773",
       "match_date": "2026-07-07",
@@ -519,39 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "696462",
-      "match_date": "2026-07-03",
-      "team1_name": "Soleil Gaming GC",
-      "team2_name": "EOTO",
-      "team1_win_prob": 0.3543,
-      "team2_win_prob": 0.6457,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "707229",
-      "match_date": "2026-07-03",
-      "team1_name": "LYON",
-      "team2_name": "Contra",
-      "team1_win_prob": 0.9112,
-      "team2_win_prob": 0.0888,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "707228",
-      "match_date": "2026-07-03",
-      "team1_name": "FUEGO",
-      "team2_name": "STREAMER ARENA",
-      "team1_win_prob": 0.835,
-      "team2_win_prob": 0.165,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
