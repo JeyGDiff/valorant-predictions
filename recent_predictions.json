@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-07T19:49:57.908309+00:00",
-  "total_resolved": 171,
-  "correct": 115,
+  "generated_at": "2026-07-07T21:20:18.784169+00:00",
+  "total_resolved": 173,
+  "correct": 117,
   "predictions": [
+    {
+      "match_id": "710278",
+      "match_date": "2026-07-07",
+      "team1_name": "Be\u015fikta\u015f Esports",
+      "team2_name": "CGN Esports",
+      "team1_win_prob": 0.4006,
+      "team2_win_prob": 0.5994,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "710283",
+      "match_date": "2026-07-07",
+      "team1_name": "UCAM Esports Club",
+      "team2_name": "Eintracht Frankfurt",
+      "team1_win_prob": 0.4715,
+      "team2_win_prob": 0.5285,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "710277",
       "match_date": "2026-07-07",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.6455,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "684637",
-      "match_date": "2026-07-03",
-      "team1_name": "Fancy United Esports",
-      "team2_name": "555",
-      "team1_win_prob": 0.697,
-      "team2_win_prob": 0.303,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "706764",
-      "match_date": "2026-07-03",
-      "team1_name": "Gentle Mates",
-      "team2_name": "Xi Lai Gaming",
-      "team1_win_prob": 0.57,
-      "team2_win_prob": 0.43,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
