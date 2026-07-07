@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "705818",
+    "match_date": "2026-07-07",
+    "team1_name": "Stray Cats",
+    "team2_name": "FUSION X",
+    "team1_win_prob": 0.6321,
+    "team2_win_prob": 0.3679,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "705841",
     "match_date": "2026-07-07",
     "team1_name": "LEVIAT\u00c1N GC",
@@ -1881,17 +1892,6 @@
     "correct": null
   },
   {
-    "match_id": "705818",
-    "match_date": "Upcoming 2",
-    "team1_name": "Stray Cats",
-    "team2_name": "FUSION X",
-    "team1_win_prob": 0.6321,
-    "team2_win_prob": 0.3679,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706768",
     "match_date": "Upcoming 1",
     "team1_name": "Nongshim RedForce",
@@ -1943,6 +1943,17 @@
     "team1_win_prob": 0.5643,
     "team2_win_prob": 0.4357,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707207",
+    "match_date": "Upcoming 1",
+    "team1_name": "Team Solid",
+    "team2_name": "2Game Esports",
+    "team1_win_prob": 0.369,
+    "team2_win_prob": 0.631,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
