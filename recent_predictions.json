@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-07T11:44:51.481750+00:00",
-  "total_resolved": 161,
-  "correct": 107,
+  "generated_at": "2026-07-07T14:23:24.792763+00:00",
+  "total_resolved": 163,
+  "correct": 109,
   "predictions": [
+    {
+      "match_id": "706773",
+      "match_date": "2026-07-07",
+      "team1_name": "MIBR.LOS(MIBR)",
+      "team2_name": "AG.AL(All Gamers)",
+      "team1_win_prob": 0.9411,
+      "team2_win_prob": 0.0589,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "709713",
+      "match_date": "2026-07-07",
+      "team1_name": "DRX Academy GC",
+      "team2_name": "SUZ",
+      "team1_win_prob": 0.5643,
+      "team2_win_prob": 0.4357,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "711000",
       "match_date": "2026-07-07",
@@ -527,28 +549,6 @@
       "team2_name": "STREAMER ARENA",
       "team1_win_prob": 0.835,
       "team2_win_prob": 0.165,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "696460",
-      "match_date": "2026-07-03",
-      "team1_name": "FENNEL GC",
-      "team2_name": "Sasanqua",
-      "team1_win_prob": 0.754,
-      "team2_win_prob": 0.246,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707768",
-      "match_date": "2026-07-03",
-      "team1_name": "Nightblood Gaming",
-      "team2_name": "YFT",
-      "team1_win_prob": 0.6337,
-      "team2_win_prob": 0.3663,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true

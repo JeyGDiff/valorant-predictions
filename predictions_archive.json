@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "706773",
+    "match_date": "2026-07-07",
+    "team1_name": "MIBR.LOS(MIBR)",
+    "team2_name": "AG.AL(All Gamers)",
+    "team1_win_prob": 0.9411,
+    "team2_win_prob": 0.0589,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "709713",
+    "match_date": "2026-07-07",
+    "team1_name": "DRX Academy GC",
+    "team2_name": "SUZ",
+    "team1_win_prob": 0.5643,
+    "team2_win_prob": 0.4357,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "711000",
     "match_date": "2026-07-07",
     "team1_name": "555",
@@ -1903,17 +1925,6 @@
     "correct": null
   },
   {
-    "match_id": "706773",
-    "match_date": "Upcoming 1",
-    "team1_name": "MIBR.LOS(MIBR)",
-    "team2_name": "AG.AL(All Gamers)",
-    "team1_win_prob": 0.9411,
-    "team2_win_prob": 0.0589,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706768",
     "match_date": "Upcoming 1",
     "team1_name": "Nongshim RedForce",
@@ -1931,17 +1942,6 @@
     "team2_name": "No Salary Peek",
     "team1_win_prob": 0.6022,
     "team2_win_prob": 0.3978,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "709713",
-    "match_date": "Upcoming 1",
-    "team1_name": "DRX Academy GC",
-    "team2_name": "SUZ",
-    "team1_win_prob": 0.5643,
-    "team2_win_prob": 0.4357,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
