@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-07T00:04:01.601850+00:00",
-  "total_resolved": 157,
-  "correct": 106,
+  "generated_at": "2026-07-07T04:47:51.111704+00:00",
+  "total_resolved": 158,
+  "correct": 107,
   "predictions": [
+    {
+      "match_id": "705841",
+      "match_date": "2026-07-07",
+      "team1_name": "LEVIAT\u00c1N GC",
+      "team2_name": "Polar Squad Esports GC",
+      "team1_win_prob": 0.3485,
+      "team2_win_prob": 0.6515,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "709710",
       "match_date": "2026-07-06",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.3837,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707205",
-      "match_date": "2026-07-02",
-      "team1_name": "MIBR Academy",
-      "team2_name": "Team Solid",
-      "team1_win_prob": 0.2912,
-      "team2_win_prob": 0.7088,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
