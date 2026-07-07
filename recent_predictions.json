@@ -1,8 +1,63 @@
 {
-  "generated_at": "2026-07-07T17:10:36.104038+00:00",
-  "total_resolved": 166,
-  "correct": 112,
+  "generated_at": "2026-07-07T19:49:57.908309+00:00",
+  "total_resolved": 171,
+  "correct": 115,
   "predictions": [
+    {
+      "match_id": "710277",
+      "match_date": "2026-07-07",
+      "team1_name": "MIR",
+      "team2_name": "Fire Flux Esports",
+      "team1_win_prob": 0.2392,
+      "team2_win_prob": 0.7608,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "710287",
+      "match_date": "2026-07-07",
+      "team1_name": "Misa Esports",
+      "team2_name": "\u00c7ilekler",
+      "team1_win_prob": 0.8363,
+      "team2_win_prob": 0.1637,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "710273",
+      "match_date": "2026-07-07",
+      "team1_name": "Twisted Saints Esports",
+      "team2_name": "Pixel Lumina",
+      "team1_win_prob": 0.2041,
+      "team2_win_prob": 0.7959,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "710288",
+      "match_date": "2026-07-07",
+      "team1_name": "Bar\u00e7a eSports",
+      "team2_name": "Ghools Esports",
+      "team1_win_prob": 0.7219,
+      "team2_win_prob": 0.2781,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "706768",
+      "match_date": "2026-07-07",
+      "team1_name": "Nongshim RedForce",
+      "team2_name": "G2 Esports",
+      "team1_win_prob": 0.4337,
+      "team2_win_prob": 0.5663,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "710272",
       "match_date": "2026-07-07",
@@ -497,61 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "706765",
-      "match_date": "2026-07-03",
-      "team1_name": "Nongshim RedForce",
-      "team2_name": "G2 Esports",
-      "team1_win_prob": 0.4337,
-      "team2_win_prob": 0.5663,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "684631",
-      "match_date": "2026-07-03",
-      "team1_name": "Jade Lions",
-      "team2_name": "Sharper Esports",
-      "team1_win_prob": 0.2287,
-      "team2_win_prob": 0.7713,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706769",
-      "match_date": "2026-07-03",
-      "team1_name": "MIBR.LOS(MIBR)",
-      "team2_name": "Global Esports",
-      "team1_win_prob": 0.6681,
-      "team2_win_prob": 0.3319,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706770",
-      "match_date": "2026-07-03",
-      "team1_name": "AG.AL(All Gamers)",
-      "team2_name": "Team Heretics",
-      "team1_win_prob": 0.316,
-      "team2_win_prob": 0.684,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "696463",
-      "match_date": "2026-07-03",
-      "team1_name": "Sasanqua",
-      "team2_name": "EOTO",
-      "team1_win_prob": 0.1979,
-      "team2_win_prob": 0.8021,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }

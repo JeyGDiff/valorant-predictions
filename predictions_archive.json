@@ -1,5 +1,60 @@
 [
   {
+    "match_id": "710277",
+    "match_date": "2026-07-07",
+    "team1_name": "MIR",
+    "team2_name": "Fire Flux Esports",
+    "team1_win_prob": 0.2392,
+    "team2_win_prob": 0.7608,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "710287",
+    "match_date": "2026-07-07",
+    "team1_name": "Misa Esports",
+    "team2_name": "\u00c7ilekler",
+    "team1_win_prob": 0.8363,
+    "team2_win_prob": 0.1637,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "710273",
+    "match_date": "2026-07-07",
+    "team1_name": "Twisted Saints Esports",
+    "team2_name": "Pixel Lumina",
+    "team1_win_prob": 0.2041,
+    "team2_win_prob": 0.7959,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "710288",
+    "match_date": "2026-07-07",
+    "team1_name": "Bar\u00e7a eSports",
+    "team2_name": "Ghools Esports",
+    "team1_win_prob": 0.7219,
+    "team2_win_prob": 0.2781,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "706768",
+    "match_date": "2026-07-07",
+    "team1_name": "Nongshim RedForce",
+    "team2_name": "G2 Esports",
+    "team1_win_prob": 0.4337,
+    "team2_win_prob": 0.5663,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "710272",
     "match_date": "2026-07-07",
     "team1_name": "FOKUS",
@@ -1870,39 +1925,6 @@
     "correct": null
   },
   {
-    "match_id": "710277",
-    "match_date": "Upcoming 2",
-    "team1_name": "MIR",
-    "team2_name": "Fire Flux Esports",
-    "team1_win_prob": 0.2392,
-    "team2_win_prob": 0.7608,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "710287",
-    "match_date": "Upcoming 2",
-    "team1_name": "Misa Esports",
-    "team2_name": "\u00c7ilekler",
-    "team1_win_prob": 0.8363,
-    "team2_win_prob": 0.1637,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "710273",
-    "match_date": "Upcoming 2",
-    "team1_name": "Twisted Saints Esports",
-    "team2_name": "Pixel Lumina",
-    "team1_win_prob": 0.2041,
-    "team2_win_prob": 0.7959,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "710278",
     "match_date": "Upcoming 2",
     "team1_name": "Be\u015fikta\u015f Esports",
@@ -1920,28 +1942,6 @@
     "team2_name": "Eintracht Frankfurt",
     "team1_win_prob": 0.4715,
     "team2_win_prob": 0.5285,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "710288",
-    "match_date": "Upcoming 2",
-    "team1_name": "Bar\u00e7a eSports",
-    "team2_name": "Ghools Esports",
-    "team1_win_prob": 0.7219,
-    "team2_win_prob": 0.2781,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "706768",
-    "match_date": "Upcoming 1",
-    "team1_name": "Nongshim RedForce",
-    "team2_name": "G2 Esports",
-    "team1_win_prob": 0.4337,
-    "team2_win_prob": 0.5663,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
@@ -1986,6 +1986,83 @@
     "team2_name": "Fancy United Esports",
     "team1_win_prob": 0.3067,
     "team2_win_prob": 0.6933,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710274",
+    "match_date": "Upcoming 1",
+    "team1_name": "FOKUS",
+    "team2_name": "Pixel Lumina",
+    "team1_win_prob": 0.3744,
+    "team2_win_prob": 0.6256,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710289",
+    "match_date": "Upcoming 1",
+    "team1_name": "\u00c7ilekler",
+    "team2_name": "Bar\u00e7a eSports",
+    "team1_win_prob": 0.3115,
+    "team2_win_prob": 0.6885,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710275",
+    "match_date": "Upcoming 2",
+    "team1_name": "Formulation Gaming",
+    "team2_name": "Twisted Saints Esports",
+    "team1_win_prob": 0.756,
+    "team2_win_prob": 0.244,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710290",
+    "match_date": "Upcoming 2",
+    "team1_name": "Misa Esports",
+    "team2_name": "Ghools Esports",
+    "team1_win_prob": 0.8548,
+    "team2_win_prob": 0.1452,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701026",
+    "match_date": "Upcoming 1",
+    "team1_name": "Dragon Ranger Gaming",
+    "team2_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
+    "team1_win_prob": 0.3937,
+    "team2_win_prob": 0.6063,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "708420",
+    "match_date": "Upcoming 1",
+    "team1_name": "100 Thieves",
+    "team2_name": "MIBR",
+    "team1_win_prob": 0.3645,
+    "team2_win_prob": 0.6355,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "708421",
+    "match_date": "Upcoming 1",
+    "team1_name": "Team Vitality",
+    "team2_name": "Nongshim RedForce",
+    "team1_win_prob": 0.4588,
+    "team2_win_prob": 0.5412,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
