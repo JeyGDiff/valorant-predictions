@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "707212",
+    "match_date": "2026-07-07",
+    "team1_name": "RED Canids",
+    "team2_name": "LA MASIA",
+    "team1_win_prob": 0.3757,
+    "team2_win_prob": 0.6243,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "710278",
     "match_date": "2026-07-07",
     "team1_name": "Be\u015fikta\u015f Esports",
@@ -1914,17 +1925,6 @@
     "correct": null
   },
   {
-    "match_id": "707212",
-    "match_date": "Upcoming 3",
-    "team1_name": "RED Canids",
-    "team2_name": "LA MASIA",
-    "team1_win_prob": 0.3757,
-    "team2_win_prob": 0.6243,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "709680",
     "match_date": "Upcoming 3",
     "team1_name": "ONSIDE GAMING",
@@ -2108,6 +2108,17 @@
     "team1_win_prob": 0.1232,
     "team2_win_prob": 0.8768,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707777",
+    "match_date": "Upcoming 1",
+    "team1_name": "Shopify Rebellion Black",
+    "team2_name": "QoR",
+    "team1_win_prob": 0.5404,
+    "team2_win_prob": 0.4596,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }

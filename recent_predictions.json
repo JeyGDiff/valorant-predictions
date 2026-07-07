@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-07T22:57:33.806564+00:00",
-  "total_resolved": 173,
-  "correct": 117,
+  "generated_at": "2026-07-07T23:59:02.300039+00:00",
+  "total_resolved": 174,
+  "correct": 118,
   "predictions": [
+    {
+      "match_id": "707212",
+      "match_date": "2026-07-07",
+      "team1_name": "RED Canids",
+      "team2_name": "LA MASIA",
+      "team1_win_prob": 0.3757,
+      "team2_win_prob": 0.6243,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "710278",
       "match_date": "2026-07-07",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.3315,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707709",
-      "match_date": "2026-07-03",
-      "team1_name": "FOKUS",
-      "team2_name": "Joblife",
-      "team1_win_prob": 0.3545,
-      "team2_win_prob": 0.6455,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
