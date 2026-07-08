@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "705839",
+    "match_date": "2026-07-08",
+    "team1_name": "Looking For Laburo",
+    "team2_name": "KR\u00dc BLAZE",
+    "team1_win_prob": 0.54,
+    "team2_win_prob": 0.46,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "705816",
+    "match_date": "2026-07-08",
+    "team1_name": "Akave Esports GC",
+    "team2_name": "No Sweat Blossom",
+    "team1_win_prob": 0.8424,
+    "team2_win_prob": 0.1576,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "707207",
+    "match_date": "2026-07-08",
+    "team1_name": "Team Solid",
+    "team2_name": "2Game Esports",
+    "team1_win_prob": 0.369,
+    "team2_win_prob": 0.631,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "707212",
     "match_date": "2026-07-07",
     "team1_name": "RED Canids",
@@ -1914,17 +1947,6 @@
     "correct": true
   },
   {
-    "match_id": "705839",
-    "match_date": "Upcoming 2",
-    "team1_name": "Looking For Laburo",
-    "team2_name": "KR\u00dc BLAZE",
-    "team1_win_prob": 0.54,
-    "team2_win_prob": 0.46,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "709680",
     "match_date": "Upcoming 3",
     "team1_name": "ONSIDE GAMING",
@@ -1932,28 +1954,6 @@
     "team1_win_prob": 0.7984,
     "team2_win_prob": 0.2016,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "705816",
-    "match_date": "Upcoming 2",
-    "team1_name": "Akave Esports GC",
-    "team2_name": "No Sweat Blossom",
-    "team1_win_prob": 0.8424,
-    "team2_win_prob": 0.1576,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707207",
-    "match_date": "Upcoming 1",
-    "team1_name": "Team Solid",
-    "team2_name": "2Game Esports",
-    "team1_win_prob": 0.369,
-    "team2_win_prob": 0.631,
-    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   },
@@ -2119,6 +2119,94 @@
     "team1_win_prob": 0.5404,
     "team2_win_prob": 0.4596,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "709681",
+    "match_date": "Upcoming 6",
+    "team1_name": "Dplus Esports",
+    "team2_name": "ARETE",
+    "team1_win_prob": 0.6566,
+    "team2_win_prob": 0.3434,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "705842",
+    "match_date": "Upcoming 1",
+    "team1_name": "Looking For Laburo",
+    "team2_name": "Polar Squad Esports GC",
+    "team1_win_prob": 0.5773,
+    "team2_win_prob": 0.4227,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "705819",
+    "match_date": "Upcoming 2",
+    "team1_name": "No Sweat Blossom",
+    "team2_name": "FUSION X",
+    "team1_win_prob": 0.8735,
+    "team2_win_prob": 0.1265,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "708422",
+    "match_date": "Upcoming 1",
+    "team1_name": "Team Heretics",
+    "team2_name": "BBL Esports",
+    "team1_win_prob": 0.7156,
+    "team2_win_prob": 0.2844,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "708423",
+    "match_date": "Upcoming 1",
+    "team1_name": "Gentle Mates",
+    "team2_name": "NRG",
+    "team1_win_prob": 0.4053,
+    "team2_win_prob": 0.5947,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707778",
+    "match_date": "Upcoming 1",
+    "team1_name": "Nightblood Gaming",
+    "team2_name": "NRG Academy",
+    "team1_win_prob": 0.3857,
+    "team2_win_prob": 0.6143,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707233",
+    "match_date": "Upcoming 1",
+    "team1_name": "Contra",
+    "team2_name": "LYON",
+    "team1_win_prob": 0.1888,
+    "team2_win_prob": 0.8112,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701027",
+    "match_date": "Upcoming 2",
+    "team1_name": "FunPlus Phoenix",
+    "team2_name": "Trace Esports",
+    "team1_win_prob": 0.2431,
+    "team2_win_prob": 0.7569,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }

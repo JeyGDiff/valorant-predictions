@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-07T23:59:02.300039+00:00",
-  "total_resolved": 174,
-  "correct": 118,
+  "generated_at": "2026-07-08T03:24:38.226517+00:00",
+  "total_resolved": 177,
+  "correct": 120,
   "predictions": [
+    {
+      "match_id": "705839",
+      "match_date": "2026-07-08",
+      "team1_name": "Looking For Laburo",
+      "team2_name": "KR\u00dc BLAZE",
+      "team1_win_prob": 0.54,
+      "team2_win_prob": 0.46,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "705816",
+      "match_date": "2026-07-08",
+      "team1_name": "Akave Esports GC",
+      "team2_name": "No Sweat Blossom",
+      "team1_win_prob": 0.8424,
+      "team2_win_prob": 0.1576,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707207",
+      "match_date": "2026-07-08",
+      "team1_name": "Team Solid",
+      "team2_name": "2Game Esports",
+      "team1_win_prob": 0.369,
+      "team2_win_prob": 0.631,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "707212",
       "match_date": "2026-07-07",
@@ -519,39 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "707221",
-      "match_date": "2026-07-03",
-      "team1_name": "KR\u00dc SPARK",
-      "team2_name": "University War",
-      "team1_win_prob": 0.6793,
-      "team2_win_prob": 0.3207,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707769",
-      "match_date": "2026-07-03",
-      "team1_name": "SaD Esports",
-      "team2_name": "NRG Academy",
-      "team1_win_prob": 0.4775,
-      "team2_win_prob": 0.5225,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "707211",
-      "match_date": "2026-07-03",
-      "team1_name": "LA MASIA",
-      "team2_name": "MIBR Academy",
-      "team1_win_prob": 0.6685,
-      "team2_win_prob": 0.3315,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
