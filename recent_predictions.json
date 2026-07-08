@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-08T16:00:23.183613+00:00",
-  "total_resolved": 181,
-  "correct": 123,
+  "generated_at": "2026-07-08T17:47:40.524061+00:00",
+  "total_resolved": 182,
+  "correct": 124,
   "predictions": [
+    {
+      "match_id": "710289",
+      "match_date": "2026-07-08",
+      "team1_name": "\u00c7ilekler",
+      "team2_name": "Bar\u00e7a eSports",
+      "team1_win_prob": 0.3115,
+      "team2_win_prob": 0.6885,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "711004",
       "match_date": "2026-07-08",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "696461",
-      "match_date": "2026-07-04",
-      "team1_name": "FENNEL GC",
-      "team2_name": "Sasanqua",
-      "team1_win_prob": 0.754,
-      "team2_win_prob": 0.246,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }

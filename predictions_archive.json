@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "710289",
+    "match_date": "2026-07-08",
+    "team1_name": "\u00c7ilekler",
+    "team2_name": "Bar\u00e7a eSports",
+    "team1_win_prob": 0.3115,
+    "team2_win_prob": 0.6885,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "711004",
     "match_date": "2026-07-08",
     "team1_name": "No Salary Peek",
@@ -2013,17 +2024,6 @@
     "correct": null
   },
   {
-    "match_id": "710289",
-    "match_date": "Upcoming 1",
-    "team1_name": "\u00c7ilekler",
-    "team2_name": "Bar\u00e7a eSports",
-    "team1_win_prob": 0.3115,
-    "team2_win_prob": 0.6885,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "710275",
     "match_date": "Upcoming 2",
     "team1_name": "Formulation Gaming",
@@ -2250,6 +2250,17 @@
     "team2_name": "Dplus Esports",
     "team1_win_prob": 0.4567,
     "team2_win_prob": 0.5433,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707226",
+    "match_date": "Upcoming 2",
+    "team1_name": "KR\u00dc SPARK",
+    "team2_name": "9z Globant",
+    "team1_win_prob": 0.3061,
+    "team2_win_prob": 0.6939,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
