@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "710275",
+    "match_date": "2026-07-08",
+    "team1_name": "Formulation Gaming",
+    "team2_name": "Twisted Saints Esports",
+    "team1_win_prob": 0.756,
+    "team2_win_prob": 0.244,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "710280",
+    "match_date": "2026-07-08",
+    "team1_name": "MIR",
+    "team2_name": "Be\u015fikta\u015f Esports",
+    "team1_win_prob": 0.2224,
+    "team2_win_prob": 0.7776,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "710285",
+    "match_date": "2026-07-08",
+    "team1_name": "La Masia",
+    "team2_name": "UCAM Esports Club",
+    "team1_win_prob": 0.1232,
+    "team2_win_prob": 0.8768,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "710274",
     "match_date": "2026-07-08",
     "team1_name": "FOKUS",
@@ -2057,17 +2090,6 @@
     "correct": null
   },
   {
-    "match_id": "710275",
-    "match_date": "Upcoming 2",
-    "team1_name": "Formulation Gaming",
-    "team2_name": "Twisted Saints Esports",
-    "team1_win_prob": 0.756,
-    "team2_win_prob": 0.244,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "701026",
     "match_date": "Upcoming 1",
     "team1_name": "Dragon Ranger Gaming",
@@ -2096,28 +2118,6 @@
     "team2_name": "Nongshim RedForce",
     "team1_win_prob": 0.4588,
     "team2_win_prob": 0.5412,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "710280",
-    "match_date": "Upcoming 2",
-    "team1_name": "MIR",
-    "team2_name": "Be\u015fikta\u015f Esports",
-    "team1_win_prob": 0.2224,
-    "team2_win_prob": 0.7776,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "710285",
-    "match_date": "Upcoming 2",
-    "team1_name": "La Masia",
-    "team2_name": "UCAM Esports Club",
-    "team1_win_prob": 0.1232,
-    "team2_win_prob": 0.8768,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
@@ -2283,6 +2283,72 @@
     "team2_name": "JFT GC",
     "team1_win_prob": 0.6199,
     "team2_win_prob": 0.3801,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710276",
+    "match_date": "Upcoming 1",
+    "team1_name": "FOKUS",
+    "team2_name": "Twisted Saints Esports",
+    "team1_win_prob": 0.7559,
+    "team2_win_prob": 0.2441,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710281",
+    "match_date": "Upcoming 1",
+    "team1_name": "CGN Esports",
+    "team2_name": "MIR",
+    "team1_win_prob": 0.8867,
+    "team2_win_prob": 0.1133,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710286",
+    "match_date": "Upcoming 1",
+    "team1_name": "Mandatory",
+    "team2_name": "UCAM Esports Club",
+    "team1_win_prob": 0.4436,
+    "team2_win_prob": 0.5564,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710291",
+    "match_date": "Upcoming 1",
+    "team1_name": "\u00c7ilekler",
+    "team2_name": "Misa Esports",
+    "team1_win_prob": 0.2014,
+    "team2_win_prob": 0.7986,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701029",
+    "match_date": "Upcoming 2",
+    "team1_name": "Dragon Ranger Gaming",
+    "team2_name": "Wuxi Titan Esports Club(Titan Esports Club)",
+    "team1_win_prob": 0.8041,
+    "team2_win_prob": 0.1959,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701329",
+    "match_date": "Upcoming 2",
+    "team1_name": "wiwiwi",
+    "team2_name": "sisu",
+    "team1_win_prob": 0.7479,
+    "team2_win_prob": 0.2521,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
