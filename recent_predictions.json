@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-08T09:23:44.970075+00:00",
-  "total_resolved": 177,
-  "correct": 120,
+  "generated_at": "2026-07-08T11:44:30.481871+00:00",
+  "total_resolved": 179,
+  "correct": 122,
   "predictions": [
+    {
+      "match_id": "709680",
+      "match_date": "2026-07-08",
+      "team1_name": "ONSIDE GAMING",
+      "team2_name": "X-CAST",
+      "team1_win_prob": 0.7984,
+      "team2_win_prob": 0.2016,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "711002",
+      "match_date": "2026-07-08",
+      "team1_name": "555",
+      "team2_name": "Fancy United Esports",
+      "team1_win_prob": 0.3067,
+      "team2_win_prob": 0.6933,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "705839",
       "match_date": "2026-07-08",
@@ -530,28 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "707222",
-      "match_date": "2026-07-04",
-      "team1_name": "BESTIA",
-      "team2_name": "9z Globant",
-      "team1_win_prob": 0.6758,
-      "team2_win_prob": 0.3242,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707770",
-      "match_date": "2026-07-04",
-      "team1_name": "Shopify Rebellion Black",
-      "team2_name": "Evil Geniuses Academy",
-      "team1_win_prob": 0.4985,
-      "team2_win_prob": 0.5015,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
