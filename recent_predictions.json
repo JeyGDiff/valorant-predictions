@@ -1,8 +1,52 @@
 {
-  "generated_at": "2026-07-08T17:47:40.524061+00:00",
-  "total_resolved": 182,
-  "correct": 124,
+  "generated_at": "2026-07-08T19:19:18.943342+00:00",
+  "total_resolved": 186,
+  "correct": 126,
   "predictions": [
+    {
+      "match_id": "710274",
+      "match_date": "2026-07-08",
+      "team1_name": "FOKUS",
+      "team2_name": "Pixel Lumina",
+      "team1_win_prob": 0.3744,
+      "team2_win_prob": 0.6256,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "710290",
+      "match_date": "2026-07-08",
+      "team1_name": "Misa Esports",
+      "team2_name": "Ghools Esports",
+      "team1_win_prob": 0.8548,
+      "team2_win_prob": 0.1452,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "710279",
+      "match_date": "2026-07-08",
+      "team1_name": "Fire Flux Esports",
+      "team2_name": "CGN Esports",
+      "team1_win_prob": 0.4336,
+      "team2_win_prob": 0.5664,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "710284",
+      "match_date": "2026-07-08",
+      "team1_name": "Mandatory",
+      "team2_name": "Eintracht Frankfurt",
+      "team1_win_prob": 0.6508,
+      "team2_win_prob": 0.3492,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "710289",
       "match_date": "2026-07-08",
@@ -508,50 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "706762",
-      "match_date": "2026-07-04",
-      "team1_name": "Karmine Corp",
-      "team2_name": "Paper Rex",
-      "team1_win_prob": 0.3013,
-      "team2_win_prob": 0.6987,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "706761",
-      "match_date": "2026-07-04",
-      "team1_name": "Team Vitality",
-      "team2_name": "NRG",
-      "team1_win_prob": 0.4488,
-      "team2_win_prob": 0.5512,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "706756",
-      "match_date": "2026-07-04",
-      "team1_name": "100 Thieves",
-      "team2_name": "BBL Esports",
-      "team1_win_prob": 0.7214,
-      "team2_win_prob": 0.2786,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706757",
-      "match_date": "2026-07-04",
-      "team1_name": "Rex Regum Qeon",
-      "team2_name": "EDward Gaming",
-      "team1_win_prob": 0.5668,
-      "team2_win_prob": 0.4332,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
