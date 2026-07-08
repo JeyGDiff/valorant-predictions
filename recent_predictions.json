@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-08T11:44:30.481871+00:00",
-  "total_resolved": 179,
-  "correct": 122,
+  "generated_at": "2026-07-08T13:53:50.078109+00:00",
+  "total_resolved": 181,
+  "correct": 123,
   "predictions": [
+    {
+      "match_id": "711004",
+      "match_date": "2026-07-08",
+      "team1_name": "No Salary Peek",
+      "team2_name": "Yi-Jing",
+      "team1_win_prob": 0.4032,
+      "team2_win_prob": 0.5968,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "709681",
+      "match_date": "2026-07-08",
+      "team1_name": "Dplus Esports",
+      "team2_name": "ARETE",
+      "team1_win_prob": 0.6566,
+      "team2_win_prob": 0.3434,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "709680",
       "match_date": "2026-07-08",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.246,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "684638",
-      "match_date": "2026-07-04",
-      "team1_name": "Jade Lions",
-      "team2_name": "555",
-      "team1_win_prob": 0.7471,
-      "team2_win_prob": 0.2529,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "707210",
-      "match_date": "2026-07-04",
-      "team1_name": "FURIA Academy",
-      "team2_name": "RED Canids",
-      "team1_win_prob": 0.2928,
-      "team2_win_prob": 0.7072,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
