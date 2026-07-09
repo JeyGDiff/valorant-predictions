@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-08T23:02:31.318881+00:00",
-  "total_resolved": 189,
-  "correct": 127,
+  "generated_at": "2026-07-09T02:35:14.223722+00:00",
+  "total_resolved": 192,
+  "correct": 128,
   "predictions": [
+    {
+      "match_id": "705086",
+      "match_date": "2026-07-09",
+      "team1_name": "Team Liquid Brazil",
+      "team2_name": "MIBR GC",
+      "team1_win_prob": 0.6353,
+      "team2_win_prob": 0.3647,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "705842",
+      "match_date": "2026-07-09",
+      "team1_name": "Looking For Laburo",
+      "team2_name": "Polar Squad Esports GC",
+      "team1_win_prob": 0.5773,
+      "team2_win_prob": 0.4227,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "705819",
+      "match_date": "2026-07-09",
+      "team1_name": "No Sweat Blossom",
+      "team2_name": "FUSION X",
+      "team1_win_prob": 0.8735,
+      "team2_win_prob": 0.1265,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "710275",
       "match_date": "2026-07-08",
@@ -519,39 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "675268",
-      "match_date": "2026-07-05",
-      "team1_name": "RIDDLE ORDER",
-      "team2_name": "IGZIST",
-      "team1_win_prob": 0.642,
-      "team2_win_prob": 0.358,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "707775",
-      "match_date": "2026-07-05",
-      "team1_name": "QoR",
-      "team2_name": "YFT",
-      "team1_win_prob": 0.7404,
-      "team2_win_prob": 0.2596,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707230",
-      "match_date": "2026-07-05",
-      "team1_name": "FUEGO",
-      "team2_name": "Contra",
-      "team1_win_prob": 0.2675,
-      "team2_win_prob": 0.7325,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
