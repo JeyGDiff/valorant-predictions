@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-09T13:46:30.231424+00:00",
-  "total_resolved": 197,
+  "generated_at": "2026-07-09T16:25:09.344249+00:00",
+  "total_resolved": 198,
   "correct": 130,
   "predictions": [
+    {
+      "match_id": "708422",
+      "match_date": "2026-07-09",
+      "team1_name": "Team Heretics",
+      "team2_name": "BBL Esports",
+      "team1_win_prob": 0.7156,
+      "team2_win_prob": 0.2844,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701026",
       "match_date": "2026-07-09",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "707704",
-      "match_date": "2026-07-05",
-      "team1_name": "Enterprise Esports",
-      "team2_name": "REBORN",
-      "team1_win_prob": 0.6163,
-      "team2_win_prob": 0.3837,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
