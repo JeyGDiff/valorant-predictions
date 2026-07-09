@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-09T06:40:01.310094+00:00",
-  "total_resolved": 192,
-  "correct": 128,
+  "generated_at": "2026-07-09T10:21:42.157430+00:00",
+  "total_resolved": 193,
+  "correct": 129,
   "predictions": [
+    {
+      "match_id": "701025",
+      "match_date": "2026-07-09",
+      "team1_name": "Wolves Esports",
+      "team2_name": "Wuxi Titan Esports Club(Titan Esports Club)",
+      "team1_win_prob": 0.8955,
+      "team2_win_prob": 0.1045,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "705086",
       "match_date": "2026-07-09",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "684632",
-      "match_date": "2026-07-05",
-      "team1_name": "Sharper Esports",
-      "team2_name": "555",
-      "team1_win_prob": 0.748,
-      "team2_win_prob": 0.252,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
