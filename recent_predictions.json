@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-09T20:44:48.837181+00:00",
-  "total_resolved": 201,
+  "generated_at": "2026-07-09T22:18:51.231602+00:00",
+  "total_resolved": 203,
   "correct": 133,
   "predictions": [
+    {
+      "match_id": "710286",
+      "match_date": "2026-07-09",
+      "team1_name": "Mandatory",
+      "team2_name": "UCAM Esports Club",
+      "team1_win_prob": 0.4436,
+      "team2_win_prob": 0.5564,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "710291",
+      "match_date": "2026-07-09",
+      "team1_name": "\u00c7ilekler",
+      "team2_name": "Misa Esports",
+      "team1_win_prob": 0.2014,
+      "team2_win_prob": 0.7986,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "708423",
       "match_date": "2026-07-09",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.0529,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707772",
-      "match_date": "2026-07-06",
-      "team1_name": "SaD Esports",
-      "team2_name": "Shopify Rebellion Black",
-      "team1_win_prob": 0.3834,
-      "team2_win_prob": 0.6166,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "707225",
-      "match_date": "2026-07-06",
-      "team1_name": "University War",
-      "team2_name": "9z Globant",
-      "team1_win_prob": 0.3776,
-      "team2_win_prob": 0.6224,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
