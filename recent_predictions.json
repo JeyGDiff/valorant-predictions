@@ -1,8 +1,52 @@
 {
-  "generated_at": "2026-07-09T10:21:42.157430+00:00",
-  "total_resolved": 193,
-  "correct": 129,
+  "generated_at": "2026-07-09T13:46:30.231424+00:00",
+  "total_resolved": 197,
+  "correct": 130,
   "predictions": [
+    {
+      "match_id": "701026",
+      "match_date": "2026-07-09",
+      "team1_name": "Dragon Ranger Gaming",
+      "team2_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
+      "team1_win_prob": 0.3937,
+      "team2_win_prob": 0.6063,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "709682",
+      "match_date": "2026-07-09",
+      "team1_name": "ONSIDE GAMING",
+      "team2_name": "ARETE",
+      "team1_win_prob": 0.9484,
+      "team2_win_prob": 0.0516,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "711005",
+      "match_date": "2026-07-09",
+      "team1_name": "555",
+      "team2_name": "Yi-Jing",
+      "team1_win_prob": 0.3502,
+      "team2_win_prob": 0.6498,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "709684",
+      "match_date": "2026-07-09",
+      "team1_name": "X-CAST",
+      "team2_name": "Dplus Esports",
+      "team1_win_prob": 0.4567,
+      "team2_win_prob": 0.5433,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "701025",
       "match_date": "2026-07-09",
@@ -508,50 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "675269",
-      "match_date": "2026-07-05",
-      "team1_name": "FENNEL",
-      "team2_name": "CREST GAMING Zst",
-      "team1_win_prob": 0.5244,
-      "team2_win_prob": 0.4756,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706767",
-      "match_date": "2026-07-05",
-      "team1_name": "Xi Lai Gaming",
-      "team2_name": "G2 Esports",
-      "team1_win_prob": 0.4632,
-      "team2_win_prob": 0.5368,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706771",
-      "match_date": "2026-07-05",
-      "team1_name": "MIBR.LOS(MIBR)",
-      "team2_name": "Team Heretics",
-      "team1_win_prob": 0.7509,
-      "team2_win_prob": 0.2491,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "706772",
-      "match_date": "2026-07-05",
-      "team1_name": "Global Esports",
-      "team2_name": "AG.AL(All Gamers)",
-      "team1_win_prob": 0.8185,
-      "team2_win_prob": 0.1815,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
