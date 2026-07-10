@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-09T22:18:51.231602+00:00",
-  "total_resolved": 203,
-  "correct": 133,
+  "generated_at": "2026-07-10T00:01:08.275410+00:00",
+  "total_resolved": 204,
+  "correct": 134,
   "predictions": [
+    {
+      "match_id": "707778",
+      "match_date": "2026-07-10",
+      "team1_name": "Nightblood Gaming",
+      "team2_name": "NRG Academy",
+      "team1_win_prob": 0.3857,
+      "team2_win_prob": 0.6143,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "710286",
       "match_date": "2026-07-09",
@@ -538,17 +549,6 @@
       "team2_name": "Karmine Corp",
       "team1_win_prob": 0.6239,
       "team2_win_prob": 0.3761,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "709709",
-      "match_date": "2026-07-06",
-      "team1_name": "Gen.G GC",
-      "team2_name": "DRX Academy GC",
-      "team1_win_prob": 0.9471,
-      "team2_win_prob": 0.0529,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true

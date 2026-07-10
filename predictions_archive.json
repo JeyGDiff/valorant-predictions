@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "707778",
+    "match_date": "2026-07-10",
+    "team1_name": "Nightblood Gaming",
+    "team2_name": "NRG Academy",
+    "team1_win_prob": 0.3857,
+    "team2_win_prob": 0.6143,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "710286",
     "match_date": "2026-07-09",
     "team1_name": "Mandatory",
@@ -2266,17 +2277,6 @@
     "correct": null
   },
   {
-    "match_id": "707778",
-    "match_date": "Upcoming 1",
-    "team1_name": "Nightblood Gaming",
-    "team2_name": "NRG Academy",
-    "team1_win_prob": 0.3857,
-    "team2_win_prob": 0.6143,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707233",
     "match_date": "Upcoming 1",
     "team1_name": "Contra",
@@ -2426,6 +2426,17 @@
     "team2_name": "Dplus Esports",
     "team1_win_prob": 0.8274,
     "team2_win_prob": 0.1726,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "705840",
+    "match_date": "Upcoming 3",
+    "team1_name": "KR\u00dc BLAZE",
+    "team2_name": "Looking For Laburo",
+    "team1_win_prob": 0.6625,
+    "team2_win_prob": 0.3375,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
