@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-10T11:48:02.851063+00:00",
-  "total_resolved": 208,
-  "correct": 135,
+  "generated_at": "2026-07-10T14:13:30.769562+00:00",
+  "total_resolved": 210,
+  "correct": 136,
   "predictions": [
+    {
+      "match_id": "708421",
+      "match_date": "2026-07-10",
+      "team1_name": "Team Vitality",
+      "team2_name": "Nongshim RedForce",
+      "team1_win_prob": 0.4588,
+      "team2_win_prob": 0.5412,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "701028",
+      "match_date": "2026-07-10",
+      "team1_name": "JD Mall JDG Esports(JDG Esports)",
+      "team2_name": "TYLOO",
+      "team1_win_prob": 0.756,
+      "team2_win_prob": 0.244,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701027",
       "match_date": "2026-07-10",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.6498,
       "predicted_winner": "team2",
       "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "709711",
-      "match_date": "2026-07-07",
-      "team1_name": "Gen.G GC",
-      "team2_name": "Ninetails",
-      "team1_win_prob": 0.9425,
-      "team2_win_prob": 0.0575,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "705818",
-      "match_date": "2026-07-07",
-      "team1_name": "Stray Cats",
-      "team2_name": "FUSION X",
-      "team1_win_prob": 0.6321,
-      "team2_win_prob": 0.3679,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
       "correct": false
     }
   ]
