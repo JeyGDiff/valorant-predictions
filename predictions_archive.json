@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "707777",
+    "match_date": "2026-07-10",
+    "team1_name": "Shopify Rebellion Black",
+    "team2_name": "QoR",
+    "team1_win_prob": 0.5404,
+    "team2_win_prob": 0.4596,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "707233",
+    "match_date": "2026-07-10",
+    "team1_name": "Contra",
+    "team2_name": "LYON",
+    "team1_win_prob": 0.1888,
+    "team2_win_prob": 0.8112,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "707778",
     "match_date": "2026-07-10",
     "team1_name": "Nightblood Gaming",
@@ -2266,28 +2288,6 @@
     "correct": null
   },
   {
-    "match_id": "707777",
-    "match_date": "Upcoming 1",
-    "team1_name": "Shopify Rebellion Black",
-    "team2_name": "QoR",
-    "team1_win_prob": 0.5404,
-    "team2_win_prob": 0.4596,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707233",
-    "match_date": "Upcoming 1",
-    "team1_name": "Contra",
-    "team2_name": "LYON",
-    "team1_win_prob": 0.1888,
-    "team2_win_prob": 0.8112,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "701027",
     "match_date": "Upcoming 2",
     "team1_name": "FunPlus Phoenix",
@@ -2438,6 +2438,83 @@
     "team1_win_prob": 0.6625,
     "team2_win_prob": 0.3375,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712768",
+    "match_date": "Upcoming 1",
+    "team1_name": "Pixel Lumina",
+    "team2_name": "CGN Esports",
+    "team1_win_prob": 0.3465,
+    "team2_win_prob": 0.6535,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712769",
+    "match_date": "Upcoming 1",
+    "team1_name": "Fire Flux Esports",
+    "team2_name": "\u00c7ilekler",
+    "team1_win_prob": 0.7903,
+    "team2_win_prob": 0.2097,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712770",
+    "match_date": "Upcoming 1",
+    "team1_name": "Eintracht Frankfurt",
+    "team2_name": "FOKUS",
+    "team1_win_prob": 0.7456,
+    "team2_win_prob": 0.2544,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712771",
+    "match_date": "Upcoming 1",
+    "team1_name": "Bar\u00e7a eSports",
+    "team2_name": "Mandatory",
+    "team1_win_prob": 0.3747,
+    "team2_win_prob": 0.6253,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707779",
+    "match_date": "Upcoming 1",
+    "team1_name": "Shopify Rebellion Black",
+    "team2_name": "NRG Academy",
+    "team1_win_prob": 0.5954,
+    "team2_win_prob": 0.4046,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701030",
+    "match_date": "Upcoming 1",
+    "team1_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
+    "team2_name": "Wolves Esports",
+    "team1_win_prob": 0.6062,
+    "team2_win_prob": 0.3938,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707231",
+    "match_date": "Upcoming 1",
+    "team1_name": "FUEGO",
+    "team2_name": "Contra",
+    "team1_win_prob": 0.2675,
+    "team2_win_prob": 0.7325,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
