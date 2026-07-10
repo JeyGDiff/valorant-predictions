@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-10T08:18:42.691363+00:00",
-  "total_resolved": 206,
+  "generated_at": "2026-07-10T11:48:02.851063+00:00",
+  "total_resolved": 208,
   "correct": 135,
   "predictions": [
+    {
+      "match_id": "701027",
+      "match_date": "2026-07-10",
+      "team1_name": "FunPlus Phoenix",
+      "team2_name": "Trace Esports",
+      "team1_win_prob": 0.2431,
+      "team2_win_prob": 0.7569,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "711003",
+      "match_date": "2026-07-10",
+      "team1_name": "Fancy United Esports",
+      "team2_name": "555",
+      "team1_win_prob": 0.697,
+      "team2_win_prob": 0.303,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "707777",
       "match_date": "2026-07-10",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "705841",
-      "match_date": "2026-07-07",
-      "team1_name": "LEVIAT\u00c1N GC",
-      "team2_name": "Polar Squad Esports GC",
-      "team1_win_prob": 0.3485,
-      "team2_win_prob": 0.6515,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "709710",
-      "match_date": "2026-07-06",
-      "team1_name": "Ninetails",
-      "team2_name": "SUZ",
-      "team1_win_prob": 0.7524,
-      "team2_win_prob": 0.2476,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
