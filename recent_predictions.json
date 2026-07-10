@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-10T20:19:37.788349+00:00",
-  "total_resolved": 213,
-  "correct": 137,
+  "generated_at": "2026-07-10T21:58:10.963326+00:00",
+  "total_resolved": 216,
+  "correct": 140,
   "predictions": [
+    {
+      "match_id": "707773",
+      "match_date": "2026-07-10",
+      "team1_name": "M80",
+      "team2_name": "SaD Esports",
+      "team1_win_prob": 0.8117,
+      "team2_win_prob": 0.1883,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "712770",
+      "match_date": "2026-07-10",
+      "team1_name": "Eintracht Frankfurt",
+      "team2_name": "FOKUS",
+      "team1_win_prob": 0.7456,
+      "team2_win_prob": 0.2544,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "712771",
+      "match_date": "2026-07-10",
+      "team1_name": "Bar\u00e7a eSports",
+      "team2_name": "Mandatory",
+      "team1_win_prob": 0.3747,
+      "team2_win_prob": 0.6253,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "708420",
       "match_date": "2026-07-10",
@@ -519,39 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "710272",
-      "match_date": "2026-07-07",
-      "team1_name": "FOKUS",
-      "team2_name": "Formulation Gaming",
-      "team1_win_prob": 0.6018,
-      "team2_win_prob": 0.3982,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "710282",
-      "match_date": "2026-07-07",
-      "team1_name": "Mandatory",
-      "team2_name": "La Masia",
-      "team1_win_prob": 0.8573,
-      "team2_win_prob": 0.1427,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "711001",
-      "match_date": "2026-07-07",
-      "team1_name": "Fancy United Esports",
-      "team2_name": "No Salary Peek",
-      "team1_win_prob": 0.6022,
-      "team2_win_prob": 0.3978,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }

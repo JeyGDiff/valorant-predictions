@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "707773",
+    "match_date": "2026-07-10",
+    "team1_name": "M80",
+    "team2_name": "SaD Esports",
+    "team1_win_prob": 0.8117,
+    "team2_win_prob": 0.1883,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "712770",
+    "match_date": "2026-07-10",
+    "team1_name": "Eintracht Frankfurt",
+    "team2_name": "FOKUS",
+    "team1_win_prob": 0.7456,
+    "team2_win_prob": 0.2544,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "712771",
+    "match_date": "2026-07-10",
+    "team1_name": "Bar\u00e7a eSports",
+    "team2_name": "Mandatory",
+    "team1_win_prob": 0.3747,
+    "team2_win_prob": 0.6253,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "708420",
     "match_date": "2026-07-10",
     "team1_name": "100 Thieves",
@@ -2354,17 +2387,6 @@
     "correct": null
   },
   {
-    "match_id": "707773",
-    "match_date": "Upcoming 2",
-    "team1_name": "M80",
-    "team2_name": "SaD Esports",
-    "team1_win_prob": 0.8117,
-    "team2_win_prob": 0.1883,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "701345",
     "match_date": "Upcoming 2",
     "team1_name": "Kiss",
@@ -2464,28 +2486,6 @@
     "correct": null
   },
   {
-    "match_id": "712770",
-    "match_date": "Upcoming 1",
-    "team1_name": "Eintracht Frankfurt",
-    "team2_name": "FOKUS",
-    "team1_win_prob": 0.7456,
-    "team2_win_prob": 0.2544,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "712771",
-    "match_date": "Upcoming 1",
-    "team1_name": "Bar\u00e7a eSports",
-    "team2_name": "Mandatory",
-    "team1_win_prob": 0.3747,
-    "team2_win_prob": 0.6253,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "707779",
     "match_date": "Upcoming 1",
     "team1_name": "Shopify Rebellion Black",
@@ -2558,6 +2558,50 @@
     "team2_name": "SaD GC",
     "team1_win_prob": 0.6814,
     "team2_win_prob": 0.3186,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712773",
+    "match_date": "Upcoming 1",
+    "team1_name": "Eintracht Frankfurt",
+    "team2_name": "Mandatory",
+    "team1_win_prob": 0.3579,
+    "team2_win_prob": 0.6421,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "709714",
+    "match_date": "Upcoming 3",
+    "team1_name": "Gen.G GC",
+    "team2_name": "DRX Academy GC",
+    "team1_win_prob": 0.9471,
+    "team2_win_prob": 0.0529,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701036",
+    "match_date": "Upcoming 3",
+    "team1_name": "Wolves Esports",
+    "team2_name": "All Gamers",
+    "team1_win_prob": 0.8985,
+    "team2_win_prob": 0.1015,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "710991",
+    "match_date": "Upcoming 3",
+    "team1_name": "Rising Esports GC",
+    "team2_name": "Team Luna",
+    "team1_win_prob": 0.7998,
+    "team2_win_prob": 0.2002,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
