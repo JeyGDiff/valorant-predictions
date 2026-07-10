@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-10T16:53:06.098595+00:00",
-  "total_resolved": 210,
-  "correct": 136,
+  "generated_at": "2026-07-10T18:20:39.663647+00:00",
+  "total_resolved": 213,
+  "correct": 137,
   "predictions": [
+    {
+      "match_id": "708420",
+      "match_date": "2026-07-10",
+      "team1_name": "100 Thieves",
+      "team2_name": "MIBR",
+      "team1_win_prob": 0.3645,
+      "team2_win_prob": 0.6355,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "712768",
+      "match_date": "2026-07-10",
+      "team1_name": "Pixel Lumina",
+      "team2_name": "CGN Esports",
+      "team1_win_prob": 0.3465,
+      "team2_win_prob": 0.6535,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "712769",
+      "match_date": "2026-07-10",
+      "team1_name": "Fire Flux Esports",
+      "team2_name": "\u00c7ilekler",
+      "team1_win_prob": 0.7903,
+      "team2_win_prob": 0.2097,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "708421",
       "match_date": "2026-07-10",
@@ -519,39 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "706773",
-      "match_date": "2026-07-07",
-      "team1_name": "MIBR.LOS(MIBR)",
-      "team2_name": "AG.AL(All Gamers)",
-      "team1_win_prob": 0.9411,
-      "team2_win_prob": 0.0589,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "709713",
-      "match_date": "2026-07-07",
-      "team1_name": "DRX Academy GC",
-      "team2_name": "SUZ",
-      "team1_win_prob": 0.5643,
-      "team2_win_prob": 0.4357,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "711000",
-      "match_date": "2026-07-07",
-      "team1_name": "555",
-      "team2_name": "Yi-Jing",
-      "team1_win_prob": 0.3502,
-      "team2_win_prob": 0.6498,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
