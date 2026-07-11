@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-11T16:52:57.736396+00:00",
-  "total_resolved": 223,
-  "correct": 144,
+  "generated_at": "2026-07-11T17:52:21.667058+00:00",
+  "total_resolved": 225,
+  "correct": 145,
   "predictions": [
+    {
+      "match_id": "701329",
+      "match_date": "2026-07-11",
+      "team1_name": "wiwiwi",
+      "team2_name": "sisu",
+      "team1_win_prob": 0.7479,
+      "team2_win_prob": 0.2521,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "708425",
+      "match_date": "2026-07-11",
+      "team1_name": "BBL Esports",
+      "team2_name": "NRG",
+      "team1_win_prob": 0.33,
+      "team2_win_prob": 0.67,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "701030",
       "match_date": "2026-07-11",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.1576,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707207",
-      "match_date": "2026-07-08",
-      "team1_name": "Team Solid",
-      "team2_name": "2Game Esports",
-      "team1_win_prob": 0.369,
-      "team2_win_prob": 0.631,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "707212",
-      "match_date": "2026-07-07",
-      "team1_name": "RED Canids",
-      "team2_name": "LA MASIA",
-      "team1_win_prob": 0.3757,
-      "team2_win_prob": 0.6243,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
