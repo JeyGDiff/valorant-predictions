@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-11T07:49:08.641211+00:00",
-  "total_resolved": 219,
+  "generated_at": "2026-07-11T09:24:29.858365+00:00",
+  "total_resolved": 220,
   "correct": 142,
   "predictions": [
+    {
+      "match_id": "701345",
+      "match_date": "2026-07-11",
+      "team1_name": "Kiss",
+      "team2_name": "JFT GC",
+      "team1_win_prob": 0.6199,
+      "team2_win_prob": 0.3801,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "707226",
       "match_date": "2026-07-11",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "710287",
-      "match_date": "2026-07-07",
-      "team1_name": "Misa Esports",
-      "team2_name": "\u00c7ilekler",
-      "team1_win_prob": 0.8363,
-      "team2_win_prob": 0.1637,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
