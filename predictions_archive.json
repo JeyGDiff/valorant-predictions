@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "707226",
+    "match_date": "2026-07-11",
+    "team1_name": "KR\u00dc SPARK",
+    "team2_name": "9z Globant",
+    "team1_win_prob": 0.3061,
+    "team2_win_prob": 0.6939,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "707213",
+    "match_date": "2026-07-11",
+    "team1_name": "Team Solid",
+    "team2_name": "LA MASIA",
+    "team1_win_prob": 0.43,
+    "team2_win_prob": 0.57,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "707779",
+    "match_date": "2026-07-11",
+    "team1_name": "Shopify Rebellion Black",
+    "team2_name": "NRG Academy",
+    "team1_win_prob": 0.5954,
+    "team2_win_prob": 0.4046,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "707773",
     "match_date": "2026-07-10",
     "team1_name": "M80",
@@ -2376,17 +2409,6 @@
     "correct": true
   },
   {
-    "match_id": "707226",
-    "match_date": "Upcoming 2",
-    "team1_name": "KR\u00dc SPARK",
-    "team2_name": "9z Globant",
-    "team1_win_prob": 0.3061,
-    "team2_win_prob": 0.6939,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "701345",
     "match_date": "Upcoming 2",
     "team1_name": "Kiss",
@@ -2416,17 +2438,6 @@
     "team1_win_prob": 0.7479,
     "team2_win_prob": 0.2521,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707213",
-    "match_date": "Upcoming 1",
-    "team1_name": "Team Solid",
-    "team2_name": "LA MASIA",
-    "team1_win_prob": 0.43,
-    "team2_win_prob": 0.57,
-    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   },
@@ -2481,17 +2492,6 @@
     "team2_name": "Looking For Laburo",
     "team1_win_prob": 0.6625,
     "team2_win_prob": 0.3375,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "707779",
-    "match_date": "Upcoming 1",
-    "team1_name": "Shopify Rebellion Black",
-    "team2_name": "NRG Academy",
-    "team1_win_prob": 0.5954,
-    "team2_win_prob": 0.4046,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
@@ -2603,6 +2603,61 @@
     "team1_win_prob": 0.7998,
     "team2_win_prob": 0.2002,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707780",
+    "match_date": "Upcoming 1",
+    "team1_name": "SaD Esports",
+    "team2_name": "Shopify Rebellion Black",
+    "team1_win_prob": 0.3834,
+    "team2_win_prob": 0.6166,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707224",
+    "match_date": "Upcoming 1",
+    "team1_name": "BESTIA",
+    "team2_name": "KR\u00dc SPARK",
+    "team1_win_prob": 0.9234,
+    "team2_win_prob": 0.0766,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707209",
+    "match_date": "Upcoming 1",
+    "team1_name": "2Game Esports",
+    "team2_name": "LA MASIA",
+    "team1_win_prob": 0.6397,
+    "team2_win_prob": 0.3603,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701037",
+    "match_date": "Upcoming 3",
+    "team1_name": "Xi Lai Gaming",
+    "team2_name": "Wuxi Titan Esports Club(Titan Esports Club)",
+    "team1_win_prob": 0.6092,
+    "team2_win_prob": 0.3908,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "707486",
+    "match_date": "Upcoming 3",
+    "team1_name": "ABACATUDOS",
+    "team2_name": "Team Liquid Brazil",
+    "team1_win_prob": 0.1279,
+    "team2_win_prob": 0.8721,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
