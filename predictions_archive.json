@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712772",
+    "match_date": "2026-07-11",
+    "team1_name": "CGN Esports",
+    "team2_name": "\u00c7ilekler",
+    "team1_win_prob": 0.8638,
+    "team2_win_prob": 0.1362,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "701329",
     "match_date": "2026-07-11",
     "team1_name": "wiwiwi",
@@ -2530,17 +2541,6 @@
     "correct": null
   },
   {
-    "match_id": "712772",
-    "match_date": "Upcoming 2",
-    "team1_name": "CGN Esports",
-    "team2_name": "\u00c7ilekler",
-    "team1_win_prob": 0.8638,
-    "team2_win_prob": 0.1362,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712750",
     "match_date": "Upcoming 3",
     "team1_name": "Cloud9 GC",
@@ -2745,6 +2745,17 @@
     "team2_name": "TYLOO",
     "team1_win_prob": 0.7196,
     "team2_win_prob": 0.2804,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712803",
+    "match_date": "Upcoming 3",
+    "team1_name": "FUT Esports",
+    "team2_name": "Natus Vincere",
+    "team1_win_prob": 0.6967,
+    "team2_win_prob": 0.3033,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

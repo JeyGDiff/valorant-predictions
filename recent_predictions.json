@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-11T17:52:21.667058+00:00",
-  "total_resolved": 225,
+  "generated_at": "2026-07-11T18:56:17.271348+00:00",
+  "total_resolved": 226,
   "correct": 145,
   "predictions": [
+    {
+      "match_id": "712772",
+      "match_date": "2026-07-11",
+      "team1_name": "CGN Esports",
+      "team2_name": "\u00c7ilekler",
+      "team1_win_prob": 0.8638,
+      "team2_win_prob": 0.1362,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701329",
       "match_date": "2026-07-11",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "705816",
-      "match_date": "2026-07-08",
-      "team1_name": "Akave Esports GC",
-      "team2_name": "No Sweat Blossom",
-      "team1_win_prob": 0.8424,
-      "team2_win_prob": 0.1576,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
