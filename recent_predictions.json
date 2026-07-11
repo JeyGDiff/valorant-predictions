@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-11T11:00:56.187587+00:00",
-  "total_resolved": 220,
-  "correct": 142,
+  "generated_at": "2026-07-11T13:09:37.202956+00:00",
+  "total_resolved": 221,
+  "correct": 143,
   "predictions": [
+    {
+      "match_id": "701029",
+      "match_date": "2026-07-11",
+      "team1_name": "Dragon Ranger Gaming",
+      "team2_name": "Wuxi Titan Esports Club(Titan Esports Club)",
+      "team1_win_prob": 0.8041,
+      "team2_win_prob": 0.1959,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701345",
       "match_date": "2026-07-11",
@@ -538,17 +549,6 @@
       "team2_name": "Eintracht Frankfurt",
       "team1_win_prob": 0.4715,
       "team2_win_prob": 0.5285,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "710277",
-      "match_date": "2026-07-07",
-      "team1_name": "MIR",
-      "team2_name": "Fire Flux Esports",
-      "team1_win_prob": 0.2392,
-      "team2_win_prob": 0.7608,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
