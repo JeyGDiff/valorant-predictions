@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-11T13:09:37.202956+00:00",
-  "total_resolved": 221,
-  "correct": 143,
+  "generated_at": "2026-07-11T14:49:10.062937+00:00",
+  "total_resolved": 223,
+  "correct": 144,
   "predictions": [
+    {
+      "match_id": "701030",
+      "match_date": "2026-07-11",
+      "team1_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
+      "team2_name": "Wolves Esports",
+      "team1_win_prob": 0.6062,
+      "team2_win_prob": 0.3938,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "708424",
+      "match_date": "2026-07-11",
+      "team1_name": "100 Thieves",
+      "team2_name": "Nongshim RedForce",
+      "team1_win_prob": 0.4117,
+      "team2_win_prob": 0.5883,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "701029",
       "match_date": "2026-07-11",
@@ -527,28 +549,6 @@
       "team2_name": "LA MASIA",
       "team1_win_prob": 0.3757,
       "team2_win_prob": 0.6243,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "710278",
-      "match_date": "2026-07-07",
-      "team1_name": "Be\u015fikta\u015f Esports",
-      "team2_name": "CGN Esports",
-      "team1_win_prob": 0.4006,
-      "team2_win_prob": 0.5994,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "710283",
-      "match_date": "2026-07-07",
-      "team1_name": "UCAM Esports Club",
-      "team2_name": "Eintracht Frankfurt",
-      "team1_win_prob": 0.4715,
-      "team2_win_prob": 0.5285,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
