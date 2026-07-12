@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "701032",
+    "match_date": "2026-07-12",
+    "team1_name": "TYLOO",
+    "team2_name": "Trace Esports",
+    "team1_win_prob": 0.6557,
+    "team2_win_prob": 0.3443,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "701031",
     "match_date": "2026-07-12",
     "team1_name": "Nova Esports",
@@ -2539,17 +2550,6 @@
     "predicted_winner": "team1",
     "actual_winner": "team1",
     "correct": true
-  },
-  {
-    "match_id": "701032",
-    "match_date": "Upcoming 2",
-    "team1_name": "TYLOO",
-    "team2_name": "Trace Esports",
-    "team1_win_prob": 0.6557,
-    "team2_win_prob": 0.3443,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
   },
   {
     "match_id": "709685",

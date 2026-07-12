@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-12T10:24:06.093075+00:00",
-  "total_resolved": 231,
-  "correct": 148,
+  "generated_at": "2026-07-12T11:56:17.361903+00:00",
+  "total_resolved": 232,
+  "correct": 149,
   "predictions": [
+    {
+      "match_id": "701032",
+      "match_date": "2026-07-12",
+      "team1_name": "TYLOO",
+      "team2_name": "Trace Esports",
+      "team1_win_prob": 0.6557,
+      "team2_win_prob": 0.3443,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701031",
       "match_date": "2026-07-12",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "710289",
-      "match_date": "2026-07-08",
-      "team1_name": "\u00c7ilekler",
-      "team2_name": "Bar\u00e7a eSports",
-      "team1_win_prob": 0.3115,
-      "team2_win_prob": 0.6885,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
