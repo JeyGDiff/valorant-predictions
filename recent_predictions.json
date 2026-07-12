@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-12T08:10:41.723748+00:00",
-  "total_resolved": 229,
-  "correct": 147,
+  "generated_at": "2026-07-12T10:24:06.093075+00:00",
+  "total_resolved": 231,
+  "correct": 148,
   "predictions": [
+    {
+      "match_id": "701031",
+      "match_date": "2026-07-12",
+      "team1_name": "Nova Esports",
+      "team2_name": "FunPlus Phoenix",
+      "team1_win_prob": 0.3128,
+      "team2_win_prob": 0.6872,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "701339",
+      "match_date": "2026-07-12",
+      "team1_name": "swaglord9000",
+      "team2_name": "JFT GC",
+      "team1_win_prob": 0.6657,
+      "team2_win_prob": 0.3343,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "707231",
       "match_date": "2026-07-12",
@@ -530,28 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "711004",
-      "match_date": "2026-07-08",
-      "team1_name": "No Salary Peek",
-      "team2_name": "Yi-Jing",
-      "team1_win_prob": 0.4032,
-      "team2_win_prob": 0.5968,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "709681",
-      "match_date": "2026-07-08",
-      "team1_name": "Dplus Esports",
-      "team2_name": "ARETE",
-      "team1_win_prob": 0.6566,
-      "team2_win_prob": 0.3434,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
