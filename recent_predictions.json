@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-12T11:56:17.361903+00:00",
-  "total_resolved": 232,
+  "generated_at": "2026-07-12T13:16:06.774805+00:00",
+  "total_resolved": 233,
   "correct": 149,
   "predictions": [
+    {
+      "match_id": "708427",
+      "match_date": "2026-07-12",
+      "team1_name": "Nongshim RedForce",
+      "team2_name": "BBL Esports",
+      "team1_win_prob": 0.4783,
+      "team2_win_prob": 0.5217,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "701032",
       "match_date": "2026-07-12",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.5664,
       "predicted_winner": "team2",
       "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "710284",
-      "match_date": "2026-07-08",
-      "team1_name": "Mandatory",
-      "team2_name": "Eintracht Frankfurt",
-      "team1_win_prob": 0.6508,
-      "team2_win_prob": 0.3492,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
       "correct": false
     }
   ]
