@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-12T14:52:34.223968+00:00",
-  "total_resolved": 233,
-  "correct": 149,
+  "generated_at": "2026-07-12T15:56:23.189764+00:00",
+  "total_resolved": 234,
+  "correct": 150,
   "predictions": [
+    {
+      "match_id": "701323",
+      "match_date": "2026-07-12",
+      "team1_name": "Team Falcons Vega",
+      "team2_name": "sisu",
+      "team1_win_prob": 0.9186,
+      "team2_win_prob": 0.0814,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "708427",
       "match_date": "2026-07-12",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "710279",
-      "match_date": "2026-07-08",
-      "team1_name": "Fire Flux Esports",
-      "team2_name": "CGN Esports",
-      "team1_win_prob": 0.4336,
-      "team2_win_prob": 0.5664,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
