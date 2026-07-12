@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-12T02:23:47.300201+00:00",
-  "total_resolved": 228,
-  "correct": 146,
+  "generated_at": "2026-07-12T05:53:40.594096+00:00",
+  "total_resolved": 229,
+  "correct": 147,
   "predictions": [
+    {
+      "match_id": "707231",
+      "match_date": "2026-07-12",
+      "team1_name": "FUEGO",
+      "team2_name": "Contra",
+      "team1_win_prob": 0.2675,
+      "team2_win_prob": 0.7325,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "707780",
       "match_date": "2026-07-11",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "709680",
-      "match_date": "2026-07-08",
-      "team1_name": "ONSIDE GAMING",
-      "team2_name": "X-CAST",
-      "team1_win_prob": 0.7984,
-      "team2_win_prob": 0.2016,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
