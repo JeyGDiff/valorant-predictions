@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-12T16:57:20.891389+00:00",
-  "total_resolved": 234,
-  "correct": 150,
+  "generated_at": "2026-07-12T17:59:19.809918+00:00",
+  "total_resolved": 236,
+  "correct": 151,
   "predictions": [
+    {
+      "match_id": "708426",
+      "match_date": "2026-07-12",
+      "team1_name": "100 Thieves",
+      "team2_name": "NRG",
+      "team1_win_prob": 0.3627,
+      "team2_win_prob": 0.6373,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "712774",
+      "match_date": "2026-07-12",
+      "team1_name": "\u00c7ilekler",
+      "team2_name": "Eintracht Frankfurt",
+      "team1_win_prob": 0.1163,
+      "team2_win_prob": 0.8837,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "701323",
       "match_date": "2026-07-12",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.8768,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "710274",
-      "match_date": "2026-07-08",
-      "team1_name": "FOKUS",
-      "team2_name": "Pixel Lumina",
-      "team1_win_prob": 0.3744,
-      "team2_win_prob": 0.6256,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "710290",
-      "match_date": "2026-07-08",
-      "team1_name": "Misa Esports",
-      "team2_name": "Ghools Esports",
-      "team1_win_prob": 0.8548,
-      "team2_win_prob": 0.1452,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
