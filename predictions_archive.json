@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712750",
+    "match_date": "2026-07-13",
+    "team1_name": "Cloud9 GC",
+    "team2_name": "ROSO GC",
+    "team1_win_prob": 0.8627,
+    "team2_win_prob": 0.1373,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "709685",
     "match_date": "2026-07-13",
     "team1_name": "ONSIDE GAMING",
@@ -2651,17 +2662,6 @@
     "correct": null
   },
   {
-    "match_id": "712750",
-    "match_date": "Upcoming 3",
-    "team1_name": "Cloud9 GC",
-    "team2_name": "ROSO GC",
-    "team1_win_prob": 0.8627,
-    "team2_win_prob": 0.1373,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712754",
     "match_date": "Upcoming 3",
     "team1_name": ":3",
@@ -2888,6 +2888,17 @@
     "team2_name": "Nongshim RedForce",
     "team1_win_prob": 0.4068,
     "team2_win_prob": 0.5932,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "698887",
+    "match_date": "Upcoming 3",
+    "team1_name": "KIWOOM DRX",
+    "team2_name": "DetonatioN FocusMe",
+    "team1_win_prob": 0.4781,
+    "team2_win_prob": 0.5219,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
