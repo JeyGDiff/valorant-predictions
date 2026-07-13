@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-12T23:50:08.812482+00:00",
-  "total_resolved": 236,
-  "correct": 151,
+  "generated_at": "2026-07-13T02:25:19.761395+00:00",
+  "total_resolved": 239,
+  "correct": 153,
   "predictions": [
+    {
+      "match_id": "707224",
+      "match_date": "2026-07-13",
+      "team1_name": "BESTIA",
+      "team2_name": "KR\u00dc SPARK",
+      "team1_win_prob": 0.9234,
+      "team2_win_prob": 0.0766,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707209",
+      "match_date": "2026-07-13",
+      "team1_name": "2Game Esports",
+      "team2_name": "LA MASIA",
+      "team1_win_prob": 0.6397,
+      "team2_win_prob": 0.3603,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "707774",
+      "match_date": "2026-07-13",
+      "team1_name": "M80",
+      "team2_name": "Shopify Rebellion Black",
+      "team1_win_prob": 0.5619,
+      "team2_win_prob": 0.4381,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "708426",
       "match_date": "2026-07-12",
@@ -519,39 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "710275",
-      "match_date": "2026-07-08",
-      "team1_name": "Formulation Gaming",
-      "team2_name": "Twisted Saints Esports",
-      "team1_win_prob": 0.756,
-      "team2_win_prob": 0.244,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "710280",
-      "match_date": "2026-07-08",
-      "team1_name": "MIR",
-      "team2_name": "Be\u015fikta\u015f Esports",
-      "team1_win_prob": 0.2224,
-      "team2_win_prob": 0.7776,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "710285",
-      "match_date": "2026-07-08",
-      "team1_name": "La Masia",
-      "team2_name": "UCAM Esports Club",
-      "team1_win_prob": 0.1232,
-      "team2_win_prob": 0.8768,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
