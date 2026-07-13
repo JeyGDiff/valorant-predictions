@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-13T10:21:36.887539+00:00",
-  "total_resolved": 239,
-  "correct": 153,
+  "generated_at": "2026-07-13T13:19:42.577776+00:00",
+  "total_resolved": 240,
+  "correct": 154,
   "predictions": [
+    {
+      "match_id": "709685",
+      "match_date": "2026-07-13",
+      "team1_name": "ONSIDE GAMING",
+      "team2_name": "Dplus Esports",
+      "team1_win_prob": 0.8274,
+      "team2_win_prob": 0.1726,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "707224",
       "match_date": "2026-07-13",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "705819",
-      "match_date": "2026-07-09",
-      "team1_name": "No Sweat Blossom",
-      "team2_name": "FUSION X",
-      "team1_win_prob": 0.8735,
-      "team2_win_prob": 0.1265,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
