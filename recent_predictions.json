@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-14T09:56:17.972997+00:00",
-  "total_resolved": 243,
-  "correct": 156,
+  "generated_at": "2026-07-14T11:24:35.149133+00:00",
+  "total_resolved": 245,
+  "correct": 157,
   "predictions": [
+    {
+      "match_id": "709714",
+      "match_date": "2026-07-14",
+      "team1_name": "Gen.G GC",
+      "team2_name": "DRX Academy GC",
+      "team1_win_prob": 0.9471,
+      "team2_win_prob": 0.0529,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "701036",
+      "match_date": "2026-07-14",
+      "team1_name": "Wolves Esports",
+      "team2_name": "All Gamers",
+      "team1_win_prob": 0.8985,
+      "team2_win_prob": 0.1015,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712754",
       "match_date": "2026-07-14",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "711005",
-      "match_date": "2026-07-09",
-      "team1_name": "555",
-      "team2_name": "Yi-Jing",
-      "team1_win_prob": 0.3502,
-      "team2_win_prob": 0.6498,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "709684",
-      "match_date": "2026-07-09",
-      "team1_name": "X-CAST",
-      "team2_name": "Dplus Esports",
-      "team1_win_prob": 0.4567,
-      "team2_win_prob": 0.5433,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
