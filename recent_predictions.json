@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-14T13:32:58.650174+00:00",
-  "total_resolved": 246,
-  "correct": 158,
+  "generated_at": "2026-07-14T15:21:33.057295+00:00",
+  "total_resolved": 248,
+  "correct": 159,
   "predictions": [
+    {
+      "match_id": "701037",
+      "match_date": "2026-07-14",
+      "team1_name": "Xi Lai Gaming",
+      "team2_name": "Wuxi Titan Esports Club(Titan Esports Club)",
+      "team1_win_prob": 0.6092,
+      "team2_win_prob": 0.3908,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "710998",
+      "match_date": "2026-07-14",
+      "team1_name": "Team Luna",
+      "team2_name": "GOC Aurora",
+      "team1_win_prob": 0.605,
+      "team2_win_prob": 0.395,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "710991",
       "match_date": "2026-07-14",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "708422",
-      "match_date": "2026-07-09",
-      "team1_name": "Team Heretics",
-      "team2_name": "BBL Esports",
-      "team1_win_prob": 0.7156,
-      "team2_win_prob": 0.2844,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "701026",
-      "match_date": "2026-07-09",
-      "team1_name": "Dragon Ranger Gaming",
-      "team2_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
-      "team1_win_prob": 0.3937,
-      "team2_win_prob": 0.6063,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
