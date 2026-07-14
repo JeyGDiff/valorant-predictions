@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-14T11:24:35.149133+00:00",
-  "total_resolved": 245,
-  "correct": 157,
+  "generated_at": "2026-07-14T13:32:58.650174+00:00",
+  "total_resolved": 246,
+  "correct": 158,
   "predictions": [
+    {
+      "match_id": "710991",
+      "match_date": "2026-07-14",
+      "team1_name": "Rising Esports GC",
+      "team2_name": "Team Luna",
+      "team1_win_prob": 0.7998,
+      "team2_win_prob": 0.2002,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "709714",
       "match_date": "2026-07-14",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.6063,
       "predicted_winner": "team2",
       "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "709682",
-      "match_date": "2026-07-09",
-      "team1_name": "ONSIDE GAMING",
-      "team2_name": "ARETE",
-      "team1_win_prob": 0.9484,
-      "team2_win_prob": 0.0516,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
       "correct": false
     }
   ]
