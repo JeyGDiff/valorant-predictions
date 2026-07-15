@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "701039",
+    "match_date": "2026-07-15",
+    "team1_name": "EDward Gaming",
+    "team2_name": "TYLOO",
+    "team1_win_prob": 0.7196,
+    "team2_win_prob": 0.2804,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "710992",
+    "match_date": "2026-07-15",
+    "team1_name": "Rising Esports GC",
+    "team2_name": "Team Luna",
+    "team1_win_prob": 0.8735,
+    "team2_win_prob": 0.1265,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "701038",
     "match_date": "2026-07-15",
     "team1_name": "JD Mall JDG Esports(JDG Esports)",
@@ -2783,17 +2805,6 @@
     "correct": true
   },
   {
-    "match_id": "701039",
-    "match_date": "Upcoming 3",
-    "team1_name": "EDward Gaming",
-    "team2_name": "TYLOO",
-    "team1_win_prob": 0.7196,
-    "team2_win_prob": 0.2804,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712803",
     "match_date": "Upcoming 3",
     "team1_name": "FUT Esports",
@@ -2970,17 +2981,6 @@
     "correct": null
   },
   {
-    "match_id": "710992",
-    "match_date": "Upcoming 1",
-    "team1_name": "Rising Esports GC",
-    "team2_name": "Team Luna",
-    "team1_win_prob": 0.8735,
-    "team2_win_prob": 0.1265,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706352",
     "match_date": "Upcoming 3",
     "team1_name": "KR\u00dc Esports",
@@ -3075,6 +3075,28 @@
     "team2_name": "Team Liquid",
     "team1_win_prob": 0.6656,
     "team2_win_prob": 0.3344,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706353",
+    "match_date": "Upcoming 3",
+    "team1_name": "G2 Esports",
+    "team2_name": "100 Thieves",
+    "team1_win_prob": 0.4306,
+    "team2_win_prob": 0.5694,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706354",
+    "match_date": "Upcoming 3",
+    "team1_name": "NRG",
+    "team2_name": "MIBR",
+    "team1_win_prob": 0.5835,
+    "team2_win_prob": 0.4165,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

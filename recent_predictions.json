@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-15T12:12:03.839541+00:00",
-  "total_resolved": 253,
-  "correct": 162,
+  "generated_at": "2026-07-15T14:45:41.452041+00:00",
+  "total_resolved": 255,
+  "correct": 163,
   "predictions": [
+    {
+      "match_id": "701039",
+      "match_date": "2026-07-15",
+      "team1_name": "EDward Gaming",
+      "team2_name": "TYLOO",
+      "team1_win_prob": 0.7196,
+      "team2_win_prob": 0.2804,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "710992",
+      "match_date": "2026-07-15",
+      "team1_name": "Rising Esports GC",
+      "team2_name": "Team Luna",
+      "team1_win_prob": 0.8735,
+      "team2_win_prob": 0.1265,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701038",
       "match_date": "2026-07-15",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.4596,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707233",
-      "match_date": "2026-07-10",
-      "team1_name": "Contra",
-      "team2_name": "LYON",
-      "team1_win_prob": 0.1888,
-      "team2_win_prob": 0.8112,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "707778",
-      "match_date": "2026-07-10",
-      "team1_name": "Nightblood Gaming",
-      "team2_name": "NRG Academy",
-      "team1_win_prob": 0.3857,
-      "team2_win_prob": 0.6143,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
