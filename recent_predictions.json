@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-15T10:45:36.397630+00:00",
-  "total_resolved": 251,
-  "correct": 161,
+  "generated_at": "2026-07-15T12:12:03.839541+00:00",
+  "total_resolved": 253,
+  "correct": 162,
   "predictions": [
+    {
+      "match_id": "701038",
+      "match_date": "2026-07-15",
+      "team1_name": "JD Mall JDG Esports(JDG Esports)",
+      "team2_name": "FunPlus Phoenix",
+      "team1_win_prob": 0.5412,
+      "team2_win_prob": 0.4588,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "709683",
+      "match_date": "2026-07-15",
+      "team1_name": "ARETE",
+      "team2_name": "ONSIDE GAMING",
+      "team1_win_prob": 0.1816,
+      "team2_win_prob": 0.8184,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "707487",
       "match_date": "2026-07-15",
@@ -530,28 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "710286",
-      "match_date": "2026-07-09",
-      "team1_name": "Mandatory",
-      "team2_name": "UCAM Esports Club",
-      "team1_win_prob": 0.4436,
-      "team2_win_prob": 0.5564,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "710291",
-      "match_date": "2026-07-09",
-      "team1_name": "\u00c7ilekler",
-      "team2_name": "Misa Esports",
-      "team1_win_prob": 0.2014,
-      "team2_win_prob": 0.7986,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
