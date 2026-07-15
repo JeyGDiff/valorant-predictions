@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-15T02:02:11.908320+00:00",
-  "total_resolved": 250,
-  "correct": 160,
+  "generated_at": "2026-07-15T05:26:50.114597+00:00",
+  "total_resolved": 251,
+  "correct": 161,
   "predictions": [
+    {
+      "match_id": "707487",
+      "match_date": "2026-07-15",
+      "team1_name": "TEAM EGO",
+      "team2_name": "PEEK",
+      "team1_win_prob": 0.8473,
+      "team2_win_prob": 0.1527,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "705817",
       "match_date": "2026-07-15",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "708423",
-      "match_date": "2026-07-09",
-      "team1_name": "Gentle Mates",
-      "team2_name": "NRG",
-      "team1_win_prob": 0.4053,
-      "team2_win_prob": 0.5947,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
