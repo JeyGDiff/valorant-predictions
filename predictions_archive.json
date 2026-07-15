@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712804",
+    "match_date": "2026-07-15",
+    "team1_name": "Team Liquid",
+    "team2_name": "Eternal Fire",
+    "team1_win_prob": 0.7379,
+    "team2_win_prob": 0.2621,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "712803",
     "match_date": "2026-07-15",
     "team1_name": "FUT Esports",
@@ -2816,17 +2827,6 @@
     "correct": true
   },
   {
-    "match_id": "712804",
-    "match_date": "Upcoming 3",
-    "team1_name": "Team Liquid",
-    "team2_name": "Eternal Fire",
-    "team1_win_prob": 0.7379,
-    "team2_win_prob": 0.2621,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698884",
     "match_date": "Upcoming 3",
     "team1_name": "Gen.G",
@@ -3130,6 +3130,17 @@
     "team2_name": "Nova Esports",
     "team1_win_prob": 0.7707,
     "team2_win_prob": 0.2293,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "698890",
+    "match_date": "Upcoming 3",
+    "team1_name": "Nongshim RedForce",
+    "team2_name": "Gen.G",
+    "team1_win_prob": 0.5573,
+    "team2_win_prob": 0.4427,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

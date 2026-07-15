@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-15T18:02:54.906740+00:00",
-  "total_resolved": 256,
+  "generated_at": "2026-07-15T20:05:20.219508+00:00",
+  "total_resolved": 257,
   "correct": 163,
   "predictions": [
+    {
+      "match_id": "712804",
+      "match_date": "2026-07-15",
+      "team1_name": "Team Liquid",
+      "team2_name": "Eternal Fire",
+      "team1_win_prob": 0.7379,
+      "team2_win_prob": 0.2621,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712803",
       "match_date": "2026-07-15",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.7569,
       "predicted_winner": "team2",
       "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "711003",
-      "match_date": "2026-07-10",
-      "team1_name": "Fancy United Esports",
-      "team2_name": "555",
-      "team1_win_prob": 0.697,
-      "team2_win_prob": 0.303,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
       "correct": false
     }
   ]
