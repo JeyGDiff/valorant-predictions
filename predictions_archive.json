@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "706349",
+    "match_date": "2026-07-16",
+    "team1_name": "LEVIAT\u00c1N",
+    "team2_name": "FURIA",
+    "team1_win_prob": 0.72,
+    "team2_win_prob": 0.28,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "707490",
+    "match_date": "2026-07-16",
+    "team1_name": "ABACATUDOS",
+    "team2_name": "PEEK",
+    "team1_win_prob": 0.2201,
+    "team2_win_prob": 0.7799,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "712806",
     "match_date": "2026-07-16",
     "team1_name": "PCIFIC Esports",
@@ -2915,17 +2937,6 @@
     "correct": true
   },
   {
-    "match_id": "706349",
-    "match_date": "Upcoming 3",
-    "team1_name": "LEVIAT\u00c1N",
-    "team2_name": "FURIA",
-    "team1_win_prob": 0.72,
-    "team2_win_prob": 0.28,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706350",
     "match_date": "Upcoming 3",
     "team1_name": "Sentinels",
@@ -3157,17 +3168,6 @@
     "correct": null
   },
   {
-    "match_id": "707490",
-    "match_date": "Upcoming 1",
-    "team1_name": "ABACATUDOS",
-    "team2_name": "PEEK",
-    "team1_win_prob": 0.2201,
-    "team2_win_prob": 0.7799,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "701048",
     "match_date": "Upcoming 3",
     "team1_name": "Dragon Ranger Gaming",
@@ -3241,6 +3241,39 @@
     "team1_win_prob": 0.7403,
     "team2_win_prob": 0.2597,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715874",
+    "match_date": "Upcoming 3",
+    "team1_name": "Gentle Mates GC",
+    "team2_name": "G2 Gozen",
+    "team1_win_prob": 0.5364,
+    "team2_win_prob": 0.4636,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715875",
+    "match_date": "Upcoming 3",
+    "team1_name": "SK Nebula",
+    "team2_name": "GIANTX GC",
+    "team1_win_prob": 0.5995,
+    "team2_win_prob": 0.4005,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715876",
+    "match_date": "Upcoming 3",
+    "team1_name": "Twisted Minds Orchid",
+    "team2_name": "Karmine Corp GC",
+    "team1_win_prob": 0.4479,
+    "team2_win_prob": 0.5521,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }

@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-16T21:11:49.155900+00:00",
-  "total_resolved": 265,
-  "correct": 166,
+  "generated_at": "2026-07-16T23:55:39.707885+00:00",
+  "total_resolved": 267,
+  "correct": 167,
   "predictions": [
+    {
+      "match_id": "706349",
+      "match_date": "2026-07-16",
+      "team1_name": "LEVIAT\u00c1N",
+      "team2_name": "FURIA",
+      "team1_win_prob": 0.72,
+      "team2_win_prob": 0.28,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "707490",
+      "match_date": "2026-07-16",
+      "team1_name": "ABACATUDOS",
+      "team2_name": "PEEK",
+      "team1_win_prob": 0.2201,
+      "team2_win_prob": 0.7799,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "712806",
       "match_date": "2026-07-16",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.57,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "707779",
-      "match_date": "2026-07-11",
-      "team1_name": "Shopify Rebellion Black",
-      "team2_name": "NRG Academy",
-      "team1_win_prob": 0.5954,
-      "team2_win_prob": 0.4046,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707773",
-      "match_date": "2026-07-10",
-      "team1_name": "M80",
-      "team2_name": "SaD Esports",
-      "team1_win_prob": 0.8117,
-      "team2_win_prob": 0.1883,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
