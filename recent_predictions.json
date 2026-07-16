@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-16T18:03:25.568915+00:00",
-  "total_resolved": 264,
+  "generated_at": "2026-07-16T20:00:11.196219+00:00",
+  "total_resolved": 265,
   "correct": 166,
   "predictions": [
+    {
+      "match_id": "712806",
+      "match_date": "2026-07-16",
+      "team1_name": "PCIFIC Esports",
+      "team2_name": "Gentle Mates",
+      "team1_win_prob": 0.5636,
+      "team2_win_prob": 0.4364,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712805",
       "match_date": "2026-07-16",
@@ -538,17 +549,6 @@
       "team2_name": "SaD Esports",
       "team1_win_prob": 0.8117,
       "team2_win_prob": 0.1883,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "712770",
-      "match_date": "2026-07-10",
-      "team1_name": "Eintracht Frankfurt",
-      "team2_name": "FOKUS",
-      "team1_win_prob": 0.7456,
-      "team2_win_prob": 0.2544,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
