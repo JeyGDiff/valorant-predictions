@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-17T12:06:00.017389+00:00",
-  "total_resolved": 270,
-  "correct": 169,
+  "generated_at": "2026-07-17T14:39:54.158282+00:00",
+  "total_resolved": 272,
+  "correct": 170,
   "predictions": [
+    {
+      "match_id": "698887",
+      "match_date": "2026-07-17",
+      "team1_name": "KIWOOM DRX",
+      "team2_name": "DetonatioN FocusMe",
+      "team1_win_prob": 0.4781,
+      "team2_win_prob": 0.5219,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
+    {
+      "match_id": "701043",
+      "match_date": "2026-07-17",
+      "team1_name": "TYLOO",
+      "team2_name": "FunPlus Phoenix",
+      "team1_win_prob": 0.5908,
+      "team2_win_prob": 0.4092,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701042",
       "match_date": "2026-07-17",
@@ -527,28 +549,6 @@
       "team2_name": "Wolves Esports",
       "team1_win_prob": 0.6062,
       "team2_win_prob": 0.3938,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "708424",
-      "match_date": "2026-07-11",
-      "team1_name": "100 Thieves",
-      "team2_name": "Nongshim RedForce",
-      "team1_win_prob": 0.4117,
-      "team2_win_prob": 0.5883,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "701029",
-      "match_date": "2026-07-11",
-      "team1_name": "Dragon Ranger Gaming",
-      "team2_name": "Wuxi Titan Esports Club(Titan Esports Club)",
-      "team1_win_prob": 0.8041,
-      "team2_win_prob": 0.1959,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
