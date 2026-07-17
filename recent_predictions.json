@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-17T14:39:54.158282+00:00",
-  "total_resolved": 272,
-  "correct": 170,
+  "generated_at": "2026-07-17T16:11:51.290224+00:00",
+  "total_resolved": 273,
+  "correct": 171,
   "predictions": [
+    {
+      "match_id": "701044",
+      "match_date": "2026-07-17",
+      "team1_name": "Trace Esports",
+      "team2_name": "EDward Gaming",
+      "team1_win_prob": 0.2835,
+      "team2_win_prob": 0.7165,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "698887",
       "match_date": "2026-07-17",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.67,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701030",
-      "match_date": "2026-07-11",
-      "team1_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
-      "team2_name": "Wolves Esports",
-      "team1_win_prob": 0.6062,
-      "team2_win_prob": 0.3938,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
