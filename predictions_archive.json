@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706350",
+    "match_date": "2026-07-17",
+    "team1_name": "Sentinels",
+    "team2_name": "Cloud9",
+    "team1_win_prob": 0.7993,
+    "team2_win_prob": 0.2007,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "706349",
     "match_date": "2026-07-16",
     "team1_name": "LEVIAT\u00c1N",
@@ -2935,17 +2946,6 @@
     "predicted_winner": "team1",
     "actual_winner": "team1",
     "correct": true
-  },
-  {
-    "match_id": "706350",
-    "match_date": "Upcoming 3",
-    "team1_name": "Sentinels",
-    "team2_name": "Cloud9",
-    "team1_win_prob": 0.7993,
-    "team2_win_prob": 0.2007,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
   },
   {
     "match_id": "701042",

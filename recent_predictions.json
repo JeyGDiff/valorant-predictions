@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-17T02:22:54.830910+00:00",
-  "total_resolved": 267,
-  "correct": 167,
+  "generated_at": "2026-07-17T05:38:52.430398+00:00",
+  "total_resolved": 268,
+  "correct": 168,
   "predictions": [
+    {
+      "match_id": "706350",
+      "match_date": "2026-07-17",
+      "team1_name": "Sentinels",
+      "team2_name": "Cloud9",
+      "team1_win_prob": 0.7993,
+      "team2_win_prob": 0.2007,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706349",
       "match_date": "2026-07-16",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "707213",
-      "match_date": "2026-07-11",
-      "team1_name": "Team Solid",
-      "team2_name": "LA MASIA",
-      "team1_win_prob": 0.43,
-      "team2_win_prob": 0.57,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
