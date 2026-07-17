@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712808",
+    "match_date": "2026-07-17",
+    "team1_name": "Team Vitality",
+    "team2_name": "Natus Vincere",
+    "team1_win_prob": 0.6327,
+    "team2_win_prob": 0.3673,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "712807",
     "match_date": "2026-07-17",
     "team1_name": "Karmine Corp",
@@ -3014,17 +3025,6 @@
     "correct": true
   },
   {
-    "match_id": "712808",
-    "match_date": "Upcoming 3",
-    "team1_name": "Team Vitality",
-    "team2_name": "Natus Vincere",
-    "team1_win_prob": 0.6327,
-    "team2_win_prob": 0.3673,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706351",
     "match_date": "Upcoming 3",
     "team1_name": "ENVY",
@@ -3339,6 +3339,17 @@
     "team2_name": "Bar\u00e7a eSports GC",
     "team1_win_prob": 0.7355,
     "team2_win_prob": 0.2645,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715882",
+    "match_date": "Upcoming 4",
+    "team1_name": "GIANTX GC",
+    "team2_name": "FOKUS Sakura",
+    "team1_win_prob": 0.79,
+    "team2_win_prob": 0.21,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

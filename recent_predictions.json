@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-17T20:02:51.285974+00:00",
-  "total_resolved": 274,
-  "correct": 172,
+  "generated_at": "2026-07-17T21:49:08.867544+00:00",
+  "total_resolved": 275,
+  "correct": 173,
   "predictions": [
+    {
+      "match_id": "712808",
+      "match_date": "2026-07-17",
+      "team1_name": "Team Vitality",
+      "team2_name": "Natus Vincere",
+      "team1_win_prob": 0.6327,
+      "team2_win_prob": 0.3673,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "712807",
       "match_date": "2026-07-17",
@@ -538,17 +549,6 @@
       "team2_name": "\u00c7ilekler",
       "team1_win_prob": 0.8638,
       "team2_win_prob": 0.1362,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "701329",
-      "match_date": "2026-07-11",
-      "team1_name": "wiwiwi",
-      "team2_name": "sisu",
-      "team1_win_prob": 0.7479,
-      "team2_win_prob": 0.2521,
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
