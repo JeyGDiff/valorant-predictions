@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-17T22:44:29.267080+00:00",
-  "total_resolved": 275,
-  "correct": 173,
+  "generated_at": "2026-07-17T23:48:49.230269+00:00",
+  "total_resolved": 276,
+  "correct": 174,
   "predictions": [
+    {
+      "match_id": "706351",
+      "match_date": "2026-07-17",
+      "team1_name": "ENVY",
+      "team2_name": "Evil Geniuses",
+      "team1_win_prob": 0.4339,
+      "team2_win_prob": 0.5661,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "712808",
       "match_date": "2026-07-17",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.6421,
       "predicted_winner": "team2",
       "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "712772",
-      "match_date": "2026-07-11",
-      "team1_name": "CGN Esports",
-      "team2_name": "\u00c7ilekler",
-      "team1_win_prob": 0.8638,
-      "team2_win_prob": 0.1362,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
       "correct": false
     }
   ]

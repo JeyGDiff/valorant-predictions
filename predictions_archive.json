@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706351",
+    "match_date": "2026-07-17",
+    "team1_name": "ENVY",
+    "team2_name": "Evil Geniuses",
+    "team1_win_prob": 0.4339,
+    "team2_win_prob": 0.5661,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "712808",
     "match_date": "2026-07-17",
     "team1_name": "Team Vitality",
@@ -3025,17 +3036,6 @@
     "correct": true
   },
   {
-    "match_id": "706351",
-    "match_date": "Upcoming 3",
-    "team1_name": "ENVY",
-    "team2_name": "Evil Geniuses",
-    "team1_win_prob": 0.4339,
-    "team2_win_prob": 0.5661,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706352",
     "match_date": "Upcoming 3",
     "team1_name": "KR\u00dc Esports",
@@ -3351,6 +3351,17 @@
     "team1_win_prob": 0.79,
     "team2_win_prob": 0.21,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712815",
+    "match_date": "Upcoming 4",
+    "team1_name": "FNATIC",
+    "team2_name": "Karmine Corp",
+    "team1_win_prob": 0.4611,
+    "team2_win_prob": 0.5389,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
