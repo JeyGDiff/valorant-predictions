@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-17T08:03:16.269942+00:00",
-  "total_resolved": 268,
-  "correct": 168,
+  "generated_at": "2026-07-17T10:43:38.006624+00:00",
+  "total_resolved": 270,
+  "correct": 169,
   "predictions": [
+    {
+      "match_id": "701042",
+      "match_date": "2026-07-17",
+      "team1_name": "Nova Esports",
+      "team2_name": "JD Mall JDG Esports(JDG Esports)",
+      "team1_win_prob": 0.5962,
+      "team2_win_prob": 0.4038,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "698886",
+      "match_date": "2026-07-17",
+      "team1_name": "FULL SENSE",
+      "team2_name": "Nongshim RedForce",
+      "team1_win_prob": 0.4068,
+      "team2_win_prob": 0.5932,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "706350",
       "match_date": "2026-07-17",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "701345",
-      "match_date": "2026-07-11",
-      "team1_name": "Kiss",
-      "team2_name": "JFT GC",
-      "team1_win_prob": 0.6199,
-      "team2_win_prob": 0.3801,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "707226",
-      "match_date": "2026-07-11",
-      "team1_name": "KR\u00dc SPARK",
-      "team2_name": "9z Globant",
-      "team1_win_prob": 0.3061,
-      "team2_win_prob": 0.6939,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }

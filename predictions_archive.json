@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "701042",
+    "match_date": "2026-07-17",
+    "team1_name": "Nova Esports",
+    "team2_name": "JD Mall JDG Esports(JDG Esports)",
+    "team1_win_prob": 0.5962,
+    "team2_win_prob": 0.4038,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "698886",
+    "match_date": "2026-07-17",
+    "team1_name": "FULL SENSE",
+    "team2_name": "Nongshim RedForce",
+    "team1_win_prob": 0.4068,
+    "team2_win_prob": 0.5932,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "706350",
     "match_date": "2026-07-17",
     "team1_name": "Sentinels",
@@ -2948,28 +2970,6 @@
     "correct": true
   },
   {
-    "match_id": "701042",
-    "match_date": "Upcoming 4",
-    "team1_name": "Nova Esports",
-    "team2_name": "JD Mall JDG Esports(JDG Esports)",
-    "team1_win_prob": 0.5962,
-    "team2_win_prob": 0.4038,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "698886",
-    "match_date": "Upcoming 3",
-    "team1_name": "FULL SENSE",
-    "team2_name": "Nongshim RedForce",
-    "team1_win_prob": 0.4068,
-    "team2_win_prob": 0.5932,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698887",
     "match_date": "Upcoming 3",
     "team1_name": "KIWOOM DRX",
@@ -3274,6 +3274,28 @@
     "team1_win_prob": 0.4479,
     "team2_win_prob": 0.5521,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715877",
+    "match_date": "Upcoming 4",
+    "team1_name": "GIANTX GC",
+    "team2_name": "Bar\u00e7a eSports GC",
+    "team1_win_prob": 0.702,
+    "team2_win_prob": 0.298,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715878",
+    "match_date": "Upcoming 4",
+    "team1_name": "G2 Gozen",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.9606,
+    "team2_win_prob": 0.0394,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
