@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-18T18:57:37.820940+00:00",
-  "total_resolved": 282,
+  "generated_at": "2026-07-18T20:04:46.831015+00:00",
+  "total_resolved": 283,
   "correct": 176,
   "predictions": [
+    {
+      "match_id": "712810",
+      "match_date": "2026-07-18",
+      "team1_name": "Team Heretics",
+      "team2_name": "Team Liquid",
+      "team1_win_prob": 0.6656,
+      "team2_win_prob": 0.3344,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712809",
       "match_date": "2026-07-18",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "708427",
-      "match_date": "2026-07-12",
-      "team1_name": "Nongshim RedForce",
-      "team2_name": "BBL Esports",
-      "team1_win_prob": 0.4783,
-      "team2_win_prob": 0.5217,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
