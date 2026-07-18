@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-18T11:57:53.954253+00:00",
-  "total_resolved": 278,
-  "correct": 174,
+  "generated_at": "2026-07-18T13:20:52.375393+00:00",
+  "total_resolved": 279,
+  "correct": 175,
   "predictions": [
+    {
+      "match_id": "701045",
+      "match_date": "2026-07-18",
+      "team1_name": "Wuxi Titan Esports Club(Titan Esports Club)",
+      "team2_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
+      "team1_win_prob": 0.2797,
+      "team2_win_prob": 0.7203,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "698888",
       "match_date": "2026-07-18",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.3343,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707231",
-      "match_date": "2026-07-12",
-      "team1_name": "FUEGO",
-      "team2_name": "Contra",
-      "team1_win_prob": 0.2675,
-      "team2_win_prob": 0.7325,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
