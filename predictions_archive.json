@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "698888",
+    "match_date": "2026-07-18",
+    "team1_name": "Rex Regum Qeon",
+    "team2_name": "Global Esports",
+    "team1_win_prob": 0.7282,
+    "team2_win_prob": 0.2718,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "706352",
     "match_date": "2026-07-18",
     "team1_name": "KR\u00dc Esports",
@@ -3047,17 +3058,6 @@
     "correct": true
   },
   {
-    "match_id": "698888",
-    "match_date": "Upcoming 3",
-    "team1_name": "Rex Regum Qeon",
-    "team2_name": "Global Esports",
-    "team1_win_prob": 0.7282,
-    "team2_win_prob": 0.2718,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "701045",
     "match_date": "Upcoming 3",
     "team1_name": "Wuxi Titan Esports Club(Titan Esports Club)",
@@ -3372,6 +3372,17 @@
     "team2_name": "Habos Babos",
     "team1_win_prob": 0.8364,
     "team2_win_prob": 0.1636,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715884",
+    "match_date": "Upcoming 4",
+    "team1_name": "Twisted Minds Orchid",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.82,
+    "team2_win_prob": 0.18,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
