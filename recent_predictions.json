@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-18T13:20:52.375393+00:00",
-  "total_resolved": 279,
+  "generated_at": "2026-07-18T14:47:54.776099+00:00",
+  "total_resolved": 280,
   "correct": 175,
   "predictions": [
+    {
+      "match_id": "698889",
+      "match_date": "2026-07-18",
+      "team1_name": "Paper Rex",
+      "team2_name": "T1",
+      "team1_win_prob": 0.7146,
+      "team2_win_prob": 0.2854,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701045",
       "match_date": "2026-07-18",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "701339",
-      "match_date": "2026-07-12",
-      "team1_name": "swaglord9000",
-      "team2_name": "JFT GC",
-      "team1_win_prob": 0.6657,
-      "team2_win_prob": 0.3343,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
