@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-18T16:53:14.921430+00:00",
-  "total_resolved": 281,
+  "generated_at": "2026-07-18T17:53:57.041715+00:00",
+  "total_resolved": 282,
   "correct": 176,
   "predictions": [
+    {
+      "match_id": "712809",
+      "match_date": "2026-07-18",
+      "team1_name": "Gentle Mates",
+      "team2_name": "FUT Esports",
+      "team1_win_prob": 0.6402,
+      "team2_win_prob": 0.3598,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701046",
       "match_date": "2026-07-18",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "701032",
-      "match_date": "2026-07-12",
-      "team1_name": "TYLOO",
-      "team2_name": "Trace Esports",
-      "team1_win_prob": 0.6557,
-      "team2_win_prob": 0.3443,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
