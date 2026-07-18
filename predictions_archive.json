@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706352",
+    "match_date": "2026-07-18",
+    "team1_name": "KR\u00dc Esports",
+    "team2_name": "LOUD",
+    "team1_win_prob": 0.6095,
+    "team2_win_prob": 0.3905,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "706351",
     "match_date": "2026-07-17",
     "team1_name": "ENVY",
@@ -3036,17 +3047,6 @@
     "correct": true
   },
   {
-    "match_id": "706352",
-    "match_date": "Upcoming 3",
-    "team1_name": "KR\u00dc Esports",
-    "team2_name": "LOUD",
-    "team1_win_prob": 0.6095,
-    "team2_win_prob": 0.3905,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698888",
     "match_date": "Upcoming 3",
     "team1_name": "Rex Regum Qeon",
@@ -3362,6 +3362,17 @@
     "team1_win_prob": 0.4611,
     "team2_win_prob": 0.5389,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715883",
+    "match_date": "Upcoming 4",
+    "team1_name": "Karmine Corp GC",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.8364,
+    "team2_win_prob": 0.1636,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }

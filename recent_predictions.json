@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-18T02:03:55.049258+00:00",
-  "total_resolved": 276,
+  "generated_at": "2026-07-18T05:20:53.506725+00:00",
+  "total_resolved": 277,
   "correct": 174,
   "predictions": [
+    {
+      "match_id": "706352",
+      "match_date": "2026-07-18",
+      "team1_name": "KR\u00dc Esports",
+      "team2_name": "LOUD",
+      "team1_win_prob": 0.6095,
+      "team2_win_prob": 0.3905,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "706351",
       "match_date": "2026-07-17",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "712773",
-      "match_date": "2026-07-11",
-      "team1_name": "Eintracht Frankfurt",
-      "team2_name": "Mandatory",
-      "team1_win_prob": 0.3579,
-      "team2_win_prob": 0.6421,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
