@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "698890",
+    "match_date": "2026-07-19",
+    "team1_name": "Nongshim RedForce",
+    "team2_name": "Gen.G",
+    "team1_win_prob": 0.5573,
+    "team2_win_prob": 0.4427,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "701047",
     "match_date": "2026-07-19",
     "team1_name": "Trace Esports",
@@ -3146,17 +3157,6 @@
     "correct": true
   },
   {
-    "match_id": "698890",
-    "match_date": "Upcoming 3",
-    "team1_name": "Nongshim RedForce",
-    "team2_name": "Gen.G",
-    "team1_win_prob": 0.5573,
-    "team2_win_prob": 0.4427,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698891",
     "match_date": "Upcoming 3",
     "team1_name": "KIWOOM DRX",
@@ -3471,6 +3471,17 @@
     "team2_name": "Twisted Minds Orchid",
     "team1_win_prob": 0.4747,
     "team2_win_prob": 0.5253,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706355",
+    "match_date": "Upcoming 4",
+    "team1_name": "Evil Geniuses",
+    "team2_name": "LEVIAT\u00c1N",
+    "team1_win_prob": 0.2815,
+    "team2_win_prob": 0.7185,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null

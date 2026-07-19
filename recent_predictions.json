@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-19T10:24:18.131236+00:00",
-  "total_resolved": 286,
+  "generated_at": "2026-07-19T11:53:52.661466+00:00",
+  "total_resolved": 287,
   "correct": 178,
   "predictions": [
+    {
+      "match_id": "698890",
+      "match_date": "2026-07-19",
+      "team1_name": "Nongshim RedForce",
+      "team2_name": "Gen.G",
+      "team1_win_prob": 0.5573,
+      "team2_win_prob": 0.4427,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701047",
       "match_date": "2026-07-19",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "707774",
-      "match_date": "2026-07-13",
-      "team1_name": "M80",
-      "team2_name": "Shopify Rebellion Black",
-      "team1_win_prob": 0.5619,
-      "team2_win_prob": 0.4381,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
