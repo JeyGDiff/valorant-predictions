@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "701047",
+    "match_date": "2026-07-19",
+    "team1_name": "Trace Esports",
+    "team2_name": "Nova Esports",
+    "team1_win_prob": 0.7707,
+    "team2_win_prob": 0.2293,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "706354",
     "match_date": "2026-07-19",
     "team1_name": "NRG",
@@ -3135,17 +3146,6 @@
     "correct": true
   },
   {
-    "match_id": "701047",
-    "match_date": "Upcoming 3",
-    "team1_name": "Trace Esports",
-    "team2_name": "Nova Esports",
-    "team1_win_prob": 0.7707,
-    "team2_win_prob": 0.2293,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698890",
     "match_date": "Upcoming 3",
     "team1_name": "Nongshim RedForce",
@@ -3461,6 +3461,17 @@
     "team1_win_prob": 0.675,
     "team2_win_prob": 0.325,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715888",
+    "match_date": "Upcoming 4",
+    "team1_name": "GIANTX GC",
+    "team2_name": "Twisted Minds Orchid",
+    "team1_win_prob": 0.4747,
+    "team2_win_prob": 0.5253,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
