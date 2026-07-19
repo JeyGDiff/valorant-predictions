@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-19T13:08:23.906621+00:00",
-  "total_resolved": 288,
-  "correct": 179,
+  "generated_at": "2026-07-19T14:51:34.973096+00:00",
+  "total_resolved": 289,
+  "correct": 180,
   "predictions": [
+    {
+      "match_id": "701048",
+      "match_date": "2026-07-19",
+      "team1_name": "Dragon Ranger Gaming",
+      "team2_name": "Wolves Esports",
+      "team1_win_prob": 0.3233,
+      "team2_win_prob": 0.6767,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "698891",
       "match_date": "2026-07-19",
@@ -538,17 +549,6 @@
       "team2_name": "Dplus Esports",
       "team1_win_prob": 0.8274,
       "team2_win_prob": 0.1726,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707224",
-      "match_date": "2026-07-13",
-      "team1_name": "BESTIA",
-      "team2_name": "KR\u00dc SPARK",
-      "team1_win_prob": 0.9234,
-      "team2_win_prob": 0.0766,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
