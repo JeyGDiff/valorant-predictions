@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-18T23:50:26.275178+00:00",
-  "total_resolved": 283,
-  "correct": 176,
+  "generated_at": "2026-07-19T02:20:18.573691+00:00",
+  "total_resolved": 284,
+  "correct": 177,
   "predictions": [
+    {
+      "match_id": "706353",
+      "match_date": "2026-07-19",
+      "team1_name": "G2 Esports",
+      "team2_name": "100 Thieves",
+      "team1_win_prob": 0.4306,
+      "team2_win_prob": 0.5694,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "712810",
       "match_date": "2026-07-18",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.8837,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701323",
-      "match_date": "2026-07-12",
-      "team1_name": "Team Falcons Vega",
-      "team2_name": "sisu",
-      "team1_win_prob": 0.9186,
-      "team2_win_prob": 0.0814,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
