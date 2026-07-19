@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-19T14:51:34.973096+00:00",
-  "total_resolved": 289,
-  "correct": 180,
+  "generated_at": "2026-07-19T15:54:01.398309+00:00",
+  "total_resolved": 291,
+  "correct": 182,
   "predictions": [
+    {
+      "match_id": "701049",
+      "match_date": "2026-07-19",
+      "team1_name": "EDward Gaming",
+      "team2_name": "JD Mall JDG Esports(JDG Esports)",
+      "team1_win_prob": 0.7386,
+      "team2_win_prob": 0.2614,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "712811",
+      "match_date": "2026-07-19",
+      "team1_name": "GIANTX",
+      "team2_name": "Karmine Corp",
+      "team1_win_prob": 0.2663,
+      "team2_win_prob": 0.7337,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "701048",
       "match_date": "2026-07-19",
@@ -527,28 +549,6 @@
       "team2_name": "Looking For Laburo",
       "team1_win_prob": 0.6625,
       "team2_win_prob": 0.3375,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "712750",
-      "match_date": "2026-07-13",
-      "team1_name": "Cloud9 GC",
-      "team2_name": "ROSO GC",
-      "team1_win_prob": 0.8627,
-      "team2_win_prob": 0.1373,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "709685",
-      "match_date": "2026-07-13",
-      "team1_name": "ONSIDE GAMING",
-      "team2_name": "Dplus Esports",
-      "team1_win_prob": 0.8274,
-      "team2_win_prob": 0.1726,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
