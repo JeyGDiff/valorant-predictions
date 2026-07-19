@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-19T17:55:29.875800+00:00",
-  "total_resolved": 291,
+  "generated_at": "2026-07-19T19:00:55.191708+00:00",
+  "total_resolved": 292,
   "correct": 182,
   "predictions": [
+    {
+      "match_id": "712812",
+      "match_date": "2026-07-19",
+      "team1_name": "Team Vitality",
+      "team2_name": "BBL Esports",
+      "team1_win_prob": 0.7224,
+      "team2_win_prob": 0.2776,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701049",
       "match_date": "2026-07-19",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "705840",
-      "match_date": "2026-07-14",
-      "team1_name": "KR\u00dc BLAZE",
-      "team2_name": "Looking For Laburo",
-      "team1_win_prob": 0.6625,
-      "team2_win_prob": 0.3375,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
