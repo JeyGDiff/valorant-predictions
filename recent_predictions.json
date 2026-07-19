@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-19T02:20:18.573691+00:00",
-  "total_resolved": 284,
-  "correct": 177,
+  "generated_at": "2026-07-19T05:47:56.690196+00:00",
+  "total_resolved": 285,
+  "correct": 178,
   "predictions": [
+    {
+      "match_id": "706354",
+      "match_date": "2026-07-19",
+      "team1_name": "NRG",
+      "team2_name": "MIBR",
+      "team1_win_prob": 0.5835,
+      "team2_win_prob": 0.4165,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706353",
       "match_date": "2026-07-19",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "712774",
-      "match_date": "2026-07-12",
-      "team1_name": "\u00c7ilekler",
-      "team2_name": "Eintracht Frankfurt",
-      "team1_win_prob": 0.1163,
-      "team2_win_prob": 0.8837,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }

@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706354",
+    "match_date": "2026-07-19",
+    "team1_name": "NRG",
+    "team2_name": "MIBR",
+    "team1_win_prob": 0.5835,
+    "team2_win_prob": 0.4165,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "706353",
     "match_date": "2026-07-19",
     "team1_name": "G2 Esports",
@@ -3124,17 +3135,6 @@
     "correct": true
   },
   {
-    "match_id": "706354",
-    "match_date": "Upcoming 3",
-    "team1_name": "NRG",
-    "team2_name": "MIBR",
-    "team1_win_prob": 0.5835,
-    "team2_win_prob": 0.4165,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "701047",
     "match_date": "Upcoming 3",
     "team1_name": "Trace Esports",
@@ -3449,6 +3449,17 @@
     "team2_name": "Natus Vincere",
     "team1_win_prob": 0.7025,
     "team2_win_prob": 0.2975,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715887",
+    "match_date": "Upcoming 4",
+    "team1_name": "Karmine Corp GC",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.675,
+    "team2_win_prob": 0.325,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
