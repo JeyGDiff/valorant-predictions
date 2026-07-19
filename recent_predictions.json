@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-19T11:53:52.661466+00:00",
-  "total_resolved": 287,
-  "correct": 178,
+  "generated_at": "2026-07-19T13:08:23.906621+00:00",
+  "total_resolved": 288,
+  "correct": 179,
   "predictions": [
+    {
+      "match_id": "698891",
+      "match_date": "2026-07-19",
+      "team1_name": "KIWOOM DRX",
+      "team2_name": "Team Secret",
+      "team1_win_prob": 0.3337,
+      "team2_win_prob": 0.6663,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "698890",
       "match_date": "2026-07-19",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "707209",
-      "match_date": "2026-07-13",
-      "team1_name": "2Game Esports",
-      "team2_name": "LA MASIA",
-      "team1_win_prob": 0.6397,
-      "team2_win_prob": 0.3603,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
