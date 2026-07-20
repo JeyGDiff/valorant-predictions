@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-20T09:56:42.212909+00:00",
-  "total_resolved": 292,
-  "correct": 182,
+  "generated_at": "2026-07-20T12:15:43.436453+00:00",
+  "total_resolved": 294,
+  "correct": 183,
   "predictions": [
+    {
+      "match_id": "709712",
+      "match_date": "2026-07-20",
+      "team1_name": "Ninetails",
+      "team2_name": "Gen.G GC",
+      "team1_win_prob": 0.1725,
+      "team2_win_prob": 0.8275,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "701050",
+      "match_date": "2026-07-20",
+      "team1_name": "Wuxi Titan Esports Club(Titan Esports Club)",
+      "team2_name": "All Gamers",
+      "team1_win_prob": 0.707,
+      "team2_win_prob": 0.293,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712812",
       "match_date": "2026-07-19",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "701036",
-      "match_date": "2026-07-14",
-      "team1_name": "Wolves Esports",
-      "team2_name": "All Gamers",
-      "team1_win_prob": 0.8985,
-      "team2_win_prob": 0.1015,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "712754",
-      "match_date": "2026-07-14",
-      "team1_name": ":3",
-      "team2_name": "SaD GC",
-      "team1_win_prob": 0.6814,
-      "team2_win_prob": 0.3186,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
