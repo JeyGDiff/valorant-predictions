@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-21T17:13:20.880033+00:00",
-  "total_resolved": 303,
-  "correct": 190,
+  "generated_at": "2026-07-21T19:14:41.417193+00:00",
+  "total_resolved": 305,
+  "correct": 191,
   "predictions": [
+    {
+      "match_id": "715877",
+      "match_date": "2026-07-21",
+      "team1_name": "GIANTX GC",
+      "team2_name": "Bar\u00e7a eSports GC",
+      "team1_win_prob": 0.702,
+      "team2_win_prob": 0.298,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "715880",
+      "match_date": "2026-07-21",
+      "team1_name": "SK Nebula",
+      "team2_name": "Gentle Mates GC",
+      "team1_win_prob": 0.4617,
+      "team2_win_prob": 0.5383,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "715878",
       "match_date": "2026-07-21",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "701039",
-      "match_date": "2026-07-15",
-      "team1_name": "EDward Gaming",
-      "team2_name": "TYLOO",
-      "team1_win_prob": 0.7196,
-      "team2_win_prob": 0.2804,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "710992",
-      "match_date": "2026-07-15",
-      "team1_name": "Rising Esports GC",
-      "team2_name": "Team Luna",
-      "team1_win_prob": 0.8735,
-      "team2_win_prob": 0.1265,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }

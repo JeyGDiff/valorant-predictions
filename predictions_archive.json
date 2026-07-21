@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "715877",
+    "match_date": "2026-07-21",
+    "team1_name": "GIANTX GC",
+    "team2_name": "Bar\u00e7a eSports GC",
+    "team1_win_prob": 0.702,
+    "team2_win_prob": 0.298,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "715880",
+    "match_date": "2026-07-21",
+    "team1_name": "SK Nebula",
+    "team2_name": "Gentle Mates GC",
+    "team1_win_prob": 0.4617,
+    "team2_win_prob": 0.5383,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "715878",
     "match_date": "2026-07-21",
     "team1_name": "G2 Gozen",
@@ -3333,17 +3355,6 @@
     "correct": true
   },
   {
-    "match_id": "715877",
-    "match_date": "Upcoming 4",
-    "team1_name": "GIANTX GC",
-    "team2_name": "Bar\u00e7a eSports GC",
-    "team1_win_prob": 0.702,
-    "team2_win_prob": 0.298,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "715879",
     "match_date": "Upcoming 4",
     "team1_name": "Twisted Minds Orchid",
@@ -3351,17 +3362,6 @@
     "team1_win_prob": 0.6987,
     "team2_win_prob": 0.3013,
     "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "715880",
-    "match_date": "Upcoming 4",
-    "team1_name": "SK Nebula",
-    "team2_name": "Gentle Mates GC",
-    "team1_win_prob": 0.4617,
-    "team2_win_prob": 0.5383,
-    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   },
@@ -3637,6 +3637,28 @@
     "team1_win_prob": 0.2596,
     "team2_win_prob": 0.7404,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706358",
+    "match_date": "Upcoming 3",
+    "team1_name": "100 Thieves",
+    "team2_name": "KR\u00dc Esports",
+    "team1_win_prob": 0.7868,
+    "team2_win_prob": 0.2132,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "675270",
+    "match_date": "Upcoming 3",
+    "team1_name": "REJECT",
+    "team2_name": "IGZIST",
+    "team1_win_prob": 0.6502,
+    "team2_win_prob": 0.3498,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
