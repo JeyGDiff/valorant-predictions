@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "715879",
+    "match_date": "2026-07-21",
+    "team1_name": "Twisted Minds Orchid",
+    "team2_name": "FOKUS Sakura",
+    "team1_win_prob": 0.6987,
+    "team2_win_prob": 0.3013,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "715877",
     "match_date": "2026-07-21",
     "team1_name": "GIANTX GC",
@@ -3355,17 +3366,6 @@
     "correct": true
   },
   {
-    "match_id": "715879",
-    "match_date": "Upcoming 4",
-    "team1_name": "Twisted Minds Orchid",
-    "team2_name": "FOKUS Sakura",
-    "team1_win_prob": 0.6987,
-    "team2_win_prob": 0.3013,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712814",
     "match_date": "Upcoming 4",
     "team1_name": "FUT Esports",
@@ -3659,6 +3659,17 @@
     "team1_win_prob": 0.6502,
     "team2_win_prob": 0.3498,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "675271",
+    "match_date": "Upcoming 3",
+    "team1_name": "QT DIG\u221e",
+    "team2_name": "FENNEL",
+    "team1_win_prob": 0.342,
+    "team2_win_prob": 0.658,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
