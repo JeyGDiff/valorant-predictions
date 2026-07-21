@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-21T08:21:17.447562+00:00",
-  "total_resolved": 300,
+  "generated_at": "2026-07-21T11:04:39.207313+00:00",
+  "total_resolved": 301,
   "correct": 189,
   "predictions": [
+    {
+      "match_id": "701052",
+      "match_date": "2026-07-21",
+      "team1_name": "JD Mall JDG Esports(JDG Esports)",
+      "team2_name": "Trace Esports",
+      "team1_win_prob": 0.4941,
+      "team2_win_prob": 0.5059,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "715219",
       "match_date": "2026-07-21",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.8184,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "707487",
-      "match_date": "2026-07-15",
-      "team1_name": "TEAM EGO",
-      "team2_name": "PEEK",
-      "team1_win_prob": 0.8473,
-      "team2_win_prob": 0.1527,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]

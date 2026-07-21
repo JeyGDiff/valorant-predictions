@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "701052",
+    "match_date": "2026-07-21",
+    "team1_name": "JD Mall JDG Esports(JDG Esports)",
+    "team2_name": "Trace Esports",
+    "team1_win_prob": 0.4941,
+    "team2_win_prob": 0.5059,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "715219",
     "match_date": "2026-07-21",
     "team1_name": "Axolotl",
@@ -3559,17 +3570,6 @@
     "team2_name": "FNATIC",
     "team1_win_prob": 0.4963,
     "team2_win_prob": 0.5037,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "701052",
-    "match_date": "Upcoming 2",
-    "team1_name": "JD Mall JDG Esports(JDG Esports)",
-    "team2_name": "Trace Esports",
-    "team1_win_prob": 0.4941,
-    "team2_win_prob": 0.5059,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
