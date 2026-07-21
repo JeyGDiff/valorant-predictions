@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "701053",
+    "match_date": "2026-07-21",
+    "team1_name": "EDward Gaming",
+    "team2_name": "Nova Esports",
+    "team1_win_prob": 0.758,
+    "team2_win_prob": 0.242,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "701052",
     "match_date": "2026-07-21",
     "team1_name": "JD Mall JDG Esports(JDG Esports)",
@@ -3571,17 +3582,6 @@
     "team1_win_prob": 0.4963,
     "team2_win_prob": 0.5037,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "701053",
-    "match_date": "Upcoming 1",
-    "team1_name": "EDward Gaming",
-    "team2_name": "Nova Esports",
-    "team1_win_prob": 0.758,
-    "team2_win_prob": 0.242,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
