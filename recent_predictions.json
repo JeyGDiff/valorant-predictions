@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-21T15:40:20.002790+00:00",
-  "total_resolved": 302,
-  "correct": 189,
+  "generated_at": "2026-07-21T17:13:20.880033+00:00",
+  "total_resolved": 303,
+  "correct": 190,
   "predictions": [
+    {
+      "match_id": "715878",
+      "match_date": "2026-07-21",
+      "team1_name": "G2 Gozen",
+      "team2_name": "Habos Babos",
+      "team1_win_prob": 0.9606,
+      "team2_win_prob": 0.0394,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701053",
       "match_date": "2026-07-21",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "701038",
-      "match_date": "2026-07-15",
-      "team1_name": "JD Mall JDG Esports(JDG Esports)",
-      "team2_name": "FunPlus Phoenix",
-      "team1_win_prob": 0.5412,
-      "team2_win_prob": 0.4588,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }

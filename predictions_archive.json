@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "715878",
+    "match_date": "2026-07-21",
+    "team1_name": "G2 Gozen",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.9606,
+    "team2_win_prob": 0.0394,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "701053",
     "match_date": "2026-07-21",
     "team1_name": "EDward Gaming",
@@ -3333,17 +3344,6 @@
     "correct": null
   },
   {
-    "match_id": "715878",
-    "match_date": "Upcoming 4",
-    "team1_name": "G2 Gozen",
-    "team2_name": "Habos Babos",
-    "team1_win_prob": 0.9606,
-    "team2_win_prob": 0.0394,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "715879",
     "match_date": "Upcoming 4",
     "team1_name": "Twisted Minds Orchid",
@@ -3625,6 +3625,17 @@
     "team2_name": "EDward Gaming",
     "team1_win_prob": 0.1446,
     "team2_win_prob": 0.8554,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706357",
+    "match_date": "Upcoming 3",
+    "team1_name": "FURIA",
+    "team2_name": "NRG",
+    "team1_win_prob": 0.2596,
+    "team2_win_prob": 0.7404,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
