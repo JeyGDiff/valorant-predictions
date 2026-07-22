@@ -1,8 +1,52 @@
 {
-  "generated_at": "2026-07-22T17:13:02.871198+00:00",
-  "total_resolved": 308,
-  "correct": 193,
+  "generated_at": "2026-07-22T19:09:09.753517+00:00",
+  "total_resolved": 312,
+  "correct": 196,
   "predictions": [
+    {
+      "match_id": "712814",
+      "match_date": "2026-07-22",
+      "team1_name": "FUT Esports",
+      "team2_name": "PCIFIC Esports",
+      "team1_win_prob": 0.5088,
+      "team2_win_prob": 0.4912,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "715881",
+      "match_date": "2026-07-22",
+      "team1_name": "SK Nebula",
+      "team2_name": "Bar\u00e7a eSports GC",
+      "team1_win_prob": 0.7355,
+      "team2_win_prob": 0.2645,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "715882",
+      "match_date": "2026-07-22",
+      "team1_name": "GIANTX GC",
+      "team2_name": "FOKUS Sakura",
+      "team1_win_prob": 0.79,
+      "team2_win_prob": 0.21,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "715883",
+      "match_date": "2026-07-22",
+      "team1_name": "Karmine Corp GC",
+      "team2_name": "Habos Babos",
+      "team1_win_prob": 0.8364,
+      "team2_win_prob": 0.1636,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "701055",
       "match_date": "2026-07-22",
@@ -508,50 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "698885",
-      "match_date": "2026-07-16",
-      "team1_name": "Team Secret",
-      "team2_name": "VARREL",
-      "team1_win_prob": 0.8476,
-      "team2_win_prob": 0.1524,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "701040",
-      "match_date": "2026-07-16",
-      "team1_name": "All Gamers",
-      "team2_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
-      "team1_win_prob": 0.5652,
-      "team2_win_prob": 0.4348,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "698884",
-      "match_date": "2026-07-16",
-      "team1_name": "Gen.G",
-      "team2_name": "ZETA DIVISION",
-      "team1_win_prob": 0.7138,
-      "team2_win_prob": 0.2862,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707488",
-      "match_date": "2026-07-16",
-      "team1_name": "ABACATUDOS",
-      "team2_name": "TEAM EGO",
-      "team1_win_prob": 0.1039,
-      "team2_win_prob": 0.8961,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
