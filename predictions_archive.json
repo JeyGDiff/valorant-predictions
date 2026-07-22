@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "715884",
+    "match_date": "2026-07-22",
+    "team1_name": "Twisted Minds Orchid",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.82,
+    "team2_win_prob": 0.18,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "712814",
     "match_date": "2026-07-22",
     "team1_name": "FUT Esports",
@@ -3443,17 +3454,6 @@
     "correct": null
   },
   {
-    "match_id": "715884",
-    "match_date": "Upcoming 4",
-    "team1_name": "Twisted Minds Orchid",
-    "team2_name": "ALTERNATE aTTaX Ruby",
-    "team1_win_prob": 0.82,
-    "team2_win_prob": 0.18,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698892",
     "match_date": "Upcoming 4",
     "team1_name": "Global Esports",
@@ -3724,6 +3724,28 @@
     "team2_name": "GIANTX",
     "team1_win_prob": 0.5099,
     "team2_win_prob": 0.4901,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "701060",
+    "match_date": "Upcoming 2",
+    "team1_name": "JD Mall JDG Esports(JDG Esports)",
+    "team2_name": "Dragon Ranger Gaming",
+    "team1_win_prob": 0.311,
+    "team2_win_prob": 0.689,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706359",
+    "match_date": "Upcoming 2",
+    "team1_name": "G2 Esports",
+    "team2_name": "Cloud9",
+    "team1_win_prob": 0.7188,
+    "team2_win_prob": 0.2812,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
