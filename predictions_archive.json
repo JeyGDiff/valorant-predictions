@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712815",
+    "match_date": "2026-07-22",
+    "team1_name": "FNATIC",
+    "team2_name": "Karmine Corp",
+    "team1_win_prob": 0.4611,
+    "team2_win_prob": 0.5389,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
     "match_id": "715884",
     "match_date": "2026-07-22",
     "team1_name": "Twisted Minds Orchid",
@@ -3443,17 +3454,6 @@
     "correct": true
   },
   {
-    "match_id": "712815",
-    "match_date": "Upcoming 4",
-    "team1_name": "FNATIC",
-    "team2_name": "Karmine Corp",
-    "team1_win_prob": 0.4611,
-    "team2_win_prob": 0.5389,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698892",
     "match_date": "Upcoming 4",
     "team1_name": "Global Esports",
@@ -3746,6 +3746,17 @@
     "team2_name": "Cloud9",
     "team1_win_prob": 0.7188,
     "team2_win_prob": 0.2812,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706360",
+    "match_date": "Upcoming 3",
+    "team1_name": "Sentinels",
+    "team2_name": "LOUD",
+    "team1_win_prob": 0.6916,
+    "team2_win_prob": 0.3084,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

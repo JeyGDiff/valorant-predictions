@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-22T21:01:48.760300+00:00",
-  "total_resolved": 313,
+  "generated_at": "2026-07-22T22:57:56.410885+00:00",
+  "total_resolved": 314,
   "correct": 197,
   "predictions": [
+    {
+      "match_id": "712815",
+      "match_date": "2026-07-22",
+      "team1_name": "FNATIC",
+      "team2_name": "Karmine Corp",
+      "team1_win_prob": 0.4611,
+      "team2_win_prob": 0.5389,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "715884",
       "match_date": "2026-07-22",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "712805",
-      "match_date": "2026-07-16",
-      "team1_name": "FNATIC",
-      "team2_name": "GIANTX",
-      "team1_win_prob": 0.7256,
-      "team2_win_prob": 0.2744,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
