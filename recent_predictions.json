@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-22T13:42:28.504735+00:00",
-  "total_resolved": 307,
-  "correct": 192,
+  "generated_at": "2026-07-22T15:37:18.597926+00:00",
+  "total_resolved": 308,
+  "correct": 193,
   "predictions": [
+    {
+      "match_id": "701055",
+      "match_date": "2026-07-22",
+      "team1_name": "All Gamers",
+      "team2_name": "Dragon Ranger Gaming",
+      "team1_win_prob": 0.5585,
+      "team2_win_prob": 0.4415,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701054",
       "match_date": "2026-07-22",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "707489",
-      "match_date": "2026-07-15",
-      "team1_name": "Team Liquid Brazil",
-      "team2_name": "PEEK",
-      "team1_win_prob": 0.8214,
-      "team2_win_prob": 0.1786,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
