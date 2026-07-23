@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "698892",
+    "match_date": "2026-07-23",
+    "team1_name": "Global Esports",
+    "team2_name": "FULL SENSE",
+    "team1_win_prob": 0.8619,
+    "team2_win_prob": 0.1381,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "712815",
     "match_date": "2026-07-22",
     "team1_name": "FNATIC",
@@ -3452,17 +3463,6 @@
     "predicted_winner": "team1",
     "actual_winner": "team1",
     "correct": true
-  },
-  {
-    "match_id": "698892",
-    "match_date": "Upcoming 4",
-    "team1_name": "Global Esports",
-    "team2_name": "FULL SENSE",
-    "team1_win_prob": 0.8619,
-    "team2_win_prob": 0.1381,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
   },
   {
     "match_id": "698893",
