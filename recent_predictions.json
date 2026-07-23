@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-23T20:58:43.747079+00:00",
-  "total_resolved": 323,
-  "correct": 202,
+  "generated_at": "2026-07-23T22:08:45.932098+00:00",
+  "total_resolved": 324,
+  "correct": 203,
   "predictions": [
+    {
+      "match_id": "715888",
+      "match_date": "2026-07-23",
+      "team1_name": "GIANTX GC",
+      "team2_name": "Twisted Minds Orchid",
+      "team1_win_prob": 0.4747,
+      "team2_win_prob": 0.5253,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "712817",
       "match_date": "2026-07-23",
@@ -538,17 +549,6 @@
       "team2_name": "Natus Vincere",
       "team1_win_prob": 0.6327,
       "team2_win_prob": 0.3673,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "712807",
-      "match_date": "2026-07-17",
-      "team1_name": "Karmine Corp",
-      "team2_name": "Eternal Fire",
-      "team1_win_prob": 0.682,
-      "team2_win_prob": 0.318,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
