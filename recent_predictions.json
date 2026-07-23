@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-23T10:17:14.909034+00:00",
-  "total_resolved": 315,
+  "generated_at": "2026-07-23T12:21:30.005603+00:00",
+  "total_resolved": 317,
   "correct": 198,
   "predictions": [
+    {
+      "match_id": "698893",
+      "match_date": "2026-07-23",
+      "team1_name": "T1",
+      "team2_name": "VARREL",
+      "team1_win_prob": 0.6488,
+      "team2_win_prob": 0.3512,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "701056",
+      "match_date": "2026-07-23",
+      "team1_name": "TYLOO",
+      "team2_name": "Nova Esports",
+      "team1_win_prob": 0.8018,
+      "team2_win_prob": 0.1982,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "698892",
       "match_date": "2026-07-23",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "706349",
-      "match_date": "2026-07-16",
-      "team1_name": "LEVIAT\u00c1N",
-      "team2_name": "FURIA",
-      "team1_win_prob": 0.72,
-      "team2_win_prob": 0.28,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "707490",
-      "match_date": "2026-07-16",
-      "team1_name": "ABACATUDOS",
-      "team2_name": "PEEK",
-      "team1_win_prob": 0.2201,
-      "team2_win_prob": 0.7799,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }

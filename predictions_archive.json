@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "698893",
+    "match_date": "2026-07-23",
+    "team1_name": "T1",
+    "team2_name": "VARREL",
+    "team1_win_prob": 0.6488,
+    "team2_win_prob": 0.3512,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "701056",
+    "match_date": "2026-07-23",
+    "team1_name": "TYLOO",
+    "team2_name": "Nova Esports",
+    "team1_win_prob": 0.8018,
+    "team2_win_prob": 0.1982,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "698892",
     "match_date": "2026-07-23",
     "team1_name": "Global Esports",
@@ -3465,17 +3487,6 @@
     "correct": true
   },
   {
-    "match_id": "698893",
-    "match_date": "Upcoming 4",
-    "team1_name": "T1",
-    "team2_name": "VARREL",
-    "team1_win_prob": 0.6488,
-    "team2_win_prob": 0.3512,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712816",
     "match_date": "Upcoming 4",
     "team1_name": "Eternal Fire",
@@ -3604,17 +3615,6 @@
     "team1_win_prob": 0.4963,
     "team2_win_prob": 0.5037,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "701056",
-    "match_date": "Upcoming 2",
-    "team1_name": "TYLOO",
-    "team2_name": "Nova Esports",
-    "team1_win_prob": 0.8018,
-    "team2_win_prob": 0.1982,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
@@ -3757,6 +3757,17 @@
     "team2_name": "LOUD",
     "team1_win_prob": 0.6916,
     "team2_win_prob": 0.3084,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "698899",
+    "match_date": "Upcoming 2",
+    "team1_name": "Paper Rex",
+    "team2_name": "KIWOOM DRX",
+    "team1_win_prob": 0.882,
+    "team2_win_prob": 0.118,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
