@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "701057",
+    "match_date": "2026-07-23",
+    "team1_name": "FunPlus Phoenix",
+    "team2_name": "EDward Gaming",
+    "team1_win_prob": 0.1446,
+    "team2_win_prob": 0.8554,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "698893",
     "match_date": "2026-07-23",
     "team1_name": "T1",
@@ -3619,17 +3630,6 @@
     "correct": null
   },
   {
-    "match_id": "701057",
-    "match_date": "Upcoming 3",
-    "team1_name": "FunPlus Phoenix",
-    "team2_name": "EDward Gaming",
-    "team1_win_prob": 0.1446,
-    "team2_win_prob": 0.8554,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706357",
     "match_date": "Upcoming 3",
     "team1_name": "FURIA",
@@ -3769,6 +3769,17 @@
     "team1_win_prob": 0.882,
     "team2_win_prob": 0.118,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "698901",
+    "match_date": "Upcoming 2",
+    "team1_name": "Gen.G",
+    "team2_name": "Rex Regum Qeon",
+    "team1_win_prob": 0.4736,
+    "team2_win_prob": 0.5264,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }

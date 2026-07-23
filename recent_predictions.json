@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-23T12:21:30.005603+00:00",
-  "total_resolved": 317,
-  "correct": 198,
+  "generated_at": "2026-07-23T15:05:33.934292+00:00",
+  "total_resolved": 318,
+  "correct": 199,
   "predictions": [
+    {
+      "match_id": "701057",
+      "match_date": "2026-07-23",
+      "team1_name": "FunPlus Phoenix",
+      "team2_name": "EDward Gaming",
+      "team1_win_prob": 0.1446,
+      "team2_win_prob": 0.8554,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "698893",
       "match_date": "2026-07-23",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "706350",
-      "match_date": "2026-07-17",
-      "team1_name": "Sentinels",
-      "team2_name": "Cloud9",
-      "team1_win_prob": 0.7993,
-      "team2_win_prob": 0.2007,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
