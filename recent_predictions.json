@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-23T19:08:50.186042+00:00",
-  "total_resolved": 321,
-  "correct": 201,
+  "generated_at": "2026-07-23T20:58:43.747079+00:00",
+  "total_resolved": 323,
+  "correct": 202,
   "predictions": [
+    {
+      "match_id": "712817",
+      "match_date": "2026-07-23",
+      "team1_name": "Gentle Mates",
+      "team2_name": "Natus Vincere",
+      "team1_win_prob": 0.7025,
+      "team2_win_prob": 0.2975,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "715887",
+      "match_date": "2026-07-23",
+      "team1_name": "Karmine Corp GC",
+      "team2_name": "ALTERNATE aTTaX Ruby",
+      "team1_win_prob": 0.675,
+      "team2_win_prob": 0.325,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "715886",
       "match_date": "2026-07-23",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "701044",
-      "match_date": "2026-07-17",
-      "team1_name": "Trace Esports",
-      "team2_name": "EDward Gaming",
-      "team1_win_prob": 0.2835,
-      "team2_win_prob": 0.7165,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "698887",
-      "match_date": "2026-07-17",
-      "team1_name": "KIWOOM DRX",
-      "team2_name": "DetonatioN FocusMe",
-      "team1_win_prob": 0.4781,
-      "team2_win_prob": 0.5219,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
