@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "715886",
+    "match_date": "2026-07-23",
+    "team1_name": "Bar\u00e7a eSports GC",
+    "team2_name": "FOKUS Sakura",
+    "team1_win_prob": 0.7155,
+    "team2_win_prob": 0.2845,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "712816",
     "match_date": "2026-07-23",
     "team1_name": "Eternal Fire",
@@ -3520,17 +3531,6 @@
     "correct": true
   },
   {
-    "match_id": "715886",
-    "match_date": "Upcoming 4",
-    "team1_name": "Bar\u00e7a eSports GC",
-    "team2_name": "FOKUS Sakura",
-    "team1_win_prob": 0.7155,
-    "team2_win_prob": 0.2845,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712817",
     "match_date": "Upcoming 4",
     "team1_name": "Gentle Mates",
@@ -3790,6 +3790,17 @@
     "team2_name": "Natus Vincere",
     "team1_win_prob": 0.5283,
     "team2_win_prob": 0.4717,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712823",
+    "match_date": "Upcoming 2",
+    "team1_name": "Team Heretics",
+    "team2_name": "Karmine Corp",
+    "team1_win_prob": 0.7187,
+    "team2_win_prob": 0.2813,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

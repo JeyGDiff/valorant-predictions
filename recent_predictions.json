@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-23T17:17:09.188080+00:00",
-  "total_resolved": 320,
+  "generated_at": "2026-07-23T19:08:50.186042+00:00",
+  "total_resolved": 321,
   "correct": 201,
   "predictions": [
+    {
+      "match_id": "715886",
+      "match_date": "2026-07-23",
+      "team1_name": "Bar\u00e7a eSports GC",
+      "team2_name": "FOKUS Sakura",
+      "team1_win_prob": 0.7155,
+      "team2_win_prob": 0.2845,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712816",
       "match_date": "2026-07-23",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team1",
       "correct": false
-    },
-    {
-      "match_id": "701043",
-      "match_date": "2026-07-17",
-      "team1_name": "TYLOO",
-      "team2_name": "FunPlus Phoenix",
-      "team1_win_prob": 0.5908,
-      "team2_win_prob": 0.4092,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
