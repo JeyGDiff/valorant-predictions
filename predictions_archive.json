@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706355",
+    "match_date": "2026-07-23",
+    "team1_name": "Evil Geniuses",
+    "team2_name": "LEVIAT\u00c1N",
+    "team1_win_prob": 0.2815,
+    "team2_win_prob": 0.7185,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "715888",
     "match_date": "2026-07-23",
     "team1_name": "GIANTX GC",
@@ -3564,17 +3575,6 @@
     "correct": true
   },
   {
-    "match_id": "706355",
-    "match_date": "Upcoming 4",
-    "team1_name": "Evil Geniuses",
-    "team2_name": "LEVIAT\u00c1N",
-    "team1_win_prob": 0.2815,
-    "team2_win_prob": 0.7185,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706356",
     "match_date": "Upcoming 4",
     "team1_name": "ENVY",
@@ -3834,6 +3834,17 @@
     "team2_name": "GIANTX GC",
     "team1_win_prob": 0.6665,
     "team2_win_prob": 0.3335,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716579",
+    "match_date": "Upcoming 3",
+    "team1_name": "Bar\u00e7a eSports GC",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.9231,
+    "team2_win_prob": 0.0769,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
