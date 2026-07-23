@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-23T15:05:33.934292+00:00",
-  "total_resolved": 318,
-  "correct": 199,
+  "generated_at": "2026-07-23T17:17:09.188080+00:00",
+  "total_resolved": 320,
+  "correct": 201,
   "predictions": [
+    {
+      "match_id": "712816",
+      "match_date": "2026-07-23",
+      "team1_name": "Eternal Fire",
+      "team2_name": "Team Heretics",
+      "team1_win_prob": 0.2767,
+      "team2_win_prob": 0.7233,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "715885",
+      "match_date": "2026-07-23",
+      "team1_name": "Gentle Mates GC",
+      "team2_name": "Habos Babos",
+      "team1_win_prob": 0.9496,
+      "team2_win_prob": 0.0504,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701057",
       "match_date": "2026-07-23",
@@ -530,28 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
-    },
-    {
-      "match_id": "701042",
-      "match_date": "2026-07-17",
-      "team1_name": "Nova Esports",
-      "team2_name": "JD Mall JDG Esports(JDG Esports)",
-      "team1_win_prob": 0.5962,
-      "team2_win_prob": 0.4038,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "698886",
-      "match_date": "2026-07-17",
-      "team1_name": "FULL SENSE",
-      "team2_name": "Nongshim RedForce",
-      "team1_win_prob": 0.4068,
-      "team2_win_prob": 0.5932,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
     }
   ]
 }
