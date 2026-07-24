@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-24T12:24:18.023493+00:00",
-  "total_resolved": 328,
-  "correct": 206,
+  "generated_at": "2026-07-24T14:51:58.223633+00:00",
+  "total_resolved": 330,
+  "correct": 208,
   "predictions": [
+    {
+      "match_id": "698895",
+      "match_date": "2026-07-24",
+      "team1_name": "DetonatioN FocusMe",
+      "team2_name": "Paper Rex",
+      "team1_win_prob": 0.1302,
+      "team2_win_prob": 0.8698,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "701059",
+      "match_date": "2026-07-24",
+      "team1_name": "EDward Gaming",
+      "team2_name": "All Gamers",
+      "team1_win_prob": 0.7729,
+      "team2_win_prob": 0.2271,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "701058",
       "match_date": "2026-07-24",
@@ -527,28 +549,6 @@
       "team2_name": "Xi Lai Gaming",
       "team1_win_prob": 0.4346,
       "team2_win_prob": 0.5654,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "698889",
-      "match_date": "2026-07-18",
-      "team1_name": "Paper Rex",
-      "team2_name": "T1",
-      "team1_win_prob": 0.7146,
-      "team2_win_prob": 0.2854,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "701045",
-      "match_date": "2026-07-18",
-      "team1_name": "Wuxi Titan Esports Club(Titan Esports Club)",
-      "team2_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
-      "team1_win_prob": 0.2797,
-      "team2_win_prob": 0.7203,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
