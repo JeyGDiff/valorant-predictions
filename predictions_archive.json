@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706356",
+    "match_date": "2026-07-24",
+    "team1_name": "ENVY",
+    "team2_name": "MIBR",
+    "team1_win_prob": 0.3182,
+    "team2_win_prob": 0.6818,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "706355",
     "match_date": "2026-07-23",
     "team1_name": "Evil Geniuses",
@@ -3575,17 +3586,6 @@
     "correct": true
   },
   {
-    "match_id": "706356",
-    "match_date": "Upcoming 4",
-    "team1_name": "ENVY",
-    "team2_name": "MIBR",
-    "team1_win_prob": 0.3182,
-    "team2_win_prob": 0.6818,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698894",
     "match_date": "Upcoming 4",
     "team1_name": "Rex Regum Qeon",
@@ -3845,6 +3845,17 @@
     "team2_name": "Habos Babos",
     "team1_win_prob": 0.9231,
     "team2_win_prob": 0.0769,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716580",
+    "match_date": "Upcoming 3",
+    "team1_name": "G2 Gozen",
+    "team2_name": "Karmine Corp GC",
+    "team1_win_prob": 0.7906,
+    "team2_win_prob": 0.2094,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
