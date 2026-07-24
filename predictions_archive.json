@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "698894",
+    "match_date": "2026-07-24",
+    "team1_name": "Rex Regum Qeon",
+    "team2_name": "ZETA DIVISION",
+    "team1_win_prob": 0.7912,
+    "team2_win_prob": 0.2088,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "706356",
     "match_date": "2026-07-24",
     "team1_name": "ENVY",
@@ -3586,17 +3597,6 @@
     "correct": true
   },
   {
-    "match_id": "698894",
-    "match_date": "Upcoming 4",
-    "team1_name": "Rex Regum Qeon",
-    "team2_name": "ZETA DIVISION",
-    "team1_win_prob": 0.7912,
-    "team2_win_prob": 0.2088,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698895",
     "match_date": "Upcoming 4",
     "team1_name": "DetonatioN FocusMe",
@@ -3900,6 +3900,17 @@
     "team2_name": "Guangzhou Huadu Bilibili Gaming(Bilibili Gaming)",
     "team1_win_prob": 0.3688,
     "team2_win_prob": 0.6312,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715113",
+    "match_date": "Upcoming 3",
+    "team1_name": "Contra",
+    "team2_name": "BESTIA",
+    "team1_win_prob": 0.3122,
+    "team2_win_prob": 0.6878,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
