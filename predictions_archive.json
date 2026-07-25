@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712821",
+    "match_date": "2026-07-25",
+    "team1_name": "Eternal Fire",
+    "team2_name": "GIANTX",
+    "team1_win_prob": 0.5099,
+    "team2_win_prob": 0.4901,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "712820",
     "match_date": "2026-07-25",
     "team1_name": "PCIFIC Esports",
@@ -3751,17 +3762,6 @@
     "correct": true
   },
   {
-    "match_id": "712821",
-    "match_date": "Upcoming 2",
-    "team1_name": "Eternal Fire",
-    "team2_name": "GIANTX",
-    "team1_win_prob": 0.5099,
-    "team2_win_prob": 0.4901,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706359",
     "match_date": "Upcoming 2",
     "team1_name": "G2 Esports",
@@ -4054,6 +4054,17 @@
     "team2_name": "ALTERNATE aTTaX Ruby",
     "team1_win_prob": 0.7647,
     "team2_win_prob": 0.2353,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716588",
+    "match_date": "Upcoming 3",
+    "team1_name": "GIANTX GC",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.9663,
+    "team2_win_prob": 0.0337,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

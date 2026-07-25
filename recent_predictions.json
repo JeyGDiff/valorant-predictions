@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-25T17:55:38.713092+00:00",
-  "total_resolved": 341,
+  "generated_at": "2026-07-25T19:02:13.615668+00:00",
+  "total_resolved": 342,
   "correct": 216,
   "predictions": [
+    {
+      "match_id": "712821",
+      "match_date": "2026-07-25",
+      "team1_name": "Eternal Fire",
+      "team2_name": "GIANTX",
+      "team1_win_prob": 0.5099,
+      "team2_win_prob": 0.4901,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712820",
       "match_date": "2026-07-25",
@@ -538,17 +549,6 @@
       "team2_name": "All Gamers",
       "team1_win_prob": 0.707,
       "team2_win_prob": 0.293,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "712812",
-      "match_date": "2026-07-19",
-      "team1_name": "Team Vitality",
-      "team2_name": "BBL Esports",
-      "team1_win_prob": 0.7224,
-      "team2_win_prob": 0.2776,
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
