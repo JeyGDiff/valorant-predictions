@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706357",
+    "match_date": "2026-07-24",
+    "team1_name": "FURIA",
+    "team2_name": "NRG",
+    "team1_win_prob": 0.2596,
+    "team2_win_prob": 0.7404,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "712819",
     "match_date": "2026-07-24",
     "team1_name": "Team Liquid",
@@ -3652,17 +3663,6 @@
     "correct": true
   },
   {
-    "match_id": "706357",
-    "match_date": "Upcoming 3",
-    "team1_name": "FURIA",
-    "team2_name": "NRG",
-    "team1_win_prob": 0.2596,
-    "team2_win_prob": 0.7404,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706358",
     "match_date": "Upcoming 3",
     "team1_name": "100 Thieves",
@@ -3966,6 +3966,17 @@
     "team2_name": "Habos Babos",
     "team1_win_prob": 0.8821,
     "team2_win_prob": 0.1179,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716584",
+    "match_date": "Upcoming 3",
+    "team1_name": "SK Nebula",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.7636,
+    "team2_win_prob": 0.2364,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
