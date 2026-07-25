@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "675271",
+    "match_date": "2026-07-25",
+    "team1_name": "QT DIG\u221e",
+    "team2_name": "FENNEL",
+    "team1_win_prob": 0.342,
+    "team2_win_prob": 0.658,
+    "predicted_winner": "team2",
+    "actual_winner": "team1",
+    "correct": false
+  },
+  {
+    "match_id": "698897",
+    "match_date": "2026-07-25",
+    "team1_name": "Nongshim RedForce",
+    "team2_name": "Global Esports",
+    "team1_win_prob": 0.5014,
+    "team2_win_prob": 0.4986,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "675270",
     "match_date": "2026-07-25",
     "team1_name": "REJECT",
@@ -3685,28 +3707,6 @@
     "correct": true
   },
   {
-    "match_id": "675271",
-    "match_date": "Upcoming 3",
-    "team1_name": "QT DIG\u221e",
-    "team2_name": "FENNEL",
-    "team1_win_prob": 0.342,
-    "team2_win_prob": 0.658,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "698897",
-    "match_date": "Upcoming 2",
-    "team1_name": "Nongshim RedForce",
-    "team2_name": "Global Esports",
-    "team1_win_prob": 0.5014,
-    "team2_win_prob": 0.4986,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698898",
     "match_date": "Upcoming 2",
     "team1_name": "Team Secret",
@@ -3988,6 +3988,28 @@
     "team2_name": "Shopify Rebellion Black",
     "team1_win_prob": 0.4463,
     "team2_win_prob": 0.5537,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "675272",
+    "match_date": "Upcoming 1",
+    "team1_name": "REJECT",
+    "team2_name": "QT DIG\u221e",
+    "team1_win_prob": 0.6855,
+    "team2_win_prob": 0.3145,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712824",
+    "match_date": "Upcoming 4",
+    "team1_name": "GIANTX",
+    "team2_name": "Team Liquid",
+    "team1_win_prob": 0.4127,
+    "team2_win_prob": 0.5873,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
