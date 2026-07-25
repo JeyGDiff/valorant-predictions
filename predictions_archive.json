@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "675270",
+    "match_date": "2026-07-25",
+    "team1_name": "REJECT",
+    "team2_name": "IGZIST",
+    "team1_win_prob": 0.6502,
+    "team2_win_prob": 0.3498,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "706358",
     "match_date": "2026-07-25",
     "team1_name": "100 Thieves",
@@ -3672,17 +3683,6 @@
     "predicted_winner": "team1",
     "actual_winner": "team1",
     "correct": true
-  },
-  {
-    "match_id": "675270",
-    "match_date": "Upcoming 3",
-    "team1_name": "REJECT",
-    "team2_name": "IGZIST",
-    "team1_win_prob": 0.6502,
-    "team2_win_prob": 0.3498,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
   },
   {
     "match_id": "675271",

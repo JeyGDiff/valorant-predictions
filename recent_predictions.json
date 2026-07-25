@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-25T03:30:29.552706+00:00",
-  "total_resolved": 334,
-  "correct": 211,
+  "generated_at": "2026-07-25T06:13:17.883995+00:00",
+  "total_resolved": 335,
+  "correct": 212,
   "predictions": [
+    {
+      "match_id": "675270",
+      "match_date": "2026-07-25",
+      "team1_name": "REJECT",
+      "team2_name": "IGZIST",
+      "team1_win_prob": 0.6502,
+      "team2_win_prob": 0.3498,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706358",
       "match_date": "2026-07-25",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "706354",
-      "match_date": "2026-07-19",
-      "team1_name": "NRG",
-      "team2_name": "MIBR",
-      "team1_win_prob": 0.5835,
-      "team2_win_prob": 0.4165,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }
