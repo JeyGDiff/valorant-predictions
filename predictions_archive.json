@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706359",
+    "match_date": "2026-07-25",
+    "team1_name": "G2 Esports",
+    "team2_name": "Cloud9",
+    "team1_win_prob": 0.7188,
+    "team2_win_prob": 0.2812,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "712821",
     "match_date": "2026-07-25",
     "team1_name": "Eternal Fire",
@@ -3760,17 +3771,6 @@
     "predicted_winner": "team1",
     "actual_winner": "team1",
     "correct": true
-  },
-  {
-    "match_id": "706359",
-    "match_date": "Upcoming 2",
-    "team1_name": "G2 Esports",
-    "team2_name": "Cloud9",
-    "team1_win_prob": 0.7188,
-    "team2_win_prob": 0.2812,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
   },
   {
     "match_id": "706360",
