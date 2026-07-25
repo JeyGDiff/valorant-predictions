@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706358",
+    "match_date": "2026-07-25",
+    "team1_name": "100 Thieves",
+    "team2_name": "KR\u00dc Esports",
+    "team1_win_prob": 0.7868,
+    "team2_win_prob": 0.2132,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "706357",
     "match_date": "2026-07-24",
     "team1_name": "FURIA",
@@ -3663,17 +3674,6 @@
     "correct": true
   },
   {
-    "match_id": "706358",
-    "match_date": "Upcoming 3",
-    "team1_name": "100 Thieves",
-    "team2_name": "KR\u00dc Esports",
-    "team1_win_prob": 0.7868,
-    "team2_win_prob": 0.2132,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "675270",
     "match_date": "Upcoming 3",
     "team1_name": "REJECT",
@@ -3978,6 +3978,17 @@
     "team1_win_prob": 0.7636,
     "team2_win_prob": 0.2364,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715114",
+    "match_date": "Upcoming 3",
+    "team1_name": "2Game Esports",
+    "team2_name": "Shopify Rebellion Black",
+    "team1_win_prob": 0.4463,
+    "team2_win_prob": 0.5537,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
