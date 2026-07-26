@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712822",
+    "match_date": "2026-07-26",
+    "team1_name": "BBL Esports",
+    "team2_name": "Natus Vincere",
+    "team1_win_prob": 0.5283,
+    "team2_win_prob": 0.4717,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "698901",
     "match_date": "2026-07-26",
     "team1_name": "Gen.G",
@@ -3839,17 +3850,6 @@
     "correct": true
   },
   {
-    "match_id": "712822",
-    "match_date": "Upcoming 2",
-    "team1_name": "BBL Esports",
-    "team2_name": "Natus Vincere",
-    "team1_win_prob": 0.5283,
-    "team2_win_prob": 0.4717,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712823",
     "match_date": "Upcoming 2",
     "team1_name": "Team Heretics",
@@ -4132,6 +4132,17 @@
     "team1_win_prob": 0.3511,
     "team2_win_prob": 0.6489,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716591",
+    "match_date": "Upcoming 3",
+    "team1_name": "GIANTX GC",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.6787,
+    "team2_win_prob": 0.3213,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
