@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-26T10:41:51.052740+00:00",
-  "total_resolved": 346,
+  "generated_at": "2026-07-26T11:59:47.923367+00:00",
+  "total_resolved": 347,
   "correct": 219,
   "predictions": [
+    {
+      "match_id": "701062",
+      "match_date": "2026-07-26",
+      "team1_name": "FunPlus Phoenix",
+      "team2_name": "Wolves Esports",
+      "team1_win_prob": 0.1079,
+      "team2_win_prob": 0.8921,
+      "predicted_winner": "team2",
+      "actual_winner": "team1",
+      "correct": false
+    },
     {
       "match_id": "698899",
       "match_date": "2026-07-26",
@@ -538,17 +549,6 @@
       "team2_name": "SEN Otters",
       "team1_win_prob": 0.8529,
       "team2_win_prob": 0.1471,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "715874",
-      "match_date": "2026-07-20",
-      "team1_name": "Gentle Mates GC",
-      "team2_name": "G2 Gozen",
-      "team1_win_prob": 0.5364,
-      "team2_win_prob": 0.4636,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
