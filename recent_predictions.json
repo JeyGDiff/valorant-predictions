@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-25T23:57:01.434349+00:00",
-  "total_resolved": 343,
-  "correct": 217,
+  "generated_at": "2026-07-26T02:48:23.839358+00:00",
+  "total_resolved": 344,
+  "correct": 218,
   "predictions": [
+    {
+      "match_id": "706360",
+      "match_date": "2026-07-26",
+      "team1_name": "Sentinels",
+      "team2_name": "LOUD",
+      "team1_win_prob": 0.6916,
+      "team2_win_prob": 0.3084,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706359",
       "match_date": "2026-07-25",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.425,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "709712",
-      "match_date": "2026-07-20",
-      "team1_name": "Ninetails",
-      "team2_name": "Gen.G GC",
-      "team1_win_prob": 0.1725,
-      "team2_win_prob": 0.8275,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]

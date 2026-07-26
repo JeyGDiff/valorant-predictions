@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706360",
+    "match_date": "2026-07-26",
+    "team1_name": "Sentinels",
+    "team2_name": "LOUD",
+    "team1_win_prob": 0.6916,
+    "team2_win_prob": 0.3084,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "706359",
     "match_date": "2026-07-25",
     "team1_name": "G2 Esports",
@@ -3773,17 +3784,6 @@
     "correct": true
   },
   {
-    "match_id": "706360",
-    "match_date": "Upcoming 3",
-    "team1_name": "Sentinels",
-    "team2_name": "LOUD",
-    "team1_win_prob": 0.6916,
-    "team2_win_prob": 0.3084,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698899",
     "match_date": "Upcoming 2",
     "team1_name": "Paper Rex",
@@ -4066,6 +4066,17 @@
     "team1_win_prob": 0.9663,
     "team2_win_prob": 0.0337,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "698902",
+    "match_date": "Upcoming 4",
+    "team1_name": "VARREL",
+    "team2_name": "DetonatioN FocusMe",
+    "team1_win_prob": 0.3883,
+    "team2_win_prob": 0.6117,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
