@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "706362",
+    "match_date": "2026-07-27",
+    "team1_name": "FURIA",
+    "team2_name": "MIBR",
+    "team1_win_prob": 0.2873,
+    "team2_win_prob": 0.7127,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "706361",
     "match_date": "2026-07-26",
     "team1_name": "ENVY",
@@ -3872,17 +3883,6 @@
     "correct": true
   },
   {
-    "match_id": "706362",
-    "match_date": "Upcoming 3",
-    "team1_name": "FURIA",
-    "team2_name": "MIBR",
-    "team1_win_prob": 0.2873,
-    "team2_win_prob": 0.7127,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "716578",
     "match_date": "Upcoming 3",
     "team1_name": "Gentle Mates GC",
@@ -4165,6 +4165,17 @@
     "team1_win_prob": 0.2849,
     "team2_win_prob": 0.7151,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706365",
+    "match_date": "Upcoming 3",
+    "team1_name": "100 Thieves",
+    "team2_name": "Sentinels",
+    "team1_win_prob": 0.5825,
+    "team2_win_prob": 0.4175,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }

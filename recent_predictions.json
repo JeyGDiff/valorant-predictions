@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-26T23:59:48.881533+00:00",
-  "total_resolved": 352,
-  "correct": 221,
+  "generated_at": "2026-07-27T03:52:41.775896+00:00",
+  "total_resolved": 353,
+  "correct": 222,
   "predictions": [
+    {
+      "match_id": "706362",
+      "match_date": "2026-07-27",
+      "team1_name": "FURIA",
+      "team2_name": "MIBR",
+      "team1_win_prob": 0.2873,
+      "team2_win_prob": 0.7127,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "706361",
       "match_date": "2026-07-26",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.5383,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "715878",
-      "match_date": "2026-07-21",
-      "team1_name": "G2 Gozen",
-      "team2_name": "Habos Babos",
-      "team1_win_prob": 0.9606,
-      "team2_win_prob": 0.0394,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
