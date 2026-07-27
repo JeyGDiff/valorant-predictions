@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-27T16:13:54.256541+00:00",
-  "total_resolved": 353,
-  "correct": 222,
+  "generated_at": "2026-07-27T18:22:19.381875+00:00",
+  "total_resolved": 355,
+  "correct": 223,
   "predictions": [
+    {
+      "match_id": "716578",
+      "match_date": "2026-07-27",
+      "team1_name": "Gentle Mates GC",
+      "team2_name": "GIANTX GC",
+      "team1_win_prob": 0.6665,
+      "team2_win_prob": 0.3335,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "716579",
+      "match_date": "2026-07-27",
+      "team1_name": "Bar\u00e7a eSports GC",
+      "team2_name": "Habos Babos",
+      "team1_win_prob": 0.9231,
+      "team2_win_prob": 0.0769,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "706362",
       "match_date": "2026-07-27",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.3013,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "715877",
-      "match_date": "2026-07-21",
-      "team1_name": "GIANTX GC",
-      "team2_name": "Bar\u00e7a eSports GC",
-      "team1_win_prob": 0.702,
-      "team2_win_prob": 0.298,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "715880",
-      "match_date": "2026-07-21",
-      "team1_name": "SK Nebula",
-      "team2_name": "Gentle Mates GC",
-      "team1_win_prob": 0.4617,
-      "team2_win_prob": 0.5383,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
