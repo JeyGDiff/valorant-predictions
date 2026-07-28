@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-28T16:04:13.117827+00:00",
-  "total_resolved": 359,
+  "generated_at": "2026-07-28T18:10:51.107085+00:00",
+  "total_resolved": 360,
   "correct": 226,
   "predictions": [
+    {
+      "match_id": "716581",
+      "match_date": "2026-07-28",
+      "team1_name": "G2 Gozen",
+      "team2_name": "FOKUS Sakura",
+      "team1_win_prob": 0.8662,
+      "team2_win_prob": 0.1338,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "715113",
       "match_date": "2026-07-28",
@@ -538,17 +549,6 @@
       "team2_name": "Bar\u00e7a eSports GC",
       "team1_win_prob": 0.7355,
       "team2_win_prob": 0.2645,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "715882",
-      "match_date": "2026-07-22",
-      "team1_name": "GIANTX GC",
-      "team2_name": "FOKUS Sakura",
-      "team1_win_prob": 0.79,
-      "team2_win_prob": 0.21,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
