@@ -1,8 +1,52 @@
 {
-  "generated_at": "2026-07-28T20:14:34.648319+00:00",
-  "total_resolved": 360,
-  "correct": 226,
+  "generated_at": "2026-07-28T21:59:56.956944+00:00",
+  "total_resolved": 364,
+  "correct": 228,
   "predictions": [
+    {
+      "match_id": "716582",
+      "match_date": "2026-07-28",
+      "team1_name": "Bar\u00e7a eSports GC",
+      "team2_name": "Karmine Corp GC",
+      "team1_win_prob": 0.5372,
+      "team2_win_prob": 0.4628,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "716583",
+      "match_date": "2026-07-28",
+      "team1_name": "Twisted Minds Orchid",
+      "team2_name": "Habos Babos",
+      "team1_win_prob": 0.8821,
+      "team2_win_prob": 0.1179,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
+    {
+      "match_id": "716584",
+      "match_date": "2026-07-28",
+      "team1_name": "SK Nebula",
+      "team2_name": "ALTERNATE aTTaX Ruby",
+      "team1_win_prob": 0.7636,
+      "team2_win_prob": 0.2364,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "715114",
+      "match_date": "2026-07-28",
+      "team1_name": "2Game Esports",
+      "team2_name": "Shopify Rebellion Black",
+      "team1_win_prob": 0.4463,
+      "team2_win_prob": 0.5537,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "716581",
       "match_date": "2026-07-28",
@@ -505,50 +549,6 @@
       "team2_name": "FULL SENSE",
       "team1_win_prob": 0.8619,
       "team2_win_prob": 0.1381,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "712815",
-      "match_date": "2026-07-22",
-      "team1_name": "FNATIC",
-      "team2_name": "Karmine Corp",
-      "team1_win_prob": 0.4611,
-      "team2_win_prob": 0.5389,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "715884",
-      "match_date": "2026-07-22",
-      "team1_name": "Twisted Minds Orchid",
-      "team2_name": "ALTERNATE aTTaX Ruby",
-      "team1_win_prob": 0.82,
-      "team2_win_prob": 0.18,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "712814",
-      "match_date": "2026-07-22",
-      "team1_name": "FUT Esports",
-      "team2_name": "PCIFIC Esports",
-      "team1_win_prob": 0.5088,
-      "team2_win_prob": 0.4912,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "715881",
-      "match_date": "2026-07-22",
-      "team1_name": "SK Nebula",
-      "team2_name": "Bar\u00e7a eSports GC",
-      "team1_win_prob": 0.7355,
-      "team2_win_prob": 0.2645,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true

@@ -1,5 +1,49 @@
 [
   {
+    "match_id": "716582",
+    "match_date": "2026-07-28",
+    "team1_name": "Bar\u00e7a eSports GC",
+    "team2_name": "Karmine Corp GC",
+    "team1_win_prob": 0.5372,
+    "team2_win_prob": 0.4628,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "716583",
+    "match_date": "2026-07-28",
+    "team1_name": "Twisted Minds Orchid",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.8821,
+    "team2_win_prob": 0.1179,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
+    "match_id": "716584",
+    "match_date": "2026-07-28",
+    "team1_name": "SK Nebula",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.7636,
+    "team2_win_prob": 0.2364,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "715114",
+    "match_date": "2026-07-28",
+    "team1_name": "2Game Esports",
+    "team2_name": "Shopify Rebellion Black",
+    "team1_win_prob": 0.4463,
+    "team2_win_prob": 0.5537,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "716581",
     "match_date": "2026-07-28",
     "team1_name": "G2 Gozen",
@@ -3960,50 +4004,6 @@
     "correct": true
   },
   {
-    "match_id": "716582",
-    "match_date": "Upcoming 3",
-    "team1_name": "Bar\u00e7a eSports GC",
-    "team2_name": "Karmine Corp GC",
-    "team1_win_prob": 0.5372,
-    "team2_win_prob": 0.4628,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "716583",
-    "match_date": "Upcoming 3",
-    "team1_name": "Twisted Minds Orchid",
-    "team2_name": "Habos Babos",
-    "team1_win_prob": 0.8821,
-    "team2_win_prob": 0.1179,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "716584",
-    "match_date": "Upcoming 3",
-    "team1_name": "SK Nebula",
-    "team2_name": "ALTERNATE aTTaX Ruby",
-    "team1_win_prob": 0.7636,
-    "team2_win_prob": 0.2364,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "715114",
-    "match_date": "Upcoming 3",
-    "team1_name": "2Game Esports",
-    "team2_name": "Shopify Rebellion Black",
-    "team1_win_prob": 0.4463,
-    "team2_win_prob": 0.5537,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712824",
     "match_date": "Upcoming 4",
     "team1_name": "GIANTX",
@@ -4275,6 +4275,50 @@
     "team1_win_prob": 0.7142,
     "team2_win_prob": 0.2858,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "698907",
+    "match_date": "Upcoming 3",
+    "team1_name": "FULL SENSE",
+    "team2_name": "Rex Regum Qeon",
+    "team1_win_prob": 0.3757,
+    "team2_win_prob": 0.6243,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712830",
+    "match_date": "Upcoming 3",
+    "team1_name": "FUT Esports",
+    "team2_name": "Team Vitality",
+    "team1_win_prob": 0.3236,
+    "team2_win_prob": 0.6764,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712831",
+    "match_date": "Upcoming 3",
+    "team1_name": "Karmine Corp",
+    "team2_name": "Team Liquid",
+    "team1_win_prob": 0.5534,
+    "team2_win_prob": 0.4466,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706368",
+    "match_date": "Upcoming 3",
+    "team1_name": "ENVY",
+    "team2_name": "FURIA",
+    "team1_win_prob": 0.4133,
+    "team2_win_prob": 0.5867,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }
