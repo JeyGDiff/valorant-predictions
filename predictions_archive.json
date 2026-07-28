@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "715113",
+    "match_date": "2026-07-28",
+    "team1_name": "Contra",
+    "team2_name": "BESTIA",
+    "team1_win_prob": 0.3122,
+    "team2_win_prob": 0.6878,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "720392",
+    "match_date": "2026-07-28",
+    "team1_name": ":3",
+    "team2_name": "Revitalize GC",
+    "team1_win_prob": 0.7514,
+    "team2_win_prob": 0.2486,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "716580",
     "match_date": "2026-07-27",
     "team1_name": "G2 Gozen",
@@ -3927,28 +3949,6 @@
     "correct": true
   },
   {
-    "match_id": "715113",
-    "match_date": "Upcoming 3",
-    "team1_name": "Contra",
-    "team2_name": "BESTIA",
-    "team1_win_prob": 0.3122,
-    "team2_win_prob": 0.6878,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "720392",
-    "match_date": "Upcoming 3",
-    "team1_name": ":3",
-    "team2_name": "Revitalize GC",
-    "team1_win_prob": 0.7514,
-    "team2_win_prob": 0.2486,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "716581",
     "match_date": "Upcoming 4",
     "team1_name": "G2 Gozen",
@@ -4219,6 +4219,50 @@
     "team2_name": "Team Heretics",
     "team1_win_prob": 0.4536,
     "team2_win_prob": 0.5464,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715115",
+    "match_date": "Upcoming 1",
+    "team1_name": "Contra",
+    "team2_name": "Shopify Rebellion Black",
+    "team1_win_prob": 0.2752,
+    "team2_win_prob": 0.7248,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715116",
+    "match_date": "Upcoming 2",
+    "team1_name": "2Game Esports",
+    "team2_name": "Contra",
+    "team1_win_prob": 0.6812,
+    "team2_win_prob": 0.3188,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706366",
+    "match_date": "Upcoming 3",
+    "team1_name": "Cloud9",
+    "team2_name": "LOUD",
+    "team1_win_prob": 0.4111,
+    "team2_win_prob": 0.5889,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706367",
+    "match_date": "Upcoming 3",
+    "team1_name": "Evil Geniuses",
+    "team2_name": "MIBR",
+    "team1_win_prob": 0.1648,
+    "team2_win_prob": 0.8352,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null

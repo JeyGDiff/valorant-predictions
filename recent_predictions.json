@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-27T23:59:23.165274+00:00",
-  "total_resolved": 357,
-  "correct": 224,
+  "generated_at": "2026-07-28T03:14:47.305535+00:00",
+  "total_resolved": 359,
+  "correct": 226,
   "predictions": [
+    {
+      "match_id": "715113",
+      "match_date": "2026-07-28",
+      "team1_name": "Contra",
+      "team2_name": "BESTIA",
+      "team1_win_prob": 0.3122,
+      "team2_win_prob": 0.6878,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "720392",
+      "match_date": "2026-07-28",
+      "team1_name": ":3",
+      "team2_name": "Revitalize GC",
+      "team1_win_prob": 0.7514,
+      "team2_win_prob": 0.2486,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "716580",
       "match_date": "2026-07-27",
@@ -527,28 +549,6 @@
       "team2_name": "FOKUS Sakura",
       "team1_win_prob": 0.79,
       "team2_win_prob": 0.21,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "715883",
-      "match_date": "2026-07-22",
-      "team1_name": "Karmine Corp GC",
-      "team2_name": "Habos Babos",
-      "team1_win_prob": 0.8364,
-      "team2_win_prob": 0.1636,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "701055",
-      "match_date": "2026-07-22",
-      "team1_name": "All Gamers",
-      "team2_name": "Dragon Ranger Gaming",
-      "team1_win_prob": 0.5585,
-      "team2_win_prob": 0.4415,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
