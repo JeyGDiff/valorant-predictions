@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "716580",
+    "match_date": "2026-07-27",
+    "team1_name": "G2 Gozen",
+    "team2_name": "Karmine Corp GC",
+    "team1_win_prob": 0.7906,
+    "team2_win_prob": 0.2094,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "720388",
+    "match_date": "2026-07-27",
+    "team1_name": "Shopify Rebellion Gold",
+    "team2_name": "SwimTrek Blue",
+    "team1_win_prob": 0.6839,
+    "team2_win_prob": 0.3161,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "716578",
     "match_date": "2026-07-27",
     "team1_name": "Gentle Mates GC",
@@ -3905,17 +3927,6 @@
     "correct": true
   },
   {
-    "match_id": "716580",
-    "match_date": "Upcoming 3",
-    "team1_name": "G2 Gozen",
-    "team2_name": "Karmine Corp GC",
-    "team1_win_prob": 0.7906,
-    "team2_win_prob": 0.2094,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "715113",
     "match_date": "Upcoming 3",
     "team1_name": "Contra",
@@ -3923,17 +3934,6 @@
     "team1_win_prob": 0.3122,
     "team2_win_prob": 0.6878,
     "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "720388",
-    "match_date": "Upcoming 3",
-    "team1_name": "Shopify Rebellion Gold",
-    "team2_name": "SwimTrek Blue",
-    "team1_win_prob": 0.6839,
-    "team2_win_prob": 0.3161,
-    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   },
@@ -4197,6 +4197,28 @@
     "team2_name": "Gen.G",
     "team1_win_prob": 0.4726,
     "team2_win_prob": 0.5274,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712828",
+    "match_date": "Upcoming 3",
+    "team1_name": "BBL Esports",
+    "team2_name": "Gentle Mates",
+    "team1_win_prob": 0.3971,
+    "team2_win_prob": 0.6029,
+    "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "712829",
+    "match_date": "Upcoming 3",
+    "team1_name": "GIANTX",
+    "team2_name": "Team Heretics",
+    "team1_win_prob": 0.4536,
+    "team2_win_prob": 0.5464,
     "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
