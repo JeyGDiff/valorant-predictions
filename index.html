@@ -149,18 +149,22 @@
     <!-- ── Headline metrics ── -->
     <div class="ss-metric-grid" id="stat-grid"></div>
 
-    <!-- ── Calibration ── -->
-    <div class="ss-section" id="calib-section" style="display:none">
+    <!-- ── Historical track record ── -->
+    <div class="ss-section" id="history-section" style="display:none">
       <div class="ss-section-head">
-        <h2>Model calibration</h2>
-        <span class="ss-section-meta">when we say 70%, teams win ~70% of the time</span>
+        <h2>Track record</h2>
+        <span class="ss-section-meta" id="history-meta"></span>
       </div>
-      <div class="calib-explainer">
-        <span class="calib-key"><span class="calib-key-dot calib-pred"></span>Predicted win chance</span>
-        <span class="calib-key"><span class="calib-key-dot calib-act"></span>Actual outcome</span>
-        <span class="calib-key-note">Bars that match = well-calibrated probabilities</span>
+      <div class="deck">
+        <button class="deck-btn" id="history-prev" aria-label="Previous prediction" disabled>‹</button>
+        <div class="deck-track" id="history-list" tabindex="0" aria-label="Past predictions, use arrow keys"></div>
+        <button class="deck-btn" id="history-next" aria-label="Next prediction">›</button>
       </div>
-      <div class="calib-chart" id="calib-chart"></div>
+      <div class="deck-foot" id="history-foot">
+        <span class="deck-count" id="history-count">—</span>
+        <div class="deck-rail"><div class="deck-rail-fill" id="history-rail"></div></div>
+        <span class="deck-hint">← → to browse</span>
+      </div>
     </div>
 
     <!-- ── Upcoming predictions ── -->
@@ -179,24 +183,6 @@
       <div class="deck-foot" id="upcoming-foot">
         <span class="deck-count" id="upcoming-count">—</span>
         <div class="deck-rail"><div class="deck-rail-fill" id="upcoming-rail"></div></div>
-        <span class="deck-hint">← → to browse</span>
-      </div>
-    </div>
-
-    <!-- ── Historical track record ── -->
-    <div class="ss-section" id="history-section" style="display:none">
-      <div class="ss-section-head">
-        <h2>Track record</h2>
-        <span class="ss-section-meta" id="history-meta"></span>
-      </div>
-      <div class="deck">
-        <button class="deck-btn" id="history-prev" aria-label="Previous prediction" disabled>‹</button>
-        <div class="deck-track" id="history-list" tabindex="0" aria-label="Past predictions, use arrow keys"></div>
-        <button class="deck-btn" id="history-next" aria-label="Next prediction">›</button>
-      </div>
-      <div class="deck-foot" id="history-foot">
-        <span class="deck-count" id="history-count">—</span>
-        <div class="deck-rail"><div class="deck-rail-fill" id="history-rail"></div></div>
         <span class="deck-hint">← → to browse</span>
       </div>
     </div>
@@ -241,6 +227,20 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <!-- ── Calibration ── -->
+    <div class="ss-section" id="calib-section" style="display:none">
+      <div class="ss-section-head">
+        <h2>Model calibration</h2>
+        <span class="ss-section-meta">when we say 70%, teams win ~70% of the time</span>
+      </div>
+      <div class="calib-explainer">
+        <span class="calib-key"><span class="calib-key-dot calib-pred"></span>Predicted win chance</span>
+        <span class="calib-key"><span class="calib-key-dot calib-act"></span>Actual outcome</span>
+        <span class="calib-key-note">Bars that match = well-calibrated probabilities</span>
+      </div>
+      <div class="calib-chart" id="calib-chart"></div>
     </div>
   </div>
 </main>
