@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-29T02:11:13.346030+00:00",
-  "total_resolved": 365,
-  "correct": 229,
+  "generated_at": "2026-07-29T05:48:07.430566+00:00",
+  "total_resolved": 366,
+  "correct": 230,
   "predictions": [
+    {
+      "match_id": "715116",
+      "match_date": "2026-07-29",
+      "team1_name": "2Game Esports",
+      "team2_name": "Contra",
+      "team1_win_prob": 0.6812,
+      "team2_win_prob": 0.3188,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "715115",
       "match_date": "2026-07-29",
@@ -538,17 +549,6 @@
       "team2_name": "VARREL",
       "team1_win_prob": 0.6488,
       "team2_win_prob": 0.3512,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "701056",
-      "match_date": "2026-07-23",
-      "team1_name": "TYLOO",
-      "team2_name": "Nova Esports",
-      "team1_win_prob": 0.8018,
-      "team2_win_prob": 0.1982,
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false

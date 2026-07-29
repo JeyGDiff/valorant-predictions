@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "715116",
+    "match_date": "2026-07-29",
+    "team1_name": "2Game Esports",
+    "team2_name": "Contra",
+    "team1_win_prob": 0.6812,
+    "team2_win_prob": 0.3188,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "715115",
     "match_date": "2026-07-29",
     "team1_name": "Contra",
@@ -4235,17 +4246,6 @@
     "correct": null
   },
   {
-    "match_id": "715116",
-    "match_date": "Upcoming 2",
-    "team1_name": "2Game Esports",
-    "team2_name": "Contra",
-    "team1_win_prob": 0.6812,
-    "team2_win_prob": 0.3188,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "706366",
     "match_date": "Upcoming 3",
     "team1_name": "Cloud9",
@@ -4329,6 +4329,28 @@
     "team2_name": "NRG",
     "team1_win_prob": 0.6357,
     "team2_win_prob": 0.3643,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "715117",
+    "match_date": "Upcoming 1",
+    "team1_name": "Shopify Rebellion Black",
+    "team2_name": "2Game Esports",
+    "team1_win_prob": 0.5944,
+    "team2_win_prob": 0.4056,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "698908",
+    "match_date": "Upcoming 4",
+    "team1_name": "VARREL",
+    "team2_name": "KIWOOM DRX",
+    "team1_win_prob": 0.5089,
+    "team2_win_prob": 0.4911,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
