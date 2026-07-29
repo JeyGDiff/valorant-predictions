@@ -1,5 +1,38 @@
 [
   {
+    "match_id": "712825",
+    "match_date": "2026-07-29",
+    "team1_name": "Gentle Mates",
+    "team2_name": "Team Vitality",
+    "team1_win_prob": 0.3132,
+    "team2_win_prob": 0.6868,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
+    "match_id": "716587",
+    "match_date": "2026-07-29",
+    "team1_name": "Bar\u00e7a eSports GC",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.7647,
+    "team2_win_prob": 0.2353,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "716588",
+    "match_date": "2026-07-29",
+    "team1_name": "GIANTX GC",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.9663,
+    "team2_win_prob": 0.0337,
+    "predicted_winner": "team1",
+    "actual_winner": "team2",
+    "correct": false
+  },
+  {
     "match_id": "712824",
     "match_date": "2026-07-29",
     "team1_name": "GIANTX",
@@ -4059,39 +4092,6 @@
     "correct": true
   },
   {
-    "match_id": "712825",
-    "match_date": "Upcoming 4",
-    "team1_name": "Gentle Mates",
-    "team2_name": "Team Vitality",
-    "team1_win_prob": 0.3132,
-    "team2_win_prob": 0.6868,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "716587",
-    "match_date": "Upcoming 4",
-    "team1_name": "Bar\u00e7a eSports GC",
-    "team2_name": "ALTERNATE aTTaX Ruby",
-    "team1_win_prob": 0.7647,
-    "team2_win_prob": 0.2353,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "716588",
-    "match_date": "Upcoming 3",
-    "team1_name": "GIANTX GC",
-    "team2_name": "Habos Babos",
-    "team1_win_prob": 0.9663,
-    "team2_win_prob": 0.0337,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698902",
     "match_date": "Upcoming 4",
     "team1_name": "VARREL",
@@ -4385,6 +4385,39 @@
     "team1_win_prob": 0.6145,
     "team2_win_prob": 0.3855,
     "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706370",
+    "match_date": "Upcoming 3",
+    "team1_name": "Cloud9",
+    "team2_name": "KR\u00dc Esports",
+    "team1_win_prob": 0.5052,
+    "team2_win_prob": 0.4948,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706371",
+    "match_date": "Upcoming 4",
+    "team1_name": "G2 Esports",
+    "team2_name": "Sentinels",
+    "team1_win_prob": 0.6549,
+    "team2_win_prob": 0.3451,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716622",
+    "match_date": "Upcoming 4",
+    "team1_name": "SK Nebula",
+    "team2_name": "FOKUS Sakura",
+    "team1_win_prob": 0.4982,
+    "team2_win_prob": 0.5018,
+    "predicted_winner": "team2",
     "actual_winner": null,
     "correct": null
   }

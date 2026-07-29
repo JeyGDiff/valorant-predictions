@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-07-29T20:09:37.449541+00:00",
-  "total_resolved": 369,
-  "correct": 232,
+  "generated_at": "2026-07-29T21:56:53.950503+00:00",
+  "total_resolved": 372,
+  "correct": 234,
   "predictions": [
+    {
+      "match_id": "712825",
+      "match_date": "2026-07-29",
+      "team1_name": "Gentle Mates",
+      "team2_name": "Team Vitality",
+      "team1_win_prob": 0.3132,
+      "team2_win_prob": 0.6868,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "716587",
+      "match_date": "2026-07-29",
+      "team1_name": "Bar\u00e7a eSports GC",
+      "team2_name": "ALTERNATE aTTaX Ruby",
+      "team1_win_prob": 0.7647,
+      "team2_win_prob": 0.2353,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
+    {
+      "match_id": "716588",
+      "match_date": "2026-07-29",
+      "team1_name": "GIANTX GC",
+      "team2_name": "Habos Babos",
+      "team1_win_prob": 0.9663,
+      "team2_win_prob": 0.0337,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712824",
       "match_date": "2026-07-29",
@@ -518,39 +551,6 @@
       "team2_win_prob": 0.2975,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "715887",
-      "match_date": "2026-07-23",
-      "team1_name": "Karmine Corp GC",
-      "team2_name": "ALTERNATE aTTaX Ruby",
-      "team1_win_prob": 0.675,
-      "team2_win_prob": 0.325,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "715886",
-      "match_date": "2026-07-23",
-      "team1_name": "Bar\u00e7a eSports GC",
-      "team2_name": "FOKUS Sakura",
-      "team1_win_prob": 0.7155,
-      "team2_win_prob": 0.2845,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
-    },
-    {
-      "match_id": "712816",
-      "match_date": "2026-07-23",
-      "team1_name": "Eternal Fire",
-      "team2_name": "Team Heretics",
-      "team1_win_prob": 0.2767,
-      "team2_win_prob": 0.7233,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
