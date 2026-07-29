@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-28T23:09:25.277440+00:00",
-  "total_resolved": 364,
-  "correct": 228,
+  "generated_at": "2026-07-29T02:11:13.346030+00:00",
+  "total_resolved": 365,
+  "correct": 229,
   "predictions": [
+    {
+      "match_id": "715115",
+      "match_date": "2026-07-29",
+      "team1_name": "Contra",
+      "team2_name": "Shopify Rebellion Black",
+      "team1_win_prob": 0.2752,
+      "team2_win_prob": 0.7248,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "716582",
       "match_date": "2026-07-28",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "698892",
-      "match_date": "2026-07-23",
-      "team1_name": "Global Esports",
-      "team2_name": "FULL SENSE",
-      "team1_win_prob": 0.8619,
-      "team2_win_prob": 0.1381,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
     }
   ]
 }

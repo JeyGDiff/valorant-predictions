@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "715115",
+    "match_date": "2026-07-29",
+    "team1_name": "Contra",
+    "team2_name": "Shopify Rebellion Black",
+    "team1_win_prob": 0.2752,
+    "team2_win_prob": 0.7248,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "716582",
     "match_date": "2026-07-28",
     "team1_name": "Bar\u00e7a eSports GC",
@@ -4224,17 +4235,6 @@
     "correct": null
   },
   {
-    "match_id": "715115",
-    "match_date": "Upcoming 1",
-    "team1_name": "Contra",
-    "team2_name": "Shopify Rebellion Black",
-    "team1_win_prob": 0.2752,
-    "team2_win_prob": 0.7248,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "715116",
     "match_date": "Upcoming 2",
     "team1_name": "2Game Esports",
@@ -4319,6 +4319,17 @@
     "team1_win_prob": 0.4133,
     "team2_win_prob": 0.5867,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "706369",
+    "match_date": "Upcoming 3",
+    "team1_name": "LEVIAT\u00c1N",
+    "team2_name": "NRG",
+    "team1_win_prob": 0.6357,
+    "team2_win_prob": 0.3643,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }
