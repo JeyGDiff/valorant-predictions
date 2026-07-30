@@ -1,5 +1,27 @@
 [
   {
+    "match_id": "716589",
+    "match_date": "2026-07-30",
+    "team1_name": "SK Nebula",
+    "team2_name": "Habos Babos",
+    "team1_win_prob": 0.9176,
+    "team2_win_prob": 0.0824,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
+    "match_id": "716590",
+    "match_date": "2026-07-30",
+    "team1_name": "Gentle Mates GC",
+    "team2_name": "Bar\u00e7a eSports GC",
+    "team1_win_prob": 0.8206,
+    "team2_win_prob": 0.1794,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "712826",
     "match_date": "2026-07-30",
     "team1_name": "Natus Vincere",
@@ -4125,28 +4147,6 @@
     "correct": true
   },
   {
-    "match_id": "716589",
-    "match_date": "Upcoming 4",
-    "team1_name": "SK Nebula",
-    "team2_name": "Habos Babos",
-    "team1_win_prob": 0.9176,
-    "team2_win_prob": 0.0824,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
-    "match_id": "716590",
-    "match_date": "Upcoming 4",
-    "team1_name": "Gentle Mates GC",
-    "team2_name": "Bar\u00e7a eSports GC",
-    "team1_win_prob": 0.8206,
-    "team2_win_prob": 0.1794,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712827",
     "match_date": "Upcoming 4",
     "team1_name": "Eternal Fire",
@@ -4450,6 +4450,28 @@
     "team2_name": "ALTERNATE aTTaX Ruby",
     "team1_win_prob": 0.8849,
     "team2_win_prob": 0.1151,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "724885",
+    "match_date": "Upcoming 4",
+    "team1_name": "FlyQuest RED",
+    "team2_name": "SwimTrek Blue",
+    "team1_win_prob": 0.6444,
+    "team2_win_prob": 0.3556,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "724889",
+    "match_date": "Upcoming 4",
+    "team1_name": "Eternal Focus Amethyst",
+    "team2_name": "Revitalize GC",
+    "team1_win_prob": 0.6622,
+    "team2_win_prob": 0.3378,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
