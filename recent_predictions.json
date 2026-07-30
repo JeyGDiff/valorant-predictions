@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-30T13:49:30.208585+00:00",
-  "total_resolved": 373,
+  "generated_at": "2026-07-30T15:49:31.660531+00:00",
+  "total_resolved": 374,
   "correct": 235,
   "predictions": [
+    {
+      "match_id": "698903",
+      "match_date": "2026-07-30",
+      "team1_name": "FULL SENSE",
+      "team2_name": "ZETA DIVISION",
+      "team1_win_prob": 0.7725,
+      "team2_win_prob": 0.2275,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "698902",
       "match_date": "2026-07-30",
@@ -538,17 +549,6 @@
       "team2_name": "LEVIAT\u00c1N",
       "team1_win_prob": 0.2815,
       "team2_win_prob": 0.7185,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "715888",
-      "match_date": "2026-07-23",
-      "team1_name": "GIANTX GC",
-      "team2_name": "Twisted Minds Orchid",
-      "team1_win_prob": 0.4747,
-      "team2_win_prob": 0.5253,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
