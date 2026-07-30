@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "712826",
+    "match_date": "2026-07-30",
+    "team1_name": "Natus Vincere",
+    "team2_name": "PCIFIC Esports",
+    "team1_win_prob": 0.5205,
+    "team2_win_prob": 0.4795,
+    "predicted_winner": "team1",
+    "actual_winner": "team1",
+    "correct": true
+  },
+  {
     "match_id": "698903",
     "match_date": "2026-07-30",
     "team1_name": "FULL SENSE",
@@ -4114,17 +4125,6 @@
     "correct": true
   },
   {
-    "match_id": "712826",
-    "match_date": "Upcoming 4",
-    "team1_name": "Natus Vincere",
-    "team2_name": "PCIFIC Esports",
-    "team1_win_prob": 0.5205,
-    "team2_win_prob": 0.4795,
-    "predicted_winner": "team1",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "716589",
     "match_date": "Upcoming 4",
     "team1_name": "SK Nebula",
@@ -4439,6 +4439,17 @@
     "team2_name": "Bar\u00e7a eSports GC",
     "team1_win_prob": 0.6742,
     "team2_win_prob": 0.3258,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716625",
+    "match_date": "Upcoming 4",
+    "team1_name": "G2 Gozen",
+    "team2_name": "ALTERNATE aTTaX Ruby",
+    "team1_win_prob": 0.8849,
+    "team2_win_prob": 0.1151,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

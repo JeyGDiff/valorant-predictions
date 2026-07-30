@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-30T15:49:31.660531+00:00",
-  "total_resolved": 374,
-  "correct": 235,
+  "generated_at": "2026-07-30T17:22:26.391649+00:00",
+  "total_resolved": 375,
+  "correct": 236,
   "predictions": [
+    {
+      "match_id": "712826",
+      "match_date": "2026-07-30",
+      "team1_name": "Natus Vincere",
+      "team2_name": "PCIFIC Esports",
+      "team1_win_prob": 0.5205,
+      "team2_win_prob": 0.4795,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "698903",
       "match_date": "2026-07-30",
@@ -538,17 +549,6 @@
       "team2_name": "MIBR",
       "team1_win_prob": 0.3182,
       "team2_win_prob": 0.6818,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "706355",
-      "match_date": "2026-07-23",
-      "team1_name": "Evil Geniuses",
-      "team2_name": "LEVIAT\u00c1N",
-      "team1_win_prob": 0.2815,
-      "team2_win_prob": 0.7185,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
