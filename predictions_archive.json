@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "698902",
+    "match_date": "2026-07-30",
+    "team1_name": "VARREL",
+    "team2_name": "DetonatioN FocusMe",
+    "team1_win_prob": 0.3883,
+    "team2_win_prob": 0.6117,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "712825",
     "match_date": "2026-07-29",
     "team1_name": "Gentle Mates",
@@ -4092,17 +4103,6 @@
     "correct": true
   },
   {
-    "match_id": "698902",
-    "match_date": "Upcoming 4",
-    "team1_name": "VARREL",
-    "team2_name": "DetonatioN FocusMe",
-    "team1_win_prob": 0.3883,
-    "team2_win_prob": 0.6117,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698903",
     "match_date": "Upcoming 3",
     "team1_name": "FULL SENSE",
@@ -4418,6 +4418,17 @@
     "team1_win_prob": 0.4982,
     "team2_win_prob": 0.5018,
     "predicted_winner": "team2",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716623",
+    "match_date": "Upcoming 4",
+    "team1_name": "Gentle Mates GC",
+    "team2_name": "Karmine Corp GC",
+    "team1_win_prob": 0.736,
+    "team2_win_prob": 0.264,
+    "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
   }

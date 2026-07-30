@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-30T09:27:44.296446+00:00",
-  "total_resolved": 372,
-  "correct": 234,
+  "generated_at": "2026-07-30T11:48:41.827262+00:00",
+  "total_resolved": 373,
+  "correct": 235,
   "predictions": [
+    {
+      "match_id": "698902",
+      "match_date": "2026-07-30",
+      "team1_name": "VARREL",
+      "team2_name": "DetonatioN FocusMe",
+      "team1_win_prob": 0.3883,
+      "team2_win_prob": 0.6117,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "712825",
       "match_date": "2026-07-29",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.5253,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "712817",
-      "match_date": "2026-07-23",
-      "team1_name": "Gentle Mates",
-      "team2_name": "Natus Vincere",
-      "team1_win_prob": 0.7025,
-      "team2_win_prob": 0.2975,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
