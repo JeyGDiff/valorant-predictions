@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-31T09:40:38.108741+00:00",
-  "total_resolved": 383,
-  "correct": 242,
+  "generated_at": "2026-07-31T11:55:49.277027+00:00",
+  "total_resolved": 384,
+  "correct": 243,
   "predictions": [
+    {
+      "match_id": "698904",
+      "match_date": "2026-07-31",
+      "team1_name": "Team Secret",
+      "team2_name": "Paper Rex",
+      "team1_win_prob": 0.2589,
+      "team2_win_prob": 0.7411,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "706365",
       "match_date": "2026-07-31",
@@ -538,17 +549,6 @@
       "team2_name": "IGZIST",
       "team1_win_prob": 0.6502,
       "team2_win_prob": 0.3498,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706358",
-      "match_date": "2026-07-25",
-      "team1_name": "100 Thieves",
-      "team2_name": "KR\u00dc Esports",
-      "team1_win_prob": 0.7868,
-      "team2_win_prob": 0.2132,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true

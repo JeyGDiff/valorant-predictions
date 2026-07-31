@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "698904",
+    "match_date": "2026-07-31",
+    "team1_name": "Team Secret",
+    "team2_name": "Paper Rex",
+    "team1_win_prob": 0.2589,
+    "team2_win_prob": 0.7411,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "706365",
     "match_date": "2026-07-31",
     "team1_name": "100 Thieves",
@@ -4213,17 +4224,6 @@
     "correct": true
   },
   {
-    "match_id": "698904",
-    "match_date": "Upcoming 3",
-    "team1_name": "Team Secret",
-    "team2_name": "Paper Rex",
-    "team1_win_prob": 0.2589,
-    "team2_win_prob": 0.7411,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "698905",
     "match_date": "Upcoming 3",
     "team1_name": "Global Esports",
@@ -4527,6 +4527,17 @@
     "team2_name": "KeepBest Gaming",
     "team1_win_prob": 0.6465,
     "team2_win_prob": 0.3535,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716630",
+    "match_date": "Upcoming 5",
+    "team1_name": "G2 Gozen",
+    "team2_name": "GIANTX GC",
+    "team1_win_prob": 0.8252,
+    "team2_win_prob": 0.1748,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null
