@@ -1,5 +1,16 @@
 [
   {
+    "match_id": "698905",
+    "match_date": "2026-07-31",
+    "team1_name": "Global Esports",
+    "team2_name": "Gen.G",
+    "team1_win_prob": 0.4726,
+    "team2_win_prob": 0.5274,
+    "predicted_winner": "team2",
+    "actual_winner": "team2",
+    "correct": true
+  },
+  {
     "match_id": "698904",
     "match_date": "2026-07-31",
     "team1_name": "Team Secret",
@@ -4224,17 +4235,6 @@
     "correct": true
   },
   {
-    "match_id": "698905",
-    "match_date": "Upcoming 3",
-    "team1_name": "Global Esports",
-    "team2_name": "Gen.G",
-    "team1_win_prob": 0.4726,
-    "team2_win_prob": 0.5274,
-    "predicted_winner": "team2",
-    "actual_winner": null,
-    "correct": null
-  },
-  {
     "match_id": "712828",
     "match_date": "Upcoming 3",
     "team1_name": "BBL Esports",
@@ -4538,6 +4538,17 @@
     "team2_name": "GIANTX GC",
     "team1_win_prob": 0.8252,
     "team2_win_prob": 0.1748,
+    "predicted_winner": "team1",
+    "actual_winner": null,
+    "correct": null
+  },
+  {
+    "match_id": "716631",
+    "match_date": "Upcoming 5",
+    "team1_name": "SK Nebula",
+    "team2_name": "Karmine Corp GC",
+    "team1_win_prob": 0.6237,
+    "team2_win_prob": 0.3763,
     "predicted_winner": "team1",
     "actual_winner": null,
     "correct": null

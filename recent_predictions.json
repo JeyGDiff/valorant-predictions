@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-31T11:55:49.277027+00:00",
-  "total_resolved": 384,
-  "correct": 243,
+  "generated_at": "2026-07-31T13:57:15.391342+00:00",
+  "total_resolved": 385,
+  "correct": 244,
   "predictions": [
+    {
+      "match_id": "698905",
+      "match_date": "2026-07-31",
+      "team1_name": "Global Esports",
+      "team2_name": "Gen.G",
+      "team1_win_prob": 0.4726,
+      "team2_win_prob": 0.5274,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "698904",
       "match_date": "2026-07-31",
@@ -538,17 +549,6 @@
       "team2_name": "Global Esports",
       "team1_win_prob": 0.5014,
       "team2_win_prob": 0.4986,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "675270",
-      "match_date": "2026-07-25",
-      "team1_name": "REJECT",
-      "team2_name": "IGZIST",
-      "team1_win_prob": 0.6502,
-      "team2_win_prob": 0.3498,
       "predicted_winner": "team1",
       "actual_winner": "team1",
       "correct": true
