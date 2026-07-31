@@ -1,8 +1,30 @@
 {
-  "generated_at": "2026-07-30T23:01:58.320640+00:00",
-  "total_resolved": 380,
-  "correct": 240,
+  "generated_at": "2026-07-31T02:26:32.355965+00:00",
+  "total_resolved": 382,
+  "correct": 241,
   "predictions": [
+    {
+      "match_id": "706364",
+      "match_date": "2026-07-31",
+      "team1_name": "KR\u00dc Esports",
+      "team2_name": "G2 Esports",
+      "team1_win_prob": 0.2849,
+      "team2_win_prob": 0.7151,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
+    {
+      "match_id": "715117",
+      "match_date": "2026-07-31",
+      "team1_name": "Shopify Rebellion Black",
+      "team2_name": "2Game Esports",
+      "team1_win_prob": 0.5944,
+      "team2_win_prob": 0.4056,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "712827",
       "match_date": "2026-07-30",
@@ -529,28 +551,6 @@
       "team2_win_prob": 0.7404,
       "predicted_winner": "team2",
       "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "712819",
-      "match_date": "2026-07-24",
-      "team1_name": "Team Liquid",
-      "team2_name": "FNATIC",
-      "team1_win_prob": 0.4963,
-      "team2_win_prob": 0.5037,
-      "predicted_winner": "team2",
-      "actual_winner": "team1",
-      "correct": false
-    },
-    {
-      "match_id": "712818",
-      "match_date": "2026-07-24",
-      "team1_name": "FUT Esports",
-      "team2_name": "BBL Esports",
-      "team1_win_prob": 0.715,
-      "team2_win_prob": 0.285,
-      "predicted_winner": "team1",
-      "actual_winner": "team1",
       "correct": true
     }
   ]
