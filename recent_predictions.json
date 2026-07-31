@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-31T02:26:32.355965+00:00",
-  "total_resolved": 382,
-  "correct": 241,
+  "generated_at": "2026-07-31T06:08:16.661599+00:00",
+  "total_resolved": 383,
+  "correct": 242,
   "predictions": [
+    {
+      "match_id": "706365",
+      "match_date": "2026-07-31",
+      "team1_name": "100 Thieves",
+      "team2_name": "Sentinels",
+      "team1_win_prob": 0.5825,
+      "team2_win_prob": 0.4175,
+      "predicted_winner": "team1",
+      "actual_winner": "team1",
+      "correct": true
+    },
     {
       "match_id": "706364",
       "match_date": "2026-07-31",
@@ -540,17 +551,6 @@
       "team2_win_prob": 0.2132,
       "predicted_winner": "team1",
       "actual_winner": "team1",
-      "correct": true
-    },
-    {
-      "match_id": "706357",
-      "match_date": "2026-07-24",
-      "team1_name": "FURIA",
-      "team2_name": "NRG",
-      "team1_win_prob": 0.2596,
-      "team2_win_prob": 0.7404,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
       "correct": true
     }
   ]
