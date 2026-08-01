@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-31T23:58:26.322848+00:00",
-  "total_resolved": 388,
-  "correct": 246,
+  "generated_at": "2026-08-01T03:21:08.971735+00:00",
+  "total_resolved": 389,
+  "correct": 247,
   "predictions": [
+    {
+      "match_id": "706367",
+      "match_date": "2026-08-01",
+      "team1_name": "Evil Geniuses",
+      "team2_name": "MIBR",
+      "team1_win_prob": 0.1648,
+      "team2_win_prob": 0.8352,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "706366",
       "match_date": "2026-07-31",
@@ -541,17 +552,6 @@
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
-    },
-    {
-      "match_id": "698898",
-      "match_date": "2026-07-25",
-      "team1_name": "Team Secret",
-      "team2_name": "T1",
-      "team1_win_prob": 0.5732,
-      "team2_win_prob": 0.4268,
-      "predicted_winner": "team1",
-      "actual_winner": "team2",
-      "correct": false
     }
   ]
 }
