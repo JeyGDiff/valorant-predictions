@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-08-01T09:02:39.837322+00:00",
-  "total_resolved": 389,
+  "generated_at": "2026-08-01T11:13:46.816693+00:00",
+  "total_resolved": 390,
   "correct": 247,
   "predictions": [
+    {
+      "match_id": "698906",
+      "match_date": "2026-08-01",
+      "team1_name": "T1",
+      "team2_name": "DetonatioN FocusMe",
+      "team1_win_prob": 0.7142,
+      "team2_win_prob": 0.2858,
+      "predicted_winner": "team1",
+      "actual_winner": "team2",
+      "correct": false
+    },
     {
       "match_id": "706367",
       "match_date": "2026-08-01",
@@ -538,17 +549,6 @@
       "team2_name": "Team Vitality",
       "team1_win_prob": 0.2235,
       "team2_win_prob": 0.7765,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
-    },
-    {
-      "match_id": "701061",
-      "match_date": "2026-07-25",
-      "team1_name": "TYLOO",
-      "team2_name": "Xi Lai Gaming",
-      "team1_win_prob": 0.4588,
-      "team2_win_prob": 0.5412,
       "predicted_winner": "team2",
       "actual_winner": "team2",
       "correct": true
