@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-07-31T22:01:23.600997+00:00",
-  "total_resolved": 387,
-  "correct": 245,
+  "generated_at": "2026-07-31T23:58:26.322848+00:00",
+  "total_resolved": 388,
+  "correct": 246,
   "predictions": [
+    {
+      "match_id": "706366",
+      "match_date": "2026-07-31",
+      "team1_name": "Cloud9",
+      "team2_name": "LOUD",
+      "team1_win_prob": 0.4111,
+      "team2_win_prob": 0.5889,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "712829",
       "match_date": "2026-07-31",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "701060",
-      "match_date": "2026-07-25",
-      "team1_name": "JD Mall JDG Esports(JDG Esports)",
-      "team2_name": "Dragon Ranger Gaming",
-      "team1_win_prob": 0.311,
-      "team2_win_prob": 0.689,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
