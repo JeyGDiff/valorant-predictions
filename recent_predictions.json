@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-08-01T13:09:56.756541+00:00",
-  "total_resolved": 390,
-  "correct": 247,
+  "generated_at": "2026-08-01T14:57:06.432163+00:00",
+  "total_resolved": 391,
+  "correct": 248,
   "predictions": [
+    {
+      "match_id": "698907",
+      "match_date": "2026-08-01",
+      "team1_name": "FULL SENSE",
+      "team2_name": "Rex Regum Qeon",
+      "team1_win_prob": 0.3757,
+      "team2_win_prob": 0.6243,
+      "predicted_winner": "team2",
+      "actual_winner": "team2",
+      "correct": true
+    },
     {
       "match_id": "698906",
       "match_date": "2026-08-01",
@@ -541,17 +552,6 @@
       "predicted_winner": "team1",
       "actual_winner": "team2",
       "correct": false
-    },
-    {
-      "match_id": "712820",
-      "match_date": "2026-07-25",
-      "team1_name": "PCIFIC Esports",
-      "team2_name": "Team Vitality",
-      "team1_win_prob": 0.2235,
-      "team2_win_prob": 0.7765,
-      "predicted_winner": "team2",
-      "actual_winner": "team2",
-      "correct": true
     }
   ]
 }
