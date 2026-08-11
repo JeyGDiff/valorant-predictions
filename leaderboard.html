@@ -1,215 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SolvedState · Elo Rankings</title>
-  <meta name="description" content="Opponent-adjusted Elo ratings for pro VALORANT teams and players, built from 32,000+ matches." />
-  <link rel="icon" type="image/png" href="ss_icon.png?v=3" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="solvedstate.css?v=3" />
-  <style>
-    .controls-row { display:flex; align-items:center; gap:var(--space-4); flex-wrap:wrap; margin-bottom:var(--space-5); }
-    .year-tabs { display:flex; gap:var(--space-1); flex-wrap:wrap; }
-
-    /* ── Leaderboard table (page-specific cells) ── */
-    .rank { font-family:var(--font-mono); font-weight:600; font-variant-numeric:tabular-nums; text-align:center; }
-    .rank-1 { color:var(--ss-cyan-500); }
-    .rank-2 { color:var(--ss-text-300); }
-    .rank-3 { color:var(--ss-cyan-700); }
-    .rank-other { color:var(--ss-text-500); }
-
-    .entity-name { font-weight:600; color:var(--ss-text-100); }
-    .elo-value { font-family:var(--font-mono); font-weight:600; color:var(--ss-text-100); font-variant-numeric:tabular-nums; }
-    .elo-bar-cell { width:120px; }
-    .elo-bar-bg { height:4px; background:var(--ss-surface-850); border-radius:var(--radius-pill); overflow:hidden; }
-    .elo-bar-fill { height:4px; border-radius:var(--radius-pill); background:var(--ss-cyan-500); }
-    .stat-cell { color:var(--ss-text-500); }
-    .win-rate-val { font-family:var(--font-mono); font-weight:600; font-variant-numeric:tabular-nums; }
-    .win-rate-val.good { color:var(--ss-green-500); }
-    .win-rate-val.bad  { color:var(--ss-text-500); }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moved — SolvedState · Elo Rankings</title>
+<meta http-equiv="refresh" content="0; url=https://solvedstate.vercel.app/leaderboard.html" />
+<link rel="canonical" href="https://solvedstate.vercel.app/leaderboard.html" />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/png" href="ss_icon.png" />
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:#0b0d10; color:#e6e9ee;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    text-align:center; padding:2rem;
+  }
+  .card { max-width:32rem; }
+  img { width:56px; height:56px; margin-bottom:1.25rem; }
+  h1 { font-size:1.35rem; font-weight:650; margin:0 0 .6rem; letter-spacing:-0.01em; }
+  p { color:#98a2b3; line-height:1.6; margin:0 0 1.5rem; font-size:.95rem; }
+  a.btn {
+    display:inline-block; padding:.65rem 1.15rem; border-radius:.5rem;
+    background:#22d3ee; color:#06202a; font-weight:650; text-decoration:none; font-size:.95rem;
+  }
+  a.plain { color:#22d3ee; }
+</style>
 </head>
 <body>
-
-<div class="ss-topbar">
-  <a class="ss-brand" href="index.html" aria-label="SolvedState home">
-    <img class="ss-brand-icon" src="ss_icon.png?v=3" alt="" />
-    <span class="ss-brand-word">Solved<b>State</b></span>
-    <span class="ss-brand-sub">VALORANT</span>
-  </a>
-  <nav class="ss-nav">
-    <a href="index.html">Predictions</a>
-    <a href="leaderboard.html" class="active">Elo Rankings</a>
-    <a href="allstar.html">All-Star</a>
-    <a href="draft-simulator.html">Draft Sim</a>
-    <a href="lifecycle.html">Lifecycle</a>
-    <a href="neuralnet.html">Neural Net</a>
-    <a href="architecture.html">How It Works</a>
-  </nav>
-  <div class="ss-meta" id="updated-at">—</div>
-</div>
-
-<div class="ss-pagehead">
-  <div class="ss-eyebrow">Opponent-Adjusted Ratings</div>
-  <h1>Elo Rankings</h1>
-  <p>Every match in history replayed in order — beat a stronger opponent and your rating climbs, lose to a weaker one and it drops. Built from 32,000+ pro matches and updated with each snapshot.</p>
-</div>
-
-<main class="ss-main">
-  <div id="status" class="ss-status">Loading rankings…</div>
-  <div id="content" style="display:none">
-
-    <div class="controls-row">
-      <div class="ss-tabs" id="type-tabs"></div>
-      <div class="year-tabs" id="year-tabs"></div>
-    </div>
-
-    <div class="ss-note ss-note--accent" id="explainer-cumul-teams" style="margin-bottom:var(--space-5)">
-      <strong>What is Elo?</strong> A rating system originally from chess. Everyone starts at 1500 and the
-      number moves after every series — the higher the number, the stronger the team's track record.
-      <strong>Cumulative</strong> ratings are built from the full VCT main-event history; only teams active
-      in the last 90 days appear, minimum 10 matches.
-    </div>
-    <div class="ss-note ss-note--accent" id="explainer-cumul-players" style="display:none;margin-bottom:var(--space-5)">
-      Player Elo works the same way but is attached to individual players, so when a star transfers their
-      rating follows them. A team's strength in the model is the average Elo of its five rostered players,
-      making it substitution-aware. <strong>Cumulative</strong> ratings cover the full VCT main-event history;
-      only players active in the last 90 days appear, minimum 10 matches.
-    </div>
-    <div class="ss-note ss-note--accent" id="explainer-season" style="display:none;margin-bottom:var(--space-5)">
-      <strong>Season view:</strong> Elo resets to 1500 at the start of each year — rankings reflect only that
-      year's performance. Ratings are confidence-weighted, so small hot streaks don't inflate the board.
-      Minimum 5 VCT-main matches to appear.
-    </div>
-
-    <div id="panels"></div>
+  <div class="card">
+    <img src="ss_logo.png" alt="SolvedState" onerror="this.style.display='none'" />
+    <h1>SolvedState has moved</h1>
+    <p>
+      This page now lives at <a class="plain" href="https://solvedstate.vercel.app/leaderboard.html">solvedstate.vercel.app/leaderboard.html</a>.
+      Redirecting you automatically&hellip;
+    </p>
+    <a class="btn" href="https://solvedstate.vercel.app/leaderboard.html">Go to Elo Rankings</a>
   </div>
-</main>
-
-<script>
-const LEADERBOARD_URL = "leaderboard.json";
-
-let activeType = "teams";
-let activeYear = "current";
-const allPanels = [];
-const typeTabs  = [];
-const yearTabs  = [];
-
-function switchView(type, year) {
-  activeType = type;
-  activeYear = year;
-
-  typeTabs.forEach(t => t.el.classList.toggle("active", t.type === type));
-  yearTabs.forEach(t => t.el.classList.toggle("active", t.year === year));
-
-  allPanels.forEach(p => { p.el.style.display = "none"; });
-  const target = allPanels.find(p => p.type === type && p.year === year);
-  if (target) target.el.style.display = "block";
-
-  const isCumul = year === "current";
-  document.getElementById("explainer-cumul-teams").style.display   = (isCumul && type === "teams")   ? "" : "none";
-  document.getElementById("explainer-cumul-players").style.display = (isCumul && type === "players") ? "" : "none";
-  document.getElementById("explainer-season").style.display        = isCumul ? "none" : "";
-}
-
-function buildTable(rows, type) {
-  if (!rows || rows.length === 0) {
-    return `<div class="ss-note">No ${type} meet the match-count threshold for this view yet.</div>`;
-  }
-  const maxElo = rows[0].elo;
-  const minElo = rows[rows.length - 1].elo;
-  const range = maxElo - minElo || 1;
-
-  const header = `<div class="ss-table-wrap"><table class="ss-table"><thead><tr>
-    <th style="width:3rem" class="right">#</th>
-    <th>${type === "teams" ? "Team" : "Player"}</th>
-    <th class="right">Elo</th>
-    <th class="elo-bar-cell"></th>
-    <th class="right">Matches</th>
-    <th class="right">Win Rate</th>
-  </tr></thead><tbody>`;
-
-  const body = rows.map(r => {
-    const rankCls = r.rank === 1 ? "rank-1" : r.rank === 2 ? "rank-2" : r.rank === 3 ? "rank-3" : "rank-other";
-    const barW = Math.round(((r.elo - minElo) / range) * 100);
-    const wrCls = r.win_rate >= 0.55 ? "good" : "bad";
-    return `<tr>
-      <td class="rank ${rankCls} right">${r.rank}</td>
-      <td class="entity-name">${r.name}</td>
-      <td class="elo-value right">${r.elo}</td>
-      <td class="elo-bar-cell"><div class="elo-bar-bg"><div class="elo-bar-fill" style="width:${barW}%"></div></div></td>
-      <td class="stat-cell right">${r.matches.toLocaleString()}</td>
-      <td class="right"><span class="win-rate-val ${wrCls}">${(r.win_rate*100).toFixed(1)}%</span></td>
-    </tr>`;
-  }).join("");
-
-  return header + body + "</tbody></table></div>";
-}
-
-function render(data) {
-  const ts = new Date(data.generated_at);
-  document.getElementById("updated-at").textContent = "Updated " + ts.toLocaleString(undefined, {
-    month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZoneName:"short"
-  });
-
-  const years = Object.keys(data.seasons || {}).sort().reverse();
-
-  const typeTabsEl = document.getElementById("type-tabs");
-  ["teams", "players"].forEach((type, i) => {
-    const el = document.createElement("div");
-    el.className = "ss-tab" + (i === 0 ? " active" : "");
-    el.textContent = type === "teams" ? "Teams" : "Players";
-    el.addEventListener("click", () => switchView(type, activeYear));
-    typeTabsEl.appendChild(el);
-    typeTabs.push({ type, el });
-  });
-
-  const yearTabsEl = document.getElementById("year-tabs");
-  ["current", ...years].forEach((year, i) => {
-    const el = document.createElement("div");
-    el.className = "ss-tab ss-tab--sm" + (i === 0 ? " active" : "");
-    el.textContent = year === "current" ? "Cumulative" : year;
-    el.addEventListener("click", () => switchView(activeType, year));
-    yearTabsEl.appendChild(el);
-    yearTabs.push({ year, el });
-  });
-
-  const panelsEl = document.getElementById("panels");
-  const allYears = ["current", ...years];
-
-  allYears.forEach(year => {
-    ["teams", "players"].forEach(type => {
-      const rows = year === "current"
-        ? (type === "teams" ? data.teams : data.players)
-        : (data.seasons[year] || {})[type];
-
-      const div = document.createElement("div");
-      div.style.display = (year === "current" && type === "teams") ? "block" : "none";
-      div.innerHTML = buildTable(rows, type);
-      panelsEl.appendChild(div);
-      allPanels.push({ type, year, el: div });
-    });
-  });
-}
-
-async function load() {
-  const statusEl = document.getElementById("status");
-  try {
-    const res = await fetch(LEADERBOARD_URL + "?_=" + Date.now());
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    render(data);
-    statusEl.style.display = "none";
-    document.getElementById("content").style.display = "block";
-  } catch(err) {
-    statusEl.innerHTML = `<div class="ss-note ss-note--accent" style="text-align:left;border-left-color:var(--ss-red-500)">Couldn't load rankings — ${err.message}. The data feed may be refreshing; try again shortly.</div>`;
-  }
-}
-
-load();
-</script>
+  <script>location.replace("https://solvedstate.vercel.app/leaderboard.html");</script>
 </body>
 </html>

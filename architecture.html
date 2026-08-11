@@ -1,381 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SolvedState · How It Works</title>
-  <meta name="description" content="How the SolvedState VALORANT model is built: data collection, point-in-time player form, roster aggregation, dual Elo, chemistry, and walk-forward evaluation." />
-  <link rel="icon" type="image/png" href="ss_icon.png?v=3" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="solvedstate.css?v=3" />
-  <style>
-    .arch-main { max-width:980px; }
-
-    /* ── Pipeline strip (at a glance) ── */
-    .pipeline {
-      display:flex; align-items:stretch; gap:0; flex-wrap:wrap;
-      background:var(--ss-surface-900); border:1px solid var(--ss-border-800);
-      border-radius:var(--radius-lg); padding:var(--space-4); margin-bottom:var(--space-10);
-    }
-    .pl-step { display:flex; align-items:center; gap:var(--space-3); flex:1; min-width:150px; }
-    .pl-node {
-      display:flex; flex-direction:column; gap:2px; padding:var(--space-3); flex:1;
-      border:1px solid var(--ss-border-800); border-radius:var(--radius-md);
-      background:var(--ss-surface-850);
-    }
-    .pl-node .k { font-family:var(--font-mono); font-size:10px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ss-cyan-500); }
-    .pl-node .t { font-size:13px; font-weight:600; color:var(--ss-text-100); }
-    .pl-arrow { color:var(--ss-text-650); flex-shrink:0; padding:0 var(--space-1); }
-    @media (max-width:760px){ .pl-arrow{ transform:rotate(90deg); } .pl-step{ flex-direction:column; } }
-
-    /* ── Stage cards ── */
-    .stage { display:grid; grid-template-columns:44px 1fr; gap:var(--space-4); margin-bottom:var(--space-6); }
-    .stage-num {
-      width:44px; height:44px; border-radius:var(--radius-md);
-      display:flex; align-items:center; justify-content:center;
-      font-family:var(--font-mono); font-size:16px; font-weight:600; color:var(--ss-cyan-500);
-      background:rgba(0,204,216,0.08); border:1px solid rgba(0,204,216,0.25);
-    }
-    .stage-body {
-      background:var(--ss-surface-900); border:1px solid var(--ss-border-800);
-      border-radius:var(--radius-lg); padding:var(--space-5);
-    }
-    .stage-body h3 { font-size:18px; color:var(--ss-text-100); margin-bottom:var(--space-2); }
-    .stage-body p { font-size:14px; line-height:22px; color:var(--ss-text-300); }
-    .stage-body p + p { margin-top:var(--space-3); }
-    .stage-body em { color:var(--ss-text-100); font-style:normal; font-weight:600; }
-
-    .io { display:flex; gap:var(--space-2); flex-wrap:wrap; margin-top:var(--space-4); }
-    .io .ss-badge { font-family:var(--font-mono); letter-spacing:0.02em; }
-    .io-label { font-family:var(--font-mono); font-size:11px; color:var(--ss-text-650); align-self:center; margin-right:var(--space-1); }
-
-    .fieldlist {
-      margin-top:var(--space-4); display:flex; flex-wrap:wrap; gap:var(--space-1);
-    }
-    .field {
-      font-family:var(--font-mono); font-size:11px; color:var(--ss-text-300);
-      background:var(--ss-surface-850); border:1px solid var(--ss-border-800);
-      border-radius:var(--radius-xs); padding:2px 7px;
-    }
-
-    /* ── Diagram: leakage-free timeline ── */
-    .viz { margin-top:var(--space-4); padding:var(--space-4); background:var(--ss-bg-950); border:1px solid var(--ss-border-800); border-radius:var(--radius-md); }
-    .viz-cap { font-size:12px; color:var(--ss-text-500); margin-top:var(--space-3); line-height:18px; }
-    .timeline { display:flex; align-items:flex-end; gap:var(--space-2); }
-    .tl-match {
-      flex:1; display:flex; flex-direction:column; align-items:center; gap:var(--space-2);
-    }
-    .tl-box {
-      width:100%; height:36px; border-radius:var(--radius-sm); border:1px solid var(--ss-border-800);
-      background:var(--ss-surface-850); display:flex; align-items:center; justify-content:center;
-      font-family:var(--font-mono); font-size:11px; color:var(--ss-text-500);
-    }
-    .tl-match.window .tl-box { border-color:rgba(0,204,216,0.35); background:rgba(0,204,216,0.08); color:var(--ss-cyan-500); }
-    .tl-match.target .tl-box { border-color:var(--ss-text-300); background:var(--ss-surface-900); color:var(--ss-text-100); border-style:dashed; }
-    .tl-match.future .tl-box { opacity:0.35; }
-    .tl-tag { font-size:10px; font-family:var(--font-mono); color:var(--ss-text-650); }
-    .tl-match.window .tl-tag { color:var(--ss-cyan-700); }
-    .tl-match.target .tl-tag { color:var(--ss-text-300); }
-
-    /* ── Diagram: roster fan-in ── */
-    .fanin { display:grid; grid-template-columns:1fr auto 1fr auto 1fr; align-items:center; gap:var(--space-4); }
-    @media (max-width:680px){ .fanin{ grid-template-columns:1fr; gap:var(--space-3); } .fanin .arrow{ transform:rotate(90deg); justify-self:center; } }
-    .players { display:flex; flex-direction:column; gap:4px; }
-    .p-chip {
-      font-family:var(--font-mono); font-size:11px; color:var(--ss-text-300);
-      background:var(--ss-surface-850); border:1px solid var(--ss-border-800);
-      border-radius:var(--radius-xs); padding:3px 8px; text-align:center;
-    }
-    .arrow { color:var(--ss-text-650); justify-self:center; }
-    .agg-box, .diff-box {
-      border-radius:var(--radius-md); padding:var(--space-3); text-align:center;
-    }
-    .agg-box { background:var(--ss-surface-850); border:1px solid var(--ss-border-800); }
-    .agg-box .op { font-family:var(--font-mono); font-size:11px; color:var(--ss-cyan-500); }
-    .agg-box .sub { font-size:11px; color:var(--ss-text-500); margin-top:2px; }
-    .diff-box { background:rgba(0,204,216,0.06); border:1px solid rgba(0,204,216,0.25); }
-    .diff-box .op { font-family:var(--font-mono); font-size:13px; color:var(--ss-cyan-500); font-weight:600; }
-    .diff-box .sub { font-size:11px; color:var(--ss-text-500); margin-top:2px; }
-
-    /* ── Diagram: walk-forward ── */
-    .wf { display:flex; flex-direction:column; gap:6px; }
-    .wf-row { display:flex; align-items:center; gap:var(--space-2); height:22px; }
-    .wf-bar { display:flex; height:14px; border-radius:var(--radius-xs); overflow:hidden; flex:1; }
-    .wf-train { background:var(--ss-border-700); }
-    .wf-pred { background:var(--ss-cyan-500); }
-    .wf-rest { background:var(--ss-surface-850); flex:1; }
-    .wf-lbl { font-family:var(--font-mono); font-size:10px; color:var(--ss-text-650); width:54px; text-align:right; }
-    .wf-key { display:flex; gap:var(--space-4); margin-top:var(--space-3); }
-    .wf-key span { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--ss-text-500); }
-    .wf-key i { width:12px; height:12px; border-radius:2px; display:inline-block; }
-
-    /* ── Feature composition ── */
-    .feat-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-4); }
-    @media (max-width:680px){ .feat-grid{ grid-template-columns:1fr; } }
-    .feat-card { background:var(--ss-surface-900); border:1px solid var(--ss-border-800); border-radius:var(--radius-lg); padding:var(--space-4) var(--space-5); }
-    .feat-card h4 { font-size:14px; color:var(--ss-text-100); display:flex; align-items:center; gap:var(--space-2); margin-bottom:var(--space-2); }
-    .feat-card .dot { width:8px; height:8px; border-radius:2px; }
-    .feat-card p { font-size:13px; line-height:20px; color:var(--ss-text-500); }
-
-    /* ── Elo curve ── */
-    .elo-row { display:grid; grid-template-columns:1fr 220px; gap:var(--space-5); align-items:center; }
-    @media (max-width:680px){ .elo-row{ grid-template-columns:1fr; } }
-    .formula {
-      font-family:var(--font-mono); font-size:13px; color:var(--ss-text-300);
-      background:var(--ss-bg-950); border:1px solid var(--ss-border-800);
-      border-radius:var(--radius-md); padding:var(--space-3) var(--space-4); line-height:20px;
-    }
-    .formula b { color:var(--ss-cyan-500); font-weight:600; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moved — SolvedState · How It Works</title>
+<meta http-equiv="refresh" content="0; url=https://solvedstate.vercel.app/architecture.html" />
+<link rel="canonical" href="https://solvedstate.vercel.app/architecture.html" />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/png" href="ss_icon.png" />
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:#0b0d10; color:#e6e9ee;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    text-align:center; padding:2rem;
+  }
+  .card { max-width:32rem; }
+  img { width:56px; height:56px; margin-bottom:1.25rem; }
+  h1 { font-size:1.35rem; font-weight:650; margin:0 0 .6rem; letter-spacing:-0.01em; }
+  p { color:#98a2b3; line-height:1.6; margin:0 0 1.5rem; font-size:.95rem; }
+  a.btn {
+    display:inline-block; padding:.65rem 1.15rem; border-radius:.5rem;
+    background:#22d3ee; color:#06202a; font-weight:650; text-decoration:none; font-size:.95rem;
+  }
+  a.plain { color:#22d3ee; }
+</style>
 </head>
 <body>
-
-<div class="ss-topbar">
-  <a class="ss-brand" href="index.html" aria-label="SolvedState home">
-    <img class="ss-brand-icon" src="ss_icon.png?v=3" alt="" />
-    <span class="ss-brand-word">Solved<b>State</b></span>
-    <span class="ss-brand-sub">VALORANT</span>
-  </a>
-  <nav class="ss-nav">
-    <a href="index.html">Predictions</a>
-    <a href="leaderboard.html">Elo Rankings</a>
-    <a href="allstar.html">All-Star</a>
-    <a href="draft-simulator.html">Draft Sim</a>
-    <a href="lifecycle.html">Lifecycle</a>
-    <a href="neuralnet.html">Neural Net</a>
-    <a href="architecture.html" class="active">How It Works</a>
-  </nav>
-</div>
-
-<div class="ss-pagehead">
-  <div class="ss-eyebrow">System Design</div>
-  <h1>How the model works</h1>
-  <p>From a raw match page to a win probability. The pipeline turns ~32,000 pro matches into a single number per upcoming game — and every step is built so a prediction only ever sees the past.</p>
-</div>
-
-<main class="ss-main arch-main">
-
-  <!-- ── Pipeline at a glance ── -->
-  <div class="pipeline">
-    <div class="pl-step">
-      <div class="pl-node"><span class="k">01 · Collect</span><span class="t">Match data</span></div>
-      <span class="pl-arrow">→</span>
-    </div>
-    <div class="pl-step">
-      <div class="pl-node"><span class="k">02 · Form</span><span class="t">Player form</span></div>
-      <span class="pl-arrow">→</span>
-    </div>
-    <div class="pl-step">
-      <div class="pl-node"><span class="k">03 · Aggregate</span><span class="t">Roster + diff</span></div>
-      <span class="pl-arrow">→</span>
-    </div>
-    <div class="pl-step">
-      <div class="pl-node"><span class="k">04 · Rate</span><span class="t">Elo + chemistry</span></div>
-      <span class="pl-arrow">→</span>
-    </div>
-    <div class="pl-step">
-      <div class="pl-node"><span class="k">05 · Predict</span><span class="t">XGBoost</span></div>
-    </div>
-  </div>
-
-  <!-- ── Core principle ── -->
-  <div class="ss-note ss-note--accent" style="margin-bottom:var(--space-10)">
-    <strong>One rule runs through everything: point-in-time.</strong> Every number describing a match is
-    computed from matches that finished strictly before it. No statistic for a game ever includes that game
-    or anything later — so the feature vector is exactly what would have been known the moment before the
-    first round. That's what makes the track record trustworthy rather than a hindsight illusion.
-  </div>
-
-  <!-- ── Stage 1 ── -->
-  <div class="stage">
-    <div class="stage-num">01</div>
-    <div class="stage-body">
-      <h3>Collect the raw matches</h3>
-      <p>
-        We collect completed professional matches going back to 2020 — roughly
-        <em>32,000 matches</em>. Each one is stored as JSON: the two rosters, the map scores, betting odds
-        where available, and a full per-player stat line for every map played.
-      </p>
-      <div class="io">
-        <span class="io-label">in</span><span class="ss-badge ss-badge--neutral">pro match data</span>
-        <span class="io-label" style="margin-left:var(--space-3)">out</span><span class="ss-badge ss-badge--info">match_*.json</span>
-      </div>
-      <div class="fieldlist">
-        <span class="field">kills</span><span class="field">deaths</span><span class="field">assists</span>
-        <span class="field">acs</span><span class="field">rating</span><span class="field">kast</span>
-        <span class="field">adr</span><span class="field">hs_percent</span><span class="field">first_kills</span>
-        <span class="field">first_deaths</span><span class="field">multi_kills</span><span class="field">clutches</span>
-        <span class="field">team_rounds</span><span class="field">opp_rounds</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Stage 2 ── -->
-  <div class="stage">
-    <div class="stage-num">02</div>
-    <div class="stage-body">
-      <h3>Describe each player's current form</h3>
-      <p>
-        For every player in every match we summarise how they'd been playing <em>beforehand</em>. The stat
-        line above is rolled into averages over each player's last <em>5, 10, and 20 matches</em>, plus a
-        career-to-date average. Each window is computed after shifting the current match out, so a player's
-        form for a game never borrows from the game itself.
-      </p>
-      <div class="viz">
-        <div class="timeline">
-          <div class="tl-match window"><div class="tl-box">m1</div><span class="tl-tag">used</span></div>
-          <div class="tl-match window"><div class="tl-box">m2</div><span class="tl-tag">used</span></div>
-          <div class="tl-match window"><div class="tl-box">m3</div><span class="tl-tag">used</span></div>
-          <div class="tl-match window"><div class="tl-box">m4</div><span class="tl-tag">used</span></div>
-          <div class="tl-match window"><div class="tl-box">m5</div><span class="tl-tag">used</span></div>
-          <div class="tl-match target"><div class="tl-box">m6</div><span class="tl-tag">predict</span></div>
-          <div class="tl-match future"><div class="tl-box">m7</div><span class="tl-tag">later</span></div>
-        </div>
-        <div class="viz-cap">Predicting <strong style="color:var(--ss-text-100)">m6</strong>: a "last-5" form average reads m1–m5 only. m6 and everything after it stay invisible. The same logic produces the L10, L20, and career windows.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Stage 3 ── -->
-  <div class="stage">
-    <div class="stage-num">03</div>
-    <div class="stage-body">
-      <h3>Roll five players into a team, then compare the two</h3>
-      <p>
-        A match is two rosters of five. We combine each side's five player-form vectors into team-level
-        numbers — the <em>mean</em> across the roster, plus the <em>min</em> and <em>max</em> to capture how
-        top-heavy or balanced a lineup is. Then the two teams are <em>differenced</em>: the model sees how much
-        stronger one side is, not just raw values.
-      </p>
-      <div class="viz">
-        <div class="fanin">
-          <div class="players">
-            <div class="p-chip">player 1</div><div class="p-chip">player 2</div><div class="p-chip">player 3</div>
-            <div class="p-chip">player 4</div><div class="p-chip">player 5</div>
-          </div>
-          <span class="arrow">→</span>
-          <div class="agg-box"><div class="op">mean · min · max</div><div class="sub">team vector</div></div>
-          <span class="arrow">→</span>
-          <div class="diff-box"><div class="op">team₁ − team₂</div><div class="sub">strength gap</div></div>
-        </div>
-        <div class="viz-cap">The same aggregation runs for both sides; differencing makes a one-sided 50-ACS edge look the same whether the teams average 200 or 250.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Stage 4 ── -->
-  <div class="stage">
-    <div class="stage-num">04</div>
-    <div class="stage-body">
-      <h3>Add ratings and chemistry</h3>
-      <p>
-        Two signals that form averages miss get layered on. <em>Elo</em> is an opponent-adjusted rating —
-        beat a strong team and it climbs, lose to a weak one and it drops. We keep two versions: a team rating,
-        and a player rating where a team's strength is the average of its five players. The player version is
-        <em>substitution-aware</em> — swap a starter and the team's predicted strength changes immediately.
-      </p>
-      <div class="elo-row">
-        <p style="margin-top:0">
-          <em>Chemistry</em> looks at the ten pairs inside a roster and counts how many matches each pair has
-          played together and how often they won — cohesion that's separate from individual skill. A freshly
-          assembled lineup scores low here even if its players are individually excellent.
-        </p>
-        <div class="formula">
-          P(win) =<br>
-          <b>1 / (1 + 10<sup>−Δ/400</sup>)</b><br>
-          <span style="color:var(--ss-text-500)">Δ = rating gap</span>
-        </div>
-      </div>
-      <div class="io">
-        <span class="io-label">adds</span>
-        <span class="ss-badge ss-badge--info">team_elo_diff</span>
-        <span class="ss-badge ss-badge--info">player_elo_diff</span>
-        <span class="ss-badge ss-badge--info">chem_avg_together</span>
-        <span class="ss-badge ss-badge--info">chem_win_rate_together</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Stage 5 ── -->
-  <div class="stage">
-    <div class="stage-num">05</div>
-    <div class="stage-body">
-      <h3>Predict, calibrated</h3>
-      <p>
-        All of the above — <em>587 features</em> per match — feed an XGBoost gradient-boosted classifier that
-        outputs a single win probability. During training the dataset is mirrored (team 1 ↔ team 2) so listing
-        order can't bias the result. The output is calibrated: across matches we call 70%, the favoured team
-        really does win about 70% of the time.
-      </p>
-      <div class="io">
-        <span class="io-label">in</span><span class="ss-badge ss-badge--neutral">587 features</span>
-        <span class="io-label" style="margin-left:var(--space-3)">out</span>
-        <span class="ss-badge ss-badge--positive">P(team 1 wins)</span>
-        <span class="ss-badge ss-badge--warning">confidence</span>
-      </div>
-      <p style="margin-top:var(--space-3);font-size:13px;color:var(--ss-text-500)">
-        Confidence reflects coverage: it's <em style="color:var(--ss-text-300)">high</em> when all ten players
-        have match history, lower when some are unknowns the model hasn't seen.
-      </p>
-    </div>
-  </div>
-
-  <!-- ── Feature composition ── -->
-  <div class="ss-section" style="margin-top:var(--space-12)">
-    <div class="ss-section-head">
-      <h2>Where the 587 features come from</h2>
-    </div>
-    <div class="feat-grid">
-      <div class="feat-card">
-        <h4><span class="dot" style="background:var(--ss-cyan-500)"></span>Player form</h4>
-        <p>~15 combat stats × four windows (L5 / L10 / L20 / career), aggregated across each five-player roster. The largest block by far.</p>
-      </div>
-      <div class="feat-card">
-        <h4><span class="dot" style="background:var(--ss-blue-500)"></span>Team differences</h4>
-        <p>The same form metrics expressed as team₁ − team₂, so the model reads relative strength directly.</p>
-      </div>
-      <div class="feat-card">
-        <h4><span class="dot" style="background:var(--ss-green-500)"></span>Elo ratings</h4>
-        <p>Pre-match team and player Elo, their diffs, and the implied win probability from the rating gap.</p>
-      </div>
-      <div class="feat-card">
-        <h4><span class="dot" style="background:var(--ss-amber-500)"></span>Roster chemistry</h4>
-        <p>Shared games and win rate across all ten in-roster pairs — average, max, min, and how many pairs have history.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Walk-forward ── -->
-  <div class="ss-section">
-    <div class="ss-section-head">
-      <h2>How we know the track record is honest</h2>
-    </div>
-    <p style="font-size:14px;line-height:22px;color:var(--ss-text-300);margin-bottom:var(--space-4)">
-      The accuracy on the predictions page comes from a <em style="color:var(--ss-text-100);font-style:normal;font-weight:600">walk-forward</em> test, not a random split. The model trains on the oldest matches, predicts the next block it has never seen, then folds that block in and refits — marching forward through history exactly the way it runs live. No prediction is ever scored against data it was allowed to learn from.
+  <div class="card">
+    <img src="ss_logo.png" alt="SolvedState" onerror="this.style.display='none'" />
+    <h1>SolvedState has moved</h1>
+    <p>
+      This page now lives at <a class="plain" href="https://solvedstate.vercel.app/architecture.html">solvedstate.vercel.app/architecture.html</a>.
+      Redirecting you automatically&hellip;
     </p>
-    <div class="viz">
-      <div class="wf">
-        <div class="wf-row"><span class="wf-lbl">round 1</span><div class="wf-bar"><div class="wf-train" style="flex:5"></div><div class="wf-pred" style="flex:1"></div><div class="wf-rest" style="flex:6"></div></div></div>
-        <div class="wf-row"><span class="wf-lbl">round 2</span><div class="wf-bar"><div class="wf-train" style="flex:6"></div><div class="wf-pred" style="flex:1"></div><div class="wf-rest" style="flex:5"></div></div></div>
-        <div class="wf-row"><span class="wf-lbl">round 3</span><div class="wf-bar"><div class="wf-train" style="flex:7"></div><div class="wf-pred" style="flex:1"></div><div class="wf-rest" style="flex:4"></div></div></div>
-        <div class="wf-row"><span class="wf-lbl">round 4</span><div class="wf-bar"><div class="wf-train" style="flex:8"></div><div class="wf-pred" style="flex:1"></div><div class="wf-rest" style="flex:3"></div></div></div>
-        <div class="wf-row"><span class="wf-lbl">round 5</span><div class="wf-bar"><div class="wf-train" style="flex:9"></div><div class="wf-pred" style="flex:1"></div><div class="wf-rest" style="flex:2"></div></div></div>
-      </div>
-      <div class="wf-key">
-        <span><i style="background:var(--ss-border-700)"></i>trained on (past)</span>
-        <span><i style="background:var(--ss-cyan-500)"></i>predicted next (unseen)</span>
-        <span><i style="background:var(--ss-surface-850)"></i>still in the future</span>
-      </div>
-      <div class="viz-cap">Training starts on the oldest 80% of matches and steps forward in 200-match blocks, refitting after each. The cyan blocks — every prediction made against a strictly future game — are what the reported accuracy is measured on.</div>
-    </div>
-    <div style="margin-top:var(--space-5)">
-      <a class="ss-btn" href="index.html">View the live predictions →</a>
-    </div>
+    <a class="btn" href="https://solvedstate.vercel.app/architecture.html">Go to How It Works</a>
   </div>
-
-</main>
-
+  <script>location.replace("https://solvedstate.vercel.app/architecture.html");</script>
 </body>
 </html>
